@@ -2363,7 +2363,7 @@ class P4Submit(Command, P4UserMap):
                 print("")
                 print("To submit, use \"p4 submit\" to write a new description,")
                 print("or \"p4 submit -i <%s\" to use the one prepared by"
-                      " \"git p4\"." % fileName)
+                      " \"kit p4\"." % fileName)
                 print("You can delete the file \"%s\" when finished." % fileName)
 
                 if self.preserveUser and p4User and not self.p4UserIsMe(p4User):
@@ -2760,7 +2760,7 @@ class P4Submit(Command, P4UserMap):
                         star = " "
                     print(star, read_pipe(["git", "show", "-s",
                                            "--format=format:%h %s",  c]))
-                print("You will have to do 'git p4 sync' and rebase.")
+                print("You will have to do 'kit p4 sync' and rebase.")
 
         if gitConfigBool("git-p4.exportLabels"):
             self.exportLabels = True
@@ -3967,7 +3967,7 @@ class P4Sync(Command, P4UserMap):
             # does not have any existing p4 branches
             if len(args) == 0:
                 if not self.p4BranchesInGit:
-                    raise P4CommandException("No remote p4 branches.  Perhaps you never did \"git p4 clone\" in here.")
+                    raise P4CommandException("No remote p4 branches.  Perhaps you never did \"kit p4 clone\" in here.")
 
                 # The default branch is master, unless --branch is used to
                 # specify something else.  Make sure it exists, or complain
@@ -4285,9 +4285,9 @@ class P4Rebase(Command):
 
     def rebase(self):
         if os.system("git update-index --refresh") != 0:
-            die("Some files in your working directory are modified and different than what is in your index. You can use git update-index <filename> to bring the index up to date or stash away all your changes with git stash.")
+            die("Some files in your working directory are modified and different than what is in your index. You can use kit update-index <filename> to bring the index up to date or stash away all your changes with kit stash.")
         if len(read_pipe(["git", "diff-index", "HEAD", "--"])) > 0:
-            die("You have uncommitted changes. Please commit them before rebasing or stash them away with git stash.")
+            die("You have uncommitted changes. Please commit them before rebasing or stash them away with kit stash.")
 
         upstream, settings = findUpstreamBranchPoint()
         if len(upstream) == 0:

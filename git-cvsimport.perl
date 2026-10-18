@@ -764,7 +764,7 @@ unless ($opt_P) {
 	    print $cvspsfh $_;
 	}
 	close CVSPS;
-	$? == 0 or die "git cvsimport: fatal: cvsps reported error\n";
+	$? == 0 or die "kit cvsimport: fatal: cvsps reported error\n";
 	close $cvspsfh;
 } else {
 	$cvspsfile = munge_user_filename($opt_P);
