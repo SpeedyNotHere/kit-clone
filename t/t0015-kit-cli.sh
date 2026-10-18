@@ -111,7 +111,12 @@ test_expect_success 'repository-format messages are unchanged' '
 test_expect_success 'bundle format signature is unchanged' '
 	kit -C repo bundle create ../repo.bundle HEAD &&
 	head -n 1 repo.bundle >actual &&
-	echo "# v2 git bundle" >expect &&
+	if test "$(git -C repo rev-parse --show-object-format)" = sha1
+	then
+		echo "# v2 git bundle"
+	else
+		echo "# v3 git bundle"
+	fi >expect &&
 	test_cmp expect actual
 '
 
