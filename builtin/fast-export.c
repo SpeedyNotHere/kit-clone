@@ -33,7 +33,7 @@
 #include "gpg-interface.h"
 
 static const char *const fast_export_usage[] = {
-	N_("git fast-export [<options>] [<revision-range>] [[--] <path>...]"),
+	N_("kit fast-export [<options>] [<revision-range>] [[--] <path>...]"),
 	NULL
 };
 

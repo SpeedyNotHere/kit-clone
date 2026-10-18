@@ -1112,11 +1112,11 @@ static void suggest_reattach(struct commit *commit, struct rev_info *revs)
 			/* The singular version */
 			"If you want to keep it by creating a new branch, "
 			"this may be a good time\nto do so with:\n\n"
-			" git branch <new-branch-name> %s\n\n",
+			" kit branch <new-branch-name> %s\n\n",
 			/* The plural version */
 			"If you want to keep them by creating a new branch, "
 			"this may be a good time\nto do so with:\n\n"
-			" git branch <new-branch-name> %s\n\n",
+			" kit branch <new-branch-name> %s\n\n",
 			/* Give ngettext() the count */
 			lost),
 			repo_find_unique_abbrev(the_repository, &commit->object.oid, DEFAULT_ABBREV));
@@ -1373,7 +1373,7 @@ static void advise_disambiguating_remotes(enum checkout_command which_command,
 	advise(_("If you meant to check out a remote tracking branch on <remote>,\n"
 		 "you can do so by fully qualifying the name with the --track option:\n"
 		 "\n"
-		 "    git %s --track <remote>/%s\n"
+		 "    kit %s --track <remote>/%s\n"
 		 "\n"
 		 "If you'd like to always have checkouts of an ambiguous name prefer\n"
 		 "one remote, e.g. the 'origin' remote, consider setting\n"
@@ -1630,24 +1630,24 @@ static void die_if_some_operation_in_progress(void)
 
 	if (state.merge_in_progress)
 		die(_("cannot switch branch while merging\n"
-		      "Consider \"git merge --quit\" "
-		      "or \"git worktree add\"."));
+		      "Consider \"kit merge --quit\" "
+		      "or \"kit worktree add\"."));
 	if (state.am_in_progress)
 		die(_("cannot switch branch in the middle of an am session\n"
-		      "Consider \"git am --quit\" "
-		      "or \"git worktree add\"."));
+		      "Consider \"kit am --quit\" "
+		      "or \"kit worktree add\"."));
 	if (state.rebase_interactive_in_progress || state.rebase_in_progress)
 		die(_("cannot switch branch while rebasing\n"
-		      "Consider \"git rebase --quit\" "
-		      "or \"git worktree add\"."));
+		      "Consider \"kit rebase --quit\" "
+		      "or \"kit worktree add\"."));
 	if (state.cherry_pick_in_progress)
 		die(_("cannot switch branch while cherry-picking\n"
-		      "Consider \"git cherry-pick --quit\" "
-		      "or \"git worktree add\"."));
+		      "Consider \"kit cherry-pick --quit\" "
+		      "or \"kit worktree add\"."));
 	if (state.revert_in_progress)
 		die(_("cannot switch branch while reverting\n"
-		      "Consider \"git revert --quit\" "
-		      "or \"git worktree add\"."));
+		      "Consider \"kit revert --quit\" "
+		      "or \"kit worktree add\"."));
 	if (state.bisect_in_progress)
 		warning(_("you are switching branch while bisecting"));
 
@@ -1863,18 +1863,18 @@ static int checkout_main(int argc, const char **argv, const char *prefix,
 	int ret;
 
 	static const char * const checkout_usage[] = {
-		N_("git checkout [<options>] <branch>"),
-		N_("git checkout [<options>] [<branch>] -- <file>..."),
+		N_("kit checkout [<options>] <branch>"),
+		N_("kit checkout [<options>] [<branch>] -- <file>..."),
 		NULL,
 	};
 
 	static const char * const switch_branch_usage[] = {
-		N_("git switch [<options>] [<branch>]"),
+		N_("kit switch [<options>] [<branch>]"),
 		NULL,
 	};
 
 	static const char * const restore_usage[] = {
-		N_("git restore [<options>] [--source=<branch>] <file>..."),
+		N_("kit restore [<options>] [--source=<branch>] <file>..."),
 		NULL,
 	};
 
@@ -2051,7 +2051,7 @@ static int checkout_main(int argc, const char **argv, const char *prefix,
 				argv[0], opts->new_branch);
 
 		if (opts->force_detach)
-			die(_("git checkout: --detach does not take a path argument '%s'"),
+			die(_("kit checkout: --detach does not take a path argument '%s'"),
 			    argv[0]);
 	}
 
@@ -2076,7 +2076,7 @@ static int checkout_main(int argc, const char **argv, const char *prefix,
 
 	if (opts->pathspec.nr) {
 		if (1 < !!opts->writeout_stage + !!opts->force + !!opts->merge)
-			die(_("git checkout: --ours/--theirs, --force and --merge are incompatible when\n"
+			die(_("kit checkout: --ours/--theirs, --force and --merge are incompatible when\n"
 			      "checking out of the index."));
 	} else {
 		if (opts->accept_pathspec && !opts->empty_pathspec_ok &&
@@ -2122,7 +2122,7 @@ int cmd_checkout(int argc,
 			   N_("create/reset and checkout a branch")),
 		OPT_BOOL('l', NULL, &opts.new_branch_log, N_("create reflog for new branch")),
 		OPT_BOOL(0, "guess", &opts.dwim_new_local_branch,
-			 N_("second guess 'git checkout <no-such-branch>' (default)")),
+			 N_("second guess 'kit checkout <no-such-branch>' (default)")),
 		OPT_BOOL(0, "overlay", &opts.overlay_mode, N_("use overlay mode (default)")),
 		OPT_BOOL(0, "auto-advance", &opts.auto_advance,
 			 N_("auto advance to the next file when selecting hunks interactively")),
@@ -2173,7 +2173,7 @@ int cmd_switch(int argc,
 		OPT_STRING('C', "force-create", &opts.new_branch_force, N_("branch"),
 			   N_("create/reset and switch to a branch")),
 		OPT_BOOL(0, "guess", &opts.dwim_new_local_branch,
-			 N_("second guess 'git switch <no-such-branch>'")),
+			 N_("second guess 'kit switch <no-such-branch>'")),
 		OPT_BOOL(0, "discard-changes", &opts.discard_changes,
 			 N_("throw away local modifications")),
 		OPT_END()

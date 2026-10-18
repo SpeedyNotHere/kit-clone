@@ -1979,7 +1979,7 @@ test_dependencies += executable('git-imap-send',
   install_dir: git_exec_path,
 )
 
-foreach alias : [ 'git-receive-pack', 'git-upload-archive', 'git-upload-pack' ]
+foreach alias : [ 'kit', 'git-receive-pack', 'git-upload-archive', 'git-upload-pack' ]
   bin_wrappers += executable(alias,
     objects: git_builtin.extract_all_objects(recursive: false),
     dependencies: [libgit_commonmain],
@@ -1993,6 +1993,7 @@ endforeach
 
 foreach symlink : [
   'git',
+  'kit',
   'git-receive-pack',
   'git-shell',
   'git-upload-archive',

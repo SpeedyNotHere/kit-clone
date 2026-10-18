@@ -32,71 +32,71 @@
 
 static const char *separator = "\n";
 static const char * const git_notes_usage[] = {
-	N_("git notes [--ref <notes-ref>] [list [<object>]]"),
-	N_("git notes [--ref <notes-ref>] add [-f] [--allow-empty] [--[no-]separator|--separator=<paragraph-break>] [--[no-]stripspace] [-m <msg> | -F <file> | (-c | -C) <object>] [<object>] [-e]"),
-	N_("git notes [--ref <notes-ref>] copy [-f] <from-object> <to-object>"),
-	N_("git notes [--ref <notes-ref>] append [--allow-empty] [--[no-]separator|--separator=<paragraph-break>] [--[no-]stripspace] [-m <msg> | -F <file> | (-c | -C) <object>] [<object>] [-e]"),
-	N_("git notes [--ref <notes-ref>] edit [--allow-empty] [<object>]"),
-	N_("git notes [--ref <notes-ref>] show [<object>]"),
-	N_("git notes [--ref <notes-ref>] merge [-v | -q] [-s <strategy>] <notes-ref>"),
-	"git notes merge --commit [-v | -q]",
-	"git notes merge --abort [-v | -q]",
-	N_("git notes [--ref <notes-ref>] remove [<object>...]"),
-	N_("git notes [--ref <notes-ref>] prune [-n] [-v]"),
-	N_("git notes [--ref <notes-ref>] get-ref"),
+	N_("kit notes [--ref <notes-ref>] [list [<object>]]"),
+	N_("kit notes [--ref <notes-ref>] add [-f] [--allow-empty] [--[no-]separator|--separator=<paragraph-break>] [--[no-]stripspace] [-m <msg> | -F <file> | (-c | -C) <object>] [<object>] [-e]"),
+	N_("kit notes [--ref <notes-ref>] copy [-f] <from-object> <to-object>"),
+	N_("kit notes [--ref <notes-ref>] append [--allow-empty] [--[no-]separator|--separator=<paragraph-break>] [--[no-]stripspace] [-m <msg> | -F <file> | (-c | -C) <object>] [<object>] [-e]"),
+	N_("kit notes [--ref <notes-ref>] edit [--allow-empty] [<object>]"),
+	N_("kit notes [--ref <notes-ref>] show [<object>]"),
+	N_("kit notes [--ref <notes-ref>] merge [-v | -q] [-s <strategy>] <notes-ref>"),
+	"kit notes merge --commit [-v | -q]",
+	"kit notes merge --abort [-v | -q]",
+	N_("kit notes [--ref <notes-ref>] remove [<object>...]"),
+	N_("kit notes [--ref <notes-ref>] prune [-n] [-v]"),
+	N_("kit notes [--ref <notes-ref>] get-ref"),
 	NULL
 };
 
 static const char * const git_notes_list_usage[] = {
-	N_("git notes [list [<object>]]"),
+	N_("kit notes [list [<object>]]"),
 	NULL
 };
 
 static const char * const git_notes_add_usage[] = {
-	N_("git notes add [<options>] [<object>]"),
+	N_("kit notes add [<options>] [<object>]"),
 	NULL
 };
 
 static const char * const git_notes_copy_usage[] = {
-	N_("git notes copy [<options>] <from-object> <to-object>"),
-	N_("git notes copy --stdin [<from-object> <to-object>]..."),
+	N_("kit notes copy [<options>] <from-object> <to-object>"),
+	N_("kit notes copy --stdin [<from-object> <to-object>]..."),
 	NULL
 };
 
 static const char * const git_notes_append_usage[] = {
-	N_("git notes append [<options>] [<object>]"),
+	N_("kit notes append [<options>] [<object>]"),
 	NULL
 };
 
 static const char * const git_notes_edit_usage[] = {
-	N_("git notes edit [<object>]"),
+	N_("kit notes edit [<object>]"),
 	NULL
 };
 
 static const char * const git_notes_show_usage[] = {
-	N_("git notes show [<object>]"),
+	N_("kit notes show [<object>]"),
 	NULL
 };
 
 static const char * const git_notes_merge_usage[] = {
-	N_("git notes merge [<options>] <notes-ref>"),
-	N_("git notes merge --commit [<options>]"),
-	N_("git notes merge --abort [<options>]"),
+	N_("kit notes merge [<options>] <notes-ref>"),
+	N_("kit notes merge --commit [<options>]"),
+	N_("kit notes merge --abort [<options>]"),
 	NULL
 };
 
 static const char * const git_notes_remove_usage[] = {
-	N_("git notes remove [<object>]"),
+	N_("kit notes remove [<object>]"),
 	NULL
 };
 
 static const char * const git_notes_prune_usage[] = {
-	N_("git notes prune [<options>]"),
+	N_("kit notes prune [<options>]"),
 	NULL
 };
 
 static const char * const git_notes_get_ref_usage[] = {
-	"git notes get-ref",
+	"kit notes get-ref",
 	NULL
 };
 
@@ -705,7 +705,7 @@ static int append_edit(int argc, const char **argv, const char *prefix,
 		if (edit)
 			fprintf(stderr, _("The -m/-F/-c/-C options have been "
 				"deprecated for the 'edit' subcommand.\n"
-				"Please use 'git notes add -f -m/-F/-c/-C' "
+				"Please use 'kit notes add -f -m/-F/-c/-C' "
 				"instead.\n"));
 	}
 
@@ -810,7 +810,7 @@ static int merge_abort(struct notes_merge_options *o)
 	if (refs_delete_ref(get_main_ref_store(the_repository), NULL, "NOTES_MERGE_REF", NULL, REF_NO_DEREF))
 		ret += error(_("failed to delete ref NOTES_MERGE_REF"));
 	if (notes_merge_abort(o))
-		ret += error(_("failed to remove 'git notes merge' worktree"));
+		ret += error(_("failed to remove 'kit notes merge' worktree"));
 	return ret;
 }
 
@@ -1002,8 +1002,8 @@ static int merge(int argc, const char **argv, const char *prefix,
 
 		path = repo_git_path(the_repository, NOTES_MERGE_WORKTREE);
 		fprintf(stderr, _("Automatic notes merge failed. Fix conflicts in %s "
-				  "and commit the result with 'git notes merge --commit', "
-				  "or abort the merge with 'git notes merge --abort'.\n"),
+				  "and commit the result with 'kit notes merge --commit', "
+				  "or abort the merge with 'kit notes merge --abort'.\n"),
 			path);
 		free(path);
 	}

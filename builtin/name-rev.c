@@ -561,9 +561,9 @@ static void show_name(const struct object *obj,
 }
 
 static char const * const name_rev_usage[] = {
-	N_("git name-rev [<options>] <commit>..."),
-	N_("git name-rev [<options>] --all"),
-	N_("git name-rev [<options>] --annotate-stdin"),
+	N_("kit name-rev [<options>] <commit>..."),
+	N_("kit name-rev [<options>] --all"),
+	N_("kit name-rev [<options>] --annotate-stdin"),
 	NULL
 };
 
@@ -802,7 +802,7 @@ static enum stdin_mode parse_stdin_mode(const char *stdin_mode)
 }
 
 static char const *const format_rev_usage[] = {
-	N_("(EXPERIMENTAL!) git format-rev --stdin-mode=<mode> "
+	N_("(EXPERIMENTAL!) kit format-rev --stdin-mode=<mode> "
 	   "--format=<pretty> [--[no-]notes=<ref>] "
 	   "[-z] [--[no-]null-output] [--[no-]null-input]"),
 	NULL

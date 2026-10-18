@@ -81,13 +81,13 @@ test_reset_when_found_fails () {
 
 test_expect_success 'bisect usage' "
 	test_bisect_usage 1 git bisect reset extra1 extra2 <<-\EOF &&
-	error: 'git bisect reset' requires either no argument or a commit
+	error: 'kit bisect reset' requires either no argument or a commit
 	EOF
 	test_bisect_usage 1 git bisect terms extra1 extra2 <<-\EOF &&
-	error: 'git bisect terms' requires 0 or 1 argument
+	error: 'kit bisect terms' requires 0 or 1 argument
 	EOF
 	test_bisect_usage 1 git bisect next extra1 <<-\EOF &&
-	error: 'git bisect next' requires 0 arguments
+	error: 'kit bisect next' requires 0 arguments
 	EOF
 	test_bisect_usage 1 git bisect log extra1 <<-\EOF &&
 	error: We are not bisecting.
@@ -96,7 +96,7 @@ test_expect_success 'bisect usage' "
 	error: no logfile given
 	EOF
 	test_bisect_usage 1 git bisect run <<-\EOF
-	error: 'git bisect run' failed: no command provided.
+	error: 'kit bisect run' failed: no command provided.
 	EOF
 "
 
@@ -1216,7 +1216,7 @@ test_expect_success 'bogus command does not start bisect' '
 	test_grep ! "You need to start" out &&
 	test_must_fail git bisect --bisect-terms 2>out &&
 	test_grep ! "You need to start" out &&
-	test_grep "git bisect.*visualize" out &&
+	test_grep "kit bisect.*visualize" out &&
 	git bisect reset
 '
 
@@ -1389,7 +1389,7 @@ test_expect_success 'verify correct error message' '
 	rm .git/BISECT*
 	EOF
 	test_must_fail git bisect run ./test_script.sh 2>error &&
-	test_grep "git bisect good.*exited with error code" error
+	test_grep "kit bisect good.*exited with error code" error
 '
 
 test_done

@@ -692,12 +692,12 @@ static const char default_branch_name_advice[] = N_(
 "to use in all of your new repositories, which will suppress this warning,\n"
 "call:\n"
 "\n"
-"\tgit config --global init.defaultBranch <name>\n"
+"\tkit config --global init.defaultBranch <name>\n"
 "\n"
 "Names commonly chosen instead of 'master' are 'main', 'trunk' and\n"
 "'development'. The just-created branch can be renamed via this command:\n"
 "\n"
-"\tgit branch -m <name>\n"
+"\tkit branch -m <name>\n"
 );
 #else
 static const char default_branch_name_advice[] = N_(
@@ -705,7 +705,7 @@ static const char default_branch_name_advice[] = N_(
 "If you expected Git to create 'master', the just-created\n"
 "branch can be renamed via this command:\n"
 "\n"
-"\tgit branch -m master\n"
+"\tkit branch -m master\n"
 );
 #endif /* WITH_BREAKING_CHANGES */
 

@@ -107,7 +107,7 @@ my $work =
 $log->info("--------------- STARTING -----------------");
 
 my $usage =
-    "usage: git cvsserver [options] [pserver|server] [<directory> ...]\n".
+    "usage: kit cvsserver [options] [pserver|server] [<directory> ...]\n".
     "    --base-path <path>  : Prepend to requested CVSROOT\n".
     "                          Can be read from GIT_CVSSERVER_BASE_PATH\n".
     "    --strict-paths      : Don't allow recursing into subdirectories\n".

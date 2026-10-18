@@ -54,8 +54,8 @@ static int opt_draft;
 static char *opt_folder;
 
 static char const * const imap_send_usage[] = {
-	N_("git imap-send [-v] [-q] [--[no-]curl] [--[no-]draft] [(--folder|-f) <folder>] < <mbox>"),
-	"git imap-send --list",
+	N_("kit imap-send [-v] [-q] [--[no-]curl] [--[no-]draft] [(--folder|-f) <folder>] < <mbox>"),
+	"kit imap-send --list",
 	NULL
 };
 
@@ -1842,8 +1842,8 @@ int cmd_main(int argc, const char **argv)
 	if (!server.host) {
 		if (!server.tunnel) {
 			error(_("no IMAP host specified"));
-			advise(_("set the IMAP host with 'git config imap.host <host>'.\n"
-				 "(e.g., 'git config imap.host imaps://imap.example.com')"));
+			advise(_("set the IMAP host with 'kit config imap.host <host>'.\n"
+				 "(e.g., 'kit config imap.host imaps://imap.example.com')"));
 			ret = 1;
 			goto out;
 		}
@@ -1864,8 +1864,8 @@ int cmd_main(int argc, const char **argv)
 
 	if (!server.folder) {
 		error(_("no IMAP folder specified"));
-		advise(_("set the target folder with 'git config imap.folder <folder>'.\n"
-			 "(e.g., 'git config imap.folder Drafts')"));
+		advise(_("set the target folder with 'kit config imap.folder <folder>'.\n"
+			 "(e.g., 'kit config imap.folder Drafts')"));
 		ret = 1;
 		goto out;
 	}

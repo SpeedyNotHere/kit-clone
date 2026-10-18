@@ -1,5 +1,6 @@
 /git
 /git-cvsserver
+/kit
 /git-receive-pack
 /git-shell
 /git-upload-archive

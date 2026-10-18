@@ -68,7 +68,7 @@ static int parse_opt_rebase(const struct option *opt, const char *arg, int unset
 }
 
 static const char * const pull_usage[] = {
-	N_("git pull [<options>] [<repository> [<refspec>...]]"),
+	N_("kit pull [<options>] [<repository> [<refspec>...]]"),
 	NULL
 };
 
@@ -337,7 +337,7 @@ static void NORETURN die_no_merge_candidates(const char *repo, const char **refs
 			fprintf_ln(stderr, _("Please specify which branch you want to merge with."));
 		fprintf_ln(stderr, _("See git-pull(1) for details."));
 		fprintf(stderr, "\n");
-		fprintf_ln(stderr, "    git pull %s %s", _("<remote>"), _("<branch>"));
+		fprintf_ln(stderr, "    kit pull %s %s", _("<remote>"), _("<branch>"));
 		fprintf(stderr, "\n");
 	} else if (!curr_branch->merge_nr) {
 		const char *remote_name = NULL;
@@ -352,11 +352,11 @@ static void NORETURN die_no_merge_candidates(const char *repo, const char **refs
 			fprintf_ln(stderr, _("Please specify which branch you want to merge with."));
 		fprintf_ln(stderr, _("See git-pull(1) for details."));
 		fprintf(stderr, "\n");
-		fprintf_ln(stderr, "    git pull %s %s", _("<remote>"), _("<branch>"));
+		fprintf_ln(stderr, "    kit pull %s %s", _("<remote>"), _("<branch>"));
 		fprintf(stderr, "\n");
 		fprintf_ln(stderr, _("If you wish to set tracking information for this branch you can do so with:"));
 		fprintf(stderr, "\n");
-		fprintf_ln(stderr, "    git branch --set-upstream-to=%s/%s %s\n",
+		fprintf_ln(stderr, "    kit branch --set-upstream-to=%s/%s %s\n",
 				remote_name, _("<branch>"), curr_branch->name);
 	} else
 		fprintf_ln(stderr, _("Your configuration specifies to merge with the ref '%s'\n"
@@ -851,11 +851,11 @@ static void show_advice_pull_non_ff(void)
 		 "You can do so by running one of the following commands sometime before\n"
 		 "your next pull:\n"
 		 "\n"
-		 "  git config pull.rebase false  # merge\n"
-		 "  git config pull.rebase true   # rebase\n"
-		 "  git config pull.ff only       # fast-forward only\n"
+		 "  kit config pull.rebase false  # merge\n"
+		 "  kit config pull.rebase true   # rebase\n"
+		 "  kit config pull.ff only       # fast-forward only\n"
 		 "\n"
-		 "You can replace \"git config\" with \"git config --global\" to set a default\n"
+		 "You can replace \"kit config\" with \"kit config --global\" to set a default\n"
 		 "preference for all repositories. You can also pass --rebase, --no-rebase,\n"
 		 "or --ff-only on the command line to override the configured default per\n"
 		 "invocation.\n"));
@@ -1014,7 +1014,7 @@ int cmd_pull(int argc,
 		OPT_BOOL(0, "show-forced-updates", &opt_show_forced_updates,
 			 N_("check for forced-updates on all updated branches")),
 		OPT_PASSTHRU(0, "set-upstream", &set_upstream, NULL,
-			N_("set upstream for git pull/fetch"),
+			N_("set upstream for kit pull/fetch"),
 			PARSE_OPT_NOARG),
 
 		OPT_END()
@@ -1119,9 +1119,9 @@ int cmd_pull(int argc,
 					  &curr_head, 0))
 			die(_("Cannot fast-forward your working tree.\n"
 				"After making sure that you saved anything precious from\n"
-				"$ git diff %s\n"
+				"$ kit diff %s\n"
 				"output, run\n"
-				"$ git reset --hard\n"
+				"$ kit reset --hard\n"
 				"to recover."), oid_to_hex(&orig_head));
 	}
 

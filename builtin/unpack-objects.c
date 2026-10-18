@@ -23,7 +23,7 @@
 #include "packfile.h"
 
 static int dry_run, quiet, recover, has_errors, strict;
-static const char unpack_usage[] = "git unpack-objects [-n] [-q] [-r] [--strict]";
+static const char unpack_usage[] = "kit unpack-objects [-n] [-q] [-r] [--strict]";
 
 static unsigned char buffer[DEFAULT_IO_BUFFER_SIZE];
 static unsigned int offset, len;

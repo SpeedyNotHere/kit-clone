@@ -23,11 +23,11 @@
 #include "utf8.h"
 
 #define REPO_INFO_USAGE \
-	"git repo info [--format=(lines|nul) | -z] [--all | <key>...]", \
-	"git repo info --keys [--format=(lines|nul) | -z]"
+	"kit repo info [--format=(lines|nul) | -z] [--all | <key>...]", \
+	"kit repo info --keys [--format=(lines|nul) | -z]"
 
 #define REPO_STRUCTURE_USAGE \
-	"git repo structure [--format=(table|lines|nul) | -z]"
+	"kit repo structure [--format=(table|lines|nul) | -z]"
 
 static const char *const repo_usage[] = {
 	REPO_INFO_USAGE,

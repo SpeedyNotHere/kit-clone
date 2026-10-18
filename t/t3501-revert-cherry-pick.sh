@@ -172,12 +172,12 @@ test_expect_success 'advice from failed revert' '
 	cat <<-EOF >expected &&
 	error: could not revert $dream_oid... add dream
 	hint: After resolving the conflicts, mark them with
-	hint: "git add/rm <pathspec>", then run
-	hint: "git revert --continue".
-	hint: You can instead skip this commit with "git revert --skip".
-	hint: To abort and get back to the state before "git revert",
-	hint: run "git revert --abort".
-	hint: Disable this message with "git config set advice.mergeConflict false"
+	hint: "kit add/rm <pathspec>", then run
+	hint: "kit revert --continue".
+	hint: You can instead skip this commit with "kit revert --skip".
+	hint: To abort and get back to the state before "kit revert",
+	hint: run "kit revert --abort".
+	hint: Disable this message with "kit config set advice.mergeConflict false"
 	EOF
 	test_commit --append --no-tag "double-add dream" dream dream &&
 	test_must_fail git revert HEAD^ 2>actual &&
@@ -253,7 +253,7 @@ test_expect_success 'identification of reverted commit (revert.reference)' '
 test_expect_success 'cherry-pick is unaware of --reference (for now)' '
 	test_when_finished "git reset --hard" &&
 	test_must_fail git cherry-pick --reference HEAD 2>actual &&
-	test_grep "^usage: git cherry-pick" actual
+	test_grep "^usage: kit cherry-pick" actual
 '
 
 test_done

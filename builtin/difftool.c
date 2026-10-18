@@ -36,7 +36,7 @@
 #include "setup.h"
 
 static const char *const builtin_difftool_usage[] = {
-	N_("git difftool [<options>] [<commit> [<commit>]] [--] [<path>...]"),
+	N_("kit difftool [<options>] [<commit> [<commit>]] [--] [<path>...]"),
 	NULL
 };
 

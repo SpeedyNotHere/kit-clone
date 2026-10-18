@@ -30,8 +30,8 @@
 #include "entry.h"
 
 static const char * const builtin_mv_usage[] = {
-	N_("git mv [-v] [-f] [-n] [-k] <source> <destination>"),
-	N_("git mv [-v] [-f] [-n] [-k] <source>... <destination-directory>"),
+	N_("kit mv [-v] [-f] [-n] [-k] <source> <destination>"),
+	N_("kit mv [-v] [-f] [-n] [-k] <source>... <destination-directory>"),
 	NULL
 };
 

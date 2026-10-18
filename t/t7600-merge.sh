@@ -175,7 +175,7 @@ test_expect_success 'merge -h with invalid index' '
 		>.git/index &&
 		git merge -h >usage
 	) &&
-	test_grep "[Uu]sage: git merge" broken/usage
+	test_grep "[Uu]sage: kit merge" broken/usage
 '
 
 test_expect_success 'reject non-strategy with a git-merge-foo name' '
@@ -342,7 +342,7 @@ test_expect_success 'merge --squash --autostash conflict does not attempt to app
 	git add unrelated &&
 	test_must_fail git merge --squash c7 --autostash >out 2>err &&
 	test_grep ! "Applying autostash resulted in conflicts." err &&
-	test_grep "When finished, apply stashed changes with \`git stash pop\`" out
+	test_grep "When finished, apply stashed changes with \`kit stash pop\`" out
 '
 
 test_expect_success 'merge c3 with c7 with commit.cleanup = scissors' '

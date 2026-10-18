@@ -913,10 +913,12 @@ endif
 
 # what 'all' will build but not install in gitexecdir
 OTHER_PROGRAMS += git$X
+OTHER_PROGRAMS += kit$X
 OTHER_PROGRAMS += scalar$X
 
 # what test wrappers are needed and 'install' will install, in bindir
 BINDIR_PROGRAMS_NEED_X += git
+BINDIR_PROGRAMS_NEED_X += kit
 BINDIR_PROGRAMS_NEED_X += scalar
 BINDIR_PROGRAMS_NEED_X += git-receive-pack
 BINDIR_PROGRAMS_NEED_X += git-shell
@@ -2701,7 +2703,7 @@ version-def.h: version-def.h.in GIT-VERSION-GEN GIT-VERSION-FILE GIT-USER-AGENT
 
 version.sp version.s version.o: version-def.h
 
-$(BUILT_INS): git$X
+$(BUILT_INS) kit$X: git$X
 	$(QUIET_BUILT_IN)$(RM) $@ && \
 	ln $< $@ 2>/dev/null || \
 	ln -s $< $@ 2>/dev/null || \

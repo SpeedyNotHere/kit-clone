@@ -20,13 +20,13 @@ test_expect_success 'setup - enable local submodules' '
 
 test_expect_success 'submodule usage: -h' '
 	git submodule -h >out 2>err &&
-	test_grep "^usage: git submodule" out &&
+	test_grep "^usage: kit submodule" out &&
 	test_must_be_empty err
 '
 
 test_expect_success 'submodule usage: --recursive' '
 	test_expect_code 1 git submodule --recursive >out 2>err &&
-	test_grep "^usage: git submodule" err &&
+	test_grep "^usage: kit submodule" err &&
 	test_must_be_empty out
 '
 
@@ -231,7 +231,7 @@ test_expect_success 'submodule add to .gitignored path fails' '
 		The following paths are ignored by one of your .gitignore files:
 		submod
 		hint: Use -f if you really want to add them.
-		hint: Disable this message with "git config set advice.addIgnoredFile false"
+		hint: Disable this message with "kit config set advice.addIgnoredFile false"
 		EOF
 		# Does not use test_commit due to the ignore
 		echo "*" > .gitignore &&

@@ -172,7 +172,7 @@ int cmd_credential_store(int argc,
 			 struct repository *repo UNUSED)
 {
 	const char * const usage[] = {
-		"git credential-store [<options>] <action>",
+		"kit credential-store [<options>] <action>",
 		NULL
 	};
 	const char *op;

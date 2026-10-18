@@ -1354,7 +1354,7 @@ static int run_apply_check(struct add_p_state *s,
 			    "apply", "--check", NULL);
 	strvec_pushv(&cp.args, s->mode->apply_check_args);
 	if (pipe_command(&cp, s->buf.buf, s->buf.len, NULL, 0, NULL, 0))
-		return error(_("'git apply --cached' failed"));
+		return error(_("'kit apply --cached' failed"));
 
 	return 0;
 }
@@ -1572,7 +1572,7 @@ static void apply_patch(struct add_p_state *s, struct file_diff *file_diff)
 			strvec_pushv(&cp.args, s->mode->apply_args);
 			if (pipe_command(&cp, s->buf.buf, s->buf.len,
 					NULL, 0, NULL, 0))
-				error(_("'git apply' failed"));
+				error(_("'kit apply' failed"));
 		}
 		if (read_index_from(s->index, s->index_file, s->r->gitdir) >= 0 &&
 		    s->index == s->r->index) {

@@ -57,14 +57,14 @@ test_expect_success 'detect empty remote with targeted refspec' '
 test_expect_success 'suggest <remote> <branch> for a <remote>/<branch> slip' '
 	test_must_fail git push origin/main 2>stderr &&
 	test_grep "${SQ}origin/main${SQ} is not a valid push target" stderr &&
-	test_grep "hint: Did you mean to use: git push origin main?" stderr &&
+	test_grep "hint: Did you mean to use: kit push origin main?" stderr &&
 	test_must_fail git -c advice.pushRepoLooksLikeRef=false push origin/main 2>stderr &&
 	test_grep ! "Did you mean" stderr
 '
 
 test_expect_success 'suggest <remote> <branch> when the branch has slashes' '
 	test_must_fail git push origin/feature/x 2>stderr &&
-	test_grep "hint: Did you mean to use: git push origin feature/x?" stderr
+	test_grep "hint: Did you mean to use: kit push origin feature/x?" stderr
 '
 
 test_expect_success 'no suggestion when prefix is not a configured remote' '

@@ -672,8 +672,8 @@ msgid "could not parse hunk header"
 msgstr "nie można przetworzyć nagłówka skrawka"
 
 #: add-patch.c:1178
-msgid "'git apply --cached' failed"
-msgstr "„git apply --cached” nie powiodło się"
+msgid "'kit apply --cached' failed"
+msgstr "„kit apply --cached” nie powiodło się"
 
 #. TRANSLATORS: do not translate [y/n]
 #. The program will only accept that input at this point.
@@ -794,7 +794,7 @@ msgid "Sorry, cannot edit this hunk"
 msgstr "Niestety nie można zmienić tego skrawka"
 
 #: add-patch.c:1680
-msgid "'git apply' failed"
+msgid "'kit apply' failed"
 msgstr "„git apply” nie powiodło się"
 
 #: advice.c:78
@@ -838,10 +838,10 @@ msgstr "Nie można wykonać %s, ponieważ istnieją niescalone pliki."
 
 #: advice.c:196
 msgid ""
-"Fix them up in the work tree, and then use 'git add/rm <file>'\n"
+"Fix them up in the work tree, and then use 'kit add/rm <file>'\n"
 "as appropriate to mark resolution and make a commit."
 msgstr ""
-"Napraw je w drzewie roboczym, i użyj odpowiednio „git add/rm <plik>”,\n"
+"Napraw je w drzewie roboczym, i użyj odpowiednio „kit add/rm <plik>”,\n"
 "aby oznaczyć rozwiązanie i złożyć zapis."
 
 #: advice.c:204
@@ -897,11 +897,11 @@ msgid ""
 "If you want to create a new branch to retain commits you create, you may\n"
 "do so (now or later) by using -c with the switch command. Example:\n"
 "\n"
-"  git switch -c <new-branch-name>\n"
+"  kit switch -c <new-branch-name>\n"
 "\n"
 "Or undo this operation with:\n"
 "\n"
-"  git switch -\n"
+"  kit switch -\n"
 "\n"
 "Turn off this advice by setting config variable advice.detachedHead to "
 "false\n"
@@ -919,11 +919,11 @@ msgstr ""
 "przełączenia.\n"
 "Przykład:\n"
 "\n"
-"  git switch -c <nazwa-nowej-gałęzi>\n"
+"  kit switch -c <nazwa-nowej-gałęzi>\n"
 "\n"
 "Lub cofnąć tę operację przez:\n"
 "\n"
-"  git switch -\n"
+"  kit switch -\n"
 "\n"
 "Wyłącz tę poradę ustawiając zmienną konfiguracji advice.detachedHead na "
 "false\n"
@@ -980,24 +980,24 @@ msgstr "nie znaleziono nazwy pliku w łatce w wierszu %d"
 
 #: apply.c:921
 #, c-format
-msgid "git apply: bad git-diff - expected /dev/null, got %s on line %d"
+msgid "kit apply: bad git-diff - expected /dev/null, got %s on line %d"
 msgstr ""
-"git apply: zły git-diff — oczekiwano /dev/null, znaleziono %s w wierszu %d"
+"kit apply: zły git-diff — oczekiwano /dev/null, znaleziono %s w wierszu %d"
 
 #: apply.c:927
 #, c-format
-msgid "git apply: bad git-diff - inconsistent new filename on line %d"
-msgstr "git apply: zły git-diff — niespójna nowa nazwa pliku w wierszu %d"
+msgid "kit apply: bad git-diff - inconsistent new filename on line %d"
+msgstr "kit apply: zły git-diff — niespójna nowa nazwa pliku w wierszu %d"
 
 #: apply.c:928
 #, c-format
-msgid "git apply: bad git-diff - inconsistent old filename on line %d"
-msgstr "git apply: zły git-diff — niespójna stara nazwa pliku w wierszu %d"
+msgid "kit apply: bad git-diff - inconsistent old filename on line %d"
+msgstr "kit apply: zły git-diff — niespójna stara nazwa pliku w wierszu %d"
 
 #: apply.c:933
 #, c-format
-msgid "git apply: bad git-diff - expected /dev/null on line %d"
-msgstr "git apply: zły git-diff — oczekiwano /dev/null w wierszu %d"
+msgid "kit apply: bad git-diff - expected /dev/null on line %d"
+msgstr "kit apply: zły git-diff — oczekiwano /dev/null w wierszu %d"
 
 #: apply.c:962
 #, c-format
@@ -1482,8 +1482,8 @@ msgid "make sure the patch is applicable to the current index"
 msgstr "upewnij się, że łatka ma zastosowanie do bieżącego indeksu"
 
 #: apply.c:5040
-msgid "mark new files with `git add --intent-to-add`"
-msgstr "oznacz nowe pliki przez „git add --intent-to-add”"
+msgid "mark new files with `kit add --intent-to-add`"
+msgstr "oznacz nowe pliki przez „kit add --intent-to-add”"
 
 #: apply.c:5042
 msgid "apply a patch without touching the working tree"
@@ -1614,8 +1614,8 @@ msgid "timestamp too large for this system: %<PRIuMAX>"
 msgstr "znacznik czasu za duży na ten system: %<PRIuMAX>"
 
 #: archive.c:14
-msgid "git archive [<options>] <tree-ish> [<path>...]"
-msgstr "git archive [<opcje>] <drzewo> [<ścieżka>...]"
+msgid "kit archive [<options>] <tree-ish> [<path>...]"
+msgstr "kit archive [<opcje>] <drzewo> [<ścieżka>...]"
 
 #: archive.c:15
 msgid "git archive --list"
@@ -1623,14 +1623,14 @@ msgstr "git archive --list"
 
 #: archive.c:16
 msgid ""
-"git archive --remote <repo> [--exec <cmd>] [<options>] <tree-ish> [<path>...]"
+"kit archive --remote <repo> [--exec <cmd>] [<options>] <tree-ish> [<path>...]"
 msgstr ""
-"git archive --remote <repozytorium> [--exec <polecenie>] [<opcje>] <drzewo> "
+"kit archive --remote <repozytorium> [--exec <polecenie>] [<opcje>] <drzewo> "
 "[<ścieżka>...]"
 
 #: archive.c:17
-msgid "git archive --remote <repo> [--exec <cmd>] --list"
-msgstr "git archive --remote <repozytorium> [--exec <polecenie>] --list"
+msgid "kit archive --remote <repo> [--exec <cmd>] --list"
+msgstr "kit archive --remote <repozytorium> [--exec <polecenie>] --list"
 
 #: archive.c:188
 #, c-format
@@ -2053,20 +2053,20 @@ msgid ""
 "\n"
 "If you are planning on basing your work on an upstream\n"
 "branch that already exists at the remote, you may need to\n"
-"run \"git fetch\" to retrieve it.\n"
+"run \"kit fetch\" to retrieve it.\n"
 "\n"
 "If you are planning to push out a new local branch that\n"
 "will track its remote counterpart, you may want to use\n"
-"\"git push -u\" to set the upstream config as you push."
+"\"kit push -u\" to set the upstream config as you push."
 msgstr ""
 "\n"
 "Jeśli planujesz oprzeć swoją pracę na zdalnej gałęzi, która\n"
-"już istnieje, możesz potrzebować uruchomić „git fetch”,\n"
+"już istnieje, możesz potrzebować uruchomić „kit fetch”,\n"
 "aby ją pobrać.\n"
 "\n"
 "Jeśli planujesz wypchnąć nową lokalną gałąź, która będzie\n"
 "śledzić swój zdalny odpowiednik, możesz chcieć użyć\n"
-"„git push -u”, żeby ustawić gałąź nadrzędną przy wypychaniu."
+"„kit push -u”, żeby ustawić gałąź nadrzędną przy wypychaniu."
 
 #: branch.c:281
 #, c-format
@@ -3031,9 +3031,9 @@ msgid "cannot start proxy %s"
 msgstr "nie można uruchomić pośrednika %s"
 
 #: connect.c:1054
-msgid "no path specified; see 'git help pull' for valid url syntax"
+msgid "no path specified; see 'kit help pull' for valid url syntax"
 msgstr ""
-"nie podano ścieżki; zobacz składnię prawidłowych adresów w „git help pull”"
+"nie podano ścieżki; zobacz składnię prawidłowych adresów w „kit help pull”"
 
 #: connect.c:1194
 msgid "newline is forbidden in git:// hosts and repo paths"
@@ -3905,12 +3905,12 @@ msgid "specify how differences in submodules are shown"
 msgstr "podaj, jak będą pokazywane różnice w podmodułach"
 
 #: diff.c:5616
-msgid "hide 'git add -N' entries from the index"
-msgstr "ukryj elementy „git add -N” z indeksu"
+msgid "hide 'kit add -N' entries from the index"
+msgstr "ukryj elementy „kit add -N” z indeksu"
 
 #: diff.c:5619
-msgid "treat 'git add -N' entries as real in the index"
-msgstr "traktuj elementy „git add -N” jako prawdziwe w indeksie"
+msgid "treat 'kit add -N' entries as real in the index"
+msgstr "traktuj elementy „kit add -N” jako prawdziwe w indeksie"
 
 #: diff.c:5621
 msgid "<string>"
@@ -4475,24 +4475,24 @@ msgid "'%s': short read"
 msgstr "„%s”: przeczytano mniej niż powinno być"
 
 #: help.c:24
-msgid "start a working area (see also: git help tutorial)"
-msgstr "przyszykuj obszar do pracy (zobacz też: git help tutorial)"
+msgid "start a working area (see also: kit help tutorial)"
+msgstr "przyszykuj obszar do pracy (zobacz też: kit help tutorial)"
 
 #: help.c:25
-msgid "work on the current change (see also: git help everyday)"
-msgstr "pracuj nad bieżącą zmianą (zobacz też: git help everyday)"
+msgid "work on the current change (see also: kit help everyday)"
+msgstr "pracuj nad bieżącą zmianą (zobacz też: kit help everyday)"
 
 #: help.c:26
-msgid "examine the history and state (see also: git help revisions)"
-msgstr "badaj historię i stan (zobacz też: git help revisions)"
+msgid "examine the history and state (see also: kit help revisions)"
+msgstr "badaj historię i stan (zobacz też: kit help revisions)"
 
 #: help.c:27
 msgid "grow, mark and tweak your common history"
 msgstr "poszerzaj, oznaczaj i dostosowuj wspólną historię"
 
 #: help.c:28
-msgid "collaborate (see also: git help workflows)"
-msgstr "współpracuj (zobacz też: git help workflows)"
+msgid "collaborate (see also: kit help workflows)"
+msgstr "współpracuj (zobacz też: kit help workflows)"
 
 #: help.c:32
 msgid "Main Porcelain Commands"
@@ -4528,15 +4528,15 @@ msgstr "Polecenia niskopoziomowe / wewnętrzne pomocniki"
 
 #: help.c:313
 #, c-format
-msgid "available git commands in '%s'"
+msgid "available kit commands in '%s'"
 msgstr "dostępne polecenia gita w „%s”"
 
 #: help.c:320
-msgid "git commands available from elsewhere on your $PATH"
+msgid "kit commands available from elsewhere on your $PATH"
 msgstr "polecenia gita dostępne gdzie indziej w ścieżce $PATH"
 
 #: help.c:329
-msgid "These are common Git commands used in various situations:"
+msgid "These are common kit commands used in various situations:"
 msgstr "Oto częste polecenia Gita używane w różnych sytuacjach:"
 
 #: help.c:378 git.c:100
@@ -4549,9 +4549,9 @@ msgid "The Git concept guides are:"
 msgstr "Podręczniki pojęć Gita to:"
 
 #: help.c:442
-msgid "See 'git help <command>' to read about a specific subcommand"
+msgid "See 'kit help <command>' to read about a specific subcommand"
 msgstr ""
-"Zobacz „git help <polecenie>”, aby przeczytać o konkretnym pod-poleceniu"
+"Zobacz „kit help <polecenie>”, aby przeczytać o konkretnym pod-poleceniu"
 
 #: help.c:447
 msgid "External commands"
@@ -4564,7 +4564,7 @@ msgstr "Skróty poleceń"
 #: help.c:543
 #, c-format
 msgid ""
-"'%s' appears to be a git command, but we were not\n"
+"'%s' appears to be a kit command, but we were not\n"
 "able to execute it. Maybe git-%s is broken?"
 msgstr ""
 "„%s” wydaje się być poleceniem gita, ale nie udało się\n"
@@ -4572,16 +4572,16 @@ msgstr ""
 
 #: help.c:565 help.c:662
 #, c-format
-msgid "git: '%s' is not a git command. See 'git --help'."
-msgstr "git: „%s” nie jest poleceniem gita. Zobacz „git --help”."
+msgid "kit: '%s' is not a kit command. See 'kit --help'."
+msgstr "kit: „%s” nie jest poleceniem gita. Zobacz „git --help”."
 
 #: help.c:613
-msgid "Uh oh. Your system reports no Git commands at all."
+msgid "Uh oh. Your system reports no kit commands at all."
 msgstr "O jejciu. Twój system w ogóle nie zgłasza żadnych poleceń gita."
 
 #: help.c:635
 #, c-format
-msgid "WARNING: You called a Git command named '%s', which does not exist."
+msgid "WARNING: You called a kit command named '%s', which does not exist."
 msgstr "Ostrzeżenie: Wywołano polecenie Gita „%s”, które nie istnieje."
 
 #: help.c:640
@@ -4666,8 +4666,8 @@ msgid ""
 "\n"
 "Run\n"
 "\n"
-"  git config --global user.email \"you@example.com\"\n"
-"  git config --global user.name \"Your Name\"\n"
+"  kit config --global user.email \"you@example.com\"\n"
+"  kit config --global user.name \"Your Name\"\n"
 "\n"
 "to set your account's default identity.\n"
 "Omit --global to set the identity only in this repository.\n"
@@ -4678,8 +4678,8 @@ msgstr ""
 "\n"
 "Wykonaj\n"
 "\n"
-"  git config --global user.email \"toja@example.com\"\n"
-"  git config --global user.name \"Twoje Imię Nazwisko\"\n"
+"  kit config --global user.email \"toja@example.com\"\n"
+"  kit config --global user.name \"Twoje Imię Nazwisko\"\n"
 "\n"
 "by ustawić domyślną tożsamość swojego konta.\n"
 "Pomiń --global, żeby ustawić tożsamość tylko w tym repozytorium.\n"
@@ -5623,11 +5623,11 @@ msgstr "nie można dołączyć do wątku lazy_name: %s"
 #, c-format
 msgid ""
 "You have not concluded your previous notes merge (%s exists).\n"
-"Please, use 'git notes merge --commit' or 'git notes merge --abort' to "
+"Please, use 'kit notes merge --commit' or 'kit notes merge --abort' to "
 "commit/abort the previous merge before you start a new notes merge."
 msgstr ""
 "Nie zwieńczono poprzedniego scalania uwag (%s istnieje).\n"
-"Użyj „git notes merge --commit” lub „git notes merge --abort”, aby złożyć/"
+"Użyj „kit notes merge --commit” lub „kit notes merge --abort”, aby złożyć/"
 "przerwać poprzednie scalenie zanim zaczniesz nowe."
 
 #: notes-merge.c:284
@@ -6683,13 +6683,13 @@ msgstr "%s: nie można zrzucić do etapu nr 0"
 
 #: rebase-interactive.c:11
 msgid ""
-"You can fix this with 'git rebase --edit-todo' and then run 'git rebase --"
+"You can fix this with 'kit rebase --edit-todo' and then run 'kit rebase --"
 "continue'.\n"
-"Or you can abort the rebase with 'git rebase --abort'.\n"
+"Or you can abort the rebase with 'kit rebase --abort'.\n"
 msgstr ""
-"Możesz to naprawić używając „git rebase --edit-todo” i uruchamiając później "
-"„git rebase --continue”.\n"
-"Albo możesz przerwać przestawianie przez „git rebase --abort”.\n"
+"Możesz to naprawić używając „kit rebase --edit-todo” i uruchamiając później "
+"„kit rebase --continue”.\n"
+"Albo możesz przerwać przestawianie przez „kit rebase --abort”.\n"
 
 #: rebase-interactive.c:33
 #, c-format
@@ -6775,13 +6775,13 @@ msgid ""
 "\n"
 "You are editing the todo file of an ongoing interactive rebase.\n"
 "To continue rebase after editing, run:\n"
-"    git rebase --continue\n"
+"    kit rebase --continue\n"
 "\n"
 msgstr ""
 "\n"
 "Edytujesz plik z poleceniami trwającego interaktywnego przestawienia.\n"
 "Aby kontynuować przestawienie po edycji, wykonaj:\n"
-"    git rebase --continue\n"
+"    kit rebase --continue\n"
 "\n"
 
 #: rebase-interactive.c:89
@@ -6820,14 +6820,14 @@ msgstr ""
 msgid ""
 "To avoid this message, use \"drop\" to explicitly remove a commit.\n"
 "\n"
-"Use 'git config rebase.missingCommitsCheck' to change the level of "
+"Use 'kit config rebase.missingCommitsCheck' to change the level of "
 "warnings.\n"
 "The possible behaviours are: ignore, warn, error.\n"
 "\n"
 msgstr ""
 "Aby uniknąć tego komunikatu, użyj „drop”, aby wyraźnie jawnie usunąć zapis.\n"
 "\n"
-"Użyj „git config rebase.missingCommitsCheck”, aby zmienić poziom ostrzeżeń.\n"
+"Użyj „kit config rebase.missingCommitsCheck”, aby zmienić poziom ostrzeżeń.\n"
 "Możliwe zachowania to: ignore, warn, error.\n"
 "\n"
 
@@ -7437,8 +7437,8 @@ msgid "Your branch is based on '%s', but the upstream is gone.\n"
 msgstr "Twoja gałąź jest oparta na „%s”, ale jej nadrzędna zniknęła.\n"
 
 #: remote.c:2123
-msgid "  (use \"git branch --unset-upstream\" to fixup)\n"
-msgstr "  (użyj „git branch --unset-upstream”, aby naprawić)\n"
+msgid "  (use \"kit branch --unset-upstream\" to fixup)\n"
+msgstr "  (użyj „kit branch --unset-upstream”, aby naprawić)\n"
 
 #: remote.c:2126
 #, c-format
@@ -7464,8 +7464,8 @@ msgstr[1] "Twoja gałąź jest do przodu względem „%s” o %d zapisy.\n"
 msgstr[2] "Twoja gałąź jest do przodu względem „%s” o %d zapisów.\n"
 
 #: remote.c:2143
-msgid "  (use \"git push\" to publish your local commits)\n"
-msgstr "  (użyj „git push”, aby opublikować swoje zapisy)\n"
+msgid "  (use \"kit push\" to publish your local commits)\n"
+msgstr "  (użyj „kit push”, aby opublikować swoje zapisy)\n"
 
 #: remote.c:2146
 #, c-format
@@ -7477,8 +7477,8 @@ msgstr[1] "Twoja gałąź jest za „%s” o %d zapisy i może zostać przewini�
 msgstr[2] "Twoja gałąź jest za „%s” o %d zapisów i może zostać przewinięta.\n"
 
 #: remote.c:2154
-msgid "  (use \"git pull\" to update your local branch)\n"
-msgstr "  (użyj „git pull”, aby zaktualizować lokalną gałąź)\n"
+msgid "  (use \"kit pull\" to update your local branch)\n"
+msgstr "  (użyj „kit pull”, aby zaktualizować lokalną gałąź)\n"
 
 #: remote.c:2157
 #, c-format
@@ -7741,42 +7741,42 @@ msgstr "nieznane działanie: %d"
 #: sequencer.c:420
 msgid ""
 "after resolving the conflicts, mark the corrected paths\n"
-"with 'git add <paths>' or 'git rm <paths>'"
+"with 'kit add <paths>' or 'kit rm <paths>'"
 msgstr ""
 "po rozwiązaniu konfliktów oznacz poprawione ścieżki\n"
-"z „git add <ścieżki>” lub „git rm <ścieżki>”"
+"z „kit add <ścieżki>” lub „kit rm <ścieżki>”"
 
 #: sequencer.c:423
 msgid ""
 "After resolving the conflicts, mark them with\n"
-"\"git add/rm <pathspec>\", then run\n"
-"\"git cherry-pick --continue\".\n"
-"You can instead skip this commit with \"git cherry-pick --skip\".\n"
-"To abort and get back to the state before \"git cherry-pick\",\n"
-"run \"git cherry-pick --abort\"."
+"\"kit add/rm <pathspec>\", then run\n"
+"\"kit cherry-pick --continue\".\n"
+"You can instead skip this commit with \"kit cherry-pick --skip\".\n"
+"To abort and get back to the state before \"kit cherry-pick\",\n"
+"run \"kit cherry-pick --abort\"."
 msgstr ""
 "Po rozwiązaniu konfliktów, oznacz je przez\n"
-"„git add/rm <ścieżki>” i wykonaj\n"
-"„git cherry-pick --continue”.\n"
-"Możesz zamiast tego pominąć ten zapis przez „git cherry-pick --skip”.\n"
-"Aby przerwać i powrócić do stanu sprzed „git cherry-pick”,\n"
-"wykonaj „git cherry-pick --abort”."
+"„kit add/rm <ścieżki>” i wykonaj\n"
+"„kit cherry-pick --continue”.\n"
+"Możesz zamiast tego pominąć ten zapis przez „kit cherry-pick --skip”.\n"
+"Aby przerwać i powrócić do stanu sprzed „kit cherry-pick”,\n"
+"wykonaj „kit cherry-pick --abort”."
 
 #: sequencer.c:430
 msgid ""
 "After resolving the conflicts, mark them with\n"
-"\"git add/rm <pathspec>\", then run\n"
-"\"git revert --continue\".\n"
-"You can instead skip this commit with \"git revert --skip\".\n"
-"To abort and get back to the state before \"git revert\",\n"
-"run \"git revert --abort\"."
+"\"kit add/rm <pathspec>\", then run\n"
+"\"kit revert --continue\".\n"
+"You can instead skip this commit with \"kit revert --skip\".\n"
+"To abort and get back to the state before \"kit revert\",\n"
+"run \"kit revert --abort\"."
 msgstr ""
 "Po rozwiązaniu konfliktów, oznacz je przez\n"
-"„git add/rm <ścieżki>” i wykonaj\n"
-"„git revert --continue”.\n"
-"Możesz zamiast tego pominąć ten zapis przez „git revert --skip”.\n"
-"Aby przerwać i powrócić do stanu sprzed „git revert”,\n"
-"wykonaj „git revert --abort”."
+"„kit add/rm <ścieżki>” i wykonaj\n"
+"„kit revert --continue”.\n"
+"Możesz zamiast tego pominąć ten zapis przez „kit revert --skip”.\n"
+"Aby przerwać i powrócić do stanu sprzed „kit revert”,\n"
+"wykonaj „kit revert --abort”."
 
 #: sequencer.c:448 sequencer.c:3290
 #, c-format
@@ -7886,28 +7886,28 @@ msgid ""
 "you have staged changes in your working tree\n"
 "If these changes are meant to be squashed into the previous commit, run:\n"
 "\n"
-"  git commit --amend %s\n"
+"  kit commit --amend %s\n"
 "\n"
 "If they are meant to go into a new commit, run:\n"
 "\n"
-"  git commit %s\n"
+"  kit commit %s\n"
 "\n"
 "In both cases, once you're done, continue with:\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 msgstr ""
 "w drzewie roboczym masz przygotowane zmiany\n"
 "Jeśli te zmiany mają być spłaszczone z poprzednim zapisem, wykonaj:\n"
 "\n"
-"  git commit --amend %s\n"
+"  kit commit --amend %s\n"
 "\n"
 "Jeśli mają być złożone w nowym zapisie, wykonaj:\n"
 "\n"
-"  git commit %s\n"
+"  kit commit %s\n"
 "\n"
 "W obu przypadkach, gdy zakończysz, kontynuuj przez:\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 
 #: sequencer.c:1229
 msgid "'prepare-commit-msg' hook failed"
@@ -7921,11 +7921,11 @@ msgid ""
 "following command and follow the instructions in your editor to edit\n"
 "your configuration file:\n"
 "\n"
-"    git config --global --edit\n"
+"    kit config --global --edit\n"
 "\n"
 "After doing this, you may fix the identity used for this commit with:\n"
 "\n"
-"    git commit --amend --reset-author\n"
+"    kit commit --amend --reset-author\n"
 msgstr ""
 "Twoja nazwa i adres e-mail zostały automatycznie skonfigurowane na "
 "podstawie\n"
@@ -7935,11 +7935,11 @@ msgstr ""
 "edytować\n"
 "twój plik konfiguracyjny:\n"
 "\n"
-"    git config --global --edit\n"
+"    kit config --global --edit\n"
 "\n"
 "Po tym możesz poprawić podpis użyty w tym zapisie używając:\n"
 "\n"
-"    git commit --amend --reset-author\n"
+"    kit commit --amend --reset-author\n"
 
 #: sequencer.c:1248
 msgid ""
@@ -7947,24 +7947,24 @@ msgid ""
 "on your username and hostname. Please check that they are accurate.\n"
 "You can suppress this message by setting them explicitly:\n"
 "\n"
-"    git config --global user.name \"Your Name\"\n"
-"    git config --global user.email you@example.com\n"
+"    kit config --global user.name \"Your Name\"\n"
+"    kit config --global user.email you@example.com\n"
 "\n"
 "After doing this, you may fix the identity used for this commit with:\n"
 "\n"
-"    git commit --amend --reset-author\n"
+"    kit commit --amend --reset-author\n"
 msgstr ""
 "Twoja nazwa i adres e-mail zostały automatycznie skonfigurowane na "
 "podstawie\n"
 " twojej nazwy użytkownika i nazwy hosta. Sprawdź, czy są one prawidłowe.\n"
 "Możesz ukryć tą wiadomość ustawiając je samodzielnie:\n"
 "\n"
-"    git config --global user.email \"toja@example.com\"\n"
-"    git config --global user.name \"Twoje Imię Nazwisko\"\n"
+"    kit config --global user.email \"toja@example.com\"\n"
+"    kit config --global user.name \"Twoje Imię Nazwisko\"\n"
 "\n"
 "Po tym możesz poprawić podpis użyty w tym zapisie używając:\n"
 "\n"
-"    git commit --amend --reset-author\n"
+"    kit commit --amend --reset-author\n"
 
 #: sequencer.c:1290
 msgid "couldn't look up newly created commit"
@@ -8004,8 +8004,8 @@ msgid "unable to parse commit author"
 msgstr "nie można przetworzyć autora zapisu %s"
 
 #: sequencer.c:1438 builtin/am.c:1616 builtin/merge.c:708
-msgid "git write-tree failed to write a tree"
-msgstr "git write-tree nie może zapisać drzewa"
+msgid "kit write-tree failed to write a tree"
+msgstr "kit write-tree nie może zapisać drzewa"
 
 #: sequencer.c:1471 sequencer.c:1591
 #, c-format
@@ -8144,13 +8144,13 @@ msgstr "gubienie %s %s — zawartość łatki już wcielona w głównym nurcie\n
 
 #: sequencer.c:2362
 #, c-format
-msgid "git %s: failed to read the index"
-msgstr "git %s: nie można odczytać indeksu"
+msgid "kit %s: failed to read the index"
+msgstr "kit %s: nie można odczytać indeksu"
 
 #: sequencer.c:2370
 #, c-format
-msgid "git %s: failed to refresh the index"
-msgstr "git %s: nie można odświeżyć indeksu"
+msgid "kit %s: failed to refresh the index"
+msgstr "kit %s: nie można odświeżyć indeksu"
 
 #: sequencer.c:2450
 #, c-format
@@ -8191,8 +8191,8 @@ msgid "cancelling a revert in progress"
 msgstr "przerywanie trwającego odwracania"
 
 #: sequencer.c:2709
-msgid "please fix this using 'git rebase --edit-todo'."
-msgstr "napraw to używając „git rebase --edit-todo”."
+msgid "please fix this using 'kit rebase --edit-todo'."
+msgstr "napraw to używając „kit rebase --edit-todo”."
 
 #: sequencer.c:2711
 #, c-format
@@ -8235,8 +8235,8 @@ msgstr "już trwa dobieranie"
 
 #: sequencer.c:3050
 #, c-format
-msgid "try \"git revert (--continue | %s--abort | --quit)\""
-msgstr "spróbuj „git revert (--continue | %s--abort | --quit)”"
+msgid "try \"kit revert (--continue | %s--abort | --quit)\""
+msgstr "spróbuj „kit revert (--continue | %s--abort | --quit)”"
 
 #: sequencer.c:3053
 msgid "cherry-pick is already in progress"
@@ -8244,8 +8244,8 @@ msgstr "już trwa dobieranie"
 
 #: sequencer.c:3055
 #, c-format
-msgid "try \"git cherry-pick (--continue | %s--abort | --quit)\""
-msgstr "spróbuj „git cherry-pick (--continue | %s--abort | --quit)”"
+msgid "try \"kit cherry-pick (--continue | %s--abort | --quit)\""
+msgstr "spróbuj „kit cherry-pick (--continue | %s--abort | --quit)”"
 
 #: sequencer.c:3069
 #, c-format
@@ -8313,10 +8313,10 @@ msgstr "nie ma nic do pominięcia"
 #, c-format
 msgid ""
 "have you committed already?\n"
-"try \"git %s --continue\""
+"try \"kit %s --continue\""
 msgstr ""
 "zapis już złożony?\n"
-"spróbuj „git %s --continue”"
+"spróbuj „kit %s --continue”"
 
 #: sequencer.c:3430 sequencer.c:4506
 msgid "cannot read HEAD"
@@ -8332,11 +8332,11 @@ msgstr "nie można skopiować „%s” do „%s”"
 msgid ""
 "You can amend the commit now, with\n"
 "\n"
-"  git commit --amend %s\n"
+"  kit commit --amend %s\n"
 "\n"
 "Once you are satisfied with your changes, run\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 msgstr ""
 "Możesz teraz poprawić zapis przez\n"
 "\n"
@@ -8372,13 +8372,13 @@ msgid ""
 "execution failed: %s\n"
 "%sYou can fix the problem, and then run\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 "\n"
 msgstr ""
 "wykonanie nie powiodło się: %s\n"
 "%sMożesz naprawić problem i uruchomić\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 "\n"
 
 #: sequencer.c:3523
@@ -8528,8 +8528,8 @@ msgid ""
 "It has been rescheduled; To edit the command before continuing, please\n"
 "edit the todo list first:\n"
 "\n"
-"    git rebase --edit-todo\n"
-"    git rebase --continue\n"
+"    kit rebase --edit-todo\n"
+"    kit rebase --continue\n"
 msgstr ""
 "Nie można wykonać polecenia z zadań do zrobienia\n"
 "\n"
@@ -8537,8 +8537,8 @@ msgstr ""
 "Zostało przeplanowane; Aby zmienić polecenie przed kontynuowaniem,\n"
 "zmień najpierw listę zadań do zrobienia:\n"
 "\n"
-"    git rebase --edit-todo\n"
-"    git rebase --continue\n"
+"    kit rebase --edit-todo\n"
+"    kit rebase --continue\n"
 
 #: sequencer.c:4350
 #, c-format
@@ -8595,11 +8595,11 @@ msgstr "nieprawidłowa zawartość: „%s”"
 msgid ""
 "\n"
 "You have uncommitted changes in your working tree. Please, commit them\n"
-"first and then run 'git rebase --continue' again."
+"first and then run 'kit rebase --continue' again."
 msgstr ""
 "\n"
 "Masz niezłożone zmiany w drzewie roboczym. Najpierw je złóż\n"
-"i wtedy ponownie wykonaj „git rebase --continue”."
+"i wtedy ponownie wykonaj „kit rebase --continue”."
 
 #: sequencer.c:4697 sequencer.c:4736
 #, c-format
@@ -8666,7 +8666,7 @@ msgstr "„%s” jest poza repozytorium w „%s”"
 #, c-format
 msgid ""
 "%s: no such path in the working tree.\n"
-"Use 'git <command> -- <path>...' to specify paths that do not exist locally."
+"Use 'kit <command> -- <path>...' to specify paths that do not exist locally."
 msgstr ""
 "%s: nie ma takiej ścieżki w drzewie roboczym.\n"
 "Użyj „git <polecenie> -- <ścieżka>...”, aby podać nieistniejące lokalnie "
@@ -8677,7 +8677,7 @@ msgstr ""
 msgid ""
 "ambiguous argument '%s': unknown revision or path not in the working tree.\n"
 "Use '--' to separate paths from revisions, like this:\n"
-"'git <command> [<revision>...] -- [<file>...]'"
+"'kit <command> [<revision>...] -- [<file>...]'"
 msgstr ""
 "niejednoznaczny argument „%s”: nieznana rewizja lub ścieżka niebędąca\n"
 "w drzewie roboczym. Użyj „--” do oddzielenia ścieżek od rewizji:\n"
@@ -8693,7 +8693,7 @@ msgstr "opcja „%s” musi się znaleźć przed argumentami, nie licząc innych
 msgid ""
 "ambiguous argument '%s': both revision and filename\n"
 "Use '--' to separate paths from revisions, like this:\n"
-"'git <command> [<revision>...] -- [<file>...]'"
+"'kit <command> [<revision>...] -- [<file>...]'"
 msgstr ""
 "niejednoznaczny argument „%s”: jednocześnie rewizja i nazwa pliku\n"
 "Użyj „--”, aby rozdzielić ścieżki od rewizji:\n"
@@ -8968,10 +8968,10 @@ msgstr "element podmodułu „%s” (%s) nie jest zapisem, jest rodzaju %s"
 #: submodule.c:1042
 #, c-format
 msgid ""
-"Could not run 'git rev-list <commits> --not --remotes -n 1' command in "
+"Could not run 'kit rev-list <commits> --not --remotes -n 1' command in "
 "submodule %s"
 msgstr ""
-"Nie można wykonać polecenia „git rev-list <zapisy> --not --remotes -n 1” w "
+"Nie można wykonać polecenia „kit rev-list <zapisy> --not --remotes -n 1” w "
 "podmodule %s"
 
 #: submodule.c:1165
@@ -9019,22 +9019,22 @@ msgstr "nie rozpoznano „%s” jako repozytorium gita"
 
 #: submodule.c:1722
 #, c-format
-msgid "Could not run 'git status --porcelain=2' in submodule %s"
-msgstr "Nie można wykonać „git status --porcelain=2” w podmodule %s"
+msgid "Could not run 'kit status --porcelain=2' in submodule %s"
+msgstr "Nie można wykonać „kit status --porcelain=2” w podmodule %s"
 
 #: submodule.c:1763
 #, c-format
-msgid "'git status --porcelain=2' failed in submodule %s"
-msgstr "„git status --porcelain=2” nie powiódł się w podmodule %s"
+msgid "'kit status --porcelain=2' failed in submodule %s"
+msgstr "„kit status --porcelain=2” nie powiódł się w podmodule %s"
 
 #: submodule.c:1838
 #, c-format
-msgid "could not start 'git status' in submodule '%s'"
+msgid "could not start 'kit status' in submodule '%s'"
 msgstr "nie można uruchomić „git status” w podmodule „%s”"
 
 #: submodule.c:1851
 #, c-format
-msgid "could not run 'git status' in submodule '%s'"
+msgid "could not run 'kit status' in submodule '%s'"
 msgstr "nie można wykonać „git status” w podmodule „%s”"
 
 #: submodule.c:1868
@@ -9375,8 +9375,8 @@ msgid "transport: invalid depth option '%s'"
 msgstr "transport: nieprawidłowa opcja głębokości „%s”"
 
 #: transport.c:279
-msgid "see protocol.version in 'git help config' for more details"
-msgstr "więcej szczegółów pod protocol.version w „git help config”"
+msgid "see protocol.version in 'kit help config' for more details"
+msgstr "więcej szczegółów pod protocol.version w „kit help config”"
 
 #: transport.c:280
 msgid "server options require protocol version 2 or later"
@@ -9423,11 +9423,11 @@ msgid ""
 "\n"
 "Please try\n"
 "\n"
-"\tgit push --recurse-submodules=on-demand\n"
+"\tkit push --recurse-submodules=on-demand\n"
 "\n"
 "or cd to the path and use\n"
 "\n"
-"\tgit push\n"
+"\tkit push\n"
 "\n"
 "to push them to a remote.\n"
 "\n"
@@ -9696,10 +9696,10 @@ msgstr "Przerywanie\n"
 #: unpack-trees.c:291
 #, c-format
 msgid ""
-"After fixing the above paths, you may want to run `git sparse-checkout "
+"After fixing the above paths, you may want to run `kit sparse-checkout "
 "reapply`.\n"
 msgstr ""
-"Po naprawieniu powyższych ścieżek możesz chcieć wykonać „git sparse-checkout "
+"Po naprawieniu powyższych ścieżek możesz chcieć wykonać „kit sparse-checkout "
 "reapply”.\n"
 
 #: unpack-trees.c:352
@@ -9888,29 +9888,29 @@ msgid "Unmerged paths:"
 msgstr "Niescalone ścieżki"
 
 #: wt-status.c:187 wt-status.c:219
-msgid "  (use \"git restore --staged <file>...\" to unstage)"
-msgstr "  (użyj „git restore --staged <plik>...”, aby wycofać)"
+msgid "  (use \"kit restore --staged <file>...\" to unstage)"
+msgstr "  (użyj „kit restore --staged <plik>...”, aby wycofać)"
 
 #: wt-status.c:190 wt-status.c:222
 #, c-format
-msgid "  (use \"git restore --source=%s --staged <file>...\" to unstage)"
-msgstr "  (użyj „git restore --source=%s --staged <plik>...”, aby wycofać)"
+msgid "  (use \"kit restore --source=%s --staged <file>...\" to unstage)"
+msgstr "  (użyj „kit restore --source=%s --staged <plik>...”, aby wycofać)"
 
 #: wt-status.c:193 wt-status.c:225
-msgid "  (use \"git rm --cached <file>...\" to unstage)"
-msgstr "  (użyj „git rm --cached <plik>...”, aby wycofać)"
+msgid "  (use \"kit rm --cached <file>...\" to unstage)"
+msgstr "  (użyj „kit rm --cached <plik>...”, aby wycofać)"
 
 #: wt-status.c:197
-msgid "  (use \"git add <file>...\" to mark resolution)"
-msgstr "  (użyj „git add <plik>...” aby zaznaczyć rozwiązanie)"
+msgid "  (use \"kit add <file>...\" to mark resolution)"
+msgstr "  (użyj „kit add <plik>...” aby zaznaczyć rozwiązanie)"
 
 #: wt-status.c:199 wt-status.c:203
-msgid "  (use \"git add/rm <file>...\" as appropriate to mark resolution)"
-msgstr "  (użyj odpowiednio „git add/rm <plik>...” aby zaznaczyć rozwiązanie)"
+msgid "  (use \"kit add/rm <file>...\" as appropriate to mark resolution)"
+msgstr "  (użyj odpowiednio „kit add/rm <plik>...” aby zaznaczyć rozwiązanie)"
 
 #: wt-status.c:201
-msgid "  (use \"git rm <file>...\" to mark resolution)"
-msgstr "  (użyj „git rm <plik>...” aby zaznaczyć rozwiązanie)"
+msgid "  (use \"kit rm <file>...\" to mark resolution)"
+msgstr "  (użyj „kit rm <plik>...” aby zaznaczyć rozwiązanie)"
 
 #: wt-status.c:211 wt-status.c:1125
 msgid "Changes to be committed:"
@@ -9921,18 +9921,18 @@ msgid "Changes not staged for commit:"
 msgstr "Zmiany nie przygotowane do złożenia:"
 
 #: wt-status.c:238
-msgid "  (use \"git add <file>...\" to update what will be committed)"
-msgstr "  (użyj „git add <plik>...”, żeby zmienić, co zostanie złożone)"
+msgid "  (use \"kit add <file>...\" to update what will be committed)"
+msgstr "  (użyj „kit add <plik>...”, żeby zmienić, co zostanie złożone)"
 
 #: wt-status.c:240
-msgid "  (use \"git add/rm <file>...\" to update what will be committed)"
-msgstr "  (użyj „git add/rm <plik>...”, żeby zmienić, co zostanie złożone)"
+msgid "  (use \"kit add/rm <file>...\" to update what will be committed)"
+msgstr "  (użyj „kit add/rm <plik>...”, żeby zmienić, co zostanie złożone)"
 
 #: wt-status.c:241
 msgid ""
-"  (use \"git restore <file>...\" to discard changes in working directory)"
+"  (use \"kit restore <file>...\" to discard changes in working directory)"
 msgstr ""
-"  (użyj „git restore <plik>...”, aby odrzucić zmiany w katalogu roboczym)"
+"  (użyj „kit restore <plik>...”, aby odrzucić zmiany w katalogu roboczym)"
 
 #: wt-status.c:243
 msgid "  (commit or discard the untracked or modified content in submodules)"
@@ -9940,8 +9940,8 @@ msgstr "  (złóż lub odrzuć nieśledzoną lub zmienioną zawartość podmodu�
 
 #: wt-status.c:254
 #, c-format
-msgid "  (use \"git %s <file>...\" to include in what will be committed)"
-msgstr "  (użyj „git %s <plik>...”, żeby uwzględnić, co zostanie złożone)"
+msgid "  (use \"kit %s <file>...\" to include in what will be committed)"
+msgstr "  (użyj „kit %s <plik>...”, żeby uwzględnić, co zostanie złożone)"
 
 #: wt-status.c:266
 msgid "both deleted:"
@@ -10055,20 +10055,20 @@ msgid "You have unmerged paths."
 msgstr "Masz niescalone ścieżki."
 
 #: wt-status.c:1198
-msgid "  (fix conflicts and run \"git commit\")"
-msgstr "  (napraw konflikty i wykonaj „git commit”)"
+msgid "  (fix conflicts and run \"kit commit\")"
+msgstr "  (napraw konflikty i wykonaj „kit commit”)"
 
 #: wt-status.c:1200
-msgid "  (use \"git merge --abort\" to abort the merge)"
-msgstr "  (użyj „git merge --abort”, aby przerwać scalanie)"
+msgid "  (use \"kit merge --abort\" to abort the merge)"
+msgstr "  (użyj „kit merge --abort”, aby przerwać scalanie)"
 
 #: wt-status.c:1204
 msgid "All conflicts fixed but you are still merging."
 msgstr "Wszystkie konflikty naprawione, ale wciąż trwa scalanie."
 
 #: wt-status.c:1207
-msgid "  (use \"git commit\" to conclude merge)"
-msgstr "  (użyj „git commit”, żeby zwieńczyć scalanie)"
+msgid "  (use \"kit commit\" to conclude merge)"
+msgstr "  (użyj „kit commit”, żeby zwieńczyć scalanie)"
 
 #: wt-status.c:1216
 msgid "You are in the middle of an am session."
@@ -10079,16 +10079,16 @@ msgid "The current patch is empty."
 msgstr "Obecna ścieżka jest pusta."
 
 #: wt-status.c:1223
-msgid "  (fix conflicts and then run \"git am --continue\")"
-msgstr "  (napraw konflikty i wykonaj „git am --continue”)"
+msgid "  (fix conflicts and then run \"kit am --continue\")"
+msgstr "  (napraw konflikty i wykonaj „kit am --continue”)"
 
 #: wt-status.c:1225
-msgid "  (use \"git am --skip\" to skip this patch)"
-msgstr "  (użyj „git am --skip” aby pominąć tę łatkę)"
+msgid "  (use \"kit am --skip\" to skip this patch)"
+msgstr "  (użyj „kit am --skip” aby pominąć tę łatkę)"
 
 #: wt-status.c:1227
-msgid "  (use \"git am --abort\" to restore the original branch)"
-msgstr "  (użyj „git am --abort”, aby przywrócić pierwotną gałąź)"
+msgid "  (use \"kit am --abort\" to restore the original branch)"
+msgstr "  (użyj „kit am --abort”, aby przywrócić pierwotną gałąź)"
 
 #: wt-status.c:1360
 msgid "git-rebase-todo is missing."
@@ -10124,8 +10124,8 @@ msgstr[1] "Następne polecenia do wykonania (pozostały %d polecenia):"
 msgstr[2] "Następne polecenia do wykonania (pozostało %d poleceń):"
 
 #: wt-status.c:1392
-msgid "  (use \"git rebase --edit-todo\" to view and edit)"
-msgstr "  (użyj „git rebase --edit-todo”, aby wyświetlić i edytować)"
+msgid "  (use \"kit rebase --edit-todo\" to view and edit)"
+msgstr "  (użyj „kit rebase --edit-todo”, aby wyświetlić i edytować)"
 
 #: wt-status.c:1404
 #, c-format
@@ -10137,20 +10137,20 @@ msgid "You are currently rebasing."
 msgstr "Jesteś w trakcie przestawiania."
 
 #: wt-status.c:1422
-msgid "  (fix conflicts and then run \"git rebase --continue\")"
-msgstr "  (napraw konflikty i wykonaj „git rebase --continue”)"
+msgid "  (fix conflicts and then run \"kit rebase --continue\")"
+msgstr "  (napraw konflikty i wykonaj „kit rebase --continue”)"
 
 #: wt-status.c:1424
-msgid "  (use \"git rebase --skip\" to skip this patch)"
-msgstr "  (użyj „git rebase --skip” aby pominąć tę łatkę)"
+msgid "  (use \"kit rebase --skip\" to skip this patch)"
+msgstr "  (użyj „kit rebase --skip” aby pominąć tę łatkę)"
 
 #: wt-status.c:1426
-msgid "  (use \"git rebase --abort\" to check out the original branch)"
-msgstr "  (użyj „git rebase --abort”, aby wybrać pierwotną gałąź)"
+msgid "  (use \"kit rebase --abort\" to check out the original branch)"
+msgstr "  (użyj „kit rebase --abort”, aby wybrać pierwotną gałąź)"
 
 #: wt-status.c:1433
-msgid "  (all conflicts fixed: run \"git rebase --continue\")"
-msgstr "  (wszystkie konflikty naprawione: wykonaj „git rebase --continue”)"
+msgid "  (all conflicts fixed: run \"kit rebase --continue\")"
+msgstr "  (wszystkie konflikty naprawione: wykonaj „kit rebase --continue”)"
 
 #: wt-status.c:1437
 #, c-format
@@ -10163,9 +10163,9 @@ msgid "You are currently splitting a commit during a rebase."
 msgstr "Dzielisz właśnie zapis podczas przestawiania."
 
 #: wt-status.c:1445
-msgid "  (Once your working directory is clean, run \"git rebase --continue\")"
+msgid "  (Once your working directory is clean, run \"kit rebase --continue\")"
 msgstr ""
-"  (Kiedy katalog roboczy będzie czysty, wykonaj „git rebase --continue”)"
+"  (Kiedy katalog roboczy będzie czysty, wykonaj „kit rebase --continue”)"
 
 #: wt-status.c:1449
 #, c-format
@@ -10177,13 +10177,13 @@ msgid "You are currently editing a commit during a rebase."
 msgstr "Edytujesz właśnie zapis podczas przestawiania."
 
 #: wt-status.c:1457
-msgid "  (use \"git commit --amend\" to amend the current commit)"
-msgstr "  (użyj „git commit --amend”, aby poprawić bieżący zapis)"
+msgid "  (use \"kit commit --amend\" to amend the current commit)"
+msgstr "  (użyj „kit commit --amend”, aby poprawić bieżący zapis)"
 
 #: wt-status.c:1459
 msgid ""
-"  (use \"git rebase --continue\" once you are satisfied with your changes)"
-msgstr "  (użyj „git rebase --continue”, kiedy zadowolisz się swoimi zmianami)"
+"  (use \"kit rebase --continue\" once you are satisfied with your changes)"
+msgstr "  (użyj „kit rebase --continue”, kiedy zadowolisz się swoimi zmianami)"
 
 #: wt-status.c:1470
 msgid "Cherry-pick currently in progress."
@@ -10195,25 +10195,25 @@ msgid "You are currently cherry-picking commit %s."
 msgstr "Dobierasz właśnie zapis %s."
 
 #: wt-status.c:1480
-msgid "  (fix conflicts and run \"git cherry-pick --continue\")"
-msgstr "  (napraw konflikty i wykonaj „git cherry-pick --continue”)"
+msgid "  (fix conflicts and run \"kit cherry-pick --continue\")"
+msgstr "  (napraw konflikty i wykonaj „kit cherry-pick --continue”)"
 
 #: wt-status.c:1483
-msgid "  (run \"git cherry-pick --continue\" to continue)"
-msgstr "  (wykonaj „git cherry-pick --continue”, aby kontynuować)"
+msgid "  (run \"kit cherry-pick --continue\" to continue)"
+msgstr "  (wykonaj „kit cherry-pick --continue”, aby kontynuować)"
 
 #: wt-status.c:1486
-msgid "  (all conflicts fixed: run \"git cherry-pick --continue\")"
+msgid "  (all conflicts fixed: run \"kit cherry-pick --continue\")"
 msgstr ""
-"  (wszystkie konflikty naprawione: wykonaj „git cherry-pick --continue”)"
+"  (wszystkie konflikty naprawione: wykonaj „kit cherry-pick --continue”)"
 
 #: wt-status.c:1488
-msgid "  (use \"git cherry-pick --skip\" to skip this patch)"
-msgstr "  (użyj „git cherry-pick --skip”, aby pominąć tę łatkę)"
+msgid "  (use \"kit cherry-pick --skip\" to skip this patch)"
+msgstr "  (użyj „kit cherry-pick --skip”, aby pominąć tę łatkę)"
 
 #: wt-status.c:1490
-msgid "  (use \"git cherry-pick --abort\" to cancel the cherry-pick operation)"
-msgstr "  (użyj „git cherry-pick --abort”, aby przerwać dobieranie)"
+msgid "  (use \"kit cherry-pick --abort\" to cancel the cherry-pick operation)"
+msgstr "  (użyj „kit cherry-pick --abort”, aby przerwać dobieranie)"
 
 #: wt-status.c:1500
 msgid "Revert currently in progress."
@@ -10225,24 +10225,24 @@ msgid "You are currently reverting commit %s."
 msgstr "Odwracasz właśnie zapis %s."
 
 #: wt-status.c:1509
-msgid "  (fix conflicts and run \"git revert --continue\")"
-msgstr "  (napraw konflikty i wykonaj „git revert --continue”)"
+msgid "  (fix conflicts and run \"kit revert --continue\")"
+msgstr "  (napraw konflikty i wykonaj „kit revert --continue”)"
 
 #: wt-status.c:1512
-msgid "  (run \"git revert --continue\" to continue)"
-msgstr "  (wykonaj „git revert --continue”, aby kontynuować)"
+msgid "  (run \"kit revert --continue\" to continue)"
+msgstr "  (wykonaj „kit revert --continue”, aby kontynuować)"
 
 #: wt-status.c:1515
-msgid "  (all conflicts fixed: run \"git revert --continue\")"
-msgstr "  (wszystkie konflikty naprawione: wykonaj „git revert --continue”)"
+msgid "  (all conflicts fixed: run \"kit revert --continue\")"
+msgstr "  (wszystkie konflikty naprawione: wykonaj „kit revert --continue”)"
 
 #: wt-status.c:1517
-msgid "  (use \"git revert --skip\" to skip this patch)"
-msgstr "  (użyj „git revert --skip” aby pominąć tę łatkę)"
+msgid "  (use \"kit revert --skip\" to skip this patch)"
+msgstr "  (użyj „kit revert --skip” aby pominąć tę łatkę)"
 
 #: wt-status.c:1519
-msgid "  (use \"git revert --abort\" to cancel the revert operation)"
-msgstr "  (użyj „git revert --abort”, aby przerwać odwracanie)"
+msgid "  (use \"kit revert --abort\" to cancel the revert operation)"
+msgstr "  (użyj „kit revert --abort”, aby przerwać odwracanie)"
 
 #: wt-status.c:1529
 #, c-format
@@ -10254,8 +10254,8 @@ msgid "You are currently bisecting."
 msgstr "Jesteś w trakcie przeszukiwania."
 
 #: wt-status.c:1536
-msgid "  (use \"git bisect reset\" to get back to the original branch)"
-msgstr "  (użyj „git bisect reset”, aby powrócić na pierwotną gałąź)"
+msgid "  (use \"kit bisect reset\" to get back to the original branch)"
+msgstr "  (użyj „kit bisect reset”, aby powrócić na pierwotną gałąź)"
 
 #: wt-status.c:1547
 msgid "You are in a sparse checkout."
@@ -10332,8 +10332,8 @@ msgstr "Brak zmian"
 
 #: wt-status.c:1870
 #, c-format
-msgid "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n"
-msgstr "brak zmian dodanych do zapisu (użyj „git add” i/lub „git commit -a”)\n"
+msgid "no changes added to commit (use \"kit add\" and/or \"kit commit -a\")\n"
+msgstr "brak zmian dodanych do zapisu (użyj „kit add” i/lub „kit commit -a”)\n"
 
 #: wt-status.c:1874
 #, c-format
@@ -10343,10 +10343,10 @@ msgstr "brak zmian dodanych do zapisu\n"
 #: wt-status.c:1878
 #, c-format
 msgid ""
-"nothing added to commit but untracked files present (use \"git add\" to "
+"nothing added to commit but untracked files present (use \"kit add\" to "
 "track)\n"
 msgstr ""
-"nie dodano nic do złożenia, ale są nieśledzone pliki (użyj „git add”, aby "
+"nie dodano nic do złożenia, ale są nieśledzone pliki (użyj „kit add”, aby "
 "śledzić)\n"
 
 #: wt-status.c:1882
@@ -10356,8 +10356,8 @@ msgstr "nie dodano nic do złożenia, ale są nieśledzone pliki\n"
 
 #: wt-status.c:1886
 #, c-format
-msgid "nothing to commit (create/copy files and use \"git add\" to track)\n"
-msgstr "nic do złożenia (utwórz/wkopiuj pliki i użyj „git add”, aby śledzić)\n"
+msgid "nothing to commit (create/copy files and use \"kit add\" to track)\n"
+msgstr "nic do złożenia (utwórz/wkopiuj pliki i użyj „kit add”, aby śledzić)\n"
 
 #: wt-status.c:1890 wt-status.c:1896
 #, c-format
@@ -10433,8 +10433,8 @@ msgid "failed to unlink '%s'"
 msgstr "nie można wykonać unlink na „%s”"
 
 #: builtin/add.c:26
-msgid "git add [<options>] [--] <pathspec>..."
-msgstr "git add [<opcje>] [--] <ścieżka>..."
+msgid "kit add [<options>] [--] <pathspec>..."
+msgstr "kit add [<opcje>] [--] <ścieżka>..."
 
 #: builtin/add.c:64
 #, c-format
@@ -10567,14 +10567,14 @@ msgid ""
 "the embedded repository and will not know how to obtain it.\n"
 "If you meant to add a submodule, use:\n"
 "\n"
-"\tgit submodule add <url> %s\n"
+"\tkit submodule add <url> %s\n"
 "\n"
 "If you added this path by mistake, you can remove it from the\n"
 "index with:\n"
 "\n"
-"\tgit rm --cached %s\n"
+"\tkit rm --cached %s\n"
 "\n"
-"See \"git help submodule\" for more information."
+"See \"kit help submodule\" for more information."
 msgstr ""
 "Dodano inne repozytorium wewnątrz bieżącego repozytorium.\n"
 "Klony zewnętrznego repozytorium nie będą zawierać zawartości\n"
@@ -10588,7 +10588,7 @@ msgstr ""
 "\n"
 "\tgit rm --cached %s\n"
 "\n"
-"Więcej informacji w „git help submodule”."
+"Więcej informacji w „kit help submodule”."
 
 #: builtin/add.c:442
 #, c-format
@@ -10826,12 +10826,12 @@ msgid "Patch failed at %s %.*s"
 msgstr "Łatanie nie powiodło się przy %s %.*s"
 
 #: builtin/am.c:1825
-msgid "Use 'git am --show-current-patch=diff' to see the failed patch"
-msgstr "Użyj „git am --show-current-patch=diff”, aby zobaczyć zawodną łatkę"
+msgid "Use 'kit am --show-current-patch=diff' to see the failed patch"
+msgstr "Użyj „kit am --show-current-patch=diff”, aby zobaczyć zawodną łatkę"
 
 #: builtin/am.c:1868
 msgid ""
-"No changes - did you forget to use 'git add'?\n"
+"No changes - did you forget to use 'kit add'?\n"
 "If there is nothing left to stage, chances are that something else\n"
 "already introduced the same changes; you might want to skip this patch."
 msgstr ""
@@ -10842,9 +10842,9 @@ msgstr ""
 #: builtin/am.c:1875
 msgid ""
 "You still have unmerged paths in your index.\n"
-"You should 'git add' each file with resolved conflicts to mark them as "
+"You should 'kit add' each file with resolved conflicts to mark them as "
 "such.\n"
-"You might run `git rm` on a file to accept \"deleted by them\" for it."
+"You might run `kit rm` on a file to accept \"deleted by them\" for it."
 msgstr ""
 "W indeksie nadal są niescalone ścieżki.\n"
 "Należy dodać każdy plik „git add” z rozwiązanymi konfliktami, aby je tak "
@@ -10886,12 +10886,12 @@ msgid "--show-current-patch=%s is incompatible with --show-current-patch=%s"
 msgstr "--show-current-patch=%s i --show-current-patch=%s się wykluczają"
 
 #: builtin/am.c:2264
-msgid "git am [<options>] [(<mbox> | <Maildir>)...]"
-msgstr "git am [<opcje>] [(<mbox> | <Maildir>)...]"
+msgid "kit am [<options>] [(<mbox> | <Maildir>)...]"
+msgstr "kit am [<opcje>] [(<mbox> | <Maildir>)...]"
 
 #: builtin/am.c:2265
-msgid "git am [<options>] (--continue | --skip | --abort)"
-msgstr "git am [<opcje>] (--continue | --skip | --abort)"
+msgid "kit am [<options>] (--continue | --skip | --abort)"
+msgstr "kit am [<opcje>] (--continue | --skip | --abort)"
 
 #: builtin/am.c:2271
 msgid "run interactively"
@@ -11045,10 +11045,10 @@ msgstr ""
 #, c-format
 msgid ""
 "Stray %s directory found.\n"
-"Use \"git am --abort\" to remove it."
+"Use \"kit am --abort\" to remove it."
 msgstr ""
 "Znaleziono bezpański katalog %s.\n"
-"Użyj „git am --abort” aby go usunąć."
+"Użyj „kit am --abort” aby go usunąć."
 
 #: builtin/am.c:2431
 msgid "Resolve operation not in progress, we are not resuming."
@@ -11059,8 +11059,8 @@ msgid "interactive mode requires patches on the command line"
 msgstr "tryb interaktywny wymaga łatek w wierszu poleceń"
 
 #: builtin/apply.c:8
-msgid "git apply [<options>] [<patch>...]"
-msgstr "git apply [<opcje>] [<łatka>...]"
+msgid "kit apply [<options>] [<patch>...]"
+msgstr "kit apply [<opcje>] [<łatka>...]"
 
 #: builtin/archive.c:18
 msgid "could not redirect output"
@@ -11071,21 +11071,21 @@ msgid "git archive: Remote with no URL"
 msgstr "git archive: Zdalne repozytorium bez adresu"
 
 #: builtin/archive.c:59
-msgid "git archive: expected ACK/NAK, got a flush packet"
-msgstr "git archive: oczekiwano ACK/NAK, otrzymano pakiet wypróżnienia"
+msgid "kit archive: expected ACK/NAK, got a flush packet"
+msgstr "kit archive: oczekiwano ACK/NAK, otrzymano pakiet wypróżnienia"
 
 #: builtin/archive.c:62
 #, c-format
-msgid "git archive: NACK %s"
-msgstr "git archive: NACK %s"
+msgid "kit archive: NACK %s"
+msgstr "kit archive: NACK %s"
 
 #: builtin/archive.c:63
-msgid "git archive: protocol error"
-msgstr "git archive: błąd protokołu"
+msgid "kit archive: protocol error"
+msgstr "kit archive: błąd protokołu"
 
 #: builtin/archive.c:67
-msgid "git archive: expected a flush"
-msgstr "git archive: oczekiwano wypróżnienia"
+msgid "kit archive: expected a flush"
+msgstr "kit archive: oczekiwano wypróżnienia"
 
 #: builtin/bisect--helper.c:24
 msgid "git bisect--helper --bisect-reset [<commit>]"
@@ -11184,9 +11184,9 @@ msgstr "„%s” nie jest prawidłowym zapisem"
 #: builtin/bisect--helper.c:227
 #, c-format
 msgid ""
-"could not check out original HEAD '%s'. Try 'git bisect reset <commit>'."
+"could not check out original HEAD '%s'. Try 'kit bisect reset <commit>'."
 msgstr ""
-"nie można wybrać pierwotnego HEAD „%s”. Spróbuj „git bisect reset <zapis>”."
+"nie można wybrać pierwotnego HEAD „%s”. Spróbuj „kit bisect reset <zapis>”."
 
 #: builtin/bisect--helper.c:271
 #, c-format
@@ -11212,21 +11212,21 @@ msgstr "Nieprawidłowe polecenie: przeszukujesz teraz %s/%s"
 #, c-format
 msgid ""
 "You need to give me at least one %s and %s revision.\n"
-"You can use \"git bisect %s\" and \"git bisect %s\" for that."
+"You can use \"kit bisect %s\" and \"kit bisect %s\" for that."
 msgstr ""
 "Wtedy podaj przynajmniej jedną rewizję %s i jedną %s.\n"
-"Możesz użyć do tego „git bisect %s” i „git bisect %s”."
+"Możesz użyć do tego „kit bisect %s” i „kit bisect %s”."
 
 #: builtin/bisect--helper.c:345
 #, c-format
 msgid ""
-"You need to start by \"git bisect start\".\n"
+"You need to start by \"kit bisect start\".\n"
 "You then need to give me at least one %s and %s revision.\n"
-"You can use \"git bisect %s\" and \"git bisect %s\" for that."
+"You can use \"kit bisect %s\" and \"kit bisect %s\" for that."
 msgstr ""
-"Należy zacząć przez „git bisect start”.\n"
+"Należy zacząć przez „kit bisect start”.\n"
 "Wtedy podaj przynajmniej jedną rewizję %s i jedną %s.\n"
-"Możesz użyć do tego „git bisect %s” i „git bisect %s”."
+"Możesz użyć do tego „kit bisect %s” i „kit bisect %s”."
 
 #: builtin/bisect--helper.c:365
 #, c-format
@@ -11257,10 +11257,10 @@ msgstr ""
 #: builtin/bisect--helper.c:447
 #, c-format
 msgid ""
-"invalid argument %s for 'git bisect terms'.\n"
+"invalid argument %s for 'kit bisect terms'.\n"
 "Supported options are: --term-good|--term-old and --term-bad|--term-new."
 msgstr ""
-"nieprawidłowy argument %s do „git bisect terms”.\n"
+"nieprawidłowy argument %s do „kit bisect terms”.\n"
 "Wspierane opcje to: --term-good | --term-old i --term-bad | --term-new."
 
 #: builtin/bisect--helper.c:514 builtin/bisect--helper.c:1038
@@ -11292,9 +11292,9 @@ msgstr "złe HEAD — potrzeba HEAD"
 
 #: builtin/bisect--helper.c:728
 #, c-format
-msgid "checking out '%s' failed. Try 'git bisect start <valid-branch>'."
+msgid "checking out '%s' failed. Try 'kit bisect start <valid-branch>'."
 msgstr ""
-"wybieranie „%s” nie powiodło się. Spróbuj „git bisect start <prawidłowa-"
+"wybieranie „%s” nie powiodło się. Spróbuj „kit bisect start <prawidłowa-"
 "gałąź>”."
 
 #: builtin/bisect--helper.c:749
@@ -11311,8 +11311,8 @@ msgid "invalid ref: '%s'"
 msgstr "nieprawidłowa referencja: „%s”"
 
 #: builtin/bisect--helper.c:830
-msgid "You need to start by \"git bisect start\"\n"
-msgstr "Musisz rozpocząć przez „git bisect start”\n"
+msgid "You need to start by \"kit bisect start\"\n"
+msgstr "Musisz rozpocząć przez „kit bisect start”\n"
 
 #. TRANSLATORS: Make sure to include [Y] and [n] in your
 #. translation. The program will only accept English input
@@ -11328,8 +11328,8 @@ msgstr "Wywołaj „--bisect-state” z przynajmniej jednym argumentem"
 
 #: builtin/bisect--helper.c:872
 #, c-format
-msgid "'git bisect %s' can take only one argument."
-msgstr "„git bisect %s” przyjmuje tylko jeden argument."
+msgid "'kit bisect %s' can take only one argument."
+msgstr "„kit bisect %s” przyjmuje tylko jeden argument."
 
 #: builtin/bisect--helper.c:884 builtin/bisect--helper.c:897
 #, c-format
@@ -11467,8 +11467,8 @@ msgid "no logfile given"
 msgstr "nie podano pliku dziennika"
 
 #: builtin/blame.c:32
-msgid "git blame [<options>] [<rev-opts>] [<rev>] [--] <file>"
-msgstr "git blame [<opcje>] [<opcje-rewizji>] [<rewizja>] [--] <plik>"
+msgid "kit blame [<options>] [<rev-opts>] [<rev>] [--] <file>"
+msgstr "kit blame [<opcje>] [<opcje-rewizji>] [<rewizja>] [--] <plik>"
 
 #: builtin/blame.c:37
 msgid "<rev-opts> are documented in git-rev-list(1)"
@@ -11655,24 +11655,24 @@ msgid "git branch [<options>] [-l] [-f] <branch-name> [<start-point>]"
 msgstr "git branch [<opcje>] [-l] [-f] <nazwa-gałęzi> [<początek>]"
 
 #: builtin/branch.c:31
-msgid "git branch [<options>] [-r] (-d | -D) <branch-name>..."
-msgstr "git branch [<opcje>] [-r] (-d | -D) <nazwa-gałęzi>..."
+msgid "kit branch [<options>] [-r] (-d | -D) <branch-name>..."
+msgstr "kit branch [<opcje>] [-r] (-d | -D) <nazwa-gałęzi>..."
 
 #: builtin/branch.c:32
-msgid "git branch [<options>] (-m | -M) [<old-branch>] <new-branch>"
-msgstr "git branch [<opcje>] (-m | -M) [<stara-gałąż>] <nowa-gałąź>"
+msgid "kit branch [<options>] (-m | -M) [<old-branch>] <new-branch>"
+msgstr "kit branch [<opcje>] (-m | -M) [<stara-gałąż>] <nowa-gałąź>"
 
 #: builtin/branch.c:33
-msgid "git branch [<options>] (-c | -C) [<old-branch>] <new-branch>"
-msgstr "git branch [<opcje>] (-c | -C) [<stara-gałąż>] <nowa-gałąź>"
+msgid "kit branch [<options>] (-c | -C) [<old-branch>] <new-branch>"
+msgstr "kit branch [<opcje>] (-c | -C) [<stara-gałąż>] <nowa-gałąź>"
 
 #: builtin/branch.c:34
-msgid "git branch [<options>] [-r | -a] [--points-at]"
-msgstr "git branch [<opcje>] [-r | -a] [--points-at]"
+msgid "kit branch [<options>] [-r | -a] [--points-at]"
+msgstr "kit branch [<opcje>] [-r | -a] [--points-at]"
 
 #: builtin/branch.c:35
-msgid "git branch [<options>] [-r | -a] [--format]"
-msgstr "git branch [<opcje>] [-r | -a] [--format]"
+msgid "kit branch [<options>] [-r | -a] [--format]"
+msgstr "kit branch [<opcje>] [-r | -a] [--format]"
 
 #: builtin/branch.c:154
 #, c-format
@@ -12145,8 +12145,8 @@ msgid "git bundle verify [<options>] <file>"
 msgstr "git bundle verify [<opcje>] <plik>"
 
 #: builtin/bundle.c:17 builtin/bundle.c:33
-msgid "git bundle list-heads <file> [<refname>...]"
-msgstr "git bundle list-heads <plik> [<referencja>...]"
+msgid "kit bundle list-heads <file> [<refname>...]"
+msgstr "kit bundle list-heads <plik> [<referencja>...]"
 
 #: builtin/bundle.c:18 builtin/bundle.c:38
 msgid "git bundle unbundle <file> [<refname>...]"
@@ -12346,8 +12346,8 @@ msgid "--non-matching is only valid with --verbose"
 msgstr "--non-matching ma sens tylko z --verbose"
 
 #: builtin/check-mailmap.c:9
-msgid "git check-mailmap [<options>] <contact>..."
-msgstr "git check-mailmap [<opcje>] <kontakt>..."
+msgid "kit check-mailmap [<options>] <contact>..."
+msgstr "kit check-mailmap [<opcje>] <kontakt>..."
 
 #: builtin/check-mailmap.c:14
 msgid "also read contacts from stdin"
@@ -12363,8 +12363,8 @@ msgid "no contacts specified"
 msgstr "nie podano kontaktów"
 
 #: builtin/checkout--worker.c:110
-msgid "git checkout--worker [<options>]"
-msgstr "git checkout--worker [<opcje>]"
+msgid "kit checkout--worker [<options>]"
+msgstr "kit checkout--worker [<opcje>]"
 
 #: builtin/checkout--worker.c:118 builtin/checkout-index.c:201
 #: builtin/column.c:31 builtin/column.c:32 builtin/submodule--helper.c:1863
@@ -12379,8 +12379,8 @@ msgid "when creating files, prepend <string>"
 msgstr "przy tworzeniu plików, dodaj <łańcuch> z przodu"
 
 #: builtin/checkout-index.c:152
-msgid "git checkout-index [<options>] [--] [<file>...]"
-msgstr "git checkout-index [<opcje>] [--] [<plik>...]"
+msgid "kit checkout-index [<options>] [--] [<file>...]"
+msgstr "kit checkout-index [<opcje>] [--] [<plik>...]"
 
 #: builtin/checkout-index.c:169
 msgid "stage should be between 1 and 3 or all"
@@ -12419,20 +12419,20 @@ msgid "copy out the files from named stage"
 msgstr "wykopiuj pliki z nazwanego przygotowania"
 
 #: builtin/checkout.c:33
-msgid "git checkout [<options>] <branch>"
-msgstr "git checkout [<opcje>] <gałąź>"
+msgid "kit checkout [<options>] <branch>"
+msgstr "kit checkout [<opcje>] <gałąź>"
 
 #: builtin/checkout.c:34
-msgid "git checkout [<options>] [<branch>] -- <file>..."
-msgstr "git checkout [<opcje>] [<gałąź>] -- <plik>..."
+msgid "kit checkout [<options>] [<branch>] -- <file>..."
+msgstr "kit checkout [<opcje>] [<gałąź>] -- <plik>..."
 
 #: builtin/checkout.c:39
-msgid "git switch [<options>] [<branch>]"
-msgstr "git switch [<opcje>] <gałąź>"
+msgid "kit switch [<options>] [<branch>]"
+msgstr "kit switch [<opcje>] <gałąź>"
 
 #: builtin/checkout.c:44
-msgid "git restore [<options>] [--source=<branch>] <file>..."
-msgstr "git restore [<opcje>] [--source=<gałąź>] <plik>..."
+msgid "kit restore [<options>] [--source=<branch>] <file>..."
+msgstr "kit restore [<opcje>] [--source=<gałąź>] <plik>..."
 
 #: builtin/checkout.c:190 builtin/checkout.c:229
 #, c-format
@@ -12615,31 +12615,31 @@ msgid ""
 "If you want to keep it by creating a new branch, this may be a good time\n"
 "to do so with:\n"
 "\n"
-" git branch <new-branch-name> %s\n"
+" kit branch <new-branch-name> %s\n"
 "\n"
 msgid_plural ""
 "If you want to keep them by creating a new branch, this may be a good time\n"
 "to do so with:\n"
 "\n"
-" git branch <new-branch-name> %s\n"
+" kit branch <new-branch-name> %s\n"
 "\n"
 msgstr[0] ""
 "Jeśli chcesz go zachować tworząc nową gałąź, to może być dobry moment\n"
 "na zrobienie tego:\n"
 "\n"
-" git branch <nazwa-nowej-gałęzi> %s\n"
+" kit branch <nazwa-nowej-gałęzi> %s\n"
 "\n"
 msgstr[1] ""
 "Jeśli chcesz je zachować tworząc nową gałąź, to może być dobry moment\n"
 "na zrobienie tego:\n"
 "\n"
-" git branch <nazwa-nowej-gałęzi> %s\n"
+" kit branch <nazwa-nowej-gałęzi> %s\n"
 "\n"
 msgstr[2] ""
 "Jeśli chcesz je zachować tworząc nową gałąź, to może być dobry moment\n"
 "na zrobienie tego:\n"
 "\n"
-" git branch <nazwa-nowej-gałęzi> %s\n"
+" kit branch <nazwa-nowej-gałęzi> %s\n"
 "\n"
 
 #: builtin/checkout.c:1051
@@ -12730,42 +12730,42 @@ msgstr "oczekiwano gałęzi, otrzymano zapis „%s”"
 #: builtin/checkout.c:1405
 msgid ""
 "cannot switch branch while merging\n"
-"Consider \"git merge --quit\" or \"git worktree add\"."
+"Consider \"kit merge --quit\" or \"kit worktree add\"."
 msgstr ""
 "Nie można przełączyć gałęzi w trakcie scalania\n"
-"Rozważ „git merge --quit” lub „git worktree add”."
+"Rozważ „kit merge --quit” lub „kit worktree add”."
 
 #: builtin/checkout.c:1409
 msgid ""
 "cannot switch branch in the middle of an am session\n"
-"Consider \"git am --quit\" or \"git worktree add\"."
+"Consider \"kit am --quit\" or \"kit worktree add\"."
 msgstr ""
 "Nie można przełączyć gałęzi w trakcie sesji am\n"
-"Rozważ „git am --quit” lub „git worktree add”."
+"Rozważ „kit am --quit” lub „kit worktree add”."
 
 #: builtin/checkout.c:1413
 msgid ""
 "cannot switch branch while rebasing\n"
-"Consider \"git rebase --quit\" or \"git worktree add\"."
+"Consider \"kit rebase --quit\" or \"kit worktree add\"."
 msgstr ""
 "Nie można przełączyć gałęzi w trakcie przestawiania\n"
-"Rozważ „git rebase --quit” lub „git worktree add”."
+"Rozważ „kit rebase --quit” lub „kit worktree add”."
 
 #: builtin/checkout.c:1417
 msgid ""
 "cannot switch branch while cherry-picking\n"
-"Consider \"git cherry-pick --quit\" or \"git worktree add\"."
+"Consider \"kit cherry-pick --quit\" or \"kit worktree add\"."
 msgstr ""
 "Nie można przełączyć gałęzi w trakcie dobierania\n"
-"Rozważ „git cherry-pick --quit” lub „git worktree add”."
+"Rozważ „kit cherry-pick --quit” lub „kit worktree add”."
 
 #: builtin/checkout.c:1421
 msgid ""
 "cannot switch branch while reverting\n"
-"Consider \"git revert --quit\" or \"git worktree add\"."
+"Consider \"kit revert --quit\" or \"kit worktree add\"."
 msgstr ""
 "Nie można przełączyć gałęzi w trakcie odwracania\n"
-"Rozważ „git revert --quit” lub „git worktree add”."
+"Rozważ „kit revert --quit” lub „kit worktree add”."
 
 #: builtin/checkout.c:1425
 msgid "you are switching branch while bisecting"
@@ -12886,8 +12886,8 @@ msgstr "„%s” nie jest zapisem, a nie można z niego utworzyć gałęzi „%s
 
 #: builtin/checkout.c:1725
 #, c-format
-msgid "git checkout: --detach does not take a path argument '%s'"
-msgstr "git checkout: --detach nie przyjmuje argumentu ścieżki „%s”"
+msgid "kit checkout: --detach does not take a path argument '%s'"
+msgstr "kit checkout: --detach nie przyjmuje argumentu ścieżki „%s”"
 
 #: builtin/checkout.c:1734
 msgid "--pathspec-from-file is incompatible with --detach"
@@ -12899,10 +12899,10 @@ msgstr "--pathspec-from-file i --patch się wykluczają"
 
 #: builtin/checkout.c:1750
 msgid ""
-"git checkout: --ours/--theirs, --force and --merge are incompatible when\n"
+"kit checkout: --ours/--theirs, --force and --merge are incompatible when\n"
 "checking out of the index."
 msgstr ""
-"git checkout: --ours/--theirs, --force i --merge się wykluczają, gdy\n"
+"kit checkout: --ours/--theirs, --force i --merge się wykluczają, gdy\n"
 "wybieranie z indeksu."
 
 #: builtin/checkout.c:1755
@@ -12930,8 +12930,8 @@ msgid "create reflog for new branch"
 msgstr "utwórz dziennik referencji nowej gałęzi"
 
 #: builtin/checkout.c:1787
-msgid "second guess 'git checkout <no-such-branch>' (default)"
-msgstr "spróbuj zgadnąć „git checkout <nieistniejąca-gałąź>” (domyślnie)"
+msgid "second guess 'kit checkout <no-such-branch>' (default)"
+msgstr "spróbuj zgadnąć „kit checkout <nieistniejąca-gałąź>” (domyślnie)"
 
 #: builtin/checkout.c:1788
 msgid "use overlay mode (default)"
@@ -12946,8 +12946,8 @@ msgid "create/reset and switch to a branch"
 msgstr "utwórz/zresetuj i przełącz na gałąź"
 
 #: builtin/checkout.c:1837
-msgid "second guess 'git switch <no-such-branch>'"
-msgstr "spróbuj zgadnąć „git switch <nieistniejąca-gałąź>”"
+msgid "second guess 'kit switch <no-such-branch>'"
+msgstr "spróbuj zgadnąć „kit switch <nieistniejąca-gałąź>”"
 
 #: builtin/checkout.c:1839
 msgid "throw away local modifications"
@@ -13149,8 +13149,8 @@ msgid "-x and -X cannot be used together"
 msgstr "-x i -X wykluczają się"
 
 #: builtin/clone.c:45
-msgid "git clone [<options>] [--] <repo> [<dir>]"
-msgstr "git clone [<opcje>] [--] <repozytorium> [<katalog>]"
+msgid "kit clone [<options>] [--] <repo> [<dir>]"
+msgstr "kit clone [<opcje>] [--] <repozytorium> [<katalog>]"
 
 #: builtin/clone.c:96
 msgid "don't clone shallow repository"
@@ -13354,12 +13354,12 @@ msgstr "gotowe.\n"
 #: builtin/clone.c:403
 msgid ""
 "Clone succeeded, but checkout failed.\n"
-"You can inspect what was checked out with 'git status'\n"
-"and retry with 'git restore --source=HEAD :/'\n"
+"You can inspect what was checked out with 'kit status'\n"
+"and retry with 'kit restore --source=HEAD :/'\n"
 msgstr ""
 "Klonowanie powiodło się, ale już nie wybieranie.\n"
 "Możesz zobaczyć, co zostało wybrane w „git status”\n"
-"i ponowić przez „git restore --source=HEAD :/”\n"
+"i ponowić przez „kit restore --source=HEAD :/”\n"
 
 #: builtin/clone.c:480
 #, c-format
@@ -13512,8 +13512,8 @@ msgid "You appear to have cloned an empty repository."
 msgstr "Wygląda na to, że sklonowano puste repozytorium."
 
 #: builtin/column.c:10
-msgid "git column [<options>]"
-msgstr "git column [<opcje>]"
+msgid "kit column [<options>]"
+msgstr "kit column [<opcje>]"
 
 #: builtin/column.c:27
 msgid "lookup config vars"
@@ -13666,13 +13666,13 @@ msgstr "nieprawidłowa nazwa obiektu %s"
 
 #: builtin/commit-tree.c:94
 #, c-format
-msgid "git commit-tree: failed to read '%s'"
-msgstr "git commit-tree: nie można odczytać „%s”"
+msgid "kit commit-tree: failed to read '%s'"
+msgstr "kit commit-tree: nie można odczytać „%s”"
 
 #: builtin/commit-tree.c:96
 #, c-format
-msgid "git commit-tree: failed to close '%s'"
-msgstr "git commit-tree: nie można zamknąć „%s”"
+msgid "kit commit-tree: failed to close '%s'"
+msgstr "kit commit-tree: nie można zamknąć „%s”"
 
 #: builtin/commit-tree.c:109
 msgid "parent"
@@ -13706,8 +13706,8 @@ msgid "must give exactly one tree"
 msgstr "należy podać tylko jedno drzewo"
 
 #: builtin/commit-tree.c:138
-msgid "git commit-tree: failed to read"
-msgstr "git commit-tree: nie można odczytać"
+msgid "kit commit-tree: failed to read"
+msgstr "kit commit-tree: nie można odczytać"
 
 #: builtin/commit.c:42
 msgid "git commit [<options>] [--] <pathspec>..."
@@ -13721,55 +13721,55 @@ msgstr "git status [<opcje>] [--] <ścieżka>..."
 msgid ""
 "You asked to amend the most recent commit, but doing so would make\n"
 "it empty. You can repeat your command with --allow-empty, or you can\n"
-"remove the commit entirely with \"git reset HEAD^\".\n"
+"remove the commit entirely with \"kit reset HEAD^\".\n"
 msgstr ""
 "Kazano poprawić najnowszy zapis, ale stałby się on przez to pusty.\n"
 "Możesz powtórzyć polecenie z --allow-empty, lub usunąć ten zapis\n"
-"całkowicie przez „git reset HEAD^”.\n"
+"całkowicie przez „kit reset HEAD^”.\n"
 
 #: builtin/commit.c:57
 msgid ""
 "The previous cherry-pick is now empty, possibly due to conflict resolution.\n"
 "If you wish to commit it anyway, use:\n"
 "\n"
-"    git commit --allow-empty\n"
+"    kit commit --allow-empty\n"
 "\n"
 msgstr ""
 "Poprzednie dobranie (cherry-pick) jest teraz puste — możliwe, że przez "
 "rozwiązane konflikty.\n"
 "Jeśli i tak chcesz je złożyć, użyj:\n"
 "\n"
-"    git commit --allow-empty\n"
+"    kit commit --allow-empty\n"
 "\n"
 
 #: builtin/commit.c:64
-msgid "Otherwise, please use 'git rebase --skip'\n"
-msgstr "W przeciwnym wypadku użyj „git rebase --skip”\n"
+msgid "Otherwise, please use 'kit rebase --skip'\n"
+msgstr "W przeciwnym wypadku użyj „kit rebase --skip”\n"
 
 #: builtin/commit.c:67
-msgid "Otherwise, please use 'git cherry-pick --skip'\n"
-msgstr "W przeciwnym wypadku użyj „git cherry-pick --skip”\n"
+msgid "Otherwise, please use 'kit cherry-pick --skip'\n"
+msgstr "W przeciwnym wypadku użyj „kit cherry-pick --skip”\n"
 
 #: builtin/commit.c:70
 msgid ""
 "and then use:\n"
 "\n"
-"    git cherry-pick --continue\n"
+"    kit cherry-pick --continue\n"
 "\n"
 "to resume cherry-picking the remaining commits.\n"
 "If you wish to skip this commit, use:\n"
 "\n"
-"    git cherry-pick --skip\n"
+"    kit cherry-pick --skip\n"
 "\n"
 msgstr ""
 "a wtedy użyj:\n"
 "\n"
-"    git cherry-pick --continue\n"
+"    kit cherry-pick --continue\n"
 "\n"
 "aby wznowić dobieranie pozostałych zapisów.\n"
 "Jeśli chcesz pominąć ten zapis, użyj:\n"
 "\n"
-"    git cherry-pick --skip\n"
+"    kit cherry-pick --skip\n"
 "\n"
 
 #: builtin/commit.c:325
@@ -13925,7 +13925,7 @@ msgid ""
 "\n"
 "It looks like you may be committing a merge.\n"
 "If this is not correct, please run\n"
-"\tgit update-ref -d MERGE_HEAD\n"
+"\tkit update-ref -d MERGE_HEAD\n"
 "and try again.\n"
 msgstr ""
 "\n"
@@ -13939,7 +13939,7 @@ msgid ""
 "\n"
 "It looks like you may be committing a cherry-pick.\n"
 "If this is not correct, please run\n"
-"\tgit update-ref -d CHERRY_PICK_HEAD\n"
+"\tkit update-ref -d CHERRY_PICK_HEAD\n"
 "and try again.\n"
 msgstr ""
 "\n"
@@ -14594,11 +14594,11 @@ msgstr "nie ustawiono $HOME"
 msgid ""
 "--worktree cannot be used with multiple working trees unless the config\n"
 "extension worktreeConfig is enabled. Please read \"CONFIGURATION FILE\"\n"
-"section in \"git help worktree\" for details"
+"section in \"kit help worktree\" for details"
 msgstr ""
 "nie można użyć --worktree z wieloma drzewami roboczymi, chyba że włączono\n"
 "rozszerzenie konfiguracji worktreeConfig. Więcej szczegółów w rozdziale\n"
-"„CONFIGURATION FILE” w „git help worktree”"
+"„CONFIGURATION FILE” w „kit help worktree”"
 
 #: builtin/config.c:743
 msgid "--get-color and variable type are incoherent"
@@ -14914,8 +14914,8 @@ msgid "%s...%s: multiple merge bases, using %s"
 msgstr "%s...%s: wiele podstaw scalenia, używanie %s"
 
 #: builtin/difftool.c:31
-msgid "git difftool [<options>] [<commit> [<commit>]] [--] [<path>...]"
-msgstr "git difftool [<opcje>] [<zapis> [<zapis>]] [--] [<ścieżka>...]"
+msgid "kit difftool [<options>] [<commit> [<commit>]] [--] [<path>...]"
+msgstr "kit difftool [<opcje>] [<zapis> [<zapis>]] [--] [<ścieżka>...]"
 
 #: builtin/difftool.c:293
 #, c-format
@@ -15193,20 +15193,20 @@ msgid "Lockfile created but not reported: %s"
 msgstr "Utworzono plik blokady, ale go nie zgłoszono: %s"
 
 #: builtin/fetch.c:35
-msgid "git fetch [<options>] [<repository> [<refspec>...]]"
-msgstr "git fetch [<opcje>] [<repozytorium> [<referencja>...]]"
+msgid "kit fetch [<options>] [<repository> [<refspec>...]]"
+msgstr "kit fetch [<opcje>] [<repozytorium> [<referencja>...]]"
 
 #: builtin/fetch.c:36
-msgid "git fetch [<options>] <group>"
-msgstr "git fetch [<opcje>] <grupa>"
+msgid "kit fetch [<options>] <group>"
+msgstr "kit fetch [<opcje>] <grupa>"
 
 #: builtin/fetch.c:37
 msgid "git fetch --multiple [<options>] [(<repository> | <group>)...]"
 msgstr "git fetch --multiple [<opcje>] [(<repozytorium> | <grupa>)...]"
 
 #: builtin/fetch.c:38
-msgid "git fetch --all [<options>]"
-msgstr "git fetch --all [<opcje>]"
+msgid "kit fetch --all [<options>]"
+msgstr "kit fetch --all [<opcje>]"
 
 #: builtin/fetch.c:122
 msgid "fetch.parallel cannot be negative"
@@ -15217,8 +15217,8 @@ msgid "fetch from all remotes"
 msgstr "pobierz ze wszystkich zdalnych repozytoriów"
 
 #: builtin/fetch.c:147 builtin/pull.c:249
-msgid "set upstream for git pull/fetch"
-msgstr "ustaw gałąź nadrzędną do git pull/fetch"
+msgid "set upstream for kit pull/fetch"
+msgstr "ustaw gałąź nadrzędną do kit pull/fetch"
 
 #: builtin/fetch.c:149 builtin/pull.c:192
 msgid "append to .git/FETCH_HEAD instead of overwriting"
@@ -15453,10 +15453,10 @@ msgstr "Z %.*s\n"
 #, c-format
 msgid ""
 "some local refs could not be updated; try running\n"
-" 'git remote prune %s' to remove any old, conflicting branches"
+" 'kit remote prune %s' to remove any old, conflicting branches"
 msgstr ""
 "nie można zaktualizować niektórych lokalnych referencji;\n"
-" spróbuj wykonać „git remote prune %s”, aby usunąć stare niepasujące gałęzie"
+" spróbuj wykonać „kit remote prune %s”, aby usunąć stare niepasujące gałęzie"
 
 #: builtin/fetch.c:1341
 #, c-format
@@ -15612,9 +15612,9 @@ msgstr ""
 
 #: builtin/fmt-merge-msg.c:7
 msgid ""
-"git fmt-merge-msg [-m <message>] [--log[=<n>] | --no-log] [--file <file>]"
+"kit fmt-merge-msg [-m <message>] [--log[=<n>] | --no-log] [--file <file>]"
 msgstr ""
-"git fmt-merge-msg [-m <komunikat>] [--log[=<n>] | --no-log] [--file <plik>]"
+"kit fmt-merge-msg [-m <komunikat>] [--log[=<n>] | --no-log] [--file <plik>]"
 
 #: builtin/fmt-merge-msg.c:18
 msgid "populate log with at most <n> entries from shortlog"
@@ -15966,8 +15966,8 @@ msgid "invalid parameter: expected sha1, got '%s'"
 msgstr "nieprawidłowy parametr: oczekiwano SHA-1, otrzymano „%s”"
 
 #: builtin/gc.c:39
-msgid "git gc [<options>]"
-msgstr "git gc [<opcje>]"
+msgid "kit gc [<options>]"
+msgstr "kit gc [<opcje>]"
 
 #: builtin/gc.c:93
 #, c-format
@@ -16047,8 +16047,8 @@ msgstr "Automatyczne pakowanie repozytorium dla optymalnej wydajności.\n"
 
 #: builtin/gc.c:610
 #, c-format
-msgid "See \"git help gc\" for manual housekeeping.\n"
-msgstr "Zobacz „git help gc”, aby utrzymywać repozytorium ręcznie.\n"
+msgid "See \"kit help gc\" for manual housekeeping.\n"
+msgstr "Zobacz „kit help gc”, aby utrzymywać repozytorium ręcznie.\n"
 
 #: builtin/gc.c:650
 #, c-format
@@ -16059,16 +16059,16 @@ msgstr ""
 
 #: builtin/gc.c:705
 msgid ""
-"There are too many unreachable loose objects; run 'git prune' to remove them."
+"There are too many unreachable loose objects; run 'kit prune' to remove them."
 msgstr ""
 "Jest za dużo nieosiągalnych luźnych obiektów; wykonaj „git prune”, aby je "
 "usunąć."
 
 #: builtin/gc.c:715
 msgid ""
-"git maintenance run [--auto] [--[no-]quiet] [--task=<task>] [--schedule]"
+"kit maintenance run [--auto] [--[no-]quiet] [--task=<task>] [--schedule]"
 msgstr ""
-"git maintenance run [--auto] [--[no-]quiet] [--task=<zadanie>] [--schedule]"
+"kit maintenance run [--auto] [--[no-]quiet] [--task=<zadanie>] [--schedule]"
 
 #: builtin/gc.c:745
 msgid "--no-schedule is not allowed"
@@ -16088,11 +16088,11 @@ msgid "failed to prefetch remotes"
 msgstr "nie można pobrać zdalnych repozytoriów z wyprzedzeniem"
 
 #: builtin/gc.c:1020
-msgid "failed to start 'git pack-objects' process"
+msgid "failed to start 'kit pack-objects' process"
 msgstr "nie można uruchomić procesu „git pack-objects”"
 
 #: builtin/gc.c:1037
-msgid "failed to finish 'git pack-objects' process"
+msgid "failed to finish 'kit pack-objects' process"
 msgstr "nie można ukończyć procesu „git pack-objects”"
 
 #: builtin/gc.c:1088
@@ -16100,12 +16100,12 @@ msgid "failed to write multi-pack-index"
 msgstr "nie można zapisać indeksu wielu paczek"
 
 #: builtin/gc.c:1104
-msgid "'git multi-pack-index expire' failed"
-msgstr "„git multi-pack-index expire” nie powiodło się"
+msgid "'kit multi-pack-index expire' failed"
+msgstr "„kit multi-pack-index expire” nie powiodło się"
 
 #: builtin/gc.c:1163
-msgid "'git multi-pack-index repack' failed"
-msgstr "„git multi-pack-index repack” nie powiodło się"
+msgid "'kit multi-pack-index repack' failed"
+msgstr "„kit multi-pack-index repack” nie powiodło się"
 
 #: builtin/gc.c:1172
 msgid ""
@@ -16244,15 +16244,15 @@ msgid "another process is scheduling background maintenance"
 msgstr "inny proces planuje porządki w tle"
 
 #: builtin/gc.c:2454
-msgid "git maintenance start [--scheduler=<scheduler>]"
-msgstr "git maintenance start [--scheduler=<planista>]"
+msgid "kit maintenance start [--scheduler=<scheduler>]"
+msgstr "kit maintenance start [--scheduler=<planista>]"
 
 #: builtin/gc.c:2463
 msgid "scheduler"
 msgstr "planista"
 
 #: builtin/gc.c:2464
-msgid "scheduler to trigger git maintenance run"
+msgid "scheduler to trigger kit maintenance run"
 msgstr "planista do wyzwolenia sprzątania repozytorium"
 
 #: builtin/gc.c:2478
@@ -16260,8 +16260,8 @@ msgid "failed to add repo to global config"
 msgstr "nie można dodać repozytorium do globalnej konfiguracji"
 
 #: builtin/gc.c:2487
-msgid "git maintenance <subcommand> [<options>]"
-msgstr "git maintenance <pod-polecenie> [<opcje>]"
+msgid "kit maintenance <subcommand> [<options>]"
+msgstr "kit maintenance <pod-polecenie> [<opcje>]"
 
 #: builtin/gc.c:2506
 #, c-format
@@ -16269,8 +16269,8 @@ msgid "invalid subcommand: %s"
 msgstr "nieprawidłowe pod-polecenie: %s"
 
 #: builtin/grep.c:30
-msgid "git grep [<options>] [-e] <pattern> [<rev>...] [[--] <path>...]"
-msgstr "git grep [<opcje>] [-e] <wzorzec> [<rewizja>...] [[--] <ścieżka>...]"
+msgid "kit grep [<options>] [-e] <pattern> [<rev>...] [[--] <path>...]"
+msgstr "kit grep [<opcje>] [-e] <wzorzec> [<rewizja>...] [[--] <ścieżka>...]"
 
 #: builtin/grep.c:239
 #, c-format
@@ -16702,8 +16702,8 @@ msgid "usage: %s%s"
 msgstr "użycie: %s%s"
 
 #: builtin/help.c:624
-msgid "'git help config' for more information"
-msgstr "więcej informacji w „git help config”"
+msgid "'kit help config' for more information"
+msgstr "więcej informacji w „kit help config”"
 
 #: builtin/index-pack.c:221
 #, c-format
@@ -17205,12 +17205,12 @@ msgid "no input file given for in-place editing"
 msgstr "nie podano pliku wejściowego do edycji w miejscu"
 
 #: builtin/log.c:59
-msgid "git log [<options>] [<revision-range>] [[--] <path>...]"
-msgstr "git log [<opcje>] [<zakres-rewizji>] [[--] <ścieżka>...]"
+msgid "kit log [<options>] [<revision-range>] [[--] <path>...]"
+msgstr "kit log [<opcje>] [<zakres-rewizji>] [[--] <ścieżka>...]"
 
 #: builtin/log.c:60
-msgid "git show [<options>] <object>..."
-msgstr "git show [<opcje>] <obiekt>..."
+msgid "kit show [<options>] <object>..."
+msgstr "kit show [<opcje>] <obiekt>..."
 
 #: builtin/log.c:113
 #, c-format
@@ -17256,8 +17256,8 @@ msgstr "Ostateczne wyjście: %d %s\n"
 
 #: builtin/log.c:571
 #, c-format
-msgid "git show %s: bad file"
-msgstr "git show %s: zły plik"
+msgid "kit show %s: bad file"
+msgstr "kit show %s: zły plik"
 
 #: builtin/log.c:586 builtin/log.c:676
 #, c-format
@@ -17305,8 +17305,8 @@ msgid "insane in-reply-to: %s"
 msgstr "szalone in-reply-to: %s"
 
 #: builtin/log.c:1293
-msgid "git format-patch [<options>] [<since> | <revision-range>]"
-msgstr "git format-patch [<opcje>] [<od-kiedy> | <zakres-rewizji>]"
+msgid "kit format-patch [<options>] [<since> | <revision-range>]"
+msgstr "kit format-patch [<opcje>] [<od-kiedy> | <zakres-rewizji>]"
 
 #: builtin/log.c:1351
 msgid "two output directories?"
@@ -17330,11 +17330,11 @@ msgstr "nie znaleziono dokładnej podstawy scalania"
 #: builtin/log.c:1532
 msgid ""
 "failed to get upstream, if you want to record base commit automatically,\n"
-"please use git branch --set-upstream-to to track a remote branch.\n"
+"please use kit branch --set-upstream-to to track a remote branch.\n"
 "Or you could specify base commit by --base=<base-commit-id> manually"
 msgstr ""
 "nie udało się uzyskać nadrzędnego repozytorium, jeśli chcesz automatycznie\n"
-"zapisać zapis podstawy, użyj git branch --set-upstream-to, aby śledzić "
+"zapisać zapis podstawy, użyj kit branch --set-upstream-to, aby śledzić "
 "zdalną gałąź.\n"
 "Albo możesz podać zapis podstawy ręcznie przez --base=<id-zapisu-podstawy>"
 
@@ -17620,8 +17620,8 @@ msgid "failed to create output files"
 msgstr "nie można utworzyć plików wyjściowych"
 
 #: builtin/log.c:2263
-msgid "git cherry [-v] [<upstream> [<head> [<limit>]]]"
-msgstr "git cherry [-v] [<nadrzędna> [<czoło> [<limit>]]]"
+msgid "kit cherry [-v] [<upstream> [<head> [<limit>]]]"
+msgstr "kit cherry [-v] [<nadrzędna> [<czoło> [<limit>]]]"
 
 #: builtin/log.c:2317
 #, c-format
@@ -17632,8 +17632,8 @@ msgstr ""
 "repozytorium>.\n"
 
 #: builtin/ls-files.c:561
-msgid "git ls-files [<options>] [<file>...]"
-msgstr "git ls-files [<opcje>] [<plik>...]"
+msgid "kit ls-files [<options>] [<file>...]"
+msgstr "kit ls-files [<opcje>] [<plik>...]"
 
 #: builtin/ls-files.c:615
 msgid "separate paths with the NUL character"
@@ -17791,8 +17791,8 @@ msgid "show underlying ref in addition to the object pointed by it"
 msgstr "pokaż referencję podłoża oprócz obiektu wskazywanego przez nią"
 
 #: builtin/ls-tree.c:30
-msgid "git ls-tree [<options>] <tree-ish> [<path>...]"
-msgstr "git ls-tree [<opcje>] <drzewo> [<ścieżka>...]"
+msgid "kit ls-tree [<options>] <tree-ish> [<path>...]"
+msgstr "kit ls-tree [<opcje>] <drzewo> [<ścieżka>...]"
 
 #: builtin/ls-tree.c:128
 msgid "only show trees"
@@ -17828,8 +17828,8 @@ msgstr "wypisz całe drzewo; nie tylko bieżący katalog (zakłada --full-name)"
 
 #. TRANSLATORS: keep <> in "<" mail ">" info.
 #: builtin/mailinfo.c:14
-msgid "git mailinfo [<options>] <msg> <patch> < mail >info"
-msgstr "git mailinfo [<opcje>] <komunikat> <łatka> < list >info"
+msgid "kit mailinfo [<options>] <msg> <patch> < mail >info"
+msgstr "kit mailinfo [<opcje>] <komunikat> <łatka> < list >info"
 
 #: builtin/mailinfo.c:58
 msgid "keep subject"
@@ -17881,24 +17881,24 @@ msgid "empty mbox: '%s'"
 msgstr "pusta skrzynka mbox: „%s”"
 
 #: builtin/merge-base.c:32
-msgid "git merge-base [-a | --all] <commit> <commit>..."
-msgstr "git merge-base [-a | --all] <zapis> <zapis>..."
+msgid "kit merge-base [-a | --all] <commit> <commit>..."
+msgstr "kit merge-base [-a | --all] <zapis> <zapis>..."
 
 #: builtin/merge-base.c:33
-msgid "git merge-base [-a | --all] --octopus <commit>..."
-msgstr "git merge-base [-a | --all] --octopus <zapis>..."
+msgid "kit merge-base [-a | --all] --octopus <commit>..."
+msgstr "kit merge-base [-a | --all] --octopus <zapis>..."
 
 #: builtin/merge-base.c:34
-msgid "git merge-base --independent <commit>..."
-msgstr "git merge-base --independent <zapis>..."
+msgid "kit merge-base --independent <commit>..."
+msgstr "kit merge-base --independent <zapis>..."
 
 #: builtin/merge-base.c:35
-msgid "git merge-base --is-ancestor <commit> <commit>"
-msgstr "git merge-base --is-ancestor <zapis> <zapis>"
+msgid "kit merge-base --is-ancestor <commit> <commit>"
+msgstr "kit merge-base --is-ancestor <zapis> <zapis>"
 
 #: builtin/merge-base.c:36
-msgid "git merge-base --fork-point <ref> [<commit>]"
-msgstr "git merge-base --fork-point <referencja> [<zapis>]"
+msgid "kit merge-base --fork-point <ref> [<commit>]"
+msgstr "kit merge-base --fork-point <referencja> [<zapis>]"
 
 #: builtin/merge-base.c:143
 msgid "output all common ancestors"
@@ -17922,10 +17922,10 @@ msgstr "znajdź, gdzie <zapis> odgałęził się od dziennika referencji <ref>"
 
 #: builtin/merge-file.c:9
 msgid ""
-"git merge-file [<options>] [-L <name1> [-L <orig> [-L <name2>]]] <file1> "
+"kit merge-file [<options>] [-L <name1> [-L <orig> [-L <name2>]]] <file1> "
 "<orig-file> <file2>"
 msgstr ""
-"git merge-file [<opcje>] [-L <nazwa1> [-L <oryg> [-L <nazwa2>]]] <plik1> "
+"kit merge-file [<opcje>] [-L <nazwa1> [-L <oryg> [-L <nazwa2>]]] <plik1> "
 "<plik-pierw> <plik2>"
 
 #: builtin/merge-file.c:35
@@ -17993,8 +17993,8 @@ msgid "Merging %s with %s\n"
 msgstr "Scalanie %s z %s\n"
 
 #: builtin/merge.c:59
-msgid "git merge [<options>] [<commit>...]"
-msgstr "git merge [<opcje>] [<zapis>...]"
+msgid "kit merge [<options>] [<commit>...]"
+msgstr "kit merge [<opcje>] [<zapis>...]"
 
 #: builtin/merge.c:124
 msgid "switch `m' requires a value"
@@ -18165,7 +18165,7 @@ msgstr "Nie można odczytać „%s”"
 
 #: builtin/merge.c:823
 #, c-format
-msgid "Not committing merge; use 'git commit' to complete the merge.\n"
+msgid "Not committing merge; use 'kit commit' to complete the merge.\n"
 msgstr "Nie składanie scalenia; użyj „git commit”, aby ukończyć scalanie.\n"
 
 #: builtin/merge.c:829
@@ -18424,16 +18424,16 @@ msgstr ""
 "snapshot=<ścieżka>]"
 
 #: builtin/multi-pack-index.c:14
-msgid "git multi-pack-index [<options>] verify"
-msgstr "git multi-pack-index [<opcje>] verify"
+msgid "kit multi-pack-index [<options>] verify"
+msgstr "kit multi-pack-index [<opcje>] verify"
 
 #: builtin/multi-pack-index.c:17
-msgid "git multi-pack-index [<options>] expire"
-msgstr "git multi-pack-index [<opcje>] expire"
+msgid "kit multi-pack-index [<options>] expire"
+msgstr "kit multi-pack-index [<opcje>] expire"
 
 #: builtin/multi-pack-index.c:20
-msgid "git multi-pack-index [<options>] repack [--batch-size=<size>]"
-msgstr "git multi-pack-index [<opcje>] repack [--batch-size=<rozmiar>]"
+msgid "kit multi-pack-index [<options>] repack [--batch-size=<size>]"
+msgstr "kit multi-pack-index [<opcje>] repack [--batch-size=<rozmiar>]"
 
 #: builtin/multi-pack-index.c:57
 msgid "object directory containing set of packfile and pack-index pairs"
@@ -18565,12 +18565,12 @@ msgid "renaming '%s' failed"
 msgstr "nie można zmienić nazwy „%s”"
 
 #: builtin/name-rev.c:465
-msgid "git name-rev [<options>] <commit>..."
-msgstr "git name-rev [<opcje>] <zapis>..."
+msgid "kit name-rev [<options>] <commit>..."
+msgstr "kit name-rev [<opcje>] <zapis>..."
 
 #: builtin/name-rev.c:466
-msgid "git name-rev [<options>] --all"
-msgstr "git name-rev [<opcje>] --all"
+msgid "kit name-rev [<options>] --all"
+msgstr "kit name-rev [<opcje>] --all"
 
 #: builtin/name-rev.c:467
 msgid "git name-rev [<options>] --stdin"
@@ -18609,8 +18609,8 @@ msgid "dereference tags in the input (internal use)"
 msgstr "zaglądaj do tagów z wejścia (użycie wewnętrzne)"
 
 #: builtin/notes.c:28
-msgid "git notes [--ref <notes-ref>] [list [<object>]]"
-msgstr "git notes [--ref <ref-uwagi>] [list [<obiekt>]]"
+msgid "kit notes [--ref <notes-ref>] [list [<object>]]"
+msgstr "kit notes [--ref <ref-uwagi>] [list [<obiekt>]]"
 
 #: builtin/notes.c:29
 msgid ""
@@ -18621,8 +18621,8 @@ msgstr ""
 "<plik> | (-c | -C) <obiekt>] [<obiekt>]"
 
 #: builtin/notes.c:30
-msgid "git notes [--ref <notes-ref>] copy [-f] <from-object> <to-object>"
-msgstr "git notes [--ref <ref-uwagi>] copy [-f] <obiekt-z> <obiekt-do>"
+msgid "kit notes [--ref <notes-ref>] copy [-f] <from-object> <to-object>"
+msgstr "kit notes [--ref <ref-uwagi>] copy [-f] <obiekt-z> <obiekt-do>"
 
 #: builtin/notes.c:31
 msgid ""
@@ -18633,18 +18633,18 @@ msgstr ""
 "<plik> | (-c | -C) <obiekt>] [<obiekt>]"
 
 #: builtin/notes.c:32
-msgid "git notes [--ref <notes-ref>] edit [--allow-empty] [<object>]"
-msgstr "git notes [--ref <ref-uwagi>] edit [--allow-empty] [<obiekt>]"
+msgid "kit notes [--ref <notes-ref>] edit [--allow-empty] [<object>]"
+msgstr "kit notes [--ref <ref-uwagi>] edit [--allow-empty] [<obiekt>]"
 
 #: builtin/notes.c:33
-msgid "git notes [--ref <notes-ref>] show [<object>]"
-msgstr "git notes [--ref <ref-uwagi>] show [<obiekt>]"
+msgid "kit notes [--ref <notes-ref>] show [<object>]"
+msgstr "kit notes [--ref <ref-uwagi>] show [<obiekt>]"
 
 #: builtin/notes.c:34
 msgid ""
-"git notes [--ref <notes-ref>] merge [-v | -q] [-s <strategy>] <notes-ref>"
+"kit notes [--ref <notes-ref>] merge [-v | -q] [-s <strategy>] <notes-ref>"
 msgstr ""
-"git notes [--ref <referencja-uwag>] merge [-v | -q] [-s <strategia>] "
+"kit notes [--ref <referencja-uwag>] merge [-v | -q] [-s <strategia>] "
 "<referencja-uwag>"
 
 #: builtin/notes.c:35
@@ -18656,64 +18656,64 @@ msgid "git notes merge --abort [-v | -q]"
 msgstr "git notes merge --abort [-v | -q]"
 
 #: builtin/notes.c:37
-msgid "git notes [--ref <notes-ref>] remove [<object>...]"
-msgstr "git notes [--ref <ref-uwagi>] remove [<obiekt>...]"
+msgid "kit notes [--ref <notes-ref>] remove [<object>...]"
+msgstr "kit notes [--ref <ref-uwagi>] remove [<obiekt>...]"
 
 #: builtin/notes.c:38
-msgid "git notes [--ref <notes-ref>] prune [-n] [-v]"
-msgstr "git notes [--ref <ref-uwag>] prune [-n] [-v]"
+msgid "kit notes [--ref <notes-ref>] prune [-n] [-v]"
+msgstr "kit notes [--ref <ref-uwag>] prune [-n] [-v]"
 
 #: builtin/notes.c:39
-msgid "git notes [--ref <notes-ref>] get-ref"
-msgstr "git notes [--ref <referencja-uwagi>] get-ref"
+msgid "kit notes [--ref <notes-ref>] get-ref"
+msgstr "kit notes [--ref <referencja-uwagi>] get-ref"
 
 #: builtin/notes.c:44
-msgid "git notes [list [<object>]]"
-msgstr "git notes [list [<obiekt>]]"
+msgid "kit notes [list [<object>]]"
+msgstr "kit notes [list [<obiekt>]]"
 
 #: builtin/notes.c:49
-msgid "git notes add [<options>] [<object>]"
-msgstr "git notes add [<opcje>] [<obiekt>]"
+msgid "kit notes add [<options>] [<object>]"
+msgstr "kit notes add [<opcje>] [<obiekt>]"
 
 #: builtin/notes.c:54
-msgid "git notes copy [<options>] <from-object> <to-object>"
-msgstr "git notes copy [<opcje>] <obiekt-z> <obiekt-do>"
+msgid "kit notes copy [<options>] <from-object> <to-object>"
+msgstr "kit notes copy [<opcje>] <obiekt-z> <obiekt-do>"
 
 #: builtin/notes.c:55
-msgid "git notes copy --stdin [<from-object> <to-object>]..."
-msgstr "git notes copy --stdin [<obiekt-z> <obiekt-do>]..."
+msgid "kit notes copy --stdin [<from-object> <to-object>]..."
+msgstr "kit notes copy --stdin [<obiekt-z> <obiekt-do>]..."
 
 #: builtin/notes.c:60
-msgid "git notes append [<options>] [<object>]"
-msgstr "git notes append [<opcje>] [<obiekt>]"
+msgid "kit notes append [<options>] [<object>]"
+msgstr "kit notes append [<opcje>] [<obiekt>]"
 
 #: builtin/notes.c:65
-msgid "git notes edit [<object>]"
-msgstr "git notes edit [<obiekt>]"
+msgid "kit notes edit [<object>]"
+msgstr "kit notes edit [<obiekt>]"
 
 #: builtin/notes.c:70
-msgid "git notes show [<object>]"
-msgstr "git notes show [<obiekt>]"
+msgid "kit notes show [<object>]"
+msgstr "kit notes show [<obiekt>]"
 
 #: builtin/notes.c:75
-msgid "git notes merge [<options>] <notes-ref>"
-msgstr "git notes merge [<opcje>] <ref-uwagi>"
+msgid "kit notes merge [<options>] <notes-ref>"
+msgstr "kit notes merge [<opcje>] <ref-uwagi>"
 
 #: builtin/notes.c:76
-msgid "git notes merge --commit [<options>]"
-msgstr "git notes merge --commit [<opcje>]"
+msgid "kit notes merge --commit [<options>]"
+msgstr "kit notes merge --commit [<opcje>]"
 
 #: builtin/notes.c:77
-msgid "git notes merge --abort [<options>]"
-msgstr "git notes merge --abort [<opcje>]"
+msgid "kit notes merge --abort [<options>]"
+msgstr "kit notes merge --abort [<opcje>]"
 
 #: builtin/notes.c:82
-msgid "git notes remove [<object>]"
-msgstr "git notes remove [<obiekt>]"
+msgid "kit notes remove [<object>]"
+msgstr "kit notes remove [<obiekt>]"
 
 #: builtin/notes.c:87
-msgid "git notes prune [<options>]"
-msgstr "git notes prune [<opcje>]"
+msgid "kit notes prune [<options>]"
+msgstr "kit notes prune [<opcje>]"
 
 #: builtin/notes.c:92
 msgid "git notes get-ref"
@@ -18875,10 +18875,10 @@ msgstr "brakuje uwag do obiektu źródłowego %s. Nie można skopiować."
 #, c-format
 msgid ""
 "The -m/-F/-c/-C options have been deprecated for the 'edit' subcommand.\n"
-"Please use 'git notes add -f -m/-F/-c/-C' instead.\n"
+"Please use 'kit notes add -f -m/-F/-c/-C' instead.\n"
 msgstr ""
 "Opcje -m/-F/-c/-C są przestarzałe w pod-poleceniu „edit”.\n"
-"użyj zamiast tego „git notes add -f -m/-F/-c/-C”.\n"
+"użyj zamiast tego „kit notes add -f -m/-F/-c/-C”.\n"
 
 #: builtin/notes.c:696
 msgid "failed to delete ref NOTES_MERGE_PARTIAL"
@@ -18889,8 +18889,8 @@ msgid "failed to delete ref NOTES_MERGE_REF"
 msgstr "nie można usunąć referencji NOTES_MERGE_REF"
 
 #: builtin/notes.c:700
-msgid "failed to remove 'git notes merge' worktree"
-msgstr "nie można usunąć drzewa roboczego „git notes merge”"
+msgid "failed to remove 'kit notes merge' worktree"
+msgstr "nie można usunąć drzewa roboczego „kit notes merge”"
 
 #: builtin/notes.c:720
 msgid "failed to read ref NOTES_MERGE_PARTIAL"
@@ -18976,11 +18976,11 @@ msgstr "nie można zapisać dowiązania do bieżącej referencji uwag (%s)"
 #, c-format
 msgid ""
 "Automatic notes merge failed. Fix conflicts in %s and commit the result with "
-"'git notes merge --commit', or abort the merge with 'git notes merge --"
+"'kit notes merge --commit', or abort the merge with 'kit notes merge --"
 "abort'.\n"
 msgstr ""
 "Automatyczne scalanie uwag nie powiodło się. Napraw konflikty w %s i złóż "
-"wynik przez „git notes merge --commit”, lub przerwij scalanie przez „git "
+"wynik przez „kit notes merge --commit”, lub przerwij scalanie przez „git "
 "notes merge --abort”.\n"
 
 #: builtin/notes.c:895 builtin/tag.c:590
@@ -19474,8 +19474,8 @@ msgid "git prune-packed [-n | --dry-run] [-q | --quiet]"
 msgstr "git prune-packed [-n | --dry-run] [-q | --quiet]"
 
 #: builtin/prune.c:14
-msgid "git prune [-n] [-v] [--progress] [--expire <time>] [--] [<head>...]"
-msgstr "git prune [-n] [-v] [--progress] [--expire <czas>] [--] [<czoło>...]"
+msgid "kit prune [-n] [-v] [--progress] [--expire <time>] [--] [<head>...]"
+msgstr "kit prune [-n] [-v] [--progress] [--expire <czas>] [--] [<czoło>...]"
 
 #: builtin/prune.c:133
 msgid "report pruned objects"
@@ -19499,8 +19499,8 @@ msgid "Invalid value for %s: %s"
 msgstr "Nieprawidłowa wartość %s: %s"
 
 #: builtin/pull.c:67
-msgid "git pull [<options>] [<repository> [<refspec>...]]"
-msgstr "git pull [<opcje>] [<repozytorium> [<referencja>...]]"
+msgid "kit pull [<options>] [<repository> [<refspec>...]]"
+msgstr "kit pull [<opcje>] [<repozytorium> [<referencja>...]]"
 
 #: builtin/pull.c:124
 msgid "control for recursive fetching of submodules"
@@ -19684,16 +19684,16 @@ msgstr ""
 msgid ""
 "Cannot fast-forward your working tree.\n"
 "After making sure that you saved anything precious from\n"
-"$ git diff %s\n"
+"$ kit diff %s\n"
 "output, run\n"
-"$ git reset --hard\n"
+"$ kit reset --hard\n"
 "to recover."
 msgstr ""
 "Nie można przewinąć drzewa roboczego.\n"
 "Po upewnieniu się, że zapiszesz wszystko cenne z wyjścia\n"
-"$ git diff %s\n"
+"$ kit diff %s\n"
 "wykonaj\n"
-"$ git reset --hard\n"
+"$ kit reset --hard\n"
 "by się pozbierać."
 
 #: builtin/pull.c:1067
@@ -19717,8 +19717,8 @@ msgid "cannot rebase with locally recorded submodule modifications"
 msgstr "nie można przestawić z lokalnie zapisanymi zmianami podmodułów"
 
 #: builtin/push.c:19
-msgid "git push [<options>] [<repository> [<refspec>...]]"
-msgstr "git push [<opcje>] [<repozytorium> [<referencja>...]]"
+msgid "kit push [<options>] [<repository> [<refspec>...]]"
+msgstr "kit push [<opcje>] [<repozytorium> [<referencja>...]]"
 
 #: builtin/push.c:111
 msgid "tag shorthand without <tag>"
@@ -19767,13 +19767,13 @@ msgid ""
 "To push the history leading to the current (detached HEAD)\n"
 "state now, use\n"
 "\n"
-"    git push %s HEAD:<name-of-remote-branch>\n"
+"    kit push %s HEAD:<name-of-remote-branch>\n"
 msgstr ""
 "Nie jesteś teraz na gałęzi.\n"
 "Żeby wypchnąć historię wiodącą do bieżącego stanu\n"
 "(odłączonego HEAD), użyj\n"
 "\n"
-"    git push %s HEAD:<nazwa-zdalnej-gałęzi>\n"
+"    kit push %s HEAD:<nazwa-zdalnej-gałęzi>\n"
 
 #: builtin/push.c:191
 #, c-format
@@ -19937,8 +19937,8 @@ msgid "receive pack program"
 msgstr "program do odbierania paczek"
 
 #: builtin/push.c:564
-msgid "set upstream for git pull/status"
-msgstr "ustaw gałąź nadrzędną do git pull/status"
+msgid "set upstream for kit pull/status"
+msgstr "ustaw gałąź nadrzędną do kit pull/status"
 
 #: builtin/push.c:567
 msgid "prune locally removed refs"
@@ -20020,18 +20020,18 @@ msgid "push options must not have new line characters"
 msgstr "opcje wypychania nie mogą zawierać znaków końca wiersza"
 
 #: builtin/range-diff.c:9
-msgid "git range-diff [<options>] <old-base>..<old-tip> <new-base>..<new-tip>"
+msgid "kit range-diff [<options>] <old-base>..<old-tip> <new-base>..<new-tip>"
 msgstr ""
-"git range-diff [<opcje>] <stara-podstawa>..<stary-czubek> <nowa-podstawa>.."
+"kit range-diff [<opcje>] <stara-podstawa>..<stary-czubek> <nowa-podstawa>.."
 "<nowy-czubek>"
 
 #: builtin/range-diff.c:10
-msgid "git range-diff [<options>] <old-tip>...<new-tip>"
-msgstr "git range-diff [<opcje>] <stary-czubek>...<nowy-czubek>"
+msgid "kit range-diff [<options>] <old-tip>...<new-tip>"
+msgstr "kit range-diff [<opcje>] <stary-czubek>...<nowy-czubek>"
 
 #: builtin/range-diff.c:11
-msgid "git range-diff [<options>] <base> <old-tip> <new-tip>"
-msgstr "git range-diff [<opcje>] <podstawa> <stary-czubek> <nowy-czubek>"
+msgid "kit range-diff [<options>] <base> <old-tip> <new-tip>"
+msgstr "kit range-diff [<opcje>] <podstawa> <stary-czubek> <nowy-czubek>"
 
 #: builtin/range-diff.c:30
 msgid "use simple diff colors"
@@ -20042,7 +20042,7 @@ msgid "notes"
 msgstr "uwagi"
 
 #: builtin/range-diff.c:32
-msgid "passed to 'git log'"
+msgid "passed to 'kit log'"
 msgstr "przekazywane do „git log”"
 
 #: builtin/range-diff.c:35
@@ -20150,17 +20150,17 @@ msgstr "Musisz najpierw rozwiązać bieżący indeks"
 
 #: builtin/rebase.c:35
 msgid ""
-"git rebase [-i] [options] [--exec <cmd>] [--onto <newbase> | --keep-base] "
+"kit rebase [-i] [options] [--exec <cmd>] [--onto <newbase> | --keep-base] "
 "[<upstream> [<branch>]]"
 msgstr ""
-"git rebase [-i] [options] [--exec <polecenie>] [--onto <nowa-podstawa> | --"
+"kit rebase [-i] [options] [--exec <polecenie>] [--onto <nowa-podstawa> | --"
 "keep-base] [<gałąź-nadrzędna> [<gałąź>]]"
 
 #: builtin/rebase.c:37
 msgid ""
-"git rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] --root [<branch>]"
+"kit rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] --root [<branch>]"
 msgstr ""
-"git rebase [-i] [options] [--exec <polecenie>] [--onto <nowa-podstawa>] --"
+"kit rebase [-i] [options] [--exec <polecenie>] [--onto <nowa-podstawa>] --"
 "root [<gałąź>]"
 
 #: builtin/rebase.c:39
@@ -20207,27 +20207,27 @@ msgstr "pomijanie błędnego allow_rerere_autoupdate: „%s”"
 #: builtin/rebase.c:597
 msgid ""
 "Resolve all conflicts manually, mark them as resolved with\n"
-"\"git add/rm <conflicted_files>\", then run \"git rebase --continue\".\n"
-"You can instead skip this commit: run \"git rebase --skip\".\n"
-"To abort and get back to the state before \"git rebase\", run \"git rebase --"
+"\"kit add/rm <conflicted_files>\", then run \"kit rebase --continue\".\n"
+"You can instead skip this commit: run \"kit rebase --skip\".\n"
+"To abort and get back to the state before \"kit rebase\", run \"kit rebase --"
 "abort\"."
 msgstr ""
 "Rozwiąż ręcznie wszystkie konflikty, oznacz je jako rozwiązane przez\n"
-"„git add/rm <skonfliktowane_pliki>” i wykonaj „git rebase --continue”.\n"
-"Możesz zamiast tego pominąć ten zapis: wykonaj „git rebase --skip”.\n"
-"Aby przerwać i powrócić do stanu sprzed „git rebase”, wykonaj „git rebase --"
+"„kit add/rm <skonfliktowane_pliki>” i wykonaj „kit rebase --continue”.\n"
+"Możesz zamiast tego pominąć ten zapis: wykonaj „kit rebase --skip”.\n"
+"Aby przerwać i powrócić do stanu sprzed „kit rebase”, wykonaj „kit rebase --"
 "abort”."
 
 #: builtin/rebase.c:680
 #, c-format
 msgid ""
 "\n"
-"git encountered an error while preparing the patches to replay\n"
+"kit encountered an error while preparing the patches to replay\n"
 "these revisions:\n"
 "\n"
 "    %s\n"
 "\n"
-"As a result, git cannot rebase them."
+"As a result, kit cannot rebase them."
 msgstr ""
 "\n"
 "git napotkał błąd podczas przygotowania łatek do odtworzenia\n"
@@ -20253,14 +20253,14 @@ msgid ""
 "Please specify which branch you want to rebase against.\n"
 "See git-rebase(1) for details.\n"
 "\n"
-"    git rebase '<branch>'\n"
+"    kit rebase '<branch>'\n"
 "\n"
 msgstr ""
 "%s\n"
 "Podaj, względem jakiej gałęzi chcesz przestawiać.\n"
 "Więcej szczegółów w git-rebase(1).\n"
 "\n"
-"    git rebase '<gałąź>'\n"
+"    kit rebase '<gałąź>'\n"
 "\n"
 
 #: builtin/rebase.c:959
@@ -20268,12 +20268,12 @@ msgstr ""
 msgid ""
 "If you wish to set tracking information for this branch you can do so with:\n"
 "\n"
-"    git branch --set-upstream-to=%s/<branch> %s\n"
+"    kit branch --set-upstream-to=%s/<branch> %s\n"
 "\n"
 msgstr ""
 "Jeśli chcesz ustawić informacje o śledzeniu w tej gałęzi, możesz to zrobić "
 "przez:\n"
-"    git branch --set-upstream-to=%s/<gałąź> %s\n"
+"    kit branch --set-upstream-to=%s/<gałąź> %s\n"
 "\n"
 
 #: builtin/rebase.c:989
@@ -20325,7 +20325,7 @@ msgid "synonym of --reset-author-date"
 msgstr "zamiennik na --reset-author-date"
 
 #: builtin/rebase.c:1047 builtin/rebase.c:1051
-msgid "passed to 'git apply'"
+msgid "passed to 'kit apply'"
 msgstr "przekaż do „git apply”"
 
 #: builtin/rebase.c:1049
@@ -20429,7 +20429,7 @@ msgid "apply all changes, even those already present upstream"
 msgstr "zastosuj wszystkie zmiany, nawet te już obecne w głównym nurcie"
 
 #: builtin/rebase.c:1149
-msgid "It looks like 'git am' is in progress. Cannot rebase."
+msgid "It looks like 'kit am' is in progress. Cannot rebase."
 msgstr "Wygląda, że trwa „git am”. Nie można przestawić."
 
 #: builtin/rebase.c:1180
@@ -20464,10 +20464,10 @@ msgstr "Nie można odczytać HEAD"
 #: builtin/rebase.c:1241
 msgid ""
 "You must edit all merge conflicts and then\n"
-"mark them as resolved using git add"
+"mark them as resolved using kit add"
 msgstr ""
 "Musisz edytować wszystkie konflikty scalania\n"
-"i oznaczyć je jako rozwiązane przy pomocy git add"
+"i oznaczyć je jako rozwiązane przy pomocy kit add"
 
 #: builtin/rebase.c:1260
 msgid "could not discard worktree changes"
@@ -20620,14 +20620,14 @@ msgid "Fast-forwarded %s to %s.\n"
 msgstr "Przewinięto %s do %s.\n"
 
 #: builtin/receive-pack.c:35
-msgid "git receive-pack <git-dir>"
-msgstr "git receive-pack <katalog-gita>"
+msgid "kit receive-pack <git-dir>"
+msgstr "kit receive-pack <katalog-gita>"
 
 #: builtin/receive-pack.c:1280
 msgid ""
 "By default, updating the current branch in a non-bare repository\n"
 "is denied, because it will make the index and work tree inconsistent\n"
-"with what you pushed, and will require 'git reset --hard' to match\n"
+"with what you pushed, and will require 'kit reset --hard' to match\n"
 "the work tree to HEAD.\n"
 "\n"
 "You can set the 'receive.denyCurrentBranch' configuration variable\n"
@@ -20641,7 +20641,7 @@ msgid ""
 msgstr ""
 "Domyślnie aktualizacja bieżącej gałęzi w nie-suchym repozytorium\n"
 "jest zabroniona, bo rozspójni indeks i drzewo robocze z tym,\n"
-"co wypchnięto, i będzie wymagać „git reset --hard”, żeby dopasować\n"
+"co wypchnięto, i będzie wymagać „kit reset --hard”, żeby dopasować\n"
 "drzewo robocze do HEAD.\n"
 "\n"
 "Możesz ustawić wartość konfiguracji „receive.denyCurrentBranch”\n"
@@ -20656,7 +20656,7 @@ msgstr ""
 #: builtin/receive-pack.c:1300
 msgid ""
 "By default, deleting the current branch is denied, because the next\n"
-"'git clone' won't result in any file checked out, causing confusion.\n"
+"'kit clone' won't result in any file checked out, causing confusion.\n"
 "\n"
 "You can set 'receive.denyDeleteCurrent' configuration variable to\n"
 "'warn' or 'ignore' in the remote repository to allow deleting the\n"
@@ -20700,8 +20700,8 @@ msgstr ""
 "<referencje>..."
 
 #: builtin/reflog.c:25
-msgid "git reflog exists <ref>"
-msgstr "git reflog exists <referencja>"
+msgid "kit reflog exists <ref>"
+msgstr "kit reflog exists <referencja>"
 
 #: builtin/reflog.c:568 builtin/reflog.c:573
 #, c-format
@@ -20747,10 +20747,10 @@ msgstr "git remote [-v | --verbose]"
 
 #: builtin/remote.c:18
 msgid ""
-"git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--"
+"kit remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--"
 "mirror=<fetch|push>] <name> <url>"
 msgstr ""
-"git remote add [-t <gałąź>] [-m <główna>] [-f] [--tags | --no-tags] [--"
+"kit remote add [-t <gałąź>] [-m <główna>] [-f] [--tags | --no-tags] [--"
 "mirror=<fetch|push>] <nazwa> <adres>"
 
 #: builtin/remote.c:19 builtin/remote.c:39
@@ -20758,71 +20758,71 @@ msgid "git remote rename <old> <new>"
 msgstr "git remote rename <stare> <nowe>"
 
 #: builtin/remote.c:20 builtin/remote.c:44
-msgid "git remote remove <name>"
-msgstr "git remote remove <nazwa>"
+msgid "kit remote remove <name>"
+msgstr "kit remote remove <nazwa>"
 
 #: builtin/remote.c:21 builtin/remote.c:49
-msgid "git remote set-head <name> (-a | --auto | -d | --delete | <branch>)"
-msgstr "git remote set-head <nazwa> (-a | --auto | -d | --delete | <gałąź>)"
+msgid "kit remote set-head <name> (-a | --auto | -d | --delete | <branch>)"
+msgstr "kit remote set-head <nazwa> (-a | --auto | -d | --delete | <gałąź>)"
 
 #: builtin/remote.c:22
-msgid "git remote [-v | --verbose] show [-n] <name>"
-msgstr "git remote [-v | --verbose] show [-n] <nazwa>"
+msgid "kit remote [-v | --verbose] show [-n] <name>"
+msgstr "kit remote [-v | --verbose] show [-n] <nazwa>"
 
 #: builtin/remote.c:23
-msgid "git remote prune [-n | --dry-run] <name>"
-msgstr "git remote prune [-n | --dry-run] <nazwa>"
+msgid "kit remote prune [-n | --dry-run] <name>"
+msgstr "kit remote prune [-n | --dry-run] <nazwa>"
 
 #: builtin/remote.c:24
 msgid ""
-"git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]"
+"kit remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]"
 msgstr ""
-"git remote [-v | --verbose] update [-p | --prune] [(<grupa> | <zdalne-"
+"kit remote [-v | --verbose] update [-p | --prune] [(<grupa> | <zdalne-"
 "repozytorium>)...]"
 
 #: builtin/remote.c:25
-msgid "git remote set-branches [--add] <name> <branch>..."
-msgstr "git remote set-branches [--add] <nazwa> <gałąź>..."
+msgid "kit remote set-branches [--add] <name> <branch>..."
+msgstr "kit remote set-branches [--add] <nazwa> <gałąź>..."
 
 #: builtin/remote.c:26 builtin/remote.c:75
-msgid "git remote get-url [--push] [--all] <name>"
-msgstr "git remote get-url [--push] [--all] <nazwa>"
+msgid "kit remote get-url [--push] [--all] <name>"
+msgstr "kit remote get-url [--push] [--all] <nazwa>"
 
 #: builtin/remote.c:27 builtin/remote.c:80
-msgid "git remote set-url [--push] <name> <newurl> [<oldurl>]"
-msgstr "git remote set-url [--push] <nazwa> <nowy-adres> [<stary-adres>]"
+msgid "kit remote set-url [--push] <name> <newurl> [<oldurl>]"
+msgstr "kit remote set-url [--push] <nazwa> <nowy-adres> [<stary-adres>]"
 
 #: builtin/remote.c:28 builtin/remote.c:81
-msgid "git remote set-url --add <name> <newurl>"
-msgstr "git remote set-url --add <nazwa> <nowy-adres>"
+msgid "kit remote set-url --add <name> <newurl>"
+msgstr "kit remote set-url --add <nazwa> <nowy-adres>"
 
 #: builtin/remote.c:29 builtin/remote.c:82
-msgid "git remote set-url --delete <name> <url>"
-msgstr "git remote set-url --delete <nazwa> <adres>"
+msgid "kit remote set-url --delete <name> <url>"
+msgstr "kit remote set-url --delete <nazwa> <adres>"
 
 #: builtin/remote.c:34
-msgid "git remote add [<options>] <name> <url>"
-msgstr "git remote add [<opcje>] <nazwa> <adres>"
+msgid "kit remote add [<options>] <name> <url>"
+msgstr "kit remote add [<opcje>] <nazwa> <adres>"
 
 #: builtin/remote.c:54
-msgid "git remote set-branches <name> <branch>..."
-msgstr "git remote set-branches <nazwa> <gałąź>..."
+msgid "kit remote set-branches <name> <branch>..."
+msgstr "kit remote set-branches <nazwa> <gałąź>..."
 
 #: builtin/remote.c:55
-msgid "git remote set-branches --add <name> <branch>..."
-msgstr "git remote set-branches --add <nazwa> <gałąź>..."
+msgid "kit remote set-branches --add <name> <branch>..."
+msgstr "kit remote set-branches --add <nazwa> <gałąź>..."
 
 #: builtin/remote.c:60
-msgid "git remote show [<options>] <name>"
-msgstr "git remote show [<opcje>] <nazwa>"
+msgid "kit remote show [<options>] <name>"
+msgstr "kit remote show [<opcje>] <nazwa>"
 
 #: builtin/remote.c:65
-msgid "git remote prune [<options>] <name>"
-msgstr "git remote prune [<opcje>] <nazwa>"
+msgid "kit remote prune [<options>] <name>"
+msgstr "kit remote prune [<opcje>] <nazwa>"
 
 #: builtin/remote.c:70
-msgid "git remote update [<options>] [<group> | <remote>]..."
-msgstr "git remote update [<opcje>] [<grupa> | <zdalne-repozytorium>]..."
+msgid "kit remote update [<options>] [<group> | <remote>]..."
+msgstr "kit remote update [<opcje>] [<grupa> | <zdalne-repozytorium>]..."
 
 #: builtin/remote.c:99
 #, c-format
@@ -20981,8 +20981,8 @@ msgid " tracked"
 msgstr " śledzone"
 
 #: builtin/remote.c:1014
-msgid " stale (use 'git remote prune' to remove)"
-msgstr " zastała (użyj „git remote prune”, aby usunąć)"
+msgid " stale (use 'kit remote prune' to remove)"
+msgstr " zastała (użyj „kit remote prune”, aby usunąć)"
 
 #: builtin/remote.c:1016
 msgid " ???"
@@ -21124,20 +21124,20 @@ msgid " (status not queried)"
 msgstr " (nie odpytano stanu)"
 
 #: builtin/remote.c:1293
-msgid "  Local branch configured for 'git pull':"
-msgid_plural "  Local branches configured for 'git pull':"
+msgid "  Local branch configured for 'kit pull':"
+msgid_plural "  Local branches configured for 'kit pull':"
 msgstr[0] "  Lokalna gałąź ustawiona do „git pull”:"
 msgstr[1] "  Lokalne gałęzie ustawione do „git pull”:"
 msgstr[2] "  Lokalne gałęzie ustawione do „git pull”:"
 
 #: builtin/remote.c:1301
-msgid "  Local refs will be mirrored by 'git push'"
+msgid "  Local refs will be mirrored by 'kit push'"
 msgstr "  Lokalne referencje będą odzwierciedlane przez „git push”"
 
 #: builtin/remote.c:1307
 #, c-format
-msgid "  Local ref configured for 'git push'%s:"
-msgid_plural "  Local refs configured for 'git push'%s:"
+msgid "  Local ref configured for 'kit push'%s:"
+msgid_plural "  Local refs configured for 'kit push'%s:"
 msgstr[0] "  Lokalna referencja ustawiona do „git push”%s:"
 msgstr[1] "  Lokalne referencje ustawione do „git push”%s:"
 msgstr[2] "  Lokalne referencje ustawione do „git push”%s:"
@@ -21432,28 +21432,28 @@ msgid "could not unlink: %s"
 msgstr "nie można usunąć przez unlink: %s"
 
 #: builtin/replace.c:22
-msgid "git replace [-f] <object> <replacement>"
-msgstr "git replace [-f] <obiekt> <zamiennik>"
+msgid "kit replace [-f] <object> <replacement>"
+msgstr "kit replace [-f] <obiekt> <zamiennik>"
 
 #: builtin/replace.c:23
-msgid "git replace [-f] --edit <object>"
-msgstr "git replace [-f] --edit <obiekt>"
+msgid "kit replace [-f] --edit <object>"
+msgstr "kit replace [-f] --edit <obiekt>"
 
 #: builtin/replace.c:24
-msgid "git replace [-f] --graft <commit> [<parent>...]"
-msgstr "git replace [-f] --graft <zapis> [<rodzic>...]"
+msgid "kit replace [-f] --graft <commit> [<parent>...]"
+msgstr "kit replace [-f] --graft <zapis> [<rodzic>...]"
 
 #: builtin/replace.c:25
 msgid "git replace [-f] --convert-graft-file"
 msgstr "git replace [-f] --convert-graft-file"
 
 #: builtin/replace.c:26
-msgid "git replace -d <object>..."
-msgstr "git replace -d <obiekt>..."
+msgid "kit replace -d <object>..."
+msgstr "kit replace -d <obiekt>..."
 
 #: builtin/replace.c:27
-msgid "git replace [--format=<format>] [-l [<pattern>]]"
-msgstr "git replace [--format=<format>] [-l [<wzorzec>]]"
+msgid "kit replace [--format=<format>] [-l [<pattern>]]"
+msgstr "kit replace [--format=<format>] [-l [<wzorzec>]]"
 
 #: builtin/replace.c:90
 #, c-format
@@ -21689,8 +21689,8 @@ msgid "register clean resolutions in index"
 msgstr "zarejestruj gładkie rozwiązania w indeksie"
 
 #: builtin/rerere.c:77
-msgid "'git rerere forget' without paths is deprecated"
-msgstr "„git rerere forget” bez ścieżek jest przestarzałe"
+msgid "'kit rerere forget' without paths is deprecated"
+msgstr "„kit rerere forget” bez ścieżek jest przestarzałe"
 
 #: builtin/rerere.c:111
 #, c-format
@@ -21699,22 +21699,22 @@ msgstr "nie można wygenerować różnic dla „%s”"
 
 #: builtin/reset.c:32
 msgid ""
-"git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]"
+"kit reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]"
 msgstr ""
-"git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<zapis>]"
+"kit reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<zapis>]"
 
 #: builtin/reset.c:33
-msgid "git reset [-q] [<tree-ish>] [--] <pathspec>..."
-msgstr "git reset [-q] [<drzewo>] [--] <ścieżka>..."
+msgid "kit reset [-q] [<tree-ish>] [--] <pathspec>..."
+msgstr "kit reset [-q] [<drzewo>] [--] <ścieżka>..."
 
 #: builtin/reset.c:34
 msgid ""
-"git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]"
-msgstr "git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<drzewo>]"
+"kit reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]"
+msgstr "kit reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<drzewo>]"
 
 #: builtin/reset.c:35
-msgid "git reset --patch [<tree-ish>] [--] [<pathspec>...]"
-msgstr "git reset --patch [<drzewo>] [--] [<ścieżka>...]"
+msgid "kit reset --patch [<tree-ish>] [--] [<pathspec>...]"
+msgstr "kit reset --patch [<drzewo>] [--] [<ścieżka>...]"
 
 #: builtin/reset.c:41
 msgid "mixed"
@@ -21799,9 +21799,9 @@ msgid "--patch is incompatible with --{hard,mixed,soft}"
 msgstr "--patch i --{hard,mixed,soft} się wykluczają"
 
 #: builtin/reset.c:377
-msgid "--mixed with paths is deprecated; use 'git reset -- <paths>' instead."
+msgid "--mixed with paths is deprecated; use 'kit reset -- <paths>' instead."
 msgstr ""
-"--mixed ze ścieżkami jest przestarzałe; użyj zamiast tego „git reset -- "
+"--mixed ze ścieżkami jest przestarzałe; użyj zamiast tego „kit reset -- "
 "<ścieżki>”."
 
 #: builtin/reset.c:379
@@ -21861,8 +21861,8 @@ msgid "marked counting is incompatible with --objects"
 msgstr "znaczone zliczanie i --objects się wykluczają"
 
 #: builtin/rev-parse.c:409
-msgid "git rev-parse --parseopt [<options>] -- [<args>...]"
-msgstr "git rev-parse --parseopt [<opcje>] -- [<argumenty>...]"
+msgid "kit rev-parse --parseopt [<options>] -- [<args>...]"
+msgstr "kit rev-parse --parseopt [<opcje>] -- [<argumenty>...]"
 
 #: builtin/rev-parse.c:414
 msgid "keep the `--` passed as an arg"
@@ -21890,17 +21890,17 @@ msgstr "Potrzeba pojedynczej rewizji"
 
 #: builtin/rev-parse.c:552
 msgid ""
-"git rev-parse --parseopt [<options>] -- [<args>...]\n"
-"   or: git rev-parse --sq-quote [<arg>...]\n"
-"   or: git rev-parse [<options>] [<arg>...]\n"
+"kit rev-parse --parseopt [<options>] -- [<args>...]\n"
+"   or: kit rev-parse --sq-quote [<arg>...]\n"
+"   or: kit rev-parse [<options>] [<arg>...]\n"
 "\n"
-"Run \"git rev-parse --parseopt -h\" for more information on the first usage."
+"Run \"kit rev-parse --parseopt -h\" for more information on the first usage."
 msgstr ""
-"git rev-parse --parseopt [<opcje>] -- [<argumenty>...]\n"
-"   lub: git rev-parse --sq-quote [<arg>...]\n"
-"   lub: git rev-parse [<opcje>] [<arg>...]\n"
+"kit rev-parse --parseopt [<opcje>] -- [<argumenty>...]\n"
+"   lub: kit rev-parse --sq-quote [<arg>...]\n"
+"   lub: kit rev-parse [<opcje>] [<arg>...]\n"
 "\n"
-"Wykonaj „git rev-parse --parseopt -h”, aby uzyskać więcej informacji o "
+"Wykonaj „kit rev-parse --parseopt -h”, aby uzyskać więcej informacji o "
 "pierwszym użyciu."
 
 #: builtin/rev-parse.c:712
@@ -22124,8 +22124,8 @@ msgstr "nie usuwanie „%s” rekurencyjne bez -r"
 
 #: builtin/rm.c:385
 #, c-format
-msgid "git rm: unable to remove %s"
-msgstr "git rm: nie można usunąć %s"
+msgid "kit rm: unable to remove %s"
+msgstr "kit rm: nie można usunąć %s"
 
 #: builtin/send-pack.c:20
 msgid ""
@@ -22156,12 +22156,12 @@ msgid "print status from remote helper"
 msgstr "wypisuj stan zdalnego pomocnika"
 
 #: builtin/shortlog.c:16
-msgid "git shortlog [<options>] [<revision-range>] [[--] <path>...]"
-msgstr "git shortlog [<opcje>] [<zakres-rewizji>] [[--] <ścieżka>...]"
+msgid "kit shortlog [<options>] [<revision-range>] [[--] <path>...]"
+msgstr "kit shortlog [<opcje>] [<zakres-rewizji>] [[--] <ścieżka>...]"
 
 #: builtin/shortlog.c:17
-msgid "git log --pretty=short | git shortlog [<options>]"
-msgstr "git log --pretty=short | git shortlog [<opcje>]"
+msgid "kit log --pretty=short | kit shortlog [<options>]"
+msgstr "kit log --pretty=short | kit shortlog [<opcje>]"
 
 #: builtin/shortlog.c:123
 msgid "using multiple --group options with stdin is not supported"
@@ -22226,9 +22226,9 @@ msgstr ""
 "<glob>)...]"
 
 #: builtin/show-branch.c:17
-msgid "git show-branch (-g | --reflog)[=<n>[,<base>]] [--list] [<ref>]"
+msgid "kit show-branch (-g | --reflog)[=<n>[,<base>]] [--list] [<ref>]"
 msgstr ""
-"git show-branch (-g | --reflog)[=<n>[,<podstawa>]] [--list] [<referencja>]"
+"kit show-branch (-g | --reflog)[=<n>[,<podstawa>]] [--list] [<referencja>]"
 
 #: builtin/show-branch.c:395
 #, c-format
@@ -22370,8 +22370,8 @@ msgstr ""
 "hash[=<n>]] [--abbrev[=<n>]] [--tags] [--heads] [--] [<wzorzec>...]"
 
 #: builtin/show-ref.c:13
-msgid "git show-ref --exclude-existing[=<pattern>]"
-msgstr "git show-ref --exclude-existing[=<wzorzec>]"
+msgid "kit show-ref --exclude-existing[=<pattern>]"
+msgstr "kit show-ref --exclude-existing[=<wzorzec>]"
 
 #: builtin/show-ref.c:162
 msgid "only show tags (can be combined with heads)"
@@ -22519,8 +22519,8 @@ msgid "git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]"
 msgstr "git stash ( pop | apply ) [--index] [-q|--quiet] [<schowek>]"
 
 #: builtin/stash.c:28 builtin/stash.c:65
-msgid "git stash branch <branchname> [<stash>]"
-msgstr "git stash branch <gałąź> [<schowek>]"
+msgid "kit stash branch <branchname> [<stash>]"
+msgstr "kit stash branch <gałąź> [<schowek>]"
 
 #: builtin/stash.c:30
 msgid ""
@@ -22592,8 +22592,8 @@ msgid "%s is not a valid reference"
 msgstr "%s nie jest prawidłową referencją."
 
 #: builtin/stash.c:227
-msgid "git stash clear with arguments is unimplemented"
-msgstr "nie zaimplementowano parametrów w git stash clear"
+msgid "kit stash clear with arguments is unimplemented"
+msgstr "nie zaimplementowano parametrów w kit stash clear"
 
 #: builtin/stash.c:447
 #, c-format
@@ -22689,8 +22689,8 @@ msgid "stash message"
 msgstr "komunikat skrytki"
 
 #: builtin/stash.c:973
-msgid "\"git stash store\" requires one <commit> argument"
-msgstr "„git stash store” wymaga jednego argumentu z <zapisem>"
+msgid "\"kit stash store\" requires one <commit> argument"
+msgstr "„kit stash store” wymaga jednego argumentu z <zapisem>"
 
 #: builtin/stash.c:1187
 msgid "No changes selected"
@@ -22721,7 +22721,7 @@ msgid "Can't use --patch and --include-untracked or --all at the same time"
 msgstr "Nie można jednocześnie użyć --patch i --include-untracked lub --all"
 
 #: builtin/stash.c:1438
-msgid "Did you forget to 'git add'?"
+msgid "Did you forget to 'kit add'?"
 msgstr "Czyżby zabrakło „git add”?"
 
 #: builtin/stash.c:1453
@@ -22919,8 +22919,8 @@ msgid ""
 msgstr "użyj zapisu z indeksu zamiast tego z HEAD podmodułu"
 
 #: builtin/submodule--helper.c:869
-msgid "git submodule status [--quiet] [--cached] [--recursive] [<path>...]"
-msgstr "git submodule status [--quiet] [--cached] [--recursive] [<ścieżka>...]"
+msgid "kit submodule status [--quiet] [--cached] [--recursive] [<path>...]"
+msgstr "kit submodule status [--quiet] [--cached] [--recursive] [<ścieżka>...]"
 
 #: builtin/submodule--helper.c:893
 msgid "git submodule--helper name <path>"
@@ -23055,9 +23055,9 @@ msgstr "wyrejestruj wszystkie podmoduły"
 
 #: builtin/submodule--helper.c:1596
 msgid ""
-"git submodule deinit [--quiet] [-f | --force] [--all | [--] [<path>...]]"
+"kit submodule deinit [--quiet] [-f | --force] [--all | [--] [<path>...]]"
 msgstr ""
-"git submodule deinit [--quiet] [-f | --force] [--all | [--] [<ścieżka>...]]"
+"kit submodule deinit [--quiet] [-f | --force] [--all | [--] [<ścieżka>...]]"
 
 #: builtin/submodule--helper.c:1610
 msgid "Use '--all' if you really want to deinitialize all submodules"
@@ -23555,8 +23555,8 @@ msgstr ""
 "        <tag> [<czoło>]"
 
 #: builtin/tag.c:27
-msgid "git tag -d <tagname>..."
-msgstr "git tag -d <nazwa-tagu>..."
+msgid "kit tag -d <tagname>..."
+msgstr "kit tag -d <nazwa-tagu>..."
 
 #: builtin/tag.c:28
 msgid ""
@@ -23571,8 +23571,8 @@ msgstr ""
 "[<wzorzec>...]"
 
 #: builtin/tag.c:30
-msgid "git tag -v [--format=<format>] <tagname>..."
-msgstr "git tag -v [--format=<format>] <nazwa-tagu>..."
+msgid "kit tag -v [--format=<format>] <tagname>..."
+msgstr "kit tag -v [--format=<format>] <nazwa-tagu>..."
 
 #: builtin/tag.c:100
 #, c-format
@@ -23622,7 +23622,7 @@ msgid ""
 "You have created a nested tag. The object referred to by your new tag is\n"
 "already a tag. If you meant to tag the object that it points to, use:\n"
 "\n"
-"\tgit tag -f %s %s^{}"
+"\tkit tag -f %s %s^{}"
 msgstr ""
 "Utworzono zagnieżdżony tag. Obiekt wskazywany przez nowy tag sam jest\n"
 "tagiem. Jeśli chodziło o otagowanie obiektu, na który wskazuje, użyj:\n"
@@ -23815,8 +23815,8 @@ msgid " OK"
 msgstr " OK"
 
 #: builtin/update-index.c:589
-msgid "git update-index [<options>] [--] [<file>...]"
-msgstr "git update-index [<opcje>] [--] [<plik>...]"
+msgid "kit update-index [<options>] [--] [<file>...]"
+msgstr "kit update-index [<opcje>] [--] [<plik>...]"
 
 #: builtin/update-index.c:974
 msgid "continue refresh even when index needs update"
@@ -24118,8 +24118,8 @@ msgid "git worktree lock [<options>] <path>"
 msgstr "git worktree lock [<opcje>] <ścieżka>"
 
 #: builtin/worktree.c:22
-msgid "git worktree move <worktree> <new-path>"
-msgstr "git worktree move <drzewo-robocze> <nowa-ścieżka>"
+msgid "kit worktree move <worktree> <new-path>"
+msgstr "kit worktree move <drzewo-robocze> <nowa-ścieżka>"
 
 #: builtin/worktree.c:23
 msgid "git worktree prune [<options>]"
@@ -24337,7 +24337,7 @@ msgstr "nie można przenieść „%s” do „%s”"
 
 #: builtin/worktree.c:925
 #, c-format
-msgid "failed to run 'git status' on '%s'"
+msgid "failed to run 'kit status' on '%s'"
 msgstr "nie można wykonać „git status” na „%s”"
 
 #: builtin/worktree.c:929
@@ -24348,7 +24348,7 @@ msgstr ""
 
 #: builtin/worktree.c:934
 #, c-format
-msgid "failed to run 'git status' on '%s', code %d"
+msgid "failed to run 'kit status' on '%s', code %d"
 msgstr "nie można wykonać „git status” na „%s”, kod %d"
 
 #: builtin/worktree.c:957
@@ -24389,8 +24389,8 @@ msgid "error: %s: %s"
 msgstr "błąd: %s: %s"
 
 #: builtin/write-tree.c:15
-msgid "git write-tree [--missing-ok] [--prefix=<prefix>/]"
-msgstr "git write-tree [--missing-ok] [--prefix=<prefiks>/]"
+msgid "kit write-tree [--missing-ok] [--prefix=<prefix>/]"
+msgstr "kit write-tree [--missing-ok] [--prefix=<prefiks>/]"
 
 #: builtin/write-tree.c:28
 msgid "<prefix>/"
@@ -24426,17 +24426,17 @@ msgstr ""
 
 #: git.c:36
 msgid ""
-"'git help -a' and 'git help -g' list available subcommands and some\n"
-"concept guides. See 'git help <command>' or 'git help <concept>'\n"
+"'kit help -a' and 'kit help -g' list available subcommands and some\n"
+"concept guides. See 'kit help <command>' or 'kit help <concept>'\n"
 "to read about a specific subcommand or concept.\n"
-"See 'git help git' for an overview of the system."
+"See 'kit help git' for an overview of the system."
 msgstr ""
-"„git help -a” i „git help -g” wypisują dostępne polecenia gita i "
+"„kit help -a” i „kit help -g” wypisują dostępne polecenia gita i "
 "wyjaśnienia\n"
-"niektórych koncepcji.  Zobacz „git help <polecenie>” lub „git help "
+"niektórych koncepcji.  Zobacz „kit help <polecenie>” lub „kit help "
 "<pojęcie>”,\n"
 "aby poczytać o konkretnym poleceniu lub pojęciu.\n"
-"W „git help git” znajdziesz przegląd systemu."
+"W „kit help git” znajdziesz przegląd systemu."
 
 #: git.c:188
 #, c-format
@@ -24535,7 +24535,7 @@ msgstr ""
 
 #: git.c:915
 #, c-format
-msgid "expansion of alias '%s' failed; '%s' is not a git command\n"
+msgid "expansion of alias '%s' failed; '%s' is not a kit command\n"
 msgstr ""
 "rozwinięcie skrótu „%s” nie powiodło się; „%s” nie jest poleceniem gita\n"
 
@@ -24829,7 +24829,7 @@ msgstr "git-http-push nie powiodło się"
 
 #: remote-curl.c:1478
 msgid "remote-curl: usage: git remote-curl <remote> [<url>]"
-msgstr "remote-curl: użycie: git remote-curl <zdalne-repozytorium> [<adres>]"
+msgstr "remote-curl: użycie: kit remote-curl <zdalne-repozytorium> [<adres>]"
 
 #: remote-curl.c:1510
 msgid "remote-curl: error reading command stream from git"
@@ -26255,7 +26255,7 @@ msgid ""
 "    This behavior is controlled by the sendemail.confirm\n"
 "    configuration setting.\n"
 "\n"
-"    For additional information, run 'git send-email --help'.\n"
+"    For additional information, run 'kit send-email --help'.\n"
 "    To retain the current behavior, but squelch this message,\n"
 "    run 'git config --global sendemail.confirm auto'.\n"
 "\n"
@@ -26266,7 +26266,7 @@ msgstr ""
 "    To zachowanie jest sterowane przez ustawienie\n"
 "    sendemail.confirm.\n"
 "\n"
-"    Więcej informacji w „git send-email --help”.\n"
+"    Więcej informacji w „kit send-email --help”.\n"
 "    Aby zachować obecne zachowanie, ale uciszyć ten komunikat,\n"
 "    wykonaj „git config --global sendemail.confirm auto”.\n"
 "\n"

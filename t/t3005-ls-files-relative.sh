@@ -39,7 +39,7 @@ test_expect_success 'ls-files -c' '
 	(
 		cd top/sub &&
 		printf "error: pathspec $SQ%s$SQ did not match any file(s) known to git\n" ../y* >expect.err &&
-		echo "Did you forget to ${SQ}git add${SQ}?" >>expect.err &&
+		echo "Did you forget to ${SQ}kit add${SQ}?" >>expect.err &&
 		ls ../x* >expect.out &&
 		test_must_fail git ls-files -c --error-unmatch ../[xy]* >actual.out 2>actual.err &&
 		test_cmp expect.out actual.out &&
@@ -51,7 +51,7 @@ test_expect_success 'ls-files -o' '
 	(
 		cd top/sub &&
 		printf "error: pathspec $SQ%s$SQ did not match any file(s) known to git\n" ../x* >expect.err &&
-		echo "Did you forget to ${SQ}git add${SQ}?" >>expect.err &&
+		echo "Did you forget to ${SQ}kit add${SQ}?" >>expect.err &&
 		ls ../y* >expect.out &&
 		test_must_fail git ls-files -o --error-unmatch ../[xy]* >actual.out 2>actual.err &&
 		test_cmp expect.out actual.out &&

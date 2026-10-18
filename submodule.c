@@ -1066,7 +1066,7 @@ static int submodule_needs_pushing(struct repository *r,
 		cp.out = -1;
 		cp.dir = path;
 		if (start_command(&cp))
-			die(_("Could not run 'git rev-list <commits> --not --remotes -n 1' command in submodule %s"),
+			die(_("Could not run 'kit rev-list <commits> --not --remotes -n 1' command in submodule %s"),
 					path);
 		if (strbuf_read(&buf, cp.out, the_hash_algo->hexsz + 1))
 			needs_pushing = 1;
@@ -1912,7 +1912,7 @@ unsigned is_submodule_modified(const char *path, int ignore_untracked)
 	cp.out = -1;
 	cp.dir = path;
 	if (start_command(&cp))
-		die(_("Could not run 'git status --porcelain=2' in submodule %s"), path);
+		die(_("Could not run 'kit status --porcelain=2' in submodule %s"), path);
 
 	fp = xfdopen(cp.out, "r");
 	while (strbuf_getwholeline(&buf, fp, '\n') != EOF) {
@@ -1953,7 +1953,7 @@ unsigned is_submodule_modified(const char *path, int ignore_untracked)
 	fclose(fp);
 
 	if (finish_command(&cp) && !ignore_cp_exit_code)
-		die(_("'git status --porcelain=2' failed in submodule %s"), path);
+		die(_("'kit status --porcelain=2' failed in submodule %s"), path);
 
 	strbuf_release(&buf);
 	return dirty_submodule;
@@ -2034,7 +2034,7 @@ int bad_to_remove_submodule(const char *path, unsigned flags)
 	cp.dir = path;
 	if (start_command(&cp)) {
 		if (flags & SUBMODULE_REMOVAL_DIE_ON_ERROR)
-			die(_("could not start 'git status' in submodule '%s'"),
+			die(_("could not start 'kit status' in submodule '%s'"),
 				path);
 		ret = -1;
 		goto out;
@@ -2047,7 +2047,7 @@ int bad_to_remove_submodule(const char *path, unsigned flags)
 
 	if (finish_command(&cp)) {
 		if (flags & SUBMODULE_REMOVAL_DIE_ON_ERROR)
-			die(_("could not run 'git status' in submodule '%s'"),
+			die(_("could not run 'kit status' in submodule '%s'"),
 				path);
 		ret = -1;
 	}
@@ -2756,7 +2756,7 @@ void submodule_name_to_gitdir(struct strbuf *buf, struct repository *r,
 		if (ret)
 			die(_("the 'submodule.%s.gitdir' config does not exist for module '%s'. "
 			      "Please ensure it is set, for example by running something like: "
-			      "'git config submodule.%s.gitdir .git/modules/%s'. For details "
+			      "'kit config submodule.%s.gitdir .git/modules/%s'. For details "
 			      "see the extensions.submodulePathConfig documentation."),
 			    submodule_name, submodule_name, submodule_name, submodule_name);
 

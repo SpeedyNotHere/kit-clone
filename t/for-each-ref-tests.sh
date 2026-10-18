@@ -523,7 +523,7 @@ test_expect_success 'Verify descending sort' '
 
 test_expect_success 'Give help even with invalid sort atoms' '
 	${git_for_each_ref} --sort=bogus -h >actual 2>&1 &&
-	test_grep "^usage: ${git_for_each_ref}" actual
+	test_grep "^usage: kit ${git_for_each_ref#git }" actual
 '
 
 cat >expected <<\EOF

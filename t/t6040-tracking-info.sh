@@ -298,7 +298,7 @@ test_expect_success 'status tracking origin/main shows only main' '
 	cat >expect <<-EOF &&
 	On branch b4
 	Your branch is ahead of ${SQ}origin/main${SQ} by 2 commits.
-	  (use "git push" to publish your local commits)
+	  (use "kit push" to publish your local commits)
 
 	nothing to commit, working tree clean
 	EOF
@@ -311,7 +311,7 @@ test_expect_success 'status --no-ahead-behind tracking origin/main shows only ma
 	cat >expect <<-EOF &&
 	On branch b4
 	Your branch and ${SQ}origin/main${SQ} refer to different commits.
-	  (use "git status --ahead-behind" for details)
+	  (use "kit status --ahead-behind" for details)
 
 	nothing to commit, working tree clean
 	EOF
@@ -354,7 +354,7 @@ test_expect_success 'status.compareBranches with only push shows only push' '
 	cat >expect <<-EOF &&
 	On branch feature2
 	Your branch is ahead of ${SQ}origin/feature2${SQ} by 1 commit.
-	  (use "git push" to publish your local commits)
+	  (use "kit push" to publish your local commits)
 
 	nothing to commit, working tree clean
 	EOF
@@ -373,7 +373,7 @@ test_expect_success 'status.compareBranches shows ahead of both upstream and pus
 	Your branch is ahead of ${SQ}origin/main${SQ} by 1 commit.
 
 	Your branch is ahead of ${SQ}origin/feature3${SQ} by 1 commit.
-	  (use "git push" to publish your local commits)
+	  (use "kit push" to publish your local commits)
 
 	nothing to commit, working tree clean
 	EOF
@@ -388,7 +388,7 @@ test_expect_success 'checkout with status.compareBranches shows both branches' '
 	Your branch is ahead of ${SQ}origin/main${SQ} by 1 commit.
 
 	Your branch is ahead of ${SQ}origin/feature3${SQ} by 1 commit.
-	  (use "git push" to publish your local commits)
+	  (use "kit push" to publish your local commits)
 	EOF
 	test_cmp expect actual
 '
@@ -418,10 +418,10 @@ test_expect_success 'status.compareBranches shows diverged and ahead' '
 	On branch feature4
 	Your branch and ${SQ}origin/main${SQ} have diverged,
 	and have 3 and 1 different commits each, respectively.
-	  (use "git pull" if you want to integrate the remote branch with yours)
+	  (use "kit pull" if you want to integrate the remote branch with yours)
 
 	Your branch is ahead of ${SQ}origin/feature4${SQ} by 1 commit.
-	  (use "git push" to publish your local commits)
+	  (use "kit push" to publish your local commits)
 
 	nothing to commit, working tree clean
 	EOF
@@ -438,7 +438,7 @@ test_expect_success 'status --no-ahead-behind with status.compareBranches' '
 	Your branch and ${SQ}origin/main${SQ} refer to different commits.
 
 	Your branch and ${SQ}origin/feature4${SQ} refer to different commits.
-	  (use "git status --ahead-behind" for details)
+	  (use "kit status --ahead-behind" for details)
 
 	nothing to commit, working tree clean
 	EOF
@@ -466,7 +466,7 @@ test_expect_success 'status.compareBranches with upstream and origin remotes' '
 	Your branch is ahead of ${SQ}upstream/main${SQ} by 1 commit.
 
 	Your branch is ahead of ${SQ}origin/feature5${SQ} by 1 commit.
-	  (use "git push" to publish your local commits)
+	  (use "kit push" to publish your local commits)
 
 	nothing to commit, working tree clean
 	EOF
@@ -484,7 +484,7 @@ test_expect_success 'status.compareBranches supports ordered upstream/push entri
 	cat >expect <<-EOF &&
 	On branch feature6
 	Your branch is ahead of ${SQ}origin/feature6${SQ} by 1 commit.
-	  (use "git push" to publish your local commits)
+	  (use "kit push" to publish your local commits)
 
 	Your branch is ahead of ${SQ}upstream/main${SQ} by 1 commit.
 
@@ -504,7 +504,7 @@ test_expect_success 'status.compareBranches deduplicates repeated specifiers' '
 	cat >expect <<-EOF &&
 	On branch feature7
 	Your branch is ahead of ${SQ}origin/feature7${SQ} by 1 commit.
-	  (use "git push" to publish your local commits)
+	  (use "kit push" to publish your local commits)
 
 	Your branch is ahead of ${SQ}upstream/main${SQ} by 1 commit.
 
@@ -598,7 +598,7 @@ test_expect_success 'status.compareBranches with upstream behind and push up to 
 	cat >expect <<-EOF &&
 	On branch feature10
 	Your branch is behind ${SQ}upstream/ahead${SQ} by 1 commit, and can be fast-forwarded.
-	  (use "git pull" to update your local branch)
+	  (use "kit pull" to update your local branch)
 
 	Your branch is up to date with ${SQ}origin/feature10${SQ}.
 
@@ -619,7 +619,7 @@ test_expect_success 'status.compareBranches with remapped push refspec' '
 	Your branch is ahead of ${SQ}origin/main${SQ} by 1 commit.
 
 	Your branch is ahead of ${SQ}origin/remapped${SQ} by 1 commit.
-	  (use "git push" to publish your local commits)
+	  (use "kit push" to publish your local commits)
 
 	nothing to commit, working tree clean
 	EOF
@@ -639,7 +639,7 @@ test_expect_success 'status.compareBranches with remapped push and upstream remo
 	Your branch is ahead of ${SQ}upstream/main${SQ} by 1 commit.
 
 	Your branch is ahead of ${SQ}origin/remapped${SQ} by 1 commit.
-	  (use "git push" to publish your local commits)
+	  (use "kit push" to publish your local commits)
 
 	nothing to commit, working tree clean
 	EOF
@@ -659,10 +659,10 @@ test_expect_success 'status.compareBranches behind both upstream and push' '
 	cat >expect <<-EOF &&
 	On branch feature13
 	Your branch is behind ${SQ}upstream/ahead${SQ} by 1 commit, and can be fast-forwarded.
-	  (use "git pull" to update your local branch)
+	  (use "kit pull" to update your local branch)
 
 	Your branch is behind ${SQ}origin/feature13${SQ} by 1 commit, and can be fast-forwarded.
-	  (use "git pull origin feature13" to update your local branch)
+	  (use "kit pull origin feature13" to update your local branch)
 
 	nothing to commit, working tree clean
 	EOF
@@ -681,7 +681,7 @@ test_expect_success 'status.compareBranches with remapped push and behind push b
 	cat >expect <<-EOF &&
 	On branch feature14
 	Your branch is behind ${SQ}origin/remapped14${SQ} by 1 commit, and can be fast-forwarded.
-	  (use "git pull origin remapped14" to update your local branch)
+	  (use "kit pull origin remapped14" to update your local branch)
 
 	nothing to commit, working tree clean
 	EOF
@@ -700,7 +700,7 @@ test_expect_success 'status.compareBranches with behind push branch and no upstr
 	cat >expect <<-EOF &&
 	On branch feature15
 	Your branch is behind ${SQ}origin/feature15${SQ} by 1 commit, and can be fast-forwarded.
-	  (use "git pull origin feature15" to update your local branch)
+	  (use "kit pull origin feature15" to update your local branch)
 
 	nothing to commit, working tree clean
 	EOF
@@ -717,7 +717,7 @@ test_expect_success 'status.compareBranches behind upstream-equals-push suggests
 	cat >expect <<-EOF &&
 	On branch feature16
 	Your branch is behind ${SQ}origin/main${SQ} by 1 commit, and can be fast-forwarded.
-	  (use "git pull" to update your local branch)
+	  (use "kit pull" to update your local branch)
 
 	nothing to commit, working tree clean
 	EOF

@@ -25,7 +25,7 @@
 #include "color.h"
 
 static const char * const push_usage[] = {
-	N_("git push [<options>] [<repository> [<refspec>...]]"),
+	N_("kit push [<options>] [<repository> [<refspec>...]]"),
 	NULL,
 };
 
@@ -165,23 +165,23 @@ static NORETURN void die_push_simple(struct branch *branch,
 	if (cfg->push_default == PUSH_DEFAULT_UNSPECIFIED)
 		advice_pushdefault_maybe = _("\n"
 				 "To choose either option permanently, "
-				 "see push.default in 'git help config'.\n");
+				 "see push.default in 'kit help config'.\n");
 	if (cfg->branch_track != BRANCH_TRACK_SIMPLE)
 		advice_automergesimple_maybe = _("\n"
 				 "To avoid automatically configuring "
 				 "an upstream branch when its name\n"
 				 "won't match the local branch, see option "
 				 "'simple' of branch.autoSetupMerge\n"
-				 "in 'git help config'.\n");
+				 "in 'kit help config'.\n");
 	die(_("The upstream branch of your current branch does not match\n"
 	      "the name of your current branch.  To push to the upstream branch\n"
 	      "on the remote, use\n"
 	      "\n"
-	      "    git push %s HEAD:%s\n"
+	      "    kit push %s HEAD:%s\n"
 	      "\n"
 	      "To push to the branch of the same name on the remote, use\n"
 	      "\n"
-	      "    git push %s HEAD\n"
+	      "    kit push %s HEAD\n"
 	      "%s%s"),
 	    remote->name, short_upstream,
 	    remote->name, advice_pushdefault_maybe,
@@ -193,7 +193,7 @@ static const char message_detached_head_die[] =
 	   "To push the history leading to the current (detached HEAD)\n"
 	   "state now, use\n"
 	   "\n"
-	   "    git push %s HEAD:<name-of-remote-branch>\n");
+	   "    kit push %s HEAD:<name-of-remote-branch>\n");
 
 static const char *get_upstream_ref(int flags, struct branch *branch, const char *remote_name)
 {
@@ -209,12 +209,12 @@ static const char *get_upstream_ref(int flags, struct branch *branch, const char
 					   "To have this happen automatically for "
 					   "branches without a tracking\n"
 					   "upstream, see 'push.autoSetupRemote' "
-					   "in 'git help config'.\n");
+					   "in 'kit help config'.\n");
 		}
 		die(_("The current branch %s has no upstream branch.\n"
 		    "To push the current branch and set the remote as upstream, use\n"
 		    "\n"
-		    "    git push --set-upstream %s %s\n"
+		    "    kit push --set-upstream %s %s\n"
 		    "%s"),
 		    branch->name,
 		    remote_name,
@@ -292,21 +292,21 @@ static void setup_default_push_refspecs(int *flags, struct remote *remote)
 static const char message_advice_pull_before_push[] =
 	N_("Updates were rejected because the tip of your current branch is behind\n"
 	   "its remote counterpart. If you want to integrate the remote changes,\n"
-	   "use 'git pull' before pushing again.\n"
-	   "See the 'Note about fast-forwards' in 'git push --help' for details.");
+	   "use 'kit pull' before pushing again.\n"
+	   "See the 'Note about fast-forwards' in 'kit push --help' for details.");
 
 static const char message_advice_checkout_pull_push[] =
 	N_("Updates were rejected because a pushed branch tip is behind its remote\n"
-	   "counterpart. If you want to integrate the remote changes, use 'git pull'\n"
+	   "counterpart. If you want to integrate the remote changes, use 'kit pull'\n"
 	   "before pushing again.\n"
-	   "See the 'Note about fast-forwards' in 'git push --help' for details.");
+	   "See the 'Note about fast-forwards' in 'kit push --help' for details.");
 
 static const char message_advice_ref_fetch_first[] =
 	N_("Updates were rejected because the remote contains work that you do not\n"
 	   "have locally. This is usually caused by another repository pushing to\n"
 	   "the same ref. If you want to integrate the remote changes, use\n"
-	   "'git pull' before pushing again.\n"
-	   "See the 'Note about fast-forwards' in 'git push --help' for details.");
+	   "'kit pull' before pushing again.\n"
+	   "See the 'Note about fast-forwards' in 'kit push --help' for details.");
 
 static const char message_advice_ref_already_exists[] =
 	N_("Updates were rejected because the tag already exists in the remote.");
@@ -319,8 +319,8 @@ static const char message_advice_ref_needs_force[] =
 static const char message_advice_ref_needs_update[] =
 	N_("Updates were rejected because the tip of the remote-tracking branch has\n"
 	   "been updated since the last checkout. If you want to integrate the\n"
-	   "remote changes, use 'git pull' before pushing again.\n"
-	   "See the 'Note about fast-forwards' in 'git push --help' for details.");
+	   "remote changes, use 'kit pull' before pushing again.\n"
+	   "See the 'Note about fast-forwards' in 'kit push --help' for details.");
 
 static void advise_pull_before_push(void)
 {
@@ -682,7 +682,7 @@ static void die_if_repo_looks_like_ref(const char *repo)
 
 	code = die_message(_("'%s' is not a valid push target"), repo);
 	advise_if_enabled(ADVICE_PUSH_REPO_LOOKS_LIKE_REF,
-			  _("Did you mean to use: git push %s %s?"),
+			  _("Did you mean to use: kit push %s %s?"),
 			  name.buf, slash + 1);
 	strbuf_release(&name);
 	exit(code);
@@ -727,7 +727,7 @@ int cmd_push(int argc,
 		OPT_BOOL_F( 0 , "thin", &thin, N_("use thin pack"), PARSE_OPT_NOCOMPLETE),
 		OPT_STRING( 0 , "receive-pack", &receivepack, "receive-pack", N_("receive pack program")),
 		OPT_STRING( 0 , "exec", &receivepack, "receive-pack", N_("receive pack program")),
-		OPT_BIT('u', "set-upstream", &flags, N_("set upstream for git pull/status"),
+		OPT_BIT('u', "set-upstream", &flags, N_("set upstream for kit pull/status"),
 			TRANSPORT_PUSH_SET_UPSTREAM),
 		OPT_BOOL(0, "progress", &progress, N_("force progress reporting")),
 		OPT_BIT(0, "prune", &flags, N_("prune locally removed refs"),
@@ -803,19 +803,19 @@ int cmd_push(int argc,
 			die(_("No configured push destination.\n"
 			    "Either specify the URL from the command-line or configure a remote repository using\n"
 			    "\n"
-			    "    git remote add <name> <url>\n"
+			    "    kit remote add <name> <url>\n"
 			    "\n"
 			    "and then push using the remote name\n"
 			    "\n"
-			    "    git push <name>\n"
+			    "    kit push <name>\n"
 			    "\n"
 			    "To push to multiple remotes at once, configure a remote group using\n"
 			    "\n"
-			    "    git config remotes.<groupname> \"<remote1> <remote2>\"\n"
+			    "    kit config remotes.<groupname> \"<remote1> <remote2>\"\n"
 			    "\n"
 			    "and then push using the group name\n"
 			    "\n"
-			    "    git push <groupname>\n"));
+			    "    kit push <groupname>\n"));
 		string_list_append(&remote_group, r->name);
 	}
 

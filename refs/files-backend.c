@@ -2165,7 +2165,7 @@ static int create_ref_symlink(struct ref_lock *lock, const char *target)
 			  "hint: tells Git to use them is thus going away. You can unset\n"
 			  "hint: it with:\n"
 			  "hint:\n"
-			  "hint:\tgit config unset core.preferSymlinkRefs\n"
+			  "hint:\tkit config unset core.preferSymlinkRefs\n"
 			  "hint:\n"
 			  "hint: Git will then use the textual symref format instead."));
 	warn_once = 0;

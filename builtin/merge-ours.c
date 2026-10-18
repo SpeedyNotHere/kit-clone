@@ -15,7 +15,7 @@
 #include "diff.h"
 
 static const char builtin_merge_ours_usage[] =
-	"git merge-ours <base>... -- HEAD <remote>...";
+	"kit merge-ours <base>... -- HEAD <remote>...";
 
 int cmd_merge_ours(int argc,
 		   const char **argv,

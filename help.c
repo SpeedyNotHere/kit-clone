@@ -35,11 +35,11 @@ static uint32_t common_mask =
 	CAT_init | CAT_worktree | CAT_info |
 	CAT_history | CAT_remote;
 static struct category_description common_categories[] = {
-	{ CAT_init, N_("start a working area (see also: git help tutorial)") },
-	{ CAT_worktree, N_("work on the current change (see also: git help everyday)") },
-	{ CAT_info, N_("examine the history and state (see also: git help revisions)") },
+	{ CAT_init, N_("start a working area (see also: kit help tutorial)") },
+	{ CAT_worktree, N_("work on the current change (see also: kit help everyday)") },
+	{ CAT_info, N_("examine the history and state (see also: kit help revisions)") },
 	{ CAT_history, N_("grow, mark and tweak your common history") },
-	{ CAT_remote, N_("collaborate (see also: git help workflows)") },
+	{ CAT_remote, N_("collaborate (see also: kit help workflows)") },
 	{ 0, NULL }
 };
 static struct category_description main_categories[] = {
@@ -338,14 +338,14 @@ void list_commands(struct cmdnames *main_cmds, struct cmdnames *other_cmds)
 
 	if (main_cmds->cnt) {
 		const char *exec_path = git_exec_path();
-		printf_ln(_("available git commands in '%s'"), exec_path);
+		printf_ln(_("available kit commands in '%s'"), exec_path);
 		putchar('\n');
 		pretty_print_cmdnames(main_cmds, colopts);
 		putchar('\n');
 	}
 
 	if (other_cmds->cnt) {
-		puts(_("git commands available from elsewhere on your $PATH"));
+		puts(_("kit commands available from elsewhere on your $PATH"));
 		putchar('\n');
 		pretty_print_cmdnames(other_cmds, colopts);
 		putchar('\n');
@@ -354,7 +354,7 @@ void list_commands(struct cmdnames *main_cmds, struct cmdnames *other_cmds)
 
 void list_common_cmds_help(void)
 {
-	puts(_("These are common Git commands used in various situations:"));
+	puts(_("These are common kit commands used in various situations:"));
 	putchar('\n');
 	print_cmd_by_category(common_categories, NULL);
 }
@@ -517,7 +517,7 @@ void list_all_cmds_help(int show_external_commands, int show_aliases)
 {
 	int longest;
 
-	puts(_("See 'git help <command>' to read about a specific subcommand"));
+	puts(_("See 'kit help <command>' to read about a specific subcommand"));
 	putchar('\n');
 	print_cmd_by_category(main_categories, &longest);
 
@@ -638,7 +638,7 @@ static void add_cmd_list(struct cmdnames *cmds, struct cmdnames *old)
 #define SIMILAR_ENOUGH(x) ((x) < SIMILARITY_FLOOR)
 
 static const char bad_interpreter_advice[] =
-	N_("'%s' appears to be a git command, but we were not\n"
+	N_("'%s' appears to be a kit command, but we were not\n"
 	"able to execute it. Maybe git-%s is broken?");
 
 char *help_unknown_cmd(const char *cmd)
@@ -658,7 +658,7 @@ char *help_unknown_cmd(const char *cmd)
 		cfg.autocorrect = AUTOCORRECT_NEVER;
 
 	if (cfg.autocorrect == AUTOCORRECT_NEVER) {
-		fprintf_ln(stderr, _("git: '%s' is not a git command. See 'git --help'."), cmd);
+		fprintf_ln(stderr, _("kit: '%s' is not a kit command. See 'kit --help'."), cmd);
 		exit(1);
 	}
 
@@ -706,7 +706,7 @@ char *help_unknown_cmd(const char *cmd)
 	QSORT(main_cmds.names, main_cmds.cnt, levenshtein_compare);
 
 	if (!main_cmds.cnt)
-		die(_("Uh oh. Your system reports no Git commands at all."));
+		die(_("Uh oh. Your system reports no kit commands at all."));
 
 	/* skip and count prefix matches */
 	for (n = 0; n < main_cmds.cnt && !main_cmds.names[n]->len; n++)
@@ -728,7 +728,7 @@ char *help_unknown_cmd(const char *cmd)
 		char *assumed = xstrdup(main_cmds.names[0]->name);
 
 		fprintf_ln(stderr,
-			   _("WARNING: You called a Git command named '%s', "
+			   _("WARNING: You called a kit command named '%s', "
 			     "which does not exist."),
 			   cmd);
 		if (cfg.autocorrect == AUTOCORRECT_IMMEDIATELY)
@@ -759,7 +759,7 @@ char *help_unknown_cmd(const char *cmd)
 		return assumed;
 	}
 
-	fprintf_ln(stderr, _("git: '%s' is not a git command. See 'git --help'."), cmd);
+	fprintf_ln(stderr, _("kit: '%s' is not a kit command. See 'kit --help'."), cmd);
 
 	if (SIMILAR_ENOUGH(best_similarity)) {
 		fprintf_ln(stderr,
@@ -774,6 +774,8 @@ char *help_unknown_cmd(const char *cmd)
 	exit(1);
 }
 
+const char *version_program_name = "git";
+
 void get_version_info(struct strbuf *buf, int show_build_options)
 {
 	/*
@@ -782,7 +784,8 @@ void get_version_info(struct strbuf *buf, int show_build_options)
 	 *
 	 * Always show the version, even if other options are given.
 	 */
-	strbuf_addf(buf, "git version %s\n", git_version_string);
+	strbuf_addf(buf, "%s version %s\n", version_program_name,
+		    git_version_string);
 
 	if (show_build_options) {
 		strbuf_addf(buf, "cpu: %s\n", GIT_HOST_CPU);
@@ -835,7 +838,7 @@ int cmd_version(int argc, const char **argv, const char *prefix, struct reposito
 	struct strbuf buf = STRBUF_INIT;
 	int build_options = 0;
 	const char * const usage[] = {
-		N_("git version [--build-options]"),
+		N_("kit version [--build-options]"),
 		NULL
 	};
 	struct option options[] = {

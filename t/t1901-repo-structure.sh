@@ -226,8 +226,8 @@ test_expect_success 'progress meter option' '
 
 test_expect_success 'git repo structure -h shows only repo structure usage' '
 	git repo structure -h >actual &&
-	test_grep "git repo structure" actual &&
-	test_grep ! "git repo info" actual
+	test_grep "kit repo structure" actual &&
+	test_grep ! "kit repo info" actual
 '
 
 test_done

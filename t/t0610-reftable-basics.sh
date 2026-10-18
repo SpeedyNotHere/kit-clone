@@ -16,9 +16,9 @@ INVALID_OID=$(test_oid 001)
 
 test_expect_success 'pack-refs does not crash with -h' '
 	git pack-refs -h >usage &&
-	test_grep "[Uu]sage: git pack-refs " usage &&
+	test_grep "[Uu]sage: kit pack-refs " usage &&
 	nongit git pack-refs -h >usage &&
-	test_grep "[Uu]sage: git pack-refs " usage
+	test_grep "[Uu]sage: kit pack-refs " usage
 '
 
 test_expect_success 'init: creates basic reftable structures' '

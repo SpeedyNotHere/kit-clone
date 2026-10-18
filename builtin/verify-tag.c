@@ -16,7 +16,7 @@
 #include "ref-filter.h"
 
 static const char * const verify_tag_usage[] = {
-		N_("git verify-tag [-v | --verbose] [--format=<format>] [--raw] <tag>..."),
+		N_("kit verify-tag [-v | --verbose] [--format=<format>] [--raw] <tag>..."),
 		NULL
 };
 

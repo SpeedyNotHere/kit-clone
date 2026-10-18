@@ -97,7 +97,7 @@ static struct {
 
 static const char turn_off_instructions[] =
 N_("\n"
-   "Disable this message with \"git config set advice.%s false\"");
+   "Disable this message with \"kit config set advice.%s false\"");
 
 static void vadvise(const char *advice, int display_instructions,
 		    const char *key, va_list params)
@@ -222,7 +222,7 @@ int error_resolve_conflict(const char *me)
 		 * Message used both when 'git commit' fails and when
 		 * other commands doing a merge do.
 		 */
-		advise(_("Fix them up in the work tree, and then use 'git add/rm <file>'\n"
+		advise(_("Fix them up in the work tree, and then use 'kit add/rm <file>'\n"
 			 "as appropriate to mark resolution and make a commit."));
 	return -1;
 }
@@ -246,11 +246,11 @@ void NORETURN die_ff_impossible(void)
 	advise_if_enabled(ADVICE_DIVERGING,
 		_("Diverging branches can't be fast-forwarded, you need to either:\n"
 		"\n"
-		"\tgit merge --no-ff\n"
+		"\tkit merge --no-ff\n"
 		"\n"
 		"or:\n"
 		"\n"
-		"\tgit rebase\n"));
+		"\tkit rebase\n"));
 	die(_("Not possible to fast-forward, aborting."));
 }
 
@@ -285,11 +285,11 @@ void detach_advice(const char *new_name)
 	"If you want to create a new branch to retain commits you create, you may\n"
 	"do so (now or later) by using -c with the switch command. Example:\n"
 	"\n"
-	"  git switch -c <new-branch-name>\n"
+	"  kit switch -c <new-branch-name>\n"
 	"\n"
 	"Or undo this operation with:\n"
 	"\n"
-	"  git switch -\n"
+	"  kit switch -\n"
 	"\n"
 	"Turn off this advice by setting config variable advice.detachedHead to false\n\n");
 
@@ -311,6 +311,6 @@ void advise_on_moving_dirty_path(struct string_list *pathspec_list)
 
 	advise_if_enabled(ADVICE_UPDATE_SPARSE_PATH,
 			  _("To correct the sparsity of these paths, do the following:\n"
-			    "* Use \"git add --sparse <paths>\" to update the index\n"
-			    "* Use \"git sparse-checkout reapply\" to apply the sparsity rules"));
+			    "* Use \"kit add --sparse <paths>\" to update the index\n"
+			    "* Use \"kit sparse-checkout reapply\" to apply the sparsity rules"));
 }

@@ -457,9 +457,9 @@ test_wt_add_orphan_hint () {
 		test_grep "hint: If you meant to create a worktree containing a new unborn branch" actual &&
 		if [ $use_branch -eq 1 ]
 		then
-			test_grep -E "^hint: +git worktree add --orphan -b [^ ]+ [^ ]+$" actual
+			test_grep -E "^hint: +kit worktree add --orphan -b [^ ]+ [^ ]+$" actual
 		else
-			test_grep -E "^hint: +git worktree add --orphan [^ ]+$" actual
+			test_grep -E "^hint: +kit worktree add --orphan [^ ]+$" actual
 		fi
 
 	'

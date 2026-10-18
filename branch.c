@@ -187,15 +187,15 @@ out_err:
 	advise(_("\nAfter fixing the error cause you may try to fix up\n"
 		"the remote tracking information by invoking:"));
 	if (remotes->nr == 1)
-		advise("  git branch --set-upstream-to=%s%s%s",
+		advise("  kit branch --set-upstream-to=%s%s%s",
 			origin ? origin : "",
 			origin ? "/" : "",
 			remotes->items[0].string);
 	else {
-		advise("  git config --add branch.\"%s\".remote %s",
+		advise("  kit config --add branch.\"%s\".remote %s",
 			local, origin ? origin : ".");
 		for_each_string_list_item(item, remotes)
-			advise("  git config --add branch.\"%s\".merge %s",
+			advise("  kit config --add branch.\"%s\".merge %s",
 				local, item->string);
 	}
 
@@ -375,7 +375,7 @@ int validate_branchname(const char *name, struct strbuf *ref)
 	if (check_branch_ref(the_repository, ref, name)) {
 		int code = die_message(_("'%s' is not a valid branch name"), name);
 		advise_if_enabled(ADVICE_REF_SYNTAX,
-				  _("See 'git help check-ref-format'"));
+				  _("See 'kit help check-ref-format'"));
 		exit(code);
 	}
 
@@ -545,11 +545,11 @@ static const char upstream_advice[] =
 N_("\n"
 "If you are planning on basing your work on an upstream\n"
 "branch that already exists at the remote, you may need to\n"
-"run \"git fetch\" to retrieve it.\n"
+"run \"kit fetch\" to retrieve it.\n"
 "\n"
 "If you are planning to push out a new local branch that\n"
 "will track its remote counterpart, you may want to use\n"
-"\"git push -u\" to set the upstream config as you push.");
+"\"kit push -u\" to set the upstream config as you push.");
 
 /**
  * DWIMs a user-provided ref to determine the starting point for a
@@ -813,7 +813,7 @@ void create_branches_recursively(struct repository *r, const char *name,
 				_("submodule '%s': unable to find submodule"),
 				submodule_entry_list.entries[i].submodule->name);
 			if (advice_enabled(ADVICE_SUBMODULES_NOT_UPDATED))
-				advise(_("You may try updating the submodules using 'git checkout --no-recurse-submodules %s && git submodule update --init'"),
+				advise(_("You may try updating the submodules using 'kit checkout --no-recurse-submodules %s && kit submodule update --init'"),
 				       start_committish);
 			exit(code);
 		}

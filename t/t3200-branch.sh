@@ -1028,7 +1028,7 @@ test_expect_success '--set-upstream-to suggests <remote>/<branch> on slip' '
 	git update-ref refs/remotes/slip-remote/slip-feature HEAD &&
 	test_must_fail git branch --set-upstream-to slip-remote slip-feature 2>err &&
 	test_grep "takes a single <remote>/<branch> argument" err &&
-	test_grep "hint: Did you mean to use: git branch --set-upstream-to=slip-remote/slip-feature?" err &&
+	test_grep "hint: Did you mean to use: kit branch --set-upstream-to=slip-remote/slip-feature?" err &&
 	test_must_fail git -c advice.setUpstreamFailure=false \
 		branch --set-upstream-to slip-remote slip-feature 2>err &&
 	test_grep ! "Did you mean" err
@@ -1057,7 +1057,7 @@ test_expect_success '--set-upstream-to slip suggestion keeps a slashed branch na
 	git remote add slip-remote . &&
 	git update-ref refs/remotes/slip-remote/slip/feature HEAD &&
 	test_must_fail git branch --set-upstream-to slip-remote slip/feature 2>err &&
-	test_grep "hint: Did you mean to use: git branch --set-upstream-to=slip-remote/slip/feature?" err
+	test_grep "hint: Did you mean to use: kit branch --set-upstream-to=slip-remote/slip/feature?" err
 '
 
 test_expect_success '--set-upstream-to fails on a missing src branch' '
@@ -1750,8 +1750,8 @@ test_expect_success '--track overrides branch.autoSetupMerge' '
 test_expect_success 'errors if given a bad branch name' '
 	cat <<-EOF >expect &&
 	fatal: ${SQ}foo..bar${SQ} is not a valid branch name
-	hint: See ${SQ}git help check-ref-format${SQ}
-	hint: Disable this message with "git config set advice.refSyntax false"
+	hint: See ${SQ}kit help check-ref-format${SQ}
+	hint: Disable this message with "kit config set advice.refSyntax false"
 	EOF
 	test_must_fail git branch foo..bar >actual 2>&1 &&
 	test_cmp expect actual

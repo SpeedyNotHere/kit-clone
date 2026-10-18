@@ -108,12 +108,12 @@ test_expect_success setup '
 
 test_expect_success 'correct usage on sub-command -h' '
 	git reflog expire -h >err &&
-	test_grep "git reflog expire" err
+	test_grep "kit reflog expire" err
 '
 
 test_expect_success 'correct usage on "git reflog show -h"' '
 	git reflog show -h >err &&
-	test_grep -F "git reflog [show]" err
+	test_grep -F "kit reflog [show]" err
 '
 
 test_expect_success 'pass through -- to sub-command' '

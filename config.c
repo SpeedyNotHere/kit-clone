@@ -2186,7 +2186,7 @@ static void add_unset_auto_comment_char_advice(struct repository *repo,
 	for (size_t i = 0; i < config->nr; i++) {
 		struct comment_char_config_item *item = &config->item[i];
 
-		strbuf_addstr(&buf, "    git config unset ");
+		strbuf_addstr(&buf, "    kit config unset ");
 		add_config_scope_arg(repo, &buf, item);
 		if (get_comment_key_flags(config, item->path, item->key_id) == KEY_SEEN_TWICE)
 			strbuf_addstr(&buf, "--all ");
@@ -2215,7 +2215,7 @@ static void add_comment_char_advice(struct repository *repo,
 	add_unset_auto_comment_char_advice(repo, config);
 	item = &config->item[config->nr - 1];
 	strbuf_reset(&buf);
-	strbuf_addstr(&buf, "    git config set ");
+	strbuf_addstr(&buf, "    kit config set ");
 	add_config_scope_arg(repo, &buf, item);
 	strbuf_addf(&buf, "%s %s\n", comment_key_name(item->key_id),
 		    placeholder);

@@ -10,28 +10,28 @@
 #include "refs/refs-internal.h"
 
 #define REFS_MIGRATE_USAGE \
-	N_("git refs migrate --ref-storage-format=<format> [--no-reflog] [--dry-run]")
+	N_("kit refs migrate --ref-storage-format=<format> [--no-reflog] [--dry-run]")
 
 #define REFS_VERIFY_USAGE \
-	N_("git refs verify [--strict] [--verbose]")
+	N_("kit refs verify [--strict] [--verbose]")
 
 #define REFS_EXISTS_USAGE \
-	N_("git refs exists <ref>")
+	N_("kit refs exists <ref>")
 
 #define REFS_OPTIMIZE_USAGE \
-	N_("git refs optimize " PACK_REFS_OPTS)
+	N_("kit refs optimize " PACK_REFS_OPTS)
 
 #define REFS_CREATE_USAGE \
-	N_("git refs create [--message=<reason>] [--no-deref] [--create-reflog] <ref> <new-value>")
+	N_("kit refs create [--message=<reason>] [--no-deref] [--create-reflog] <ref> <new-value>")
 
 #define REFS_DELETE_USAGE \
-	N_("git refs delete [--message=<reason>] [--no-deref] <ref> [<old-value>]")
+	N_("kit refs delete [--message=<reason>] [--no-deref] <ref> [<old-value>]")
 
 #define REFS_UPDATE_USAGE \
-	N_("git refs update [--message=<reason>] [--no-deref] [--create-reflog] <ref> <new-value> [<old-value>]")
+	N_("kit refs update [--message=<reason>] [--no-deref] [--create-reflog] <ref> <new-value> [<old-value>]")
 
 #define REFS_RENAME_USAGE \
-	N_("git refs rename [--message=<reason>] <old-ref> <new-ref>")
+	N_("kit refs rename [--message=<reason>] <old-ref> <new-ref>")
 
 static int cmd_refs_migrate(int argc, const char **argv, const char *prefix,
 			    struct repository *repo)
@@ -109,7 +109,7 @@ static int cmd_refs_verify(int argc, const char **argv, const char *prefix,
 
 	argc = parse_options(argc, argv, prefix, options, verify_usage, 0);
 	if (argc)
-		usage(_("'git refs verify' takes no arguments"));
+		usage(_("'kit refs verify' takes no arguments"));
 
 	repo_config(repo, git_fsck_config, &fsck_refs_options);
 	prepare_repo_settings(repo);
@@ -128,7 +128,7 @@ static int cmd_refs_list(int argc, const char **argv, const char *prefix,
 			   struct repository *repo)
 {
 	static char const * const refs_list_usage[] = {
-		N_("git refs list " COMMON_USAGE_FOR_EACH_REF),
+		N_("kit refs list " COMMON_USAGE_FOR_EACH_REF),
 		NULL
 	};
 
@@ -154,7 +154,7 @@ static int cmd_refs_exists(int argc, const char **argv, const char *prefix,
 
 	argc = parse_options(argc, argv, prefix, options, exists_usage, 0);
 	if (argc != 1)
-		die(_("'git refs exists' requires a reference"));
+		die(_("'kit refs exists' requires a reference"));
 
 	ref = *argv++;
 	if (refs_read_raw_ref(get_main_ref_store(repo), ref,
@@ -384,7 +384,7 @@ int cmd_refs(int argc,
 		REFS_MIGRATE_USAGE,
 		REFS_VERIFY_USAGE,
 		REFS_OPTIMIZE_USAGE,
-		"git refs list " COMMON_USAGE_FOR_EACH_REF,
+		"kit refs list " COMMON_USAGE_FOR_EACH_REF,
 		REFS_EXISTS_USAGE,
 		REFS_CREATE_USAGE,
 		REFS_DELETE_USAGE,

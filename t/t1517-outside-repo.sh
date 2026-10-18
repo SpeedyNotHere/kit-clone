@@ -159,19 +159,19 @@ do
 	esac
 	test_$h_expect_outcome $prereq "'git $cmd -h' outside a repository" '
 		nongit git $cmd -h >usage &&
-		test_grep "[Uu]sage: git $cmd " usage
+		test_grep "[Uu]sage: kit $cmd " usage
 	'
 	test_$all_expect_outcome $prereq "'git $cmd --help-all' outside a repository" '
 		nongit git $cmd --help-all >usage &&
-		test_grep "[Uu]sage: git $cmd " usage
+		test_grep "[Uu]sage: kit $cmd " usage
 	'
 done
 
 test_expect_success 'fmt-merge-msg does not crash with -h' '
 	git fmt-merge-msg -h >usage &&
-	test_grep "[Uu]sage: git fmt-merge-msg " usage &&
+	test_grep "[Uu]sage: kit fmt-merge-msg " usage &&
 	nongit git fmt-merge-msg -h >usage &&
-	test_grep "[Uu]sage: git fmt-merge-msg " usage
+	test_grep "[Uu]sage: kit fmt-merge-msg " usage
 '
 
 test_done

@@ -180,13 +180,13 @@ test_expect_success 'remove remote protects local branches' '
 		cat >expect1 <<-\EOF &&
 		Note: A branch outside the refs/remotes/ hierarchy was not removed;
 		to delete it, use:
-		  git branch -d main
+		  kit branch -d main
 		EOF
 		cat >expect2 <<-\EOF &&
 		Note: Some branches outside the refs/remotes/ hierarchy were not removed;
 		to delete them, use:
-		  git branch -d foobranch
-		  git branch -d main
+		  kit branch -d foobranch
+		  kit branch -d main
 		EOF
 		git tag footag &&
 		git config --add remote.oops.fetch "+refs/*:refs/*" &&
@@ -294,21 +294,21 @@ cat >test/expect <<EOF
   Remote branches:
     main new (next fetch will store in remotes/origin)
     side tracked
-  Local branches configured for 'git pull':
+  Local branches configured for 'kit pull':
     ahead    merges with remote main
     main     merges with remote main
     octopus  merges with remote topic-a
                 and with remote topic-b
                 and with remote topic-c
     rebase  rebases onto remote main
-  Local refs configured for 'git push':
+  Local refs configured for 'kit push':
     main pushes to main     (local out of date)
     main pushes to upstream (create)
 * remote two
   Fetch URL: ../two
   Push  URL: ../three
   HEAD branch: main
-  Local refs configured for 'git push':
+  Local refs configured for 'kit push':
     ahead forces to main    (fast-forwardable)
     main  pushes to another (up to date)
 EOF
@@ -355,10 +355,10 @@ cat >expect <<EOF
   Remote branches:
     main skipped
     side tracked
-  Local branches configured for 'git pull':
+  Local branches configured for 'kit pull':
     ahead merges with remote main
     main  merges with remote main
-  Local refs configured for 'git push':
+  Local refs configured for 'kit push':
     main pushes to main     (local out of date)
     main pushes to upstream (create)
 EOF
@@ -378,10 +378,10 @@ cat >expect <<EOF
   Remote branches:
     main new (next fetch will store in remotes/origin)
     side stale (use 'git remote prune' to remove)
-  Local branches configured for 'git pull':
+  Local branches configured for 'kit pull':
     ahead merges with remote main
     main  merges with remote main
-  Local refs configured for 'git push':
+  Local refs configured for 'kit push':
     main pushes to main     (local out of date)
     main pushes to upstream (create)
 EOF
@@ -401,10 +401,10 @@ cat >test/expect <<EOF
   Remote branches: (status not queried)
     main
     side
-  Local branches configured for 'git pull':
+  Local branches configured for 'kit pull':
     ahead merges with remote main
     main  merges with remote main
-  Local refs configured for 'git push' (status not queried):
+  Local refs configured for 'kit push' (status not queried):
     (matching)           pushes to (matching)
     refs/heads/main      pushes to refs/heads/upstream
     refs/tags/lastbackup forces to refs/tags/lastbackup
@@ -1046,7 +1046,7 @@ test_expect_success 'URL-valued pushRemote without matching remote is not tracka
 	check_status <<-EOF
 	On branch topic
 	Your branch is ahead of ${SQ}origin/main${SQ} by 1 commit.
-	  (use "git push" to publish your local commits)
+	  (use "kit push" to publish your local commits)
 
 	nothing to commit, working tree clean
 	EOF
@@ -1126,7 +1126,7 @@ test_expect_success 'up-to-date URL push refreshes stale tracking branch' '
 	Your branch is ahead of ${SQ}upstream/main${SQ} by 2 commits.
 
 	Your branch is ahead of ${SQ}origin/topic${SQ} by 1 commit.
-	  (use "git push" to publish your local commits)
+	  (use "kit push" to publish your local commits)
 
 	nothing to commit, working tree clean
 	EOF
@@ -1156,7 +1156,7 @@ test_expect_success 'duplicate remote URL leaves URL-valued pushRemote ambiguous
 	check_status <<-EOF
 	On branch topic
 	Your branch is ahead of ${SQ}upstream/main${SQ} by 1 commit.
-	  (use "git push" to publish your local commits)
+	  (use "kit push" to publish your local commits)
 
 	nothing to commit, working tree clean
 	EOF

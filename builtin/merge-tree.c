@@ -550,8 +550,8 @@ int cmd_merge_tree(int argc,
 	int quiet = 0;
 
 	const char * const merge_tree_usage[] = {
-		N_("git merge-tree [--write-tree] [<options>] <branch1> <branch2>"),
-		N_("git merge-tree [--trivial-merge] <base-tree> <branch1> <branch2>"),
+		N_("kit merge-tree [--write-tree] [<options>] <branch1> <branch2>"),
+		N_("kit merge-tree [--trivial-merge] <base-tree> <branch1> <branch2>"),
 		NULL
 	};
 	struct option mt_options[] = {

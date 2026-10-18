@@ -724,7 +724,7 @@ do
 		else
 			cat >expect <<-EOF
 			error: header for $bogus_long_oid too long, exceeds 32 bytes
-			fatal: git cat-file: could not get object info
+			fatal: kit cat-file: could not get object info
 			EOF
 		fi &&
 
@@ -750,7 +750,7 @@ do
 			EOF
 		else
 			cat >expect.err <<-\EOF
-			fatal: git cat-file: could not get object info
+			fatal: kit cat-file: could not get object info
 			EOF
 		fi &&
 		test_must_fail git cat-file $arg1 $(test_oid deadbeef) >out 2>err.actual &&
