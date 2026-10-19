@@ -215,6 +215,8 @@
 *.py[co]
 .build/
 .depend/
+testai.txt
+kit.txt
 *.gcda
 *.gcno
 *.gcov
@@ -262,3 +264,4 @@ Release/
 /contrib/buildsystems/out
 /contrib/libgit-rs/target
 /contrib/libgit-sys/target
+api.txt
