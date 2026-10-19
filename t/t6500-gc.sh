@@ -26,7 +26,7 @@ test_expect_success 'gc does not leave behind pid file' '
 
 test_expect_success 'gc --gobbledegook' '
 	test_expect_code 129 git gc --nonsense 2>err &&
-	test_grep "[Uu]sage: git gc" err
+	test_grep "[Uu]sage: kit gc" err
 '
 
 test_expect_success 'gc -h with invalid configuration' '
@@ -110,7 +110,7 @@ test_expect_success 'pre-auto-gc hook can stop auto gc' '
 	cat >err.expect <<-\EOF &&
 	will gc for you
 	Auto packing the repository for optimum performance.
-	See "git help gc" for manual housekeeping.
+	See "kit help gc" for manual housekeeping.
 	EOF
 
 	test_hook -C pre-auto-gc-hook --clobber pre-auto-gc <<-\EOF &&

@@ -90,7 +90,7 @@ static int print_alternate(struct odb_source *alternate, void *data UNUSED)
 }
 
 static char const * const count_objects_usage[] = {
-	"git count-objects [-v] [-H | --human-readable]",
+	"kit count-objects [-v] [-H | --human-readable]",
 	NULL
 };
 

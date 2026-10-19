@@ -310,7 +310,7 @@ static void display_warning_msgs(struct unpack_trees_options *o)
 		string_list_clear(rejects, 0);
 	}
 	if (warning_displayed)
-		fprintf(stderr, _("After fixing the above paths, you may want to run `git sparse-checkout reapply`.\n"));
+		fprintf(stderr, _("After fixing the above paths, you may want to run `kit sparse-checkout reapply`.\n"));
 }
 static int check_submodule_move_head(const struct cache_entry *ce,
 				     const char *old_id,

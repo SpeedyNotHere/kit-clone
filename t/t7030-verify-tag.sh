@@ -9,9 +9,9 @@ export GIT_TEST_DEFAULT_INITIAL_BRANCH_NAME
 
 test_expect_success GPG 'verify-tag does not crash with -h' '
 	git verify-tag -h >usage &&
-	test_grep "[Uu]sage: git verify-tag " usage &&
+	test_grep "[Uu]sage: kit verify-tag " usage &&
 	nongit git verify-tag -h >usage &&
-	test_grep "[Uu]sage: git verify-tag " usage
+	test_grep "[Uu]sage: kit verify-tag " usage
 '
 
 test_expect_success GPG 'create signed tags' '

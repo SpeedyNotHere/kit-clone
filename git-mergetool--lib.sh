@@ -419,7 +419,7 @@ guess_merge_tool () {
 	cat >&2 <<-EOF
 
 	This message is displayed because '$TOOL_MODE.tool' is not configured.
-	See 'git ${TOOL_MODE}tool --tool-help' or 'git help config' for more details.
+	See 'kit ${TOOL_MODE}tool --tool-help' or 'kit help config' for more details.
 	'git ${TOOL_MODE}tool' will now attempt to use one of the following tools:
 	$tools
 	EOF

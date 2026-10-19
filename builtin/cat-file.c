@@ -163,7 +163,7 @@ static int cat_one_file(int opt, const char *exp_type, const char *obj_name)
 	case 't':
 		oi.typep = &type;
 		if (odb_read_object_info_extended(the_repository->objects, &oid, &oi, flags) < 0)
-			die("git cat-file: could not get object info");
+			die("kit cat-file: could not get object info");
 		printf("%s\n", type_name(type));
 		ret = 0;
 		goto cleanup;
@@ -177,7 +177,7 @@ static int cat_one_file(int opt, const char *exp_type, const char *obj_name)
 		}
 
 		if (odb_read_object_info_extended(the_repository->objects, &oid, &oi, flags) < 0)
-			die("git cat-file: could not get object info");
+			die("kit cat-file: could not get object info");
 
 		if (use_mailmap && (type == OBJ_COMMIT || type == OBJ_TAG))
 			buf = replace_idents_using_mailmap(buf, &size);
@@ -284,11 +284,11 @@ static int cat_one_file(int opt, const char *exp_type, const char *obj_name)
 		break;
 	}
 	default:
-		die("git cat-file: unknown option: %s", exp_type);
+		die("kit cat-file: unknown option: %s", exp_type);
 	}
 
 	if (!buf)
-		die("git cat-file %s: bad file", obj_name);
+		die("kit cat-file %s: bad file", obj_name);
 
 	write_or_die(1, buf, size);
 	ret = 0;
@@ -1197,11 +1197,11 @@ int cmd_cat_file(int argc,
 	int ret;
 
 	const char * const builtin_catfile_usage[] = {
-		N_("git cat-file <type> <object>"),
-		N_("git cat-file (-e | -p | -t | -s) <object>"),
-		N_("git cat-file (--textconv | --filters)\n"
+		N_("kit cat-file <type> <object>"),
+		N_("kit cat-file (-e | -p | -t | -s) <object>"),
+		N_("kit cat-file (--textconv | --filters)\n"
 		   "             [<rev>:<path|tree-ish> | --path=<path|tree-ish> <rev>]"),
-		N_("git cat-file (--batch | --batch-check | --batch-command) [--batch-all-objects]\n"
+		N_("kit cat-file (--batch | --batch-check | --batch-command) [--batch-all-objects]\n"
 		   "             [--buffer] [--follow-symlinks] [--unordered]\n"
 		   "             [--textconv | --filters] [-Z]"),
 		NULL

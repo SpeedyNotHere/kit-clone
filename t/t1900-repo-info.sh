@@ -151,8 +151,8 @@ test_expect_success 'git repo info --keys uses lines as its default output forma
 
 test_expect_success 'git repo info -h shows only repo info usage' '
 	git repo info -h >actual &&
-	test_grep "git repo info" actual &&
-	test_grep ! "git repo structure" actual
+	test_grep "kit repo info" actual &&
+	test_grep ! "kit repo structure" actual
 '
 
 # Helper function to test path keys in both absolute and relative formats.

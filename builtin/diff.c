@@ -30,12 +30,12 @@
 #define DIFF_NO_INDEX_IMPLICIT 2
 
 static const char builtin_diff_usage[] =
-"git diff [<options>] [<commit>] [--] [<path>...]\n"
-"   or: git diff [<options>] --cached [--merge-base] [<commit>] [--] [<path>...]\n"
-"   or: git diff [<options>] [--merge-base] <commit> [<commit>...] <commit> [--] [<path>...]\n"
-"   or: git diff [<options>] <commit>...<commit> [--] [<path>...]\n"
-"   or: git diff [<options>] <blob> <blob>\n"
-"   or: git diff [<options>] --no-index [--] <path> <path> [<pathspec>...]"
+"kit diff [<options>] [<commit>] [--] [<path>...]\n"
+"   or: kit diff [<options>] --cached [--merge-base] [<commit>] [--] [<path>...]\n"
+"   or: kit diff [<options>] [--merge-base] <commit> [<commit>...] <commit> [--] [<path>...]\n"
+"   or: kit diff [<options>] <commit>...<commit> [--] [<path>...]\n"
+"   or: kit diff [<options>] <blob> <blob>\n"
+"   or: kit diff [<options>] --no-index [--] <path> <path> [<pathspec>...]"
 "\n"
 COMMON_DIFF_OPTIONS_HELP;
 

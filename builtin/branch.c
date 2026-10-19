@@ -31,15 +31,15 @@
 #include "commit-reach.h"
 
 static const char * const builtin_branch_usage[] = {
-	N_("git branch [<options>] [-r | -a] [--merged] [--no-merged] [(--forked <branch>)...]"),
-	N_("git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]"),
-	N_("git branch [<options>] [-l] [<pattern>...]"),
-	N_("git branch [<options>] [-r] (-d | -D) <branch-name>..."),
-	N_("git branch [<options>] (-m | -M) [<old-branch>] <new-branch>"),
-	N_("git branch [<options>] (-c | -C) [<old-branch>] <new-branch>"),
-	N_("git branch [<options>] [-r | -a] [--points-at]"),
-	N_("git branch [<options>] [-r | -a] [--format]"),
-	N_("git branch [<options>] (--delete-merged <pattern>)... "
+	N_("kit branch [<options>] [-r | -a] [--merged] [--no-merged] [(--forked <branch>)...]"),
+	N_("kit branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]"),
+	N_("kit branch [<options>] [-l] [<pattern>...]"),
+	N_("kit branch [<options>] [-r] (-d | -D) <branch-name>..."),
+	N_("kit branch [<options>] (-m | -M) [<old-branch>] <new-branch>"),
+	N_("kit branch [<options>] (-c | -C) [<old-branch>] <new-branch>"),
+	N_("kit branch [<options>] [-r | -a] [--points-at]"),
+	N_("kit branch [<options>] [-r | -a] [--format]"),
+	N_("kit branch [<options>] (--delete-merged <pattern>)... "
 	   "[<branch-pattern>...]"),
 	NULL
 };
@@ -219,7 +219,7 @@ static int check_branch_commit(const char *branchname, const char *refname,
 			      branchname);
 			advise_if_enabled(ADVICE_FORCE_DELETE_BRANCH,
 					  _("If you are sure you want to delete it, "
-					  "run 'git branch -D %s'"), branchname);
+					  "run 'kit branch -D %s'"), branchname);
 		}
 		return -1;
 	}
@@ -626,7 +626,7 @@ static void copy_or_rename_branch(const char *oldname, const char *newname, int 
 		else {
 			int code = die_message(_("invalid branch name: '%s'"), oldname);
 			advise_if_enabled(ADVICE_REF_SYNTAX,
-					  _("See 'git help check-ref-format'"));
+					  _("See 'kit help check-ref-format'"));
 			exit(code);
 		}
 	}
@@ -960,7 +960,7 @@ static void die_if_upstream_looks_like_remote(const char *new_upstream, const ch
 
 	code = die_message(_("--set-upstream-to takes a single <remote>/<branch> argument"));
 	advise_if_enabled(ADVICE_SET_UPSTREAM_FAILURE,
-			  _("Did you mean to use: git branch --set-upstream-to=%s/%s?"),
+			  _("Did you mean to use: kit branch --set-upstream-to=%s/%s?"),
 			  new_upstream, branch_name);
 	strbuf_release(&remote_ref);
 	exit(code);
@@ -1292,7 +1292,7 @@ int cmd_branch(int argc,
 		const char *start_name = argc == 2 ? argv[1] : head;
 
 		if (filter.kind != FILTER_REFS_BRANCHES)
-			die(_("the -a, and -r, options to 'git branch' do not take a branch name.\n"
+			die(_("the -a, and -r, options to 'kit branch' do not take a branch name.\n"
 				  "Did you mean to use: -a|-r --list <pattern>?"));
 
 		if (track == BRANCH_TRACK_OVERRIDE)

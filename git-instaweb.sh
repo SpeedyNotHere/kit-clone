@@ -7,7 +7,7 @@ PERL='@PERL_PATH@'
 OPTIONS_KEEPDASHDASH=
 OPTIONS_STUCKLONG=
 OPTIONS_SPEC="\
-git instaweb [options] (--start | --stop | --restart)
+kit instaweb [options] (--start | --stop | --restart)
 --
 l,local        only bind on 127.0.0.1
 p,port=        the port to bind to

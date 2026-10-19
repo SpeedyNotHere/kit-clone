@@ -35,6 +35,9 @@ help_to_synopsis () {
 			/^$/d;
 			s/^usage: //;
 			s/^ *or: //;
+			s/^kit /git /;
+			s/) kit /) git /;
+			s/| kit /| git /g;
 			p;
 		}' <"$out.raw" >"$out" &&
 	echo "$out"

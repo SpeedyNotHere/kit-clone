@@ -60,7 +60,7 @@ test_expect_success 'autocorrect can be declined altogether' '
 	git config help.autocorrect never &&
 
 	test_must_fail git lfg 2>actual &&
-	test_grep "is not a git command" actual &&
+	test_grep "is not a kit command" actual &&
 	test_line_count = 1 actual
 '
 

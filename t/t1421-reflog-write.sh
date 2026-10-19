@@ -22,7 +22,7 @@ test_expect_success 'invalid number of arguments' '
 		for args in "" "1" "1 2" "1 2 3" "1 2 3 4 5"
 		do
 			test_must_fail git reflog write $args 2>err &&
-			test_grep "usage: git reflog write" err || return 1
+			test_grep "usage: kit reflog write" err || return 1
 		done
 	)
 '

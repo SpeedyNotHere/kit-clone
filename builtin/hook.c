@@ -8,10 +8,10 @@
 #include "thread-utils.h"
 
 #define BUILTIN_HOOK_RUN_USAGE \
-	N_("git hook run [--allow-unknown-hook-name] [--ignore-missing] [--to-stdin=<path>] [(-j|--jobs) <n>]\n" \
+	N_("kit hook run [--allow-unknown-hook-name] [--ignore-missing] [--to-stdin=<path>] [(-j|--jobs) <n>]\n" \
 	   "<hook-name> [-- <hook-args>]")
 #define BUILTIN_HOOK_LIST_USAGE \
-	N_("git hook list [--allow-unknown-hook-name] [-z] [--show-scope] <hook-name>")
+	N_("kit hook list [--allow-unknown-hook-name] [-z] [--show-scope] <hook-name>")
 
 static const char * const builtin_hook_usage[] = {
 	BUILTIN_HOOK_RUN_USAGE,

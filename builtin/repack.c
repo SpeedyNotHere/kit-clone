@@ -38,7 +38,7 @@ static int dry_run;
 static int write_bitmaps_given;
 
 static const char *const git_repack_usage[] = {
-	N_("git repack [-a] [-A] [-d] [-f] [-F] [-l] [-n] [-q] [-b] [-m]\n"
+	N_("kit repack [-a] [-A] [-d] [-f] [-F] [-l] [-n] [-q] [-b] [-m]\n"
 	   "[--window=<n>] [--depth=<n>] [--threads=<n>] [--keep-pack=<pack-name>]\n"
 	   "[--write-midx[=<mode>]] [--name-hash-version=<n>] [--path-walk]\n"
 	   "[--filter=<filter-spec>] [--drop-filtered [--dry-run]]"),

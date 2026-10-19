@@ -142,10 +142,10 @@ msgstr "Δεν είναι δυνατό να γίνει %s επειδή έχετ�
 
 #: advice.c:172
 msgid ""
-"Fix them up in the work tree, and then use 'git add/rm <file>'\n"
+"Fix them up in the work tree, and then use 'kit add/rm <file>'\n"
 "as appropriate to mark resolution and make a commit."
 msgstr ""
-"Φτιάξτε τα στο δέντρο εργασίας, και μετά χρησιμοποιήστε 'git add/rm "
+"Φτιάξτε τα στο δέντρο εργασίας, και μετά χρησιμοποιήστε 'kit add/rm "
 "<αρχείο>'\n"
 "έτσι ώστε να επισημάνετε την επίλυση και να κάνετε μία υποβολή."
 
@@ -251,25 +251,25 @@ msgstr "δεν είναι δυνατό να βρεθεί το όνομα αρχ�
 
 #: apply.c:946
 #, c-format
-msgid "git apply: bad git-diff - expected /dev/null, got %s on line %d"
+msgid "kit apply: bad git-diff - expected /dev/null, got %s on line %d"
 msgstr ""
-"git apply: λάθος git-diff - αναμενόταν /dev/null, βρέθηκε %s στη γραμμή %d"
+"kit apply: λάθος git-diff - αναμενόταν /dev/null, βρέθηκε %s στη γραμμή %d"
 
 #: apply.c:952
 #, c-format
-msgid "git apply: bad git-diff - inconsistent new filename on line %d"
-msgstr "git apply: λάθος git-diff - ασύμφωνο όνομα νέου αρχείου στη γραμμή %d"
+msgid "kit apply: bad git-diff - inconsistent new filename on line %d"
+msgstr "kit apply: λάθος git-diff - ασύμφωνο όνομα νέου αρχείου στη γραμμή %d"
 
 #: apply.c:953
 #, c-format
-msgid "git apply: bad git-diff - inconsistent old filename on line %d"
+msgid "kit apply: bad git-diff - inconsistent old filename on line %d"
 msgstr ""
-"git apply: λάθος git-diff - ασύμφωνο όνομα παλιού αρχείου στη γραμμή %d"
+"kit apply: λάθος git-diff - ασύμφωνο όνομα παλιού αρχείου στη γραμμή %d"
 
 #: apply.c:958
 #, c-format
-msgid "git apply: bad git-diff - expected /dev/null on line %d"
-msgstr "git apply: λάθος git-diff - αναμενόταν /dev/null στη γραμμή %d"
+msgid "kit apply: bad git-diff - expected /dev/null on line %d"
+msgstr "kit apply: λάθος git-diff - αναμενόταν /dev/null στη γραμμή %d"
 
 #: apply.c:987
 #, c-format
@@ -761,7 +761,7 @@ msgid "make sure the patch is applicable to the current index"
 msgstr ""
 
 #: apply.c:4983
-msgid "mark new files with `git add --intent-to-add`"
+msgid "mark new files with `kit add --intent-to-add`"
 msgstr ""
 
 #: apply.c:4985
@@ -846,8 +846,8 @@ msgid "prepend <root> to all filenames"
 msgstr "προσθήκη του προθέματος <ρίζα> σε όλα τα ονόματα αρχείων"
 
 #: archive.c:14
-msgid "git archive [<options>] <tree-ish> [<path>...]"
-msgstr "git archive [<επιλογές>] <δέντρο ή φαινομενικό> [<διαδρομή>...]"
+msgid "kit archive [<options>] <tree-ish> [<path>...]"
+msgstr "kit archive [<επιλογές>] <δέντρο ή φαινομενικό> [<διαδρομή>...]"
 
 #: archive.c:15
 msgid "git archive --list"
@@ -855,14 +855,14 @@ msgstr "git archive --list"
 
 #: archive.c:16
 msgid ""
-"git archive --remote <repo> [--exec <cmd>] [<options>] <tree-ish> [<path>...]"
+"kit archive --remote <repo> [--exec <cmd>] [<options>] <tree-ish> [<path>...]"
 msgstr ""
-"git archive --remote <αποθετήριο> [--exec <εντολή>] [<επιλογές>] <δέντρο ή "
+"kit archive --remote <αποθετήριο> [--exec <εντολή>] [<επιλογές>] <δέντρο ή "
 "φαινομενικό> [<διαδρομή>...]"
 
 #: archive.c:17
-msgid "git archive --remote <repo> [--exec <cmd>] --list"
-msgstr "git archive --remote <αποθετήριο> [--exec <εντολή>] --list"
+msgid "kit archive --remote <repo> [--exec <cmd>] --list"
+msgstr "kit archive --remote <αποθετήριο> [--exec <εντολή>] --list"
 
 #: archive.c:372 builtin/add.c:177 builtin/add.c:515 builtin/rm.c:299
 #, c-format
@@ -1281,11 +1281,11 @@ msgid ""
 "\n"
 "If you are planning on basing your work on an upstream\n"
 "branch that already exists at the remote, you may need to\n"
-"run \"git fetch\" to retrieve it.\n"
+"run \"kit fetch\" to retrieve it.\n"
 "\n"
 "If you are planning to push out a new local branch that\n"
 "will track its remote counterpart, you may want to use\n"
-"\"git push -u\" to set the upstream config as you push."
+"\"kit push -u\" to set the upstream config as you push."
 msgstr ""
 
 #: branch.c:280
@@ -2008,7 +2008,7 @@ msgid "cannot start proxy %s"
 msgstr ""
 
 #: connect.c:924
-msgid "no path specified; see 'git help pull' for valid url syntax"
+msgid "no path specified; see 'kit help pull' for valid url syntax"
 msgstr ""
 
 #: connect.c:1119
@@ -2704,15 +2704,15 @@ msgid "'%s': short read"
 msgstr ""
 
 #: help.c:23
-msgid "start a working area (see also: git help tutorial)"
+msgid "start a working area (see also: kit help tutorial)"
 msgstr ""
 
 #: help.c:24
-msgid "work on the current change (see also: git help everyday)"
+msgid "work on the current change (see also: kit help everyday)"
 msgstr ""
 
 #: help.c:25
-msgid "examine the history and state (see also: git help revisions)"
+msgid "examine the history and state (see also: kit help revisions)"
 msgstr ""
 
 #: help.c:26
@@ -2720,7 +2720,7 @@ msgid "grow, mark and tweak your common history"
 msgstr ""
 
 #: help.c:27
-msgid "collaborate (see also: git help workflows)"
+msgid "collaborate (see also: kit help workflows)"
 msgstr ""
 
 #: help.c:31
@@ -2757,15 +2757,15 @@ msgstr "Εντολές Χαμηλού Επιπέδου / Εσωτερικές Β
 
 #: help.c:298
 #, c-format
-msgid "available git commands in '%s'"
+msgid "available kit commands in '%s'"
 msgstr ""
 
 #: help.c:305
-msgid "git commands available from elsewhere on your $PATH"
+msgid "kit commands available from elsewhere on your $PATH"
 msgstr "εντολές git διαθέσιμες από αλλού στο $PATH σας"
 
 #: help.c:314
-msgid "These are common Git commands used in various situations:"
+msgid "These are common kit commands used in various situations:"
 msgstr ""
 "Αυτές είναι κοινές εντολές Git που χρησιμοποιούνται σε διάφορες περιπτώσεις:"
 
@@ -2779,9 +2779,9 @@ msgid "The common Git guides are:"
 msgstr ""
 
 #: help.c:519
-msgid "See 'git help <command>' to read about a specific subcommand"
+msgid "See 'kit help <command>' to read about a specific subcommand"
 msgstr ""
-"Δείτε 'git help <εντολή>' για να διαβάσετε για κάποια συγκεκριμένη υποεντολή"
+"Δείτε 'kit help <εντολή>' για να διαβάσετε για κάποια συγκεκριμένη υποεντολή"
 
 #: help.c:524
 msgid "External commands"
@@ -2794,19 +2794,19 @@ msgstr ""
 #: help.c:603
 #, c-format
 msgid ""
-"'%s' appears to be a git command, but we were not\n"
+"'%s' appears to be a kit command, but we were not\n"
 "able to execute it. Maybe git-%s is broken?"
 msgstr ""
 "'%s' φαίνεται να είναι εντολή git, αλλά δεν μπορέσαμε\n"
 "να την εκτελέσουμε. Μήπως το git-%s είναι χαλασμένο;"
 
 #: help.c:662
-msgid "Uh oh. Your system reports no Git commands at all."
+msgid "Uh oh. Your system reports no kit commands at all."
 msgstr "Ώπα. Το σύστημά σας δεν αναφέρει καμία απολύτως εντολή Git."
 
 #: help.c:684
 #, c-format
-msgid "WARNING: You called a Git command named '%s', which does not exist."
+msgid "WARNING: You called a kit command named '%s', which does not exist."
 msgstr "ΠΡΟΣΟΧΗ: Καλέσατε μία εντολή Git με όνομα '%s', η οποία δεν υπάρχει."
 
 #: help.c:689
@@ -2821,8 +2821,8 @@ msgstr "Συνεχίζουμε σε %0.1f δευτερόλεπτα, υποθέτ
 
 #: help.c:702
 #, c-format
-msgid "git: '%s' is not a git command. See 'git --help'."
-msgstr "git: '%s' δεν είναι εντολή git. Δείτε 'git --help'."
+msgid "kit: '%s' is not a kit command. See 'kit --help'."
+msgstr "kit: '%s' δεν είναι εντολή git. Δείτε 'kit --help'."
 
 #: help.c:706
 msgid ""
@@ -2868,8 +2868,8 @@ msgid ""
 "\n"
 "Run\n"
 "\n"
-"  git config --global user.email \"you@example.com\"\n"
-"  git config --global user.name \"Your Name\"\n"
+"  kit config --global user.email \"you@example.com\"\n"
+"  kit config --global user.name \"Your Name\"\n"
 "\n"
 "to set your account's default identity.\n"
 "Omit --global to set the identity only in this repository.\n"
@@ -2880,8 +2880,8 @@ msgstr ""
 "\n"
 "Τρέξτε\n"
 "\n"
-"  git config --global user.email \"you@example.com\"\n"
-"  git config --global user.name \"Το Όνομά Σας\"\n"
+"  kit config --global user.email \"you@example.com\"\n"
+"  kit config --global user.name \"Το Όνομά Σας\"\n"
 "\n"
 "για να ορίσετε την προεπιλεγμένη ταυτότητα του λογαριασμού σας.\n"
 "Παραλείψετε το --global για να ορίσετε την ταυτότητα μόνο σε αυτό το "
@@ -3491,12 +3491,12 @@ msgstr ""
 #, c-format
 msgid ""
 "You have not concluded your previous notes merge (%s exists).\n"
-"Please, use 'git notes merge --commit' or 'git notes merge --abort' to "
+"Please, use 'kit notes merge --commit' or 'kit notes merge --abort' to "
 "commit/abort the previous merge before you start a new notes merge."
 msgstr ""
 "Δεν έχετε ολοκληρώσει την προηγούμενη συγχώνευση σημειώσεών σας (Υπάρχει το "
 "%s).\n"
-"Παρακαλώ, χρησιμοποιήστε 'git notes merge --commit' ή 'git notes merge --"
+"Παρακαλώ, χρησιμοποιήστε 'kit notes merge --commit' ή 'kit notes merge --"
 "abort' για να υποβάλετε/εγκαταλείψετε την προηγούμενη συγχώνευση πριν "
 "ξεκινήσετε νέα συγχώνευση σημειώσεων."
 
@@ -4057,7 +4057,7 @@ msgid ""
 "\n"
 "You are editing the todo file of an ongoing interactive rebase.\n"
 "To continue rebase after editing, run:\n"
-"    git rebase --continue\n"
+"    kit rebase --continue\n"
 "\n"
 msgstr ""
 
@@ -4669,9 +4669,9 @@ msgstr ""
 "Ο κλάδος σας βασίζεται πάνω στο '%s', αλλά το προς τα πάνω δεν υπάρχει πια.\n"
 
 #: remote.c:1994
-msgid "  (use \"git branch --unset-upstream\" to fixup)\n"
+msgid "  (use \"kit branch --unset-upstream\" to fixup)\n"
 msgstr ""
-"  (χρησιμοποιήστε \"git branch --unset-upstream\" για να επιδιορθώσετε)\n"
+"  (χρησιμοποιήστε \"kit branch --unset-upstream\" για να επιδιορθώσετε)\n"
 
 #: remote.c:1997
 #, c-format
@@ -4696,9 +4696,9 @@ msgstr[0] "Ο κλάδος σας είναι μπροστά από το '%s' κ�
 msgstr[1] "Ο κλάδος σας είναι μπροστά από το '%s' κατά %d υποβολές.\n"
 
 #: remote.c:2014
-msgid "  (use \"git push\" to publish your local commits)\n"
+msgid "  (use \"kit push\" to publish your local commits)\n"
 msgstr ""
-"  (χρησιμοποιήστε \"git push\" για να δημοσιεύσετε τις τοπικές σας "
+"  (χρησιμοποιήστε \"kit push\" για να δημοσιεύσετε τις τοπικές σας "
 "υποβολές)\n"
 
 #: remote.c:2017
@@ -4714,9 +4714,9 @@ msgstr[1] ""
 "ταχεία προώθηση.\n"
 
 #: remote.c:2025
-msgid "  (use \"git pull\" to update your local branch)\n"
+msgid "  (use \"kit pull\" to update your local branch)\n"
 msgstr ""
-"  (χρησιμοποιήστε \"git pull\" για να ενημερώσετε τον τοπικό σας κλάδο)\n"
+"  (χρησιμοποιήστε \"kit pull\" για να ενημερώσετε τον τοπικό σας κλάδο)\n"
 
 #: remote.c:2028
 #, c-format
@@ -4953,10 +4953,10 @@ msgstr ""
 #: sequencer.c:378
 msgid ""
 "after resolving the conflicts, mark the corrected paths\n"
-"with 'git add <paths>' or 'git rm <paths>'"
+"with 'kit add <paths>' or 'kit rm <paths>'"
 msgstr ""
 "αφού επιλύσετε τις συγκρούσεις, επισημάνετε τις διορθωμένες διαδρομές\n"
-"με 'git add <διαδρομές>' ή 'git rm <διαδρομές>'"
+"με 'kit add <διαδρομές>' ή 'kit rm <διαδρομές>'"
 
 #: sequencer.c:381
 msgid ""
@@ -5077,29 +5077,29 @@ msgid ""
 "you have staged changes in your working tree\n"
 "If these changes are meant to be squashed into the previous commit, run:\n"
 "\n"
-"  git commit --amend %s\n"
+"  kit commit --amend %s\n"
 "\n"
 "If they are meant to go into a new commit, run:\n"
 "\n"
-"  git commit %s\n"
+"  kit commit %s\n"
 "\n"
 "In both cases, once you're done, continue with:\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 msgstr ""
 "έχετε προετοιμασμένες αλλαγές στο δέντρο εργασίας σας\n"
 "Αν αυτές οι αλλαγές πρέπει να συμπτυχθούν μέσα στην προηγούμενη υποβολή, "
 "τρέξτε:\n"
 "\n"
-"  git commit --amend %s\n"
+"  kit commit --amend %s\n"
 "\n"
 "Αν πρέπει να πάνε σε νέα υποβολή, τρέξτε:\n"
 "\n"
-"  git commit %s\n"
+"  kit commit %s\n"
 "\n"
 "Και στις δύο περιπτώσεις, μόλις τελειώσετε, συνεχίστε με:\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 
 #: sequencer.c:945
 msgid "writing root commit"
@@ -5117,11 +5117,11 @@ msgid ""
 "following command and follow the instructions in your editor to edit\n"
 "your configuration file:\n"
 "\n"
-"    git config --global --edit\n"
+"    kit config --global --edit\n"
 "\n"
 "After doing this, you may fix the identity used for this commit with:\n"
 "\n"
-"    git commit --amend --reset-author\n"
+"    kit commit --amend --reset-author\n"
 msgstr ""
 "Το όνομα και η διεύθυνση email σας ρυθμίστηκαν αυτόματα με βάση\n"
 "το όνομα χρήστη και το όνομα υπολογιστή σας. Παρακαλώ ελέγξτε πως είναι "
@@ -5131,12 +5131,12 @@ msgstr ""
 "επεξεργαστείτε\n"
 "το αρχείο ρυθμίσεών σας :\n"
 "\n"
-"    git config --global --edit\n"
+"    kit config --global --edit\n"
 "\n"
 "Έπειτα, μπορείτε να διορθώσετε την ταυτότητα χρήστη που χρησιμοποιήθηκε για "
 "αυτή την υποβολή με:\n"
 "\n"
-"    git commit --amend --reset-author\n"
+"    kit commit --amend --reset-author\n"
 
 #: sequencer.c:1175
 msgid ""
@@ -5144,25 +5144,25 @@ msgid ""
 "on your username and hostname. Please check that they are accurate.\n"
 "You can suppress this message by setting them explicitly:\n"
 "\n"
-"    git config --global user.name \"Your Name\"\n"
-"    git config --global user.email you@example.com\n"
+"    kit config --global user.name \"Your Name\"\n"
+"    kit config --global user.email you@example.com\n"
 "\n"
 "After doing this, you may fix the identity used for this commit with:\n"
 "\n"
-"    git commit --amend --reset-author\n"
+"    kit commit --amend --reset-author\n"
 msgstr ""
 "Το όνομα και η διεύθυνση email σας ρυθμίστηκαν αυτόματα με βάση\n"
 "το όνομα χρήστη και το όνομα υπολογιστή σας. Παρακαλώ ελέγξτε πως είναι "
 "ακριβή.\n"
 "Μπορείτε να αποκρύψετε αυτό το μήνυμα ορίζοντας τα ρητά:\n"
 "\n"
-"    git config --global user.name \"Το όνομά σας\"\n"
-"    git config --global user.email you@example.com\n"
+"    kit config --global user.name \"Το όνομά σας\"\n"
+"    kit config --global user.email you@example.com\n"
 "\n"
 "Έπειτα, μπορείτε να διορθώσετε την ταυτότητα χρήστη που χρησιμοποιήθηκε για "
 "αυτή την υποβολή με:\n"
 "\n"
-"    git commit --amend --reset-author\n"
+"    kit commit --amend --reset-author\n"
 
 #: sequencer.c:1217
 msgid "couldn't look up newly created commit"
@@ -5202,7 +5202,7 @@ msgid "unable to parse commit author"
 msgstr ""
 
 #: sequencer.c:1360 builtin/am.c:1570 builtin/merge.c:678
-msgid "git write-tree failed to write a tree"
+msgid "kit write-tree failed to write a tree"
 msgstr ""
 
 #: sequencer.c:1377 sequencer.c:1433
@@ -5318,12 +5318,12 @@ msgstr ""
 
 #: sequencer.c:2005
 #, c-format
-msgid "git %s: failed to read the index"
+msgid "kit %s: failed to read the index"
 msgstr ""
 
 #: sequencer.c:2012
 #, c-format
-msgid "git %s: failed to refresh the index"
+msgid "kit %s: failed to refresh the index"
 msgstr ""
 
 #: sequencer.c:2094
@@ -5347,7 +5347,7 @@ msgid "cannot '%s' without a previous commit"
 msgstr ""
 
 #: sequencer.c:2243
-msgid "please fix this using 'git rebase --edit-todo'."
+msgid "please fix this using 'kit rebase --edit-todo'."
 msgstr ""
 
 #: sequencer.c:2245
@@ -5458,19 +5458,19 @@ msgstr ""
 msgid ""
 "You can amend the commit now, with\n"
 "\n"
-"  git commit --amend %s\n"
+"  kit commit --amend %s\n"
 "\n"
 "Once you are satisfied with your changes, run\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 msgstr ""
 "Μπορείτε να τροποποιήσετε την υποβολή τώρα, με\n"
 "\n"
-"  git commit --amend %s\n"
+"  kit commit --amend %s\n"
 "\n"
 "Όταν οι αλλαγές σας σας ικανοποιούν, τρέξτε\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 
 #: sequencer.c:2823
 #, c-format
@@ -5498,7 +5498,7 @@ msgid ""
 "execution failed: %s\n"
 "%sYou can fix the problem, and then run\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 "\n"
 msgstr ""
 
@@ -5630,8 +5630,8 @@ msgid ""
 "It has been rescheduled; To edit the command before continuing, please\n"
 "edit the todo list first:\n"
 "\n"
-"    git rebase --edit-todo\n"
-"    git rebase --continue\n"
+"    kit rebase --edit-todo\n"
+"    kit rebase --continue\n"
 msgstr ""
 
 #: sequencer.c:3597
@@ -5679,12 +5679,12 @@ msgstr ""
 msgid ""
 "\n"
 "You have uncommitted changes in your working tree. Please, commit them\n"
-"first and then run 'git rebase --continue' again."
+"first and then run 'kit rebase --continue' again."
 msgstr ""
 "\n"
 "Έχετε μη συγχωνευμένες αλλαγές στο δέντρο εργασίας σας. Παρακαλώ, υποβάλετέ "
 "τις\n"
-"πρώτα και μετά τρέξτε 'git rebase --continue' πάλι."
+"πρώτα και μετά τρέξτε 'kit rebase --continue' πάλι."
 
 #: sequencer.c:3883 sequencer.c:3921
 #, c-format
@@ -5744,7 +5744,7 @@ msgstr ""
 msgid ""
 "To avoid this message, use \"drop\" to explicitly remove a commit.\n"
 "\n"
-"Use 'git config rebase.missingCommitsCheck' to change the level of "
+"Use 'kit config rebase.missingCommitsCheck' to change the level of "
 "warnings.\n"
 "The possible behaviours are: ignore, warn, error.\n"
 "\n"
@@ -5753,13 +5753,13 @@ msgstr ""
 #: sequencer.c:4774
 #, c-format
 msgid ""
-"You can fix this with 'git rebase --edit-todo' and then run 'git rebase --"
+"You can fix this with 'kit rebase --edit-todo' and then run 'kit rebase --"
 "continue'.\n"
-"Or you can abort the rebase with 'git rebase --abort'.\n"
+"Or you can abort the rebase with 'kit rebase --abort'.\n"
 msgstr ""
-"Μπορείτε να το διορθώσετε αυτό με 'git rebase --edit-todo' και μετά να "
-"τρέξετε 'git rebase --continue'.\n"
-"Ή μπορείτε να εγκαταλείψετε το rebase με 'git rebase --abort'.\n"
+"Μπορείτε να το διορθώσετε αυτό με 'kit rebase --edit-todo' και μετά να "
+"τρέξετε 'kit rebase --continue'.\n"
+"Ή μπορείτε να εγκαταλείψετε το rebase με 'kit rebase --abort'.\n"
 
 #: sequencer.c:4912 sequencer.c:4950
 msgid "nothing to do"
@@ -5798,7 +5798,7 @@ msgstr ""
 #, c-format
 msgid ""
 "%s: no such path in the working tree.\n"
-"Use 'git <command> -- <path>...' to specify paths that do not exist locally."
+"Use 'kit <command> -- <path>...' to specify paths that do not exist locally."
 msgstr ""
 
 #: setup.c:185
@@ -5806,7 +5806,7 @@ msgstr ""
 msgid ""
 "ambiguous argument '%s': unknown revision or path not in the working tree.\n"
 "Use '--' to separate paths from revisions, like this:\n"
-"'git <command> [<revision>...] -- [<file>...]'"
+"'kit <command> [<revision>...] -- [<file>...]'"
 msgstr ""
 
 #: setup.c:234
@@ -5819,7 +5819,7 @@ msgstr ""
 msgid ""
 "ambiguous argument '%s': both revision and filename\n"
 "Use '--' to separate paths from revisions, like this:\n"
-"'git <command> [<revision>...] -- [<file>...]'"
+"'kit <command> [<revision>...] -- [<file>...]'"
 msgstr ""
 
 #: setup.c:389
@@ -6259,12 +6259,12 @@ msgstr ""
 
 #: submodule.c:1777
 #, c-format
-msgid "could not start 'git status' in submodule '%s'"
+msgid "could not start 'kit status' in submodule '%s'"
 msgstr ""
 
 #: submodule.c:1790
 #, c-format
-msgid "could not run 'git status' in submodule '%s'"
+msgid "could not run 'kit status' in submodule '%s'"
 msgstr ""
 
 #: submodule.c:1805
@@ -6445,11 +6445,11 @@ msgid ""
 "\n"
 "Please try\n"
 "\n"
-"\tgit push --recurse-submodules=on-demand\n"
+"\tkit push --recurse-submodules=on-demand\n"
 "\n"
 "or cd to the path and use\n"
 "\n"
-"\tgit push\n"
+"\tkit push\n"
 "\n"
 "to push them to a remote.\n"
 "\n"
@@ -6948,26 +6948,26 @@ msgstr ""
 "  (χρησιμοποιήστε \"git reset %s <αρχείο>...\" για να αποπροετοιμάσετε)"
 
 #: wt-status.c:184 wt-status.c:211
-msgid "  (use \"git rm --cached <file>...\" to unstage)"
+msgid "  (use \"kit rm --cached <file>...\" to unstage)"
 msgstr ""
-"  (χρησιμοποιήστε \"git rm --cached <αρχείο>...\" για να αποπροετοιμάσετε)"
+"  (χρησιμοποιήστε \"kit rm --cached <αρχείο>...\" για να αποπροετοιμάσετε)"
 
 #: wt-status.c:188
-msgid "  (use \"git add <file>...\" to mark resolution)"
+msgid "  (use \"kit add <file>...\" to mark resolution)"
 msgstr ""
-"  (χρησιμοποιήστε \"git add <αρχείο>...\" έτσι ώστε να επισημάνετε την "
+"  (χρησιμοποιήστε \"kit add <αρχείο>...\" έτσι ώστε να επισημάνετε την "
 "επίλυση)"
 
 #: wt-status.c:190 wt-status.c:194
-msgid "  (use \"git add/rm <file>...\" as appropriate to mark resolution)"
+msgid "  (use \"kit add/rm <file>...\" as appropriate to mark resolution)"
 msgstr ""
-"  (χρησιμοποιήστε \"git add/rm <αρχείο>...\" έτσι ώστε να επισημάνετε την "
+"  (χρησιμοποιήστε \"kit add/rm <αρχείο>...\" έτσι ώστε να επισημάνετε την "
 "επίλυση)"
 
 #: wt-status.c:192
-msgid "  (use \"git rm <file>...\" to mark resolution)"
+msgid "  (use \"kit rm <file>...\" to mark resolution)"
 msgstr ""
-"  (χρησιμοποιήστε \"git rm <αρχείο>...\" έτσι ώστε να επισημάνετε την "
+"  (χρησιμοποιήστε \"kit rm <αρχείο>...\" έτσι ώστε να επισημάνετε την "
 "επίλυση)"
 
 #: wt-status.c:203 wt-status.c:1046
@@ -6979,15 +6979,15 @@ msgid "Changes not staged for commit:"
 msgstr "Αλλαγές που δεν έχουν προετοιμαστεί για υποβολή:"
 
 #: wt-status.c:225
-msgid "  (use \"git add <file>...\" to update what will be committed)"
+msgid "  (use \"kit add <file>...\" to update what will be committed)"
 msgstr ""
-"  (χρησιμοποιήστε \"git add <αρχείο>...\" για να ενημερώσετε αυτά που θα "
+"  (χρησιμοποιήστε \"kit add <αρχείο>...\" για να ενημερώσετε αυτά που θα "
 "υποβληθούν)"
 
 #: wt-status.c:227
-msgid "  (use \"git add/rm <file>...\" to update what will be committed)"
+msgid "  (use \"kit add/rm <file>...\" to update what will be committed)"
 msgstr ""
-"  (χρησιμοποιήστε \"git add/rm <αρχείο>...\" για να ενημερώσετε αυτά που θα "
+"  (χρησιμοποιήστε \"kit add/rm <αρχείο>...\" για να ενημερώσετε αυτά που θα "
 "υποβληθούν)"
 
 #: wt-status.c:228
@@ -7005,9 +7005,9 @@ msgstr ""
 
 #: wt-status.c:242
 #, c-format
-msgid "  (use \"git %s <file>...\" to include in what will be committed)"
+msgid "  (use \"kit %s <file>...\" to include in what will be committed)"
 msgstr ""
-"  (χρησιμοποιήστε \"git %s <αρχείο>...\" για να συμπεριληφθεί σε αυτά που θα "
+"  (χρησιμοποιήστε \"kit %s <αρχείο>...\" για να συμπεριληφθεί σε αυτά που θα "
 "υποβληθούν)"
 
 #: wt-status.c:257
@@ -7110,21 +7110,21 @@ msgid "You have unmerged paths."
 msgstr "Έχετε μη συγχωνευμένες διαδρομές."
 
 #: wt-status.c:1104
-msgid "  (fix conflicts and run \"git commit\")"
-msgstr "  (διορθώστε τις συγκρούσεις και τρέξτε \"git commit\")"
+msgid "  (fix conflicts and run \"kit commit\")"
+msgstr "  (διορθώστε τις συγκρούσεις και τρέξτε \"kit commit\")"
 
 #: wt-status.c:1106
-msgid "  (use \"git merge --abort\" to abort the merge)"
+msgid "  (use \"kit merge --abort\" to abort the merge)"
 msgstr ""
-"  (χρησιμοποιήστε \"git merge --abort\" για να εγκαταλείψετε τη συγχώνευση)"
+"  (χρησιμοποιήστε \"kit merge --abort\" για να εγκαταλείψετε τη συγχώνευση)"
 
 #: wt-status.c:1110
 msgid "All conflicts fixed but you are still merging."
 msgstr "Επιλύθηκαν όλες οι συγκρούσεις αλλά ακόμα κάνετε συγχώνευση."
 
 #: wt-status.c:1113
-msgid "  (use \"git commit\" to conclude merge)"
-msgstr "  (χρησιμοποιήστε \"git commit\" για να ολοκληρώσετε τη συγχώνευση)"
+msgid "  (use \"kit commit\" to conclude merge)"
+msgstr "  (χρησιμοποιήστε \"kit commit\" για να ολοκληρώσετε τη συγχώνευση)"
 
 #: wt-status.c:1122
 msgid "You are in the middle of an am session."
@@ -7135,18 +7135,18 @@ msgid "The current patch is empty."
 msgstr "Η παρούσα διόρθωση είναι κενή."
 
 #: wt-status.c:1129
-msgid "  (fix conflicts and then run \"git am --continue\")"
-msgstr "  (διορθώστε τις συγκρούσεις και τρέξτε \"git am --continue\")"
+msgid "  (fix conflicts and then run \"kit am --continue\")"
+msgstr "  (διορθώστε τις συγκρούσεις και τρέξτε \"kit am --continue\")"
 
 #: wt-status.c:1131
-msgid "  (use \"git am --skip\" to skip this patch)"
+msgid "  (use \"kit am --skip\" to skip this patch)"
 msgstr ""
-"  (χρησιμοποιήστε \"git am --skip\" για να προσπεράσετε αυτή τη διόρθωση)"
+"  (χρησιμοποιήστε \"kit am --skip\" για να προσπεράσετε αυτή τη διόρθωση)"
 
 #: wt-status.c:1133
-msgid "  (use \"git am --abort\" to restore the original branch)"
+msgid "  (use \"kit am --abort\" to restore the original branch)"
 msgstr ""
-"  (χρησιμοποιήστε \"git am --abort\" για να αποκαταστήσετε τον αρχικό κλάδο)"
+"  (χρησιμοποιήστε \"kit am --abort\" για να αποκαταστήσετε τον αρχικό κλάδο)"
 
 #: wt-status.c:1264
 msgid "git-rebase-todo is missing."
@@ -7180,9 +7180,9 @@ msgstr[0] "Επόμενη εντολή προς εκτέλεση (%d εντολ�
 msgstr[1] "Επόμενες εντολές προς εκτέλεση (%d εντολές απομένουν):"
 
 #: wt-status.c:1296
-msgid "  (use \"git rebase --edit-todo\" to view and edit)"
+msgid "  (use \"kit rebase --edit-todo\" to view and edit)"
 msgstr ""
-"  (χρησιμοποιήστε \"git rebase --edit-todo\" για προβολή και επεξεργασία)"
+"  (χρησιμοποιήστε \"kit rebase --edit-todo\" για προβολή και επεξεργασία)"
 
 #: wt-status.c:1308
 #, c-format
@@ -7194,22 +7194,22 @@ msgid "You are currently rebasing."
 msgstr "Αυτή τη στιγμή κάνετε rebase."
 
 #: wt-status.c:1326
-msgid "  (fix conflicts and then run \"git rebase --continue\")"
-msgstr "  (διορθώστε τις συγκρούσεις και τρέξτε \"git rebase --continue\")"
+msgid "  (fix conflicts and then run \"kit rebase --continue\")"
+msgstr "  (διορθώστε τις συγκρούσεις και τρέξτε \"kit rebase --continue\")"
 
 #: wt-status.c:1328
-msgid "  (use \"git rebase --skip\" to skip this patch)"
+msgid "  (use \"kit rebase --skip\" to skip this patch)"
 msgstr ""
-"  (χρησιμοποιήστε \"git rebase --skip\" για να προσπεράσετε αυτή τη διόρθωση)"
+"  (χρησιμοποιήστε \"kit rebase --skip\" για να προσπεράσετε αυτή τη διόρθωση)"
 
 #: wt-status.c:1330
-msgid "  (use \"git rebase --abort\" to check out the original branch)"
+msgid "  (use \"kit rebase --abort\" to check out the original branch)"
 msgstr ""
-"  (χρησιμοποιήστε \"git rebase --abort\" για να εξαγάγετε τον αρχικό κλάδο)"
+"  (χρησιμοποιήστε \"kit rebase --abort\" για να εξαγάγετε τον αρχικό κλάδο)"
 
 #: wt-status.c:1337
-msgid "  (all conflicts fixed: run \"git rebase --continue\")"
-msgstr "  (επιλύθηκαν όλες οι συγκρούσεις: τρέξτε \"git rebase --continue\")"
+msgid "  (all conflicts fixed: run \"kit rebase --continue\")"
+msgstr "  (επιλύθηκαν όλες οι συγκρούσεις: τρέξτε \"kit rebase --continue\")"
 
 #: wt-status.c:1341
 #, c-format
@@ -7224,9 +7224,9 @@ msgid "You are currently splitting a commit during a rebase."
 msgstr "Αυτή τη στιγμή τεμαχίζετε μια υποβολή κατά τη διάρκεια ενός rebase."
 
 #: wt-status.c:1349
-msgid "  (Once your working directory is clean, run \"git rebase --continue\")"
+msgid "  (Once your working directory is clean, run \"kit rebase --continue\")"
 msgstr ""
-"  (Όταν ο φάκελος εργασίας σας θα είναι καθαρός, τρέξτε \"git rebase --"
+"  (Όταν ο φάκελος εργασίας σας θα είναι καθαρός, τρέξτε \"kit rebase --"
 "continue\")"
 
 #: wt-status.c:1353
@@ -7241,16 +7241,16 @@ msgid "You are currently editing a commit during a rebase."
 msgstr "Αυτή τη στιγμή διορθώνετε μια υποβολή κατά τη διάρκεια ενός rebase."
 
 #: wt-status.c:1361
-msgid "  (use \"git commit --amend\" to amend the current commit)"
+msgid "  (use \"kit commit --amend\" to amend the current commit)"
 msgstr ""
-"  (χρησιμοποιήστε \"git commit --amend\" για να τροποποιήσετε την τρέχουσα "
+"  (χρησιμοποιήστε \"kit commit --amend\" για να τροποποιήσετε την τρέχουσα "
 "υποβολή)"
 
 #: wt-status.c:1363
 msgid ""
-"  (use \"git rebase --continue\" once you are satisfied with your changes)"
+"  (use \"kit rebase --continue\" once you are satisfied with your changes)"
 msgstr ""
-"  (χρησιμοποιήστε \"git rebase --continue\" όταν οι αλλαγές σας σας "
+"  (χρησιμοποιήστε \"kit rebase --continue\" όταν οι αλλαγές σας σας "
 "ικανοποιούν)"
 
 #: wt-status.c:1372
@@ -7259,19 +7259,19 @@ msgid "You are currently cherry-picking commit %s."
 msgstr "Αυτή τη στιγμή κάνετε επιλεκτική διαλογή της υποβολής %s."
 
 #: wt-status.c:1377
-msgid "  (fix conflicts and run \"git cherry-pick --continue\")"
+msgid "  (fix conflicts and run \"kit cherry-pick --continue\")"
 msgstr ""
-"  (διορθώστε τις συγκρούσεις και τρέξτε \"git cherry-pick --continue\")"
+"  (διορθώστε τις συγκρούσεις και τρέξτε \"kit cherry-pick --continue\")"
 
 #: wt-status.c:1380
-msgid "  (all conflicts fixed: run \"git cherry-pick --continue\")"
+msgid "  (all conflicts fixed: run \"kit cherry-pick --continue\")"
 msgstr ""
-"  (επιλύθηκαν όλες οι συγκρούσεις: τρέξτε \"git cherry-pick --continue\")"
+"  (επιλύθηκαν όλες οι συγκρούσεις: τρέξτε \"kit cherry-pick --continue\")"
 
 #: wt-status.c:1382
-msgid "  (use \"git cherry-pick --abort\" to cancel the cherry-pick operation)"
+msgid "  (use \"kit cherry-pick --abort\" to cancel the cherry-pick operation)"
 msgstr ""
-"  (χρησιμοποιήστε \"git cherry-pick --abort\" για να ακυρώσετε την ενέργεια "
+"  (χρησιμοποιήστε \"kit cherry-pick --abort\" για να ακυρώσετε την ενέργεια "
 "επιλεκτικής διαλογής)"
 
 #: wt-status.c:1390
@@ -7280,17 +7280,17 @@ msgid "You are currently reverting commit %s."
 msgstr "Αυτή τη στιγμή αναιρείτε την υποβολή %s."
 
 #: wt-status.c:1395
-msgid "  (fix conflicts and run \"git revert --continue\")"
-msgstr "  (επιλύστε τις συγκρούσεις και τρέξτε \"git revert --continue\")"
+msgid "  (fix conflicts and run \"kit revert --continue\")"
+msgstr "  (επιλύστε τις συγκρούσεις και τρέξτε \"kit revert --continue\")"
 
 #: wt-status.c:1398
-msgid "  (all conflicts fixed: run \"git revert --continue\")"
-msgstr "  (επιλύθηκαν όλες οι συγκρούσεις: τρέξτε \"git revert --continue\")"
+msgid "  (all conflicts fixed: run \"kit revert --continue\")"
+msgstr "  (επιλύθηκαν όλες οι συγκρούσεις: τρέξτε \"kit revert --continue\")"
 
 #: wt-status.c:1400
-msgid "  (use \"git revert --abort\" to cancel the revert operation)"
+msgid "  (use \"kit revert --abort\" to cancel the revert operation)"
 msgstr ""
-"  (χρησιμοποιήστε \"git revert --abort\" για να εγκαταλείψετε τη διεργασία "
+"  (χρησιμοποιήστε \"kit revert --abort\" για να εγκαταλείψετε τη διεργασία "
 "revert)"
 
 #: wt-status.c:1410
@@ -7303,9 +7303,9 @@ msgid "You are currently bisecting."
 msgstr "Αυτή τη στιγμή διχοτομείτε."
 
 #: wt-status.c:1417
-msgid "  (use \"git bisect reset\" to get back to the original branch)"
+msgid "  (use \"kit bisect reset\" to get back to the original branch)"
 msgstr ""
-"  (χρησιμοποιήστε \"git bisect reset\" για να επιστρέψετε στον αρχικό κλάδο)"
+"  (χρησιμοποιήστε \"kit bisect reset\" για να επιστρέψετε στον αρχικό κλάδο)"
 
 #: wt-status.c:1617
 msgid "On branch "
@@ -7377,9 +7377,9 @@ msgstr "Δεν υπάρχουν αλλαγές"
 
 #: wt-status.c:1693
 #, c-format
-msgid "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n"
+msgid "no changes added to commit (use \"kit add\" and/or \"kit commit -a\")\n"
 msgstr ""
-"δεν προστέθηκαν αλλαγές στην υποβολή (χρησιμοποιήστε \"git add\" και/ή \"git "
+"δεν προστέθηκαν αλλαγές στην υποβολή (χρησιμοποιήστε \"kit add\" και/ή \"git "
 "commit -a\")\n"
 
 #: wt-status.c:1696
@@ -7390,11 +7390,11 @@ msgstr "δεν προστέθηκαν αλλαγές στην υποβολή\n"
 #: wt-status.c:1699
 #, c-format
 msgid ""
-"nothing added to commit but untracked files present (use \"git add\" to "
+"nothing added to commit but untracked files present (use \"kit add\" to "
 "track)\n"
 msgstr ""
 "δεν προστέθηκε τίποτα στην υποβολή αλλά υπάρχουν μη παρακολουθούμενα αρχεία "
-"(χρησιμοποιήστε \"git add\" για να παρακολουθήσετε)\n"
+"(χρησιμοποιήστε \"kit add\" για να παρακολουθήσετε)\n"
 
 #: wt-status.c:1702
 #, c-format
@@ -7404,10 +7404,10 @@ msgstr ""
 
 #: wt-status.c:1705
 #, c-format
-msgid "nothing to commit (create/copy files and use \"git add\" to track)\n"
+msgid "nothing to commit (create/copy files and use \"kit add\" to track)\n"
 msgstr ""
 "δεν υπάρχει τίποτα προς υποβολή (δημιουργήστε/αντιγράψτε αρχεία και "
-"χρησιμοποιήστε \"git add\" για να παρακολουθήσετε)\n"
+"χρησιμοποιήστε \"kit add\" για να παρακολουθήσετε)\n"
 
 #: wt-status.c:1708 wt-status.c:1713
 #, c-format
@@ -7464,8 +7464,8 @@ msgstr ""
 "αλλαγές."
 
 #: builtin/add.c:25
-msgid "git add [<options>] [--] <pathspec>..."
-msgstr "git add [<επιλογές>] [--] <περιγραφή διαδρομής>..."
+msgid "kit add [<options>] [--] <pathspec>..."
+msgstr "kit add [<επιλογές>] [--] <περιγραφή διαδρομής>..."
 
 #: builtin/add.c:84
 #, c-format
@@ -7590,14 +7590,14 @@ msgid ""
 "the embedded repository and will not know how to obtain it.\n"
 "If you meant to add a submodule, use:\n"
 "\n"
-"\tgit submodule add <url> %s\n"
+"\tkit submodule add <url> %s\n"
 "\n"
 "If you added this path by mistake, you can remove it from the\n"
 "index with:\n"
 "\n"
-"\tgit rm --cached %s\n"
+"\tkit rm --cached %s\n"
 "\n"
-"See \"git help submodule\" for more information."
+"See \"kit help submodule\" for more information."
 msgstr ""
 "Προσθέσατε ένα άλλο αποθετήριο git μέσα στο τρέχον αποθετήριο.\n"
 "Οι κλώνοι του εξώτερου αποθετηρίου δε θα περιέχουν τα περιεχόμενα του\n"
@@ -7612,7 +7612,7 @@ msgstr ""
 "\n"
 "\tgit rm --cached %s\n"
 "\n"
-"Δείτε \"git help submodule\" για περισσότερες πληροφορίες."
+"Δείτε \"kit help submodule\" για περισσότερες πληροφορίες."
 
 #: builtin/add.c:354
 #, c-format
@@ -7823,7 +7823,7 @@ msgstr ""
 
 #: builtin/am.c:1820
 msgid ""
-"No changes - did you forget to use 'git add'?\n"
+"No changes - did you forget to use 'kit add'?\n"
 "If there is nothing left to stage, chances are that something else\n"
 "already introduced the same changes; you might want to skip this patch."
 msgstr ""
@@ -7835,14 +7835,14 @@ msgstr ""
 #: builtin/am.c:1827
 msgid ""
 "You still have unmerged paths in your index.\n"
-"You should 'git add' each file with resolved conflicts to mark them as "
+"You should 'kit add' each file with resolved conflicts to mark them as "
 "such.\n"
-"You might run `git rm` on a file to accept \"deleted by them\" for it."
+"You might run `kit rm` on a file to accept \"deleted by them\" for it."
 msgstr ""
 "Έχετε ακόμα μη συγχωνευμένες διαδρομές στο ευρετήριό σας.\n"
-"Θα πρέπει να προσθέσετε με 'git add' κάθε αρχείο που έχει επιλυμένες "
+"Θα πρέπει να προσθέσετε με 'kit add' κάθε αρχείο που έχει επιλυμένες "
 "συγκρούσεις για να το επισημάνετε.\n"
-"Μπορείτε να τρέξετε `git rm` σε ένα αρχείο για να αποδεχθείτε για αυτό πως "
+"Μπορείτε να τρέξετε `kit rm` σε ένα αρχείο για να αποδεχθείτε για αυτό πως "
 "\"διαγράφηκε από αυτούς\"."
 
 #: builtin/am.c:1934 builtin/am.c:1938 builtin/am.c:1950 builtin/reset.c:329
@@ -7870,12 +7870,12 @@ msgid "Invalid value for --patch-format: %s"
 msgstr ""
 
 #: builtin/am.c:2159
-msgid "git am [<options>] [(<mbox> | <Maildir>)...]"
-msgstr "git am [<επιλογές>] [(<mbox> | <Maildir>)...]"
+msgid "kit am [<options>] [(<mbox> | <Maildir>)...]"
+msgstr "kit am [<επιλογές>] [(<mbox> | <Maildir>)...]"
 
 #: builtin/am.c:2160
-msgid "git am [<options>] (--continue | --skip | --abort)"
-msgstr "git am [<επιλογές>] (--continue | --skip | --abort)"
+msgid "kit am [<options>] (--continue | --skip | --abort)"
+msgstr "kit am [<επιλογές>] (--continue | --skip | --abort)"
 
 #: builtin/am.c:2166
 msgid "run interactively"
@@ -8019,7 +8019,7 @@ msgstr ""
 #, c-format
 msgid ""
 "Stray %s directory found.\n"
-"Use \"git am --abort\" to remove it."
+"Use \"kit am --abort\" to remove it."
 msgstr ""
 
 #: builtin/am.c:2321
@@ -8027,8 +8027,8 @@ msgid "Resolve operation not in progress, we are not resuming."
 msgstr "Δεν υφίσταται διεργασία επίλυσης, δε συνεχίζουμε."
 
 #: builtin/apply.c:8
-msgid "git apply [<options>] [<patch>...]"
-msgstr "git apply [<επιλογές>] [<διόρθωση>...]"
+msgid "kit apply [<options>] [<patch>...]"
+msgstr "kit apply [<επιλογές>] [<διόρθωση>...]"
 
 #: builtin/archive.c:17
 #, c-format
@@ -8044,21 +8044,21 @@ msgid "git archive: Remote with no URL"
 msgstr "git archive: Απομακρυσμένος εξυπηρετητής χωρίς URL"
 
 #: builtin/archive.c:61
-msgid "git archive: expected ACK/NAK, got a flush packet"
-msgstr "git archive: αναμενόταν ACK/NAK, βρέθηκε πακέτο flush"
+msgid "kit archive: expected ACK/NAK, got a flush packet"
+msgstr "kit archive: αναμενόταν ACK/NAK, βρέθηκε πακέτο flush"
 
 #: builtin/archive.c:64
 #, c-format
-msgid "git archive: NACK %s"
-msgstr "git archive: NACK %s"
+msgid "kit archive: NACK %s"
+msgstr "kit archive: NACK %s"
 
 #: builtin/archive.c:65
-msgid "git archive: protocol error"
-msgstr "git archive: σφάλμα πρωτοκόλλου επικοινωνίας"
+msgid "kit archive: protocol error"
+msgstr "kit archive: σφάλμα πρωτοκόλλου επικοινωνίας"
 
 #: builtin/archive.c:69
-msgid "git archive: expected a flush"
-msgstr "git archive: αναμενόταν flush"
+msgid "kit archive: expected a flush"
+msgstr "kit archive: αναμενόταν flush"
 
 #: builtin/bisect--helper.c:22
 msgid "git bisect--helper --next-all [--no-checkout]"
@@ -8149,7 +8149,7 @@ msgstr ""
 #: builtin/bisect--helper.c:174
 #, c-format
 msgid ""
-"could not check out original HEAD '%s'. Try 'git bisect reset <commit>'."
+"could not check out original HEAD '%s'. Try 'kit bisect reset <commit>'."
 msgstr ""
 
 #: builtin/bisect--helper.c:215
@@ -8176,21 +8176,21 @@ msgstr ""
 #, c-format
 msgid ""
 "You need to give me at least one %s and %s revision.\n"
-"You can use \"git bisect %s\" and \"git bisect %s\" for that."
+"You can use \"kit bisect %s\" and \"kit bisect %s\" for that."
 msgstr ""
 "Πρέπει να δώσετε τουλάχιστον ένα %s και %s έκδοση.\n"
-"Μπορείτε να χρησιμοποιήσετε \"git bisect %s\" και \"git bisect %s\" για αυτό."
+"Μπορείτε να χρησιμοποιήσετε \"kit bisect %s\" και \"kit bisect %s\" για αυτό."
 
 #: builtin/bisect--helper.c:289
 #, c-format
 msgid ""
-"You need to start by \"git bisect start\".\n"
+"You need to start by \"kit bisect start\".\n"
 "You then need to give me at least one %s and %s revision.\n"
-"You can use \"git bisect %s\" and \"git bisect %s\" for that."
+"You can use \"kit bisect %s\" and \"kit bisect %s\" for that."
 msgstr ""
-"Χρειάζεται να αρχίσετε με \"git bisect start\".\n"
+"Χρειάζεται να αρχίσετε με \"kit bisect start\".\n"
 "Έπειτα χρειάζεται να δώσετε τουλάχιστον ένα %s και %s έκδοση.\n"
-"Μπορείτε να χρησιμοποιήσετε \"git bisect %s\" και \"git bisect %s\" για αυτό."
+"Μπορείτε να χρησιμοποιήσετε \"kit bisect %s\" και \"kit bisect %s\" για αυτό."
 
 #: builtin/bisect--helper.c:321
 #, c-format
@@ -8221,7 +8221,7 @@ msgstr ""
 #: builtin/bisect--helper.c:389
 #, c-format
 msgid ""
-"invalid argument %s for 'git bisect terms'.\n"
+"invalid argument %s for 'kit bisect terms'.\n"
 "Supported options are: --term-good|--term-old and --term-bad|--term-new."
 msgstr ""
 
@@ -8241,7 +8241,7 @@ msgstr ""
 
 #: builtin/bisect--helper.c:526
 #, c-format
-msgid "checking out '%s' failed. Try 'git bisect start <valid-branch>'."
+msgid "checking out '%s' failed. Try 'kit bisect start <valid-branch>'."
 msgstr ""
 
 #: builtin/bisect--helper.c:547
@@ -8329,8 +8329,8 @@ msgid "--bisect-terms requires 0 or 1 argument"
 msgstr ""
 
 #: builtin/blame.c:31
-msgid "git blame [<options>] [<rev-opts>] [<rev>] [--] <file>"
-msgstr "git blame [<επιλογές>] [<επιλογές έκδ.>] [<έκδ.>] [--] <αρχείο>"
+msgid "kit blame [<options>] [<rev-opts>] [<rev>] [--] <file>"
+msgstr "kit blame [<επιλογές>] [<επιλογές έκδ.>] [<έκδ.>] [--] <αρχείο>"
 
 #: builtin/blame.c:36
 msgid "<rev-opts> are documented in git-rev-list(1)"
@@ -8500,24 +8500,24 @@ msgid "git branch [<options>] [-l] [-f] <branch-name> [<start-point>]"
 msgstr "git branch [<επιλογές>] [-l] [-f] <όνομα κλάδου> [<αρχικό σημείο>]"
 
 #: builtin/branch.c:31
-msgid "git branch [<options>] [-r] (-d | -D) <branch-name>..."
-msgstr "git branch [<επιλογές>] [-r] (-d | -D) <όνομα κλάδου>..."
+msgid "kit branch [<options>] [-r] (-d | -D) <branch-name>..."
+msgstr "kit branch [<επιλογές>] [-r] (-d | -D) <όνομα κλάδου>..."
 
 #: builtin/branch.c:32
-msgid "git branch [<options>] (-m | -M) [<old-branch>] <new-branch>"
-msgstr "git branch [<επιλογές>] (-m | -M) [<παλιός κλάδος>] <νέος κλάδος>"
+msgid "kit branch [<options>] (-m | -M) [<old-branch>] <new-branch>"
+msgstr "kit branch [<επιλογές>] (-m | -M) [<παλιός κλάδος>] <νέος κλάδος>"
 
 #: builtin/branch.c:33
-msgid "git branch [<options>] (-c | -C) [<old-branch>] <new-branch>"
-msgstr "git branch [<επιλογές>] (-c | -C) [<παλιός κλάδος>] <νέος κλάδος>"
+msgid "kit branch [<options>] (-c | -C) [<old-branch>] <new-branch>"
+msgstr "kit branch [<επιλογές>] (-c | -C) [<παλιός κλάδος>] <νέος κλάδος>"
 
 #: builtin/branch.c:34
-msgid "git branch [<options>] [-r | -a] [--points-at]"
-msgstr "git branch [<επιλογές>] [-r | -a] [--points-at]"
+msgid "kit branch [<options>] [-r | -a] [--points-at]"
+msgstr "kit branch [<επιλογές>] [-r | -a] [--points-at]"
 
 #: builtin/branch.c:35
-msgid "git branch [<options>] [-r | -a] [--format]"
-msgstr "git branch [<επιλογές>] [-r | -a] [--format]"
+msgid "kit branch [<options>] [-r | -a] [--format]"
+msgstr "kit branch [<επιλογές>] [-r | -a] [--format]"
 
 #: builtin/branch.c:151
 #, c-format
@@ -9037,8 +9037,8 @@ msgid "--non-matching is only valid with --verbose"
 msgstr ""
 
 #: builtin/check-mailmap.c:9
-msgid "git check-mailmap [<options>] <contact>..."
-msgstr "git check-mailmap [<επιλογές>] <επαφή>..."
+msgid "kit check-mailmap [<options>] <contact>..."
+msgstr "kit check-mailmap [<επιλογές>] <επαφή>..."
 
 #: builtin/check-mailmap.c:14
 msgid "also read contacts from stdin"
@@ -9054,8 +9054,8 @@ msgid "no contacts specified"
 msgstr ""
 
 #: builtin/checkout-index.c:131
-msgid "git checkout-index [<options>] [--] [<file>...]"
-msgstr "git checkout-index [<επιλογές>] [--] [<αρχείο>...]"
+msgid "kit checkout-index [<options>] [--] [<file>...]"
+msgstr "kit checkout-index [<επιλογές>] [--] [<αρχείο>...]"
 
 #: builtin/checkout-index.c:148
 msgid "stage should be between 1 and 3 or all"
@@ -9105,12 +9105,12 @@ msgid "copy out the files from named stage"
 msgstr ""
 
 #: builtin/checkout.c:32
-msgid "git checkout [<options>] <branch>"
-msgstr "git checkout [<επιλογές>] <κλάδος>"
+msgid "kit checkout [<options>] <branch>"
+msgstr "kit checkout [<επιλογές>] <κλάδος>"
 
 #: builtin/checkout.c:33
-msgid "git checkout [<options>] [<branch>] -- <file>..."
-msgstr "git checkout [<επιλογές>] [<κλάδος>] -- <αρχείο>..."
+msgid "kit checkout [<options>] [<branch>] -- <file>..."
+msgstr "kit checkout [<επιλογές>] [<κλάδος>] -- <αρχείο>..."
 
 #: builtin/checkout.c:147 builtin/checkout.c:181
 #, c-format
@@ -9252,13 +9252,13 @@ msgid ""
 "If you want to keep it by creating a new branch, this may be a good time\n"
 "to do so with:\n"
 "\n"
-" git branch <new-branch-name> %s\n"
+" kit branch <new-branch-name> %s\n"
 "\n"
 msgid_plural ""
 "If you want to keep them by creating a new branch, this may be a good time\n"
 "to do so with:\n"
 "\n"
-" git branch <new-branch-name> %s\n"
+" kit branch <new-branch-name> %s\n"
 "\n"
 msgstr[0] ""
 msgstr[1] ""
@@ -9427,15 +9427,15 @@ msgstr ""
 
 #: builtin/checkout.c:1415
 #, c-format
-msgid "git checkout: --detach does not take a path argument '%s'"
-msgstr "git checkout: το --detach δε δέχεται όρισμα διαδρομής '%s'"
+msgid "kit checkout: --detach does not take a path argument '%s'"
+msgstr "kit checkout: το --detach δε δέχεται όρισμα διαδρομής '%s'"
 
 #: builtin/checkout.c:1419
 msgid ""
-"git checkout: --ours/--theirs, --force and --merge are incompatible when\n"
+"kit checkout: --ours/--theirs, --force and --merge are incompatible when\n"
 "checking out of the index."
 msgstr ""
-"git checkout: --ours/--theirs, --force και --merge είναι ασύμβατα όταν\n"
+"kit checkout: --ours/--theirs, --force και --merge είναι ασύμβατα όταν\n"
 "γίνεται εξαγωγή από το ευρετήριο."
 
 #: builtin/checkout.c:1439
@@ -9649,8 +9649,8 @@ msgid ""
 msgstr ""
 
 #: builtin/clone.c:44
-msgid "git clone [<options>] [--] <repo> [<dir>]"
-msgstr "git clone [<επιλογές>] [--] <αποθετήριο> [<φάκελος>]"
+msgid "kit clone [<options>] [--] <repo> [<dir>]"
+msgstr "kit clone [<επιλογές>] [--] <αποθετήριο> [<φάκελος>]"
 
 #: builtin/clone.c:89
 msgid "don't create a checkout"
@@ -9990,8 +9990,8 @@ msgid "You appear to have cloned an empty repository."
 msgstr "Φαίνεται πως κλωνοποιήσατε ένα κενό αποθετήριο."
 
 #: builtin/column.c:10
-msgid "git column [<options>]"
-msgstr "git column [<επιλογές>]"
+msgid "kit column [<options>]"
+msgstr "kit column [<επιλογές>]"
 
 #: builtin/column.c:27
 msgid "lookup config vars"
@@ -10033,25 +10033,25 @@ msgstr "git status [<επιλογές>] [--] <περιγραφή διαδρομ�
 msgid ""
 "You asked to amend the most recent commit, but doing so would make\n"
 "it empty. You can repeat your command with --allow-empty, or you can\n"
-"remove the commit entirely with \"git reset HEAD^\".\n"
+"remove the commit entirely with \"kit reset HEAD^\".\n"
 msgstr ""
 "Ζητήσατε να τροποποιήσετε την πιο πρόσφατη υποβολή, αλλά αυτό θα την άφηνε\n"
 "κενή. Μπορείτε να επαναλάβετε την εντολή σας με --allow-empty, ή να\n"
-"αφαιρέσετε την υποβολή εντελώς με \"git reset HEAD^\".\n"
+"αφαιρέσετε την υποβολή εντελώς με \"kit reset HEAD^\".\n"
 
 #: builtin/commit.c:56
 msgid ""
 "The previous cherry-pick is now empty, possibly due to conflict resolution.\n"
 "If you wish to commit it anyway, use:\n"
 "\n"
-"    git commit --allow-empty\n"
+"    kit commit --allow-empty\n"
 "\n"
 msgstr ""
 "Η προηγούμενη επιλεκτική διαλογή είναι τώρα κενή, πιθανώς λόγω επίλυσης "
 "συγκρούσεων.\n"
 "Αν θέλετε να την υποβάλετε πάραυτα, χρησιμοποιήστε:\n"
 "\n"
-"    git commit --allow-empty\n"
+"    kit commit --allow-empty\n"
 "\n"
 
 #: builtin/commit.c:63
@@ -10855,7 +10855,7 @@ msgstr "Το $HOME δεν έχει οριστεί"
 msgid ""
 "--worktree cannot be used with multiple working trees unless the config\n"
 "extension worktreeConfig is enabled. Please read \"CONFIGURATION FILE\"\n"
-"section in \"git help worktree\" for details"
+"section in \"kit help worktree\" for details"
 msgstr ""
 
 #: builtin/config.c:688
@@ -11119,8 +11119,8 @@ msgid "unhandled object '%s' given."
 msgstr ""
 
 #: builtin/difftool.c:31
-msgid "git difftool [<options>] [<commit> [<commit>]] [--] [<path>...]"
-msgstr "git difftool [<επιλογές>] [<υποβολή> [<υποβολή>]] [--] [<διαδρομή>...]"
+msgid "kit difftool [<options>] [<commit> [<commit>]] [--] [<path>...]"
+msgstr "kit difftool [<επιλογές>] [<υποβολή> [<υποβολή>]] [--] [<διαδρομή>...]"
 
 #: builtin/difftool.c:261
 #, c-format
@@ -11273,20 +11273,20 @@ msgid "Show original object ids of blobs/commits"
 msgstr "Προβολή αρχικών αναγνωριστικών των blob/υποβολών"
 
 #: builtin/fetch.c:28
-msgid "git fetch [<options>] [<repository> [<refspec>...]]"
-msgstr "git fetch [<επιλογές>] [<αποθετήριο> [<refspec>...]]"
+msgid "kit fetch [<options>] [<repository> [<refspec>...]]"
+msgstr "kit fetch [<επιλογές>] [<αποθετήριο> [<refspec>...]]"
 
 #: builtin/fetch.c:29
-msgid "git fetch [<options>] <group>"
-msgstr "git fetch [<επιλογές>] <ομάδα>"
+msgid "kit fetch [<options>] <group>"
+msgstr "kit fetch [<επιλογές>] <ομάδα>"
 
 #: builtin/fetch.c:30
 msgid "git fetch --multiple [<options>] [(<repository> | <group>)...]"
 msgstr "git fetch --multiple [<επιλογές>] [(<αποθετήριο> | <ομάδα>)...]"
 
 #: builtin/fetch.c:31
-msgid "git fetch --all [<options>]"
-msgstr "git fetch --all [<επιλογές>]"
+msgid "kit fetch --all [<options>]"
+msgstr "kit fetch --all [<επιλογές>]"
 
 #: builtin/fetch.c:115 builtin/pull.c:195
 msgid "fetch from all remotes"
@@ -11470,7 +11470,7 @@ msgstr "Από το %.*s\n"
 #, c-format
 msgid ""
 "some local refs could not be updated; try running\n"
-" 'git remote prune %s' to remove any old, conflicting branches"
+" 'kit remote prune %s' to remove any old, conflicting branches"
 msgstr ""
 
 #: builtin/fetch.c:1051
@@ -11575,7 +11575,7 @@ msgstr ""
 
 #: builtin/fmt-merge-msg.c:18
 msgid ""
-"git fmt-merge-msg [-m <message>] [--log[=<n>] | --no-log] [--file <file>]"
+"kit fmt-merge-msg [-m <message>] [--log[=<n>] | --no-log] [--file <file>]"
 msgstr ""
 
 #: builtin/fmt-merge-msg.c:672
@@ -11900,8 +11900,8 @@ msgid "invalid parameter: expected sha1, got '%s'"
 msgstr ""
 
 #: builtin/gc.c:34
-msgid "git gc [<options>]"
-msgstr "git gc [<επιλογές>]"
+msgid "kit gc [<options>]"
+msgstr "kit gc [<επιλογές>]"
 
 #: builtin/gc.c:90
 #, c-format
@@ -11970,7 +11970,7 @@ msgstr ""
 
 #: builtin/gc.c:579
 #, c-format
-msgid "See \"git help gc\" for manual housekeeping.\n"
+msgid "See \"kit help gc\" for manual housekeeping.\n"
 msgstr ""
 
 #: builtin/gc.c:619
@@ -11981,11 +11981,11 @@ msgstr ""
 
 #: builtin/gc.c:672
 msgid ""
-"There are too many unreachable loose objects; run 'git prune' to remove them."
+"There are too many unreachable loose objects; run 'kit prune' to remove them."
 msgstr ""
 
 #: builtin/grep.c:29
-msgid "git grep [<options>] [-e] <pattern> [<rev>...] [[--] <path>...]"
+msgid "kit grep [<options>] [-e] <pattern> [<rev>...] [[--] <path>...]"
 msgstr ""
 
 #: builtin/grep.c:225
@@ -12398,8 +12398,8 @@ msgid "usage: %s%s"
 msgstr "χρήση: %s%s"
 
 #: builtin/help.c:487
-msgid "'git help config' for more information"
-msgstr "'git help config' για περισσότερες πληροφορίες"
+msgid "'kit help config' for more information"
+msgstr "'kit help config' για περισσότερες πληροφορίες"
 
 #: builtin/index-pack.c:184
 #, c-format
@@ -12868,11 +12868,11 @@ msgid "no input file given for in-place editing"
 msgstr ""
 
 #: builtin/log.c:55
-msgid "git log [<options>] [<revision-range>] [[--] <path>...]"
-msgstr "git log [<επιλογές>] [<εύρος εκδόσεων>] [[--] <διαδρομή>...]"
+msgid "kit log [<options>] [<revision-range>] [[--] <path>...]"
+msgstr "kit log [<επιλογές>] [<εύρος εκδόσεων>] [[--] <διαδρομή>...]"
 
 #: builtin/log.c:56
-msgid "git show [<options>] <object>..."
+msgid "kit show [<options>] <object>..."
 msgstr ""
 
 #: builtin/log.c:100
@@ -12915,7 +12915,7 @@ msgstr ""
 
 #: builtin/log.c:525
 #, c-format
-msgid "git show %s: bad file"
+msgid "kit show %s: bad file"
 msgstr ""
 
 #: builtin/log.c:540 builtin/log.c:634
@@ -12959,7 +12959,7 @@ msgid "insane in-reply-to: %s"
 msgstr ""
 
 #: builtin/log.c:1159
-msgid "git format-patch [<options>] [<since> | <revision-range>]"
+msgid "kit format-patch [<options>] [<since> | <revision-range>]"
 msgstr ""
 
 #: builtin/log.c:1217
@@ -13253,8 +13253,8 @@ msgid "Failed to create output files"
 msgstr ""
 
 #: builtin/log.c:2003
-msgid "git cherry [-v] [<upstream> [<head> [<limit>]]]"
-msgstr "git cherry [-v] [<προς τα πάνω> [<head> [<όριο>]]]"
+msgid "kit cherry [-v] [<upstream> [<head> [<limit>]]]"
+msgstr "kit cherry [-v] [<προς τα πάνω> [<head> [<όριο>]]]"
 
 #: builtin/log.c:2057
 #, c-format
@@ -13263,7 +13263,7 @@ msgid ""
 msgstr ""
 
 #: builtin/ls-files.c:470
-msgid "git ls-files [<options>] [<file>...]"
+msgid "kit ls-files [<options>] [<file>...]"
 msgstr ""
 
 #: builtin/ls-files.c:526
@@ -13410,7 +13410,7 @@ msgid "show underlying ref in addition to the object pointed by it"
 msgstr ""
 
 #: builtin/ls-tree.c:30
-msgid "git ls-tree [<options>] <tree-ish> [<path>...]"
+msgid "kit ls-tree [<options>] <tree-ish> [<path>...]"
 msgstr ""
 
 #: builtin/ls-tree.c:128
@@ -13451,7 +13451,7 @@ msgid "empty mbox: '%s'"
 msgstr ""
 
 #: builtin/merge.c:53
-msgid "git merge [<options>] [<commit>...]"
+msgid "kit merge [<options>] [<commit>...]"
 msgstr ""
 
 #: builtin/merge.c:54
@@ -13625,9 +13625,9 @@ msgstr ""
 
 #: builtin/merge.c:792
 #, c-format
-msgid "Not committing merge; use 'git commit' to complete the merge.\n"
+msgid "Not committing merge; use 'kit commit' to complete the merge.\n"
 msgstr ""
-"Δε γίνεται υποβολή της συγχώνευσης, χρησιμοποιήστε 'git commit' για να "
+"Δε γίνεται υποβολή της συγχώνευσης, χρησιμοποιήστε 'kit commit' για να "
 "ολοκληρώσετε τη συγχώνευση.\n"
 
 #: builtin/merge.c:798
@@ -13811,23 +13811,23 @@ msgid "Automatic merge went well; stopped before committing as requested\n"
 msgstr ""
 
 #: builtin/merge-base.c:32
-msgid "git merge-base [-a | --all] <commit> <commit>..."
+msgid "kit merge-base [-a | --all] <commit> <commit>..."
 msgstr ""
 
 #: builtin/merge-base.c:33
-msgid "git merge-base [-a | --all] --octopus <commit>..."
+msgid "kit merge-base [-a | --all] --octopus <commit>..."
 msgstr ""
 
 #: builtin/merge-base.c:34
-msgid "git merge-base --independent <commit>..."
+msgid "kit merge-base --independent <commit>..."
 msgstr ""
 
 #: builtin/merge-base.c:35
-msgid "git merge-base --is-ancestor <commit> <commit>"
+msgid "kit merge-base --is-ancestor <commit> <commit>"
 msgstr ""
 
 #: builtin/merge-base.c:36
-msgid "git merge-base --fork-point <ref> [<commit>]"
+msgid "kit merge-base --fork-point <ref> [<commit>]"
 msgstr ""
 
 #: builtin/merge-base.c:153
@@ -13852,7 +13852,7 @@ msgstr ""
 
 #: builtin/merge-file.c:9
 msgid ""
-"git merge-file [<options>] [-L <name1> [-L <orig> [-L <name2>]]] <file1> "
+"kit merge-file [<options>] [-L <name1> [-L <orig> [-L <name2>]]] <file1> "
 "<orig-file> <file2>"
 msgstr ""
 
@@ -14045,11 +14045,11 @@ msgid "renaming '%s' failed"
 msgstr ""
 
 #: builtin/name-rev.c:355
-msgid "git name-rev [<options>] <commit>..."
+msgid "kit name-rev [<options>] <commit>..."
 msgstr ""
 
 #: builtin/name-rev.c:356
-msgid "git name-rev [<options>] --all"
+msgid "kit name-rev [<options>] --all"
 msgstr ""
 
 #: builtin/name-rev.c:357
@@ -14089,7 +14089,7 @@ msgid "dereference tags in the input (internal use)"
 msgstr ""
 
 #: builtin/notes.c:28
-msgid "git notes [--ref <notes-ref>] [list [<object>]]"
+msgid "kit notes [--ref <notes-ref>] [list [<object>]]"
 msgstr ""
 
 #: builtin/notes.c:29
@@ -14099,7 +14099,7 @@ msgid ""
 msgstr ""
 
 #: builtin/notes.c:30
-msgid "git notes [--ref <notes-ref>] copy [-f] <from-object> <to-object>"
+msgid "kit notes [--ref <notes-ref>] copy [-f] <from-object> <to-object>"
 msgstr ""
 
 #: builtin/notes.c:31
@@ -14109,16 +14109,16 @@ msgid ""
 msgstr ""
 
 #: builtin/notes.c:32
-msgid "git notes [--ref <notes-ref>] edit [--allow-empty] [<object>]"
+msgid "kit notes [--ref <notes-ref>] edit [--allow-empty] [<object>]"
 msgstr ""
 
 #: builtin/notes.c:33
-msgid "git notes [--ref <notes-ref>] show [<object>]"
+msgid "kit notes [--ref <notes-ref>] show [<object>]"
 msgstr ""
 
 #: builtin/notes.c:34
 msgid ""
-"git notes [--ref <notes-ref>] merge [-v | -q] [-s <strategy>] <notes-ref>"
+"kit notes [--ref <notes-ref>] merge [-v | -q] [-s <strategy>] <notes-ref>"
 msgstr ""
 
 #: builtin/notes.c:35
@@ -14130,63 +14130,63 @@ msgid "git notes merge --abort [-v | -q]"
 msgstr ""
 
 #: builtin/notes.c:37
-msgid "git notes [--ref <notes-ref>] remove [<object>...]"
+msgid "kit notes [--ref <notes-ref>] remove [<object>...]"
 msgstr ""
 
 #: builtin/notes.c:38
-msgid "git notes [--ref <notes-ref>] prune [-n] [-v]"
+msgid "kit notes [--ref <notes-ref>] prune [-n] [-v]"
 msgstr ""
 
 #: builtin/notes.c:39
-msgid "git notes [--ref <notes-ref>] get-ref"
+msgid "kit notes [--ref <notes-ref>] get-ref"
 msgstr ""
 
 #: builtin/notes.c:44
-msgid "git notes [list [<object>]]"
+msgid "kit notes [list [<object>]]"
 msgstr ""
 
 #: builtin/notes.c:49
-msgid "git notes add [<options>] [<object>]"
+msgid "kit notes add [<options>] [<object>]"
 msgstr ""
 
 #: builtin/notes.c:54
-msgid "git notes copy [<options>] <from-object> <to-object>"
+msgid "kit notes copy [<options>] <from-object> <to-object>"
 msgstr ""
 
 #: builtin/notes.c:55
-msgid "git notes copy --stdin [<from-object> <to-object>]..."
+msgid "kit notes copy --stdin [<from-object> <to-object>]..."
 msgstr ""
 
 #: builtin/notes.c:60
-msgid "git notes append [<options>] [<object>]"
+msgid "kit notes append [<options>] [<object>]"
 msgstr ""
 
 #: builtin/notes.c:65
-msgid "git notes edit [<object>]"
+msgid "kit notes edit [<object>]"
 msgstr ""
 
 #: builtin/notes.c:70
-msgid "git notes show [<object>]"
+msgid "kit notes show [<object>]"
 msgstr ""
 
 #: builtin/notes.c:75
-msgid "git notes merge [<options>] <notes-ref>"
+msgid "kit notes merge [<options>] <notes-ref>"
 msgstr ""
 
 #: builtin/notes.c:76
-msgid "git notes merge --commit [<options>]"
+msgid "kit notes merge --commit [<options>]"
 msgstr ""
 
 #: builtin/notes.c:77
-msgid "git notes merge --abort [<options>]"
+msgid "kit notes merge --abort [<options>]"
 msgstr ""
 
 #: builtin/notes.c:82
-msgid "git notes remove [<object>]"
+msgid "kit notes remove [<object>]"
 msgstr ""
 
 #: builtin/notes.c:87
-msgid "git notes prune [<options>]"
+msgid "kit notes prune [<options>]"
 msgstr ""
 
 #: builtin/notes.c:92
@@ -14345,7 +14345,7 @@ msgstr ""
 #, c-format
 msgid ""
 "The -m/-F/-c/-C options have been deprecated for the 'edit' subcommand.\n"
-"Please use 'git notes add -f -m/-F/-c/-C' instead.\n"
+"Please use 'kit notes add -f -m/-F/-c/-C' instead.\n"
 msgstr ""
 
 #: builtin/notes.c:698
@@ -14357,7 +14357,7 @@ msgid "failed to delete ref NOTES_MERGE_REF"
 msgstr ""
 
 #: builtin/notes.c:702
-msgid "failed to remove 'git notes merge' worktree"
+msgid "failed to remove 'kit notes merge' worktree"
 msgstr ""
 
 #: builtin/notes.c:722
@@ -14444,7 +14444,7 @@ msgstr ""
 #, c-format
 msgid ""
 "Automatic notes merge failed. Fix conflicts in %s and commit the result with "
-"'git notes merge --commit', or abort the merge with 'git notes merge --"
+"'kit notes merge --commit', or abort the merge with 'kit notes merge --"
 "abort'.\n"
 msgstr ""
 
@@ -14882,7 +14882,7 @@ msgid "Removing duplicate objects"
 msgstr ""
 
 #: builtin/prune.c:12
-msgid "git prune [-n] [-v] [--progress] [--expire <time>] [--] [<head>...]"
+msgid "kit prune [-n] [-v] [--progress] [--expire <time>] [--] [<head>...]"
 msgstr ""
 
 #: builtin/prune.c:109
@@ -14907,7 +14907,7 @@ msgid "Invalid value for %s: %s"
 msgstr ""
 
 #: builtin/pull.c:83
-msgid "git pull [<options>] [<repository> [<refspec>...]]"
+msgid "kit pull [<options>] [<repository> [<refspec>...]]"
 msgstr ""
 
 #: builtin/pull.c:134
@@ -15057,9 +15057,9 @@ msgstr ""
 msgid ""
 "Cannot fast-forward your working tree.\n"
 "After making sure that you saved anything precious from\n"
-"$ git diff %s\n"
+"$ kit diff %s\n"
 "output, run\n"
-"$ git reset --hard\n"
+"$ kit reset --hard\n"
 "to recover."
 msgstr ""
 
@@ -15076,8 +15076,8 @@ msgid "cannot rebase with locally recorded submodule modifications"
 msgstr ""
 
 #: builtin/push.c:19
-msgid "git push [<options>] [<repository> [<refspec>...]]"
-msgstr "git push [<επιλογές>] [<αποθετήριο> [<refspec>...]]"
+msgid "kit push [<options>] [<repository> [<refspec>...]]"
+msgstr "kit push [<επιλογές>] [<αποθετήριο> [<refspec>...]]"
 
 #: builtin/push.c:111
 msgid "tag shorthand without <tag>"
@@ -15130,13 +15130,13 @@ msgid ""
 "To push the history leading to the current (detached HEAD)\n"
 "state now, use\n"
 "\n"
-"    git push %s HEAD:<name-of-remote-branch>\n"
+"    kit push %s HEAD:<name-of-remote-branch>\n"
 msgstr ""
 "Δε βρίσκεστε αυτή τη στιγμή σε κάποιον κλάδο.\n"
 "Για να δημοσιεύσετε το ιστορικό που οδηγεί στην τρέχουσα κατάσταση\n"
 "(αποσυνδεδεμένου HEAD) τώρα, χρησιμοποιήστε\n"
 "\n"
-"    git push %s HEAD:<όνομα-του-απομακρυσμένου-κλάδου>\n"
+"    kit push %s HEAD:<όνομα-του-απομακρυσμένου-κλάδου>\n"
 
 #: builtin/push.c:199
 #, c-format
@@ -15328,8 +15328,8 @@ msgid "receive pack program"
 msgstr "λήψη προγράμματος πακέτου"
 
 #: builtin/push.c:573
-msgid "set upstream for git pull/status"
-msgstr "να οριστεί το προς τα πάνω για το git pull/status"
+msgid "set upstream for kit pull/status"
+msgstr "να οριστεί το προς τα πάνω για το kit pull/status"
 
 #: builtin/push.c:576
 msgid "prune locally removed refs"
@@ -15384,15 +15384,15 @@ msgid "push options must not have new line characters"
 msgstr "οι επιλογές δημοσίευσης δεν πρέπει να έχουν χαρακτήρες newline"
 
 #: builtin/range-diff.c:8
-msgid "git range-diff [<options>] <old-base>..<old-tip> <new-base>..<new-tip>"
+msgid "kit range-diff [<options>] <old-base>..<old-tip> <new-base>..<new-tip>"
 msgstr ""
 
 #: builtin/range-diff.c:9
-msgid "git range-diff [<options>] <old-tip>...<new-tip>"
+msgid "kit range-diff [<options>] <old-tip>...<new-tip>"
 msgstr ""
 
 #: builtin/range-diff.c:10
-msgid "git range-diff [<options>] <base> <old-tip> <new-tip>"
+msgid "kit range-diff [<options>] <base> <old-tip> <new-tip>"
 msgstr ""
 
 #: builtin/range-diff.c:21
@@ -15495,7 +15495,7 @@ msgstr ""
 
 #: builtin/rebase.c:32
 msgid ""
-"git rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] --root [<branch>]"
+"kit rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] --root [<branch>]"
 msgstr ""
 
 #: builtin/rebase.c:34
@@ -15539,29 +15539,29 @@ msgstr ""
 #: builtin/rebase.c:522
 msgid ""
 "Resolve all conflicts manually, mark them as resolved with\n"
-"\"git add/rm <conflicted_files>\", then run \"git rebase --continue\".\n"
-"You can instead skip this commit: run \"git rebase --skip\".\n"
-"To abort and get back to the state before \"git rebase\", run \"git rebase --"
+"\"kit add/rm <conflicted_files>\", then run \"kit rebase --continue\".\n"
+"You can instead skip this commit: run \"kit rebase --skip\".\n"
+"To abort and get back to the state before \"kit rebase\", run \"kit rebase --"
 "abort\"."
 msgstr ""
 "Επιλύστε όλες τις συγκρούσεις χειροκίνητα, επισημάνετέ τις ως επιλυμένες με\n"
-"\"git add/rm <συγκρουόμενα αρχεία>\", έπειτα τρέξτε \"git rebase --continue"
+"\"kit add/rm <συγκρουόμενα αρχεία>\", έπειτα τρέξτε \"kit rebase --continue"
 "\".\n"
-"Ειδάλλως μπορείτε να προσπεράσετε αυτή την υποβολή: τρέξτε \"git rebase --"
+"Ειδάλλως μπορείτε να προσπεράσετε αυτή την υποβολή: τρέξτε \"kit rebase --"
 "skip\".\n"
 "Για να εγκαταλείψετε και να επιστρέψετε στην κατάσταση πριν από το \"git "
-"rebase\", τρέξτε \"git rebase --abort\"."
+"rebase\", τρέξτε \"kit rebase --abort\"."
 
 #: builtin/rebase.c:603
 #, c-format
 msgid ""
 "\n"
-"git encountered an error while preparing the patches to replay\n"
+"kit encountered an error while preparing the patches to replay\n"
 "these revisions:\n"
 "\n"
 "    %s\n"
 "\n"
-"As a result, git cannot rebase them."
+"As a result, kit cannot rebase them."
 msgstr ""
 
 #: builtin/rebase.c:948
@@ -15571,7 +15571,7 @@ msgid ""
 "Please specify which branch you want to rebase against.\n"
 "See git-rebase(1) for details.\n"
 "\n"
-"    git rebase '<branch>'\n"
+"    kit rebase '<branch>'\n"
 "\n"
 msgstr ""
 
@@ -15580,7 +15580,7 @@ msgstr ""
 msgid ""
 "If you wish to set tracking information for this branch you can do so with:\n"
 "\n"
-"    git branch --set-upstream-to=%s/<branch> %s\n"
+"    kit branch --set-upstream-to=%s/<branch> %s\n"
 "\n"
 msgstr ""
 
@@ -15621,7 +15621,7 @@ msgid "passed to 'git am'"
 msgstr ""
 
 #: builtin/rebase.c:1063 builtin/rebase.c:1065
-msgid "passed to 'git apply'"
+msgid "passed to 'kit apply'"
 msgstr ""
 
 #: builtin/rebase.c:1067 builtin/rebase.c:1070
@@ -15722,7 +15722,7 @@ msgid "could not exec %s"
 msgstr ""
 
 #: builtin/rebase.c:1167 git-legacy-rebase.sh:220
-msgid "It looks like 'git am' is in progress. Cannot rebase."
+msgid "It looks like 'kit am' is in progress. Cannot rebase."
 msgstr ""
 
 #: builtin/rebase.c:1208 git-legacy-rebase.sh:406
@@ -15740,10 +15740,10 @@ msgstr ""
 #: builtin/rebase.c:1238 git-legacy-rebase.sh:427
 msgid ""
 "You must edit all merge conflicts and then\n"
-"mark them as resolved using git add"
+"mark them as resolved using kit add"
 msgstr ""
 "Πρέπει να επεξεργαστείτε όλες τις συγκρούσεις συγχώνευσης και μετά\n"
-"να τις επισημάνετε ως επιλυμένες χρησιμοποιώντας git add"
+"να τις επισημάνετε ως επιλυμένες χρησιμοποιώντας kit add"
 
 #: builtin/rebase.c:1257
 msgid "could not discard worktree changes"
@@ -16095,14 +16095,14 @@ msgid "a base commit must be provided with --upstream or --onto"
 msgstr ""
 
 #: builtin/receive-pack.c:33
-msgid "git receive-pack <git-dir>"
+msgid "kit receive-pack <git-dir>"
 msgstr ""
 
 #: builtin/receive-pack.c:830
 msgid ""
 "By default, updating the current branch in a non-bare repository\n"
 "is denied, because it will make the index and work tree inconsistent\n"
-"with what you pushed, and will require 'git reset --hard' to match\n"
+"with what you pushed, and will require 'kit reset --hard' to match\n"
 "the work tree to HEAD.\n"
 "\n"
 "You can set the 'receive.denyCurrentBranch' configuration variable\n"
@@ -16118,7 +16118,7 @@ msgstr ""
 #: builtin/receive-pack.c:850
 msgid ""
 "By default, deleting the current branch is denied, because the next\n"
-"'git clone' won't result in any file checked out, causing confusion.\n"
+"'kit clone' won't result in any file checked out, causing confusion.\n"
 "\n"
 "You can set 'receive.denyDeleteCurrent' configuration variable to\n"
 "'warn' or 'ignore' in the remote repository to allow deleting the\n"
@@ -16149,7 +16149,7 @@ msgid ""
 msgstr ""
 
 #: builtin/reflog.c:25
-msgid "git reflog exists <ref>"
+msgid "kit reflog exists <ref>"
 msgstr ""
 
 #: builtin/reflog.c:567 builtin/reflog.c:572
@@ -16196,7 +16196,7 @@ msgstr ""
 
 #: builtin/remote.c:17
 msgid ""
-"git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--"
+"kit remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--"
 "mirror=<fetch|push>] <name> <url>"
 msgstr ""
 
@@ -16205,68 +16205,68 @@ msgid "git remote rename <old> <new>"
 msgstr ""
 
 #: builtin/remote.c:19 builtin/remote.c:43
-msgid "git remote remove <name>"
+msgid "kit remote remove <name>"
 msgstr ""
 
 #: builtin/remote.c:20 builtin/remote.c:48
-msgid "git remote set-head <name> (-a | --auto | -d | --delete | <branch>)"
+msgid "kit remote set-head <name> (-a | --auto | -d | --delete | <branch>)"
 msgstr ""
 
 #: builtin/remote.c:21
-msgid "git remote [-v | --verbose] show [-n] <name>"
+msgid "kit remote [-v | --verbose] show [-n] <name>"
 msgstr ""
 
 #: builtin/remote.c:22
-msgid "git remote prune [-n | --dry-run] <name>"
+msgid "kit remote prune [-n | --dry-run] <name>"
 msgstr ""
 
 #: builtin/remote.c:23
 msgid ""
-"git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]"
+"kit remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]"
 msgstr ""
 
 #: builtin/remote.c:24
-msgid "git remote set-branches [--add] <name> <branch>..."
+msgid "kit remote set-branches [--add] <name> <branch>..."
 msgstr ""
 
 #: builtin/remote.c:25 builtin/remote.c:74
-msgid "git remote get-url [--push] [--all] <name>"
+msgid "kit remote get-url [--push] [--all] <name>"
 msgstr ""
 
 #: builtin/remote.c:26 builtin/remote.c:79
-msgid "git remote set-url [--push] <name> <newurl> [<oldurl>]"
+msgid "kit remote set-url [--push] <name> <newurl> [<oldurl>]"
 msgstr ""
 
 #: builtin/remote.c:27 builtin/remote.c:80
-msgid "git remote set-url --add <name> <newurl>"
+msgid "kit remote set-url --add <name> <newurl>"
 msgstr ""
 
 #: builtin/remote.c:28 builtin/remote.c:81
-msgid "git remote set-url --delete <name> <url>"
+msgid "kit remote set-url --delete <name> <url>"
 msgstr ""
 
 #: builtin/remote.c:33
-msgid "git remote add [<options>] <name> <url>"
+msgid "kit remote add [<options>] <name> <url>"
 msgstr ""
 
 #: builtin/remote.c:53
-msgid "git remote set-branches <name> <branch>..."
+msgid "kit remote set-branches <name> <branch>..."
 msgstr ""
 
 #: builtin/remote.c:54
-msgid "git remote set-branches --add <name> <branch>..."
+msgid "kit remote set-branches --add <name> <branch>..."
 msgstr ""
 
 #: builtin/remote.c:59
-msgid "git remote show [<options>] <name>"
+msgid "kit remote show [<options>] <name>"
 msgstr ""
 
 #: builtin/remote.c:64
-msgid "git remote prune [<options>] <name>"
+msgid "kit remote prune [<options>] <name>"
 msgstr ""
 
 #: builtin/remote.c:69
-msgid "git remote update [<options>] [<group> | <remote>]..."
+msgid "kit remote update [<options>] [<group> | <remote>]..."
 msgstr ""
 
 #: builtin/remote.c:98
@@ -16404,7 +16404,7 @@ msgid " tracked"
 msgstr ""
 
 #: builtin/remote.c:922
-msgid " stale (use 'git remote prune' to remove)"
+msgid " stale (use 'kit remote prune' to remove)"
 msgstr ""
 
 #: builtin/remote.c:924
@@ -16544,19 +16544,19 @@ msgid " (status not queried)"
 msgstr ""
 
 #: builtin/remote.c:1207
-msgid "  Local branch configured for 'git pull':"
-msgid_plural "  Local branches configured for 'git pull':"
+msgid "  Local branch configured for 'kit pull':"
+msgid_plural "  Local branches configured for 'kit pull':"
 msgstr[0] ""
 msgstr[1] ""
 
 #: builtin/remote.c:1215
-msgid "  Local refs will be mirrored by 'git push'"
+msgid "  Local refs will be mirrored by 'kit push'"
 msgstr ""
 
 #: builtin/remote.c:1221
 #, c-format
-msgid "  Local ref configured for 'git push'%s:"
-msgid_plural "  Local refs configured for 'git push'%s:"
+msgid "  Local ref configured for 'kit push'%s:"
+msgid_plural "  Local refs configured for 'kit push'%s:"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -16822,15 +16822,15 @@ msgid "failed to remove '%s'"
 msgstr ""
 
 #: builtin/replace.c:22
-msgid "git replace [-f] <object> <replacement>"
+msgid "kit replace [-f] <object> <replacement>"
 msgstr ""
 
 #: builtin/replace.c:23
-msgid "git replace [-f] --edit <object>"
+msgid "kit replace [-f] --edit <object>"
 msgstr ""
 
 #: builtin/replace.c:24
-msgid "git replace [-f] --graft <commit> [<parent>...]"
+msgid "kit replace [-f] --graft <commit> [<parent>...]"
 msgstr ""
 
 #: builtin/replace.c:25
@@ -16838,11 +16838,11 @@ msgid "git replace [-f] --convert-graft-file"
 msgstr ""
 
 #: builtin/replace.c:26
-msgid "git replace -d <object>..."
+msgid "kit replace -d <object>..."
 msgstr ""
 
 #: builtin/replace.c:27
-msgid "git replace [--format=<format>] [-l [<pattern>]]"
+msgid "kit replace [--format=<format>] [-l [<pattern>]]"
 msgstr ""
 
 #: builtin/replace.c:58 builtin/replace.c:203 builtin/replace.c:206
@@ -17069,7 +17069,7 @@ msgid "register clean resolutions in index"
 msgstr ""
 
 #: builtin/rerere.c:79
-msgid "'git rerere forget' without paths is deprecated"
+msgid "'kit rerere forget' without paths is deprecated"
 msgstr ""
 
 #: builtin/rerere.c:113
@@ -17079,9 +17079,9 @@ msgstr ""
 
 #: builtin/reset.c:32
 msgid ""
-"git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]"
+"kit reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]"
 msgstr ""
-"git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<υποβολή>]"
+"kit reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<υποβολή>]"
 
 #: builtin/reset.c:33
 msgid "git reset [-q] [<tree-ish>] [--] <paths>..."
@@ -17170,7 +17170,7 @@ msgid "--patch is incompatible with --{hard,mixed,soft}"
 msgstr "το --patch είναι ασύμβατο με --{hard,mixed,soft}"
 
 #: builtin/reset.c:352
-msgid "--mixed with paths is deprecated; use 'git reset -- <paths>' instead."
+msgid "--mixed with paths is deprecated; use 'kit reset -- <paths>' instead."
 msgstr ""
 "το --mixed με διαδρομές έχει καταργηθεί, χρησιμοποιήστε αντί αυτού 'git "
 "reset -- <διαδρομές>'."
@@ -17239,7 +17239,7 @@ msgid "cannot combine --use-bitmap-index with object filtering"
 msgstr ""
 
 #: builtin/rev-parse.c:408
-msgid "git rev-parse --parseopt [<options>] -- [<args>...]"
+msgid "kit rev-parse --parseopt [<options>] -- [<args>...]"
 msgstr ""
 
 #: builtin/rev-parse.c:413
@@ -17256,11 +17256,11 @@ msgstr ""
 
 #: builtin/rev-parse.c:551
 msgid ""
-"git rev-parse --parseopt [<options>] -- [<args>...]\n"
-"   or: git rev-parse --sq-quote [<arg>...]\n"
-"   or: git rev-parse [<options>] [<arg>...]\n"
+"kit rev-parse --parseopt [<options>] -- [<args>...]\n"
+"   or: kit rev-parse --sq-quote [<arg>...]\n"
+"   or: kit rev-parse [<options>] [<arg>...]\n"
 "\n"
-"Run \"git rev-parse --parseopt -h\" for more information on the first usage."
+"Run \"kit rev-parse --parseopt -h\" for more information on the first usage."
 msgstr ""
 
 #: builtin/revert.c:24
@@ -17416,7 +17416,7 @@ msgstr ""
 
 #: builtin/rm.c:346
 #, c-format
-msgid "git rm: unable to remove %s"
+msgid "kit rm: unable to remove %s"
 msgstr ""
 
 #: builtin/send-pack.c:20
@@ -17456,12 +17456,12 @@ msgid "exit immediately after advertising capabilities"
 msgstr ""
 
 #: builtin/shortlog.c:14
-msgid "git shortlog [<options>] [<revision-range>] [[--] <path>...]"
+msgid "kit shortlog [<options>] [<revision-range>] [[--] <path>...]"
 msgstr ""
 
 #: builtin/shortlog.c:15
-msgid "git log --pretty=short | git shortlog [<options>]"
-msgstr "git log --pretty=short | git shortlog [<επιλογές>]"
+msgid "kit log --pretty=short | kit shortlog [<options>]"
+msgstr "kit log --pretty=short | kit shortlog [<επιλογές>]"
 
 #: builtin/shortlog.c:264
 msgid "Group by committer rather than author"
@@ -17500,7 +17500,7 @@ msgid ""
 msgstr ""
 
 #: builtin/show-branch.c:17
-msgid "git show-branch (-g | --reflog)[=<n>[,<base>]] [--list] [<ref>]"
+msgid "kit show-branch (-g | --reflog)[=<n>[,<base>]] [--list] [<ref>]"
 msgstr ""
 
 #: builtin/show-branch.c:395
@@ -17628,7 +17628,7 @@ msgid ""
 msgstr ""
 
 #: builtin/show-ref.c:12
-msgid "git show-ref --exclude-existing[=<pattern>]"
+msgid "kit show-ref --exclude-existing[=<pattern>]"
 msgstr ""
 
 #: builtin/show-ref.c:161
@@ -17804,7 +17804,7 @@ msgid "recurse into nested submodules"
 msgstr ""
 
 #: builtin/submodule--helper.c:881
-msgid "git submodule status [--quiet] [--cached] [--recursive] [<path>...]"
+msgid "kit submodule status [--quiet] [--cached] [--recursive] [<path>...]"
 msgstr ""
 
 #: builtin/submodule--helper.c:905
@@ -17883,7 +17883,7 @@ msgstr ""
 
 #: builtin/submodule--helper.c:1192
 msgid ""
-"git submodule deinit [--quiet] [-f | --force] [--all | [--] [<path>...]]"
+"kit submodule deinit [--quiet] [-f | --force] [--all | [--] [<path>...]]"
 msgstr ""
 
 #: builtin/submodule--helper.c:1206
@@ -18100,8 +18100,8 @@ msgstr ""
 "<αρχείο>] <όνομα ετικέτας> [<head>]"
 
 #: builtin/tag.c:26
-msgid "git tag -d <tagname>..."
-msgstr "git tag -d <όνομα ετικέτας>..."
+msgid "kit tag -d <tagname>..."
+msgstr "kit tag -d <όνομα ετικέτας>..."
 
 #: builtin/tag.c:27
 msgid ""
@@ -18114,8 +18114,8 @@ msgstr ""
 "\t\t[--format=<μορφή>] [--[no-]merged [<υποβολή>]] [<μοτίβο>...]"
 
 #: builtin/tag.c:29
-msgid "git tag -v [--format=<format>] <tagname>..."
-msgstr "git tag -v [--format=<μορφή>] <όνομα ετικέτας>..."
+msgid "kit tag -v [--format=<format>] <tagname>..."
+msgstr "kit tag -v [--format=<μορφή>] <όνομα ετικέτας>..."
 
 #: builtin/tag.c:87
 #, c-format
@@ -18348,7 +18348,7 @@ msgid " OK"
 msgstr " OK"
 
 #: builtin/update-index.c:589
-msgid "git update-index [<options>] [--] [<file>...]"
+msgid "kit update-index [<options>] [--] [<file>...]"
 msgstr ""
 
 #: builtin/update-index.c:962
@@ -18630,7 +18630,7 @@ msgid "git worktree lock [<options>] <path>"
 msgstr ""
 
 #: builtin/worktree.c:21
-msgid "git worktree move <worktree> <new-path>"
+msgid "kit worktree move <worktree> <new-path>"
 msgstr ""
 
 #: builtin/worktree.c:22
@@ -18852,7 +18852,7 @@ msgstr ""
 
 #: builtin/worktree.c:868
 #, c-format
-msgid "failed to run 'git status' on '%s'"
+msgid "failed to run 'kit status' on '%s'"
 msgstr ""
 
 #: builtin/worktree.c:872
@@ -18862,7 +18862,7 @@ msgstr ""
 
 #: builtin/worktree.c:877
 #, c-format
-msgid "failed to run 'git status' on '%s', code %d"
+msgid "failed to run 'kit status' on '%s', code %d"
 msgstr ""
 
 #: builtin/worktree.c:900
@@ -18888,7 +18888,7 @@ msgid "validation failed, cannot remove working tree: %s"
 msgstr ""
 
 #: builtin/write-tree.c:15
-msgid "git write-tree [--missing-ok] [--prefix=<prefix>/]"
+msgid "kit write-tree [--missing-ok] [--prefix=<prefix>/]"
 msgstr ""
 
 #: builtin/write-tree.c:28
@@ -19040,7 +19040,7 @@ msgstr ""
 
 #: git.c:803
 #, c-format
-msgid "expansion of alias '%s' failed; '%s' is not a git command\n"
+msgid "expansion of alias '%s' failed; '%s' is not a kit command\n"
 msgstr ""
 
 #: git.c:815
@@ -21332,7 +21332,7 @@ msgid ""
 "    This behavior is controlled by the sendemail.confirm\n"
 "    configuration setting.\n"
 "\n"
-"    For additional information, run 'git send-email --help'.\n"
+"    For additional information, run 'kit send-email --help'.\n"
 "    To retain the current behavior, but squelch this message,\n"
 "    run 'git config --global sendemail.confirm auto'.\n"
 "\n"

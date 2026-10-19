@@ -61,8 +61,8 @@ static int stdout_mboxrd;
 static int format_no_prefix;
 
 static const char * const builtin_log_usage[] = {
-	N_("git log [<options>] [<revision-range>] [[--] <path>...]"),
-	N_("git show [<options>] <object>..."),
+	N_("kit log [<options>] [<revision-range>] [[--] <path>...]"),
+	N_("kit show [<options>] <object>..."),
 	NULL
 };
 
@@ -548,12 +548,12 @@ int cmd_whatchanged(int argc,
 	cmd_log_init(argc, argv, prefix, &rev, &opt, &cfg);
 
 	if (!cfg.i_still_use_this)
-		you_still_use_that("git whatchanged",
+		you_still_use_that("kit whatchanged",
 				   _("\n"
-				     "hint: You can replace 'git whatchanged <opts>' with:\n"
-				     "hint:\tgit log <opts> --raw --no-merges\n"
+				     "hint: You can replace 'kit whatchanged <opts>' with:\n"
+				     "hint:\tkit log <opts> --raw --no-merges\n"
 				     "hint: Or make an alias:\n"
-				     "hint:\tgit config set --global alias.whatchanged 'log --raw --no-merges'\n"
+				     "hint:\tkit config set --global alias.whatchanged 'log --raw --no-merges'\n"
 				     "\n"));
 
 	if (!rev.diffopt.output_format)
@@ -603,7 +603,7 @@ static int show_blob_object(const struct object_id *oid, struct rev_info *rev, c
 	}
 
 	if (!buf)
-		die(_("git show %s: bad file"), obj_name);
+		die(_("kit show %s: bad file"), obj_name);
 
 	write_or_die(1, buf, size);
 	object_context_release(&obj_context);
@@ -1559,7 +1559,7 @@ static const char *set_outdir(const char *prefix, const char *output_directory)
 }
 
 static const char * const builtin_format_patch_usage[] = {
-	N_("git format-patch [<options>] [<since> | <revision-range>]"),
+	N_("kit format-patch [<options>] [<since> | <revision-range>]"),
 	NULL
 };
 
@@ -1799,7 +1799,7 @@ static struct commit *get_base_commit(const struct format_config *cfg,
 		} else {
 			if (die_on_failure)
 				die(_("failed to get upstream, if you want to record base commit automatically,\n"
-				      "please use git branch --set-upstream-to to track a remote branch.\n"
+				      "please use kit branch --set-upstream-to to track a remote branch.\n"
 				      "Or you could specify base commit by --base=<base-commit-id> manually"));
 			else
 				return NULL;
@@ -2625,7 +2625,7 @@ static int add_pending_commit(const char *arg, struct rev_info *revs, int flags)
 }
 
 static const char * const cherry_usage[] = {
-	N_("git cherry [-v] [<upstream> [<head> [<limit>]]]"),
+	N_("kit cherry [-v] [<upstream> [<head> [<limit>]]]"),
 	NULL
 };
 

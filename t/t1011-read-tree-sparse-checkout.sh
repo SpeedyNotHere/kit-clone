@@ -274,7 +274,7 @@ warning: The following paths were already present and thus not updated despite s
 	sub/added
 	sub/addedtoo
 
-After fixing the above paths, you may want to run `git sparse-checkout reapply`.
+After fixing the above paths, you may want to run `kit sparse-checkout reapply`.
 EOF
 	test_cmp expected actual
 '

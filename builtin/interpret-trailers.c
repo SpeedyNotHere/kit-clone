@@ -15,7 +15,7 @@
 #include "config.h"
 
 static const char * const git_interpret_trailers_usage[] = {
-	N_("git interpret-trailers [--in-place] [--trim-empty]\n"
+	N_("kit interpret-trailers [--in-place] [--trim-empty]\n"
 	   "                       [(--trailer (<key>|<key-alias>)[(=|:)<value>])...]\n"
 	   "                       [--parse] [<file>...]"),
 	NULL

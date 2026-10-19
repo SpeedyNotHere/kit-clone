@@ -92,7 +92,7 @@ test_expect_success "--exclude-guides does not work for guides" '
 
 test_expect_success "--help does not work for guides" "
 	cat <<-EOF >expect &&
-		git: 'revisions' is not a git command. See 'git --help'.
+		kit: 'revisions' is not a kit command. See 'kit --help'.
 	EOF
 	test_must_fail git revisions --help 2>actual &&
 	test_cmp expect actual
@@ -139,7 +139,7 @@ test_expect_success 'git help -c' '
 	git help -c >help.output &&
 	cat >expect <<-\EOF &&
 
-	'\''git help config'\'' for more information
+	'\''kit help config'\'' for more information
 	EOF
 	sed -E -e "
 		/^[^.]+\.[^.]+$/d
@@ -194,19 +194,19 @@ for cmd in git "git help"
 do
 	test_expect_success "'$cmd' section spacing" '
 		test_section_spacing_trailer git help <<-\EOF &&
-		usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+		usage: kit [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
 
-		These are common Git commands used in various situations:
+		These are common kit commands used in various situations:
 
-		start a working area (see also: git help tutorial)
+		start a working area (see also: kit help tutorial)
 
-		work on the current change (see also: git help everyday)
+		work on the current change (see also: kit help everyday)
 
-		examine the history and state (see also: git help revisions)
+		examine the history and state (see also: kit help revisions)
 
 		grow, mark and tweak your common history
 
-		collaborate (see also: git help workflows)
+		collaborate (see also: kit help workflows)
 
 		EOF
 		test_cmp expect actual
@@ -216,7 +216,7 @@ done
 test_expect_success "'git help -a' section spacing" '
 	test_section_spacing \
 		git help -a --no-external-commands --no-aliases <<-\EOF &&
-	See '\''git help <command>'\'' to read about a specific subcommand
+	See '\''kit help <command>'\'' to read about a specific subcommand
 
 	Main Porcelain Commands
 

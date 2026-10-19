@@ -37,14 +37,14 @@ test_expect_success 'M/D conflict does not segfault' '
 	cat >expect <<EOF &&
 On branch side
 You have unmerged paths.
-  (fix conflicts and run "git commit")
-  (use "git merge --abort" to abort the merge)
+  (fix conflicts and run "kit commit")
+  (use "kit merge --abort" to abort the merge)
 
 Unmerged paths:
-  (use "git add/rm <file>..." as appropriate to mark resolution)
+  (use "kit add/rm <file>..." as appropriate to mark resolution)
 	deleted by us:   foo
 
-no changes added to commit (use "git add" and/or "git commit -a")
+no changes added to commit (use "kit add" and/or "kit commit -a")
 EOF
 	mkdir mdconflict &&
 	(
@@ -141,15 +141,15 @@ test_expect_success 'status when conflicts with add and rm advice (deleted by th
 	cat >expected <<\EOF &&
 On branch main
 You have unmerged paths.
-  (fix conflicts and run "git commit")
-  (use "git merge --abort" to abort the merge)
+  (fix conflicts and run "kit commit")
+  (use "kit merge --abort" to abort the merge)
 
 Unmerged paths:
-  (use "git add/rm <file>..." as appropriate to mark resolution)
+  (use "kit add/rm <file>..." as appropriate to mark resolution)
 	both added:      conflict.txt
 	deleted by them: main.txt
 
-no changes added to commit (use "git add" and/or "git commit -a")
+no changes added to commit (use "kit add" and/or "kit commit -a")
 EOF
 	git status --untracked-files=no >actual &&
 	test_cmp expected actual
@@ -174,16 +174,16 @@ test_expect_success 'status when conflicts with add and rm advice (both deleted)
 	cat >expected <<\EOF &&
 On branch conflict_second
 You have unmerged paths.
-  (fix conflicts and run "git commit")
-  (use "git merge --abort" to abort the merge)
+  (fix conflicts and run "kit commit")
+  (use "kit merge --abort" to abort the merge)
 
 Unmerged paths:
-  (use "git add/rm <file>..." as appropriate to mark resolution)
+  (use "kit add/rm <file>..." as appropriate to mark resolution)
 	both deleted:    main.txt
 	added by them:   sub_main.txt
 	added by us:     sub_second.txt
 
-no changes added to commit (use "git add" and/or "git commit -a")
+no changes added to commit (use "kit add" and/or "kit commit -a")
 EOF
 	git status --untracked-files=no >actual &&
 	test_cmp expected actual
@@ -198,14 +198,14 @@ test_expect_success 'status when conflicts with only rm advice (both deleted)' '
 	cat >expected <<\EOF &&
 On branch conflict_second
 You have unmerged paths.
-  (fix conflicts and run "git commit")
-  (use "git merge --abort" to abort the merge)
+  (fix conflicts and run "kit commit")
+  (use "kit merge --abort" to abort the merge)
 
 Changes to be committed:
 	new file:   sub_main.txt
 
 Unmerged paths:
-  (use "git rm <file>..." to mark resolution)
+  (use "kit rm <file>..." to mark resolution)
 	both deleted:    main.txt
 
 Untracked files not listed (use -u option to show untracked files)

@@ -152,7 +152,7 @@ static void show_dir_entry(struct index_state *istate,
 	int len = max_prefix_len;
 
 	if (len > ent->len)
-		die("git ls-files: internal error - directory entry not superset of prefix");
+		die("kit ls-files: internal error - directory entry not superset of prefix");
 
 	/* If ps_matches is non-NULL, figure out which pathspec(s) match. */
 	if (ps_matched)
@@ -321,7 +321,7 @@ static void show_ce(struct repository *repo, struct dir_struct *dir,
 		    const char *tag)
 {
 	if (max_prefix_len > strlen(fullname))
-		die("git ls-files: internal error - cache entry not superset of prefix");
+		die("kit ls-files: internal error - cache entry not superset of prefix");
 
 	if (recurse_submodules && S_ISGITLINK(ce->ce_mode) &&
 	    is_submodule_active(repo, ce->name)) {
@@ -543,7 +543,7 @@ static int get_common_prefix_len(const char *common_prefix)
 }
 
 static const char * const ls_files_usage[] = {
-	N_("git ls-files [<options>] [<file>...]"),
+	N_("kit ls-files [<options>] [<file>...]"),
 	NULL
 };
 
@@ -780,7 +780,7 @@ int cmd_ls_files(int argc,
 		show_ru_info(repo, repo->index);
 
 	if (ps_matched && report_path_error(ps_matched, &pathspec)) {
-		fprintf(stderr, "Did you forget to 'git add'?\n");
+		fprintf(stderr, "Did you forget to 'kit add'?\n");
 		ret = 1;
 	}
 

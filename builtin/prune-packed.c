@@ -4,7 +4,7 @@
 #include "prune-packed.h"
 
 static const char * const prune_packed_usage[] = {
-	"git prune-packed [-n | --dry-run] [-q | --quiet]",
+	"kit prune-packed [-n | --dry-run] [-q | --quiet]",
 	NULL
 };
 

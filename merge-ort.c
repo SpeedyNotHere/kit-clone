@@ -4809,7 +4809,7 @@ static void print_submodule_conflict_suggestion(struct string_list *csub) {
 		      "This can be accomplished with the following steps:\n"
 		      "%s"
 		      " - come back to superproject and run:\n\n"
-		      "      git add %s\n\n"
+		      "      kit add %s\n\n"
 		      "   to record the above merge or update\n"
 		      " - resolve any other conflicts in the superproject\n"
 		      " - commit the resulting index in the superproject\n"),

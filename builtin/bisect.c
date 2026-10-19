@@ -28,30 +28,30 @@ static GIT_PATH_FUNC(git_path_bisect_reset_when_found, "BISECT_RESET_WHEN_FOUND"
 static GIT_PATH_FUNC(git_path_bisect_run, "BISECT_RUN")
 
 #define BUILTIN_GIT_BISECT_START_USAGE \
-	N_("git bisect start [--term-(bad|new)=<term-new> --term-(good|old)=<term-old>]\n" \
+	N_("kit bisect start [--term-(bad|new)=<term-new> --term-(good|old)=<term-old>]\n" \
 	   "                 [--no-checkout] [--first-parent] [--reset-when-found[=<where>]] [<bad> [<good>...]] [--] [<pathspec>...]")
 #define BUILTIN_GIT_BISECT_BAD_USAGE \
-	N_("git bisect (bad|new|<term-new>) [<rev>]")
+	N_("kit bisect (bad|new|<term-new>) [<rev>]")
 #define BUILTIN_GIT_BISECT_GOOD_USAGE \
-	N_("git bisect (good|old|<term-old>) [<rev>...]")
+	N_("kit bisect (good|old|<term-old>) [<rev>...]")
 #define BUILTIN_GIT_BISECT_TERMS_USAGE \
-	"git bisect terms [--term-(good|old) | --term-(bad|new)]"
+	"kit bisect terms [--term-(good|old) | --term-(bad|new)]"
 #define BUILTIN_GIT_BISECT_SKIP_USAGE \
-	N_("git bisect skip [(<rev>|<range>)...]")
+	N_("kit bisect skip [(<rev>|<range>)...]")
 #define BUILTIN_GIT_BISECT_NEXT_USAGE \
-	"git bisect next"
+	"kit bisect next"
 #define BUILTIN_GIT_BISECT_RESET_USAGE \
-	N_("git bisect reset [<commit>]")
+	N_("kit bisect reset [<commit>]")
 #define BUILTIN_GIT_BISECT_VISUALIZE_USAGE \
-	"git bisect (visualize|view)"
+	"kit bisect (visualize|view)"
 #define BUILTIN_GIT_BISECT_REPLAY_USAGE \
-	N_("git bisect replay <logfile>")
+	N_("kit bisect replay <logfile>")
 #define BUILTIN_GIT_BISECT_LOG_USAGE \
-	"git bisect log"
+	"kit bisect log"
 #define BUILTIN_GIT_BISECT_RUN_USAGE \
-	N_("git bisect run [--reset-when-found[=<where>]] <cmd> [<arg>...]")
+	N_("kit bisect run [--reset-when-found[=<where>]] <cmd> [<arg>...]")
 #define BUILTIN_GIT_BISECT_HELP_USAGE \
-	"git bisect help"
+	"kit bisect help"
 
 static const char * const git_bisect_usage[] = {
 	BUILTIN_GIT_BISECT_START_USAGE,
@@ -268,7 +268,7 @@ static int bisect_reset(const char *commit, bool quiet)
 		strvec_pushl(&cmd.args, branch.buf, "--", NULL);
 		if (run_command(&cmd)) {
 			error(_("could not check out original"
-				" HEAD '%s'. Try 'git bisect"
+				" HEAD '%s'. Try 'kit bisect"
 				" reset <commit>'."), branch.buf);
 			strbuf_release(&branch);
 			return -1;
@@ -453,12 +453,12 @@ static int inc_nr(const struct reference *ref UNUSED, void *cb_data)
 
 static const char need_bad_and_good_revision_warning[] =
 	N_("You need to give me at least one %s and %s revision.\n"
-	   "You can use \"git bisect %s\" and \"git bisect %s\" for that.");
+	   "You can use \"kit bisect %s\" and \"kit bisect %s\" for that.");
 
 static const char need_bisect_start_warning[] =
-	N_("You need to start by \"git bisect start\".\n"
+	N_("You need to start by \"kit bisect start\".\n"
 	   "You then need to give me at least one %s and %s revision.\n"
-	   "You can use \"git bisect %s\" and \"git bisect %s\" for that.");
+	   "You can use \"kit bisect %s\" and \"kit bisect %s\" for that.");
 
 static int decide_next(const struct bisect_terms *terms,
 		       const char *current_term, int missing_good,
@@ -614,7 +614,7 @@ static int bisect_terms(struct bisect_terms *terms, const char *option)
 	else if (one_of(option, "--term-bad", "--term-new", NULL))
 		printf("%s\n", terms->term_bad);
 	else
-		return error(_("invalid argument %s for 'git bisect terms'.\n"
+		return error(_("invalid argument %s for 'kit bisect terms'.\n"
 			       "Supported options are: "
 			       "--term-good|--term-old and "
 			       "--term-bad|--term-new."), option);
@@ -935,7 +935,7 @@ static enum bisect_error bisect_start(struct bisect_terms *terms, int argc,
 				     "--", NULL);
 			if (run_command(&cmd)) {
 				res = error(_("checking out '%s' failed."
-						 " Try 'git bisect start "
+						 " Try 'kit bisect start "
 						 "<valid-branch>'."),
 					       start_head.buf);
 				goto finish;
@@ -1033,7 +1033,7 @@ static int bisect_autostart(struct bisect_terms *terms)
 	if (file_is_not_empty(git_path_bisect_start()))
 		return 0;
 
-	fprintf_ln(stderr, _("You need to start by \"git bisect "
+	fprintf_ln(stderr, _("You need to start by \"kit bisect "
 			  "start\"\n"));
 
 	if (!isatty(STDIN_FILENO))
@@ -1074,7 +1074,7 @@ static enum bisect_error bisect_state(struct bisect_terms *terms, int argc,
 	argv++;
 	argc--;
 	if (argc > 1 && !strcmp(state, terms->term_bad))
-		return error(_("'git bisect %s' can take only one argument."), terms->term_bad);
+		return error(_("'kit bisect %s' can take only one argument."), terms->term_bad);
 
 	if (argc == 0) {
 		const char *head = "BISECT_HEAD";
@@ -1464,7 +1464,7 @@ static int bisect_run(struct bisect_terms *terms, int argc, const char **argv)
 		} else if (res == BISECT_INTERNAL_SUCCESS_1ST_BAD_FOUND) {
 			printf(_("bisect found first '%s' commit\n"), terms->term_bad);
 		} else if (res) {
-			error(_("bisect run failed: 'git bisect %s'"
+			error(_("bisect run failed: 'kit bisect %s'"
 				" exited with error code %d"), new_state, res);
 		} else {
 			continue;
@@ -1483,7 +1483,7 @@ static int cmd_bisect__reset(int argc, const char **argv, const char *prefix UNU
 
 	if (argc > 1)
 		return error(_("'%s' requires either no argument or a commit"),
-			     "git bisect reset");
+			     "kit bisect reset");
 	res = bisect_reset(argc ? argv[0] : NULL, false);
 	if (res)
 		return res;
@@ -1498,7 +1498,7 @@ static int cmd_bisect__terms(int argc, const char **argv, const char *prefix UNU
 
 	if (argc > 1)
 		return error(_("'%s' requires 0 or 1 argument"),
-			     "git bisect terms");
+			     "kit bisect terms");
 	res = bisect_terms(&terms, argc == 1 ? argv[0] : NULL);
 	free_terms(&terms);
 	return res;
@@ -1524,7 +1524,7 @@ static int cmd_bisect__next(int argc, const char **argv UNUSED, const char *pref
 
 	if (argc)
 		return error(_("'%s' requires 0 arguments"),
-			     "git bisect next");
+			     "kit bisect next");
 	if (get_terms(&terms, 1))
 		return error(_("no terms defined"));
 	res = bisect_next(&terms, prefix);
@@ -1587,7 +1587,7 @@ static int cmd_bisect__run(int argc, const char **argv, const char *prefix UNUSE
 	struct bisect_terms terms = { 0 };
 
 	if (!argc)
-		return error(_("'%s' failed: no command provided."), "git bisect run");
+		return error(_("'%s' failed: no command provided."), "kit bisect run");
 	if (get_terms(&terms, 1))
 		return error(_("no terms defined"));
 	res = bisect_run(&terms, argc, argv);

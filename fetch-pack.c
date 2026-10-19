@@ -129,7 +129,7 @@ static void die_in_commit_graph_only(const struct object_id *oid)
 {
 	die(_("You are attempting to fetch %s, which is in the commit graph file but not in the object database.\n"
 	      "This is probably due to repo corruption.\n"
-	      "If you are attempting to repair this repo corruption by refetching the missing object, use 'git fetch --refetch' with the missing object."),
+	      "If you are attempting to repair this repo corruption by refetching the missing object, use 'kit fetch --refetch' with the missing object."),
 	      oid_to_hex(oid));
 }
 

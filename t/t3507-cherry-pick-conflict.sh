@@ -55,12 +55,12 @@ test_expect_success 'advice from failed cherry-pick' '
 	cat <<-EOF >expected &&
 	error: could not apply $picked... picked
 	hint: After resolving the conflicts, mark them with
-	hint: "git add/rm <pathspec>", then run
-	hint: "git cherry-pick --continue".
-	hint: You can instead skip this commit with "git cherry-pick --skip".
-	hint: To abort and get back to the state before "git cherry-pick",
-	hint: run "git cherry-pick --abort".
-	hint: Disable this message with "git config set advice.mergeConflict false"
+	hint: "kit add/rm <pathspec>", then run
+	hint: "kit cherry-pick --continue".
+	hint: You can instead skip this commit with "kit cherry-pick --skip".
+	hint: To abort and get back to the state before "kit cherry-pick",
+	hint: run "kit cherry-pick --abort".
+	hint: Disable this message with "kit config set advice.mergeConflict false"
 	EOF
 	test_must_fail git cherry-pick picked 2>actual &&
 
@@ -74,8 +74,8 @@ test_expect_success 'advice from failed cherry-pick --no-commit' "
 	cat <<-EOF >expected &&
 	error: could not apply \$picked... picked
 	hint: after resolving the conflicts, mark the corrected paths
-	hint: with 'git add <paths>' or 'git rm <paths>'
-	hint: Disable this message with \"git config set advice.mergeConflict false\"
+	hint: with 'kit add <paths>' or 'kit rm <paths>'
+	hint: Disable this message with \"kit config set advice.mergeConflict false\"
 	EOF
 	test_must_fail git cherry-pick --no-commit picked 2>actual &&
 

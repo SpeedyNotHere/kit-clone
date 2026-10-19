@@ -35,8 +35,8 @@
 #include "tag.h"
 #include "write-or-die.h"
 
-static const char blame_usage[] = N_("git blame [<options>] [<rev-opts>] [<rev>] [--] <file>");
-static const char annotate_usage[] = N_("git annotate [<options>] [<rev-opts>] [<rev>] [--] <file>");
+static const char blame_usage[] = N_("kit blame [<options>] [<rev-opts>] [<rev>] [--] <file>");
+static const char annotate_usage[] = N_("kit annotate [<options>] [<rev-opts>] [<rev>] [--] <file>");
 
 static const char *const blame_opt_usage[] = {
 	blame_usage,

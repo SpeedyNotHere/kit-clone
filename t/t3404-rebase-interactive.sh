@@ -1216,11 +1216,11 @@ test_expect_success !WITH_BREAKING_CHANGES 'rebase -i respects core.commentchar=
 
 	To use the default comment string (#) please run
 
-	    git config unset core.commentChar
+	    kit config unset core.commentChar
 
 	To set a custom comment string please run
 
-	    git config set core.commentChar <comment string>
+	    kit config set core.commentChar <comment string>
 
 	where ${SQ}<comment string>${SQ} is the string you wish to use.
 	EOF
@@ -1540,11 +1540,11 @@ test_expect_success 'rebase -i respects rebase.missingCommitsCheck = error' '
 	 - $(git log --format="%h # %s" -1 primary~2)
 	To avoid this message, use "drop" to explicitly remove a commit.
 
-	Use '\''git config rebase.missingCommitsCheck'\'' to change the level of warnings.
+	Use '\''kit config rebase.missingCommitsCheck'\'' to change the level of warnings.
 	The possible behaviours are: ignore, warn, error.
 
-	You can fix this with '\''git rebase --edit-todo'\'' and then run '\''git rebase --continue'\''.
-	Or you can abort the rebase with '\''git rebase --abort'\''.
+	You can fix this with '\''kit rebase --edit-todo'\'' and then run '\''kit rebase --continue'\''.
+	Or you can abort the rebase with '\''kit rebase --abort'\''.
 	EOF
 	test_config rebase.missingCommitsCheck error &&
 	rebase_setup_and_clean missing-commit &&
@@ -1622,11 +1622,11 @@ test_expect_success 'rebase --edit-todo respects rebase.missingCommitsCheck = er
 	 - $(git log --format="%h # %s" -1 primary~4)
 	To avoid this message, use "drop" to explicitly remove a commit.
 
-	Use '\''git config rebase.missingCommitsCheck'\'' to change the level of warnings.
+	Use '\''kit config rebase.missingCommitsCheck'\'' to change the level of warnings.
 	The possible behaviours are: ignore, warn, error.
 
-	You can fix this with '\''git rebase --edit-todo'\'' and then run '\''git rebase --continue'\''.
-	Or you can abort the rebase with '\''git rebase --abort'\''.
+	You can fix this with '\''kit rebase --edit-todo'\'' and then run '\''kit rebase --continue'\''.
+	Or you can abort the rebase with '\''kit rebase --abort'\''.
 	EOF
 	tail -n11 expect >expect.2 &&
 	head -n3 expect.2 >expect.3 &&
@@ -1717,7 +1717,7 @@ test_expect_success 'static check of bad command' '
 		git rebase -i --root 2>actual &&
 		test_grep "pickled $(git log --format="%h # %s" -1 primary~1)" \
 				actual &&
-		test_grep "You can fix this with .git rebase --edit-todo.." \
+		test_grep "You can fix this with .kit rebase --edit-todo.." \
 				actual &&
 		FAKE_LINES="1 2 3 drop 4 5" git rebase --edit-todo
 	) &&
@@ -1739,14 +1739,14 @@ test_expect_success 'the first command cannot be a fixup' '
 		test_must_fail git rebase -i A 2>actual
 	) &&
 	test_grep "cannot .fixup. without a previous commit" actual &&
-	test_grep "You can fix this with .git rebase --edit-todo.." actual &&
+	test_grep "You can fix this with .kit rebase --edit-todo.." actual &&
 	# verify that the todo list has not been truncated
 	grep -v "^#" .git/rebase-merge/git-rebase-todo >actual &&
 	test_cmp orig actual &&
 
 	test_must_fail git rebase --edit-todo 2>actual &&
 	test_grep "cannot .fixup. without a previous commit" actual &&
-	test_grep "You can fix this with .git rebase --edit-todo.." actual &&
+	test_grep "You can fix this with .kit rebase --edit-todo.." actual &&
 	# verify that the todo list has not been truncated
 	grep -v "^#" .git/rebase-merge/git-rebase-todo >actual &&
 	test_cmp orig actual
@@ -1776,7 +1776,7 @@ test_expect_success 'static check of bad SHA-1' '
 		test_must_fail env FAKE_LINES="1 2 edit fakesha 3 4 5 #" \
 			git rebase -i --root 2>actual &&
 			test_grep "edit XXXXXXX False commit" actual &&
-			test_grep "You can fix this with .git rebase --edit-todo.." \
+			test_grep "You can fix this with .kit rebase --edit-todo.." \
 					actual &&
 		FAKE_LINES="1 2 4 5 6" git rebase --edit-todo
 	) &&
@@ -2341,27 +2341,27 @@ test_expect_success 'non-merge commands reject merge commits' '
 	error: ${SQ}pick${SQ} does not accept merge commits
 	hint: ${SQ}pick${SQ} does not take a merge commit. If you wanted to
 	hint: replay the merge, use ${SQ}merge -C${SQ} on the commit.
-	hint: Disable this message with "git config set advice.rebaseTodoError false"
+	hint: Disable this message with "kit config set advice.rebaseTodoError false"
 	error: invalid line 1: pick $oid
 	error: ${SQ}reword${SQ} does not accept merge commits
 	hint: ${SQ}reword${SQ} does not take a merge commit. If you wanted to
 	hint: replay the merge and reword the commit message, use
 	hint: ${SQ}merge -c${SQ} on the commit
-	hint: Disable this message with "git config set advice.rebaseTodoError false"
+	hint: Disable this message with "kit config set advice.rebaseTodoError false"
 	error: invalid line 2: reword $oid
 	error: ${SQ}edit${SQ} does not accept merge commits
 	hint: ${SQ}edit${SQ} does not take a merge commit. If you wanted to
 	hint: replay the merge, use ${SQ}merge -C${SQ} on the commit, and then
 	hint: ${SQ}break${SQ} to give the control back to you so that you can
-	hint: do ${SQ}git commit --amend && git rebase --continue${SQ}.
-	hint: Disable this message with "git config set advice.rebaseTodoError false"
+	hint: do ${SQ}kit commit --amend && kit rebase --continue${SQ}.
+	hint: Disable this message with "kit config set advice.rebaseTodoError false"
 	error: invalid line 3: edit $oid
 	error: cannot squash merge commit into another commit
 	error: invalid line 4: fixup $oid
 	error: cannot squash merge commit into another commit
 	error: invalid line 5: squash $oid
-	You can fix this with ${SQ}git rebase --edit-todo${SQ} and then run ${SQ}git rebase --continue${SQ}.
-	Or you can abort the rebase with ${SQ}git rebase --abort${SQ}.
+	You can fix this with ${SQ}kit rebase --edit-todo${SQ} and then run ${SQ}kit rebase --continue${SQ}.
+	Or you can abort the rebase with ${SQ}kit rebase --abort${SQ}.
 	EOF
 	test_cmp expect actual
 '

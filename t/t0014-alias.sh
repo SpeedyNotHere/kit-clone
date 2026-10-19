@@ -145,7 +145,7 @@ test_expect_success 'simple dotted alias syntax still works' '
 test_expect_success 'subsection syntax only accepts command key' '
 	test_config alias.invalid.notcommand value &&
 	test_must_fail git invalid 2>error &&
-	test_grep -i "not a git command" error
+	test_grep -i "not a kit command" error
 '
 
 test_expect_success 'subsection syntax requires value for command' '

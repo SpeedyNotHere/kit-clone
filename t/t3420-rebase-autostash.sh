@@ -63,9 +63,9 @@ create_expected_failure_apply () {
 	Applying: third commit
 	Your local changes are stashed, however applying them
 	resulted in conflicts.  You can either resolve the conflicts
-	and then discard the stash with "git stash drop", or, if you
-	do not want to resolve them now, run "git reset --hard" and
-	apply the local changes later by running "git stash pop".
+	and then discard the stash with "kit stash drop", or, if you
+	do not want to resolve them now, run "kit reset --hard" and
+	apply the local changes later by running "kit stash pop".
 	EOF
 }
 
@@ -74,9 +74,9 @@ create_expected_failure_merge () {
 	$(grep "^Created autostash: [0-9a-f][0-9a-f]*\$" actual)
 	Your local changes are stashed, however applying them
 	resulted in conflicts.  You can either resolve the conflicts
-	and then discard the stash with "git stash drop", or, if you
-	do not want to resolve them now, run "git reset --hard" and
-	apply the local changes later by running "git stash pop".
+	and then discard the stash with "kit stash drop", or, if you
+	do not want to resolve them now, run "kit reset --hard" and
+	apply the local changes later by running "kit stash pop".
 	Successfully rebased and updated refs/heads/rebased-feature-branch.
 	EOF
 }

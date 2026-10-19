@@ -3981,7 +3981,7 @@ static void git_pack_config(void)
 }
 
 static const char *const fast_import_usage[] = {
-	N_("git fast-import [<options>]"),
+	N_("kit fast-import [<options>]"),
 	NULL
 };
 

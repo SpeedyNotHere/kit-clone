@@ -39,13 +39,13 @@ test_systemd_analyze_verify () {
 
 test_expect_success 'help text' '
 	git maintenance -h >actual &&
-	test_grep "usage: git maintenance <subcommand>" actual &&
+	test_grep "usage: kit maintenance <subcommand>" actual &&
 	test_expect_code 129 git maintenance barf 2>err &&
 	test_grep "unknown subcommand: \`barf'\''" err &&
-	test_grep "usage: git maintenance" err &&
+	test_grep "usage: kit maintenance" err &&
 	test_expect_code 129 git maintenance 2>err &&
 	test_grep "error: need a subcommand" err &&
-	test_grep "usage: git maintenance" err
+	test_grep "usage: kit maintenance" err
 '
 
 test_expect_success 'run [--auto|--quiet] with gc strategy' '

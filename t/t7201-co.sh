@@ -239,9 +239,9 @@ test_expect_success 'checkout -m creates a recoverable stash on conflict' '
 	cat >expect <<-EOF &&
 	Your local changes are stashed, however applying them
 	resulted in conflicts.  You can either resolve the conflicts
-	and then discard the stash with "git stash drop", or, if you
-	do not want to resolve them now, run "git reset --hard" and
-	apply the local changes later by running "git stash pop".
+	and then discard the stash with "kit stash drop", or, if you
+	do not want to resolve them now, run "kit reset --hard" and
+	apply the local changes later by running "kit stash pop".
 
 	Switched to branch ${SQ}side${SQ}
 	The following paths have local changes:

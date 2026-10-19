@@ -822,7 +822,7 @@ static enum bisect_error handle_bad_merge_base(void)
 	}
 
 	fprintf(stderr, _("Some '%s' revs are not ancestors of the '%s' rev.\n"
-		"git bisect cannot work properly in this case.\n"
+		"kit bisect cannot work properly in this case.\n"
 		"Maybe you mistook '%s' and '%s' revs?\n"),
 		term_good, term_bad, term_good, term_bad);
 	return BISECT_FAILED;

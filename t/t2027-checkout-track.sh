@@ -59,10 +59,10 @@ test_expect_success 'ambiguous tracking info' '
 
 	# DWIM
 	test_must_fail git checkout trunk 2>hint.checkout &&
-	test_grep "hint: *git checkout --track" hint.checkout &&
+	test_grep "hint: *kit checkout --track" hint.checkout &&
 
 	test_must_fail git switch trunk 2>hint.switch &&
-	test_grep "hint: *git switch --track" hint.switch
+	test_grep "hint: *kit switch --track" hint.switch
 '
 
 test_done

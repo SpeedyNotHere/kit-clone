@@ -28,7 +28,7 @@
 #include "apply.h"
 
 static const char * const builtin_add_usage[] = {
-	N_("git add [<options>] [--] <pathspec>..."),
+	N_("kit add [<options>] [--] <pathspec>..."),
 	NULL
 };
 static int patch_interactive, add_interactive, edit_interactive;
@@ -313,14 +313,14 @@ static const char embedded_advice[] = N_(
 "the embedded repository and will not know how to obtain it.\n"
 "If you meant to add a submodule, use:\n"
 "\n"
-"	git submodule add <url> %s\n"
+"	kit submodule add <url> %s\n"
 "\n"
 "If you added this path by mistake, you can remove it from the\n"
 "index with:\n"
 "\n"
-"	git rm --cached %s\n"
+"	kit rm --cached %s\n"
 "\n"
-"See \"git help submodule\" for more information."
+"See \"kit help submodule\" for more information."
 );
 
 static void check_embedded_repo(const char *path)
@@ -559,7 +559,7 @@ int cmd_add(int argc,
 	if (require_pathspec && pathspec.nr == 0) {
 		fprintf(stderr, _("Nothing specified, nothing added.\n"));
 		advise_if_enabled(ADVICE_ADD_EMPTY_PATHSPEC,
-				  _("Maybe you wanted to say 'git add .'?"));
+				  _("Maybe you wanted to say 'kit add .'?"));
 		return 0;
 	}
 

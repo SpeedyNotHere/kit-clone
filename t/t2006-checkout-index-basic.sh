@@ -23,9 +23,9 @@ test_expect_success 'checkout-index -h in broken repository' '
 
 test_expect_success 'checkout-index does not crash with -h' '
 	git checkout-index -h >usage &&
-	test_grep "[Uu]sage: git checkout-index " usage &&
+	test_grep "[Uu]sage: kit checkout-index " usage &&
 	nongit git checkout-index -h >usage &&
-	test_grep "[Uu]sage: git checkout-index " usage
+	test_grep "[Uu]sage: kit checkout-index " usage
 '
 
 test_expect_success 'checkout-index reports errors (cmdline)' '

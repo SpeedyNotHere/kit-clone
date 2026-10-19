@@ -10,8 +10,8 @@
 #include "strbuf.h"
 
 static const char builtin_check_ref_format_usage[] =
-"git check-ref-format [--normalize] [<options>] <refname>\n"
-"   or: git check-ref-format --branch <branchname-shorthand>";
+"kit check-ref-format [--normalize] [<options>] <refname>\n"
+"   or: kit check-ref-format --branch <branchname-shorthand>";
 
 /*
  * Return a copy of refname but with leading slashes removed and runs

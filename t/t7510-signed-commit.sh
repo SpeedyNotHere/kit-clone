@@ -10,9 +10,9 @@ GNUPGHOME_NOT_USED=$GNUPGHOME
 
 test_expect_success GPG 'verify-commit does not crash with -h' '
 	git verify-commit -h >usage &&
-	test_grep "[Uu]sage: git verify-commit " usage &&
+	test_grep "[Uu]sage: kit verify-commit " usage &&
 	nongit git verify-commit -h >usage &&
-	test_grep "[Uu]sage: git verify-commit " usage
+	test_grep "[Uu]sage: kit verify-commit " usage
 '
 
 test_expect_success GPG 'create signed commits' '

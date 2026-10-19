@@ -472,13 +472,13 @@ test_expect_success 'invalid key' '
 test_expect_success 'set with 1 arg of "key=value": valid key suggests split form' '
 	test_must_fail git config set pull.rebase=false 2>err &&
 	test_grep "missing value to set to the variable .pull\\.rebase=false." err &&
-	test_grep "did you mean .git config set pull\\.rebase false." err
+	test_grep "did you mean .kit config set pull\\.rebase false." err
 '
 
 test_expect_success 'set with 1 arg of "key=value": implicit form suggests split form' '
 	test_must_fail git config pull.rebase=false 2>err &&
 	test_grep "missing value to set to the variable .pull\\.rebase=false." err &&
-	test_grep "did you mean .git config set pull\\.rebase false." err
+	test_grep "did you mean .kit config set pull\\.rebase false." err
 '
 
 test_expect_success 'set with 1 arg of "key=value": invalid key does not suggest split form' '
@@ -496,7 +496,7 @@ test_expect_success 'set with 1 arg: variable name starting with digit is invali
 test_expect_success 'set with 1 arg: digit-led section name is valid' '
 	test_must_fail git config set 1foo.bar=baz 2>err &&
 	test_grep "missing value to set to the variable .1foo\\.bar=baz." err &&
-	test_grep "did you mean .git config set 1foo\\.bar baz." err
+	test_grep "did you mean .kit config set 1foo\\.bar baz." err
 '
 
 test_expect_success 'set with 1 arg: subsection plus invalid variable name' '

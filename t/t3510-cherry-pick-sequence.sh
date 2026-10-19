@@ -186,7 +186,7 @@ test_expect_success 'skip "empty" commit' '
 	pristine_detach picked &&
 	test_commit dummy foo d &&
 	test_must_fail git cherry-pick anotherpick 2>err &&
-	test_grep "git cherry-pick --skip" err &&
+	test_grep "kit cherry-pick --skip" err &&
 	git cherry-pick --skip &&
 	test_cmp_rev dummy HEAD
 '
@@ -224,7 +224,7 @@ test_expect_success 'check advice when we move HEAD by committing' '
 	cat >expect <<-EOF &&
 	error: there is nothing to skip
 	hint: have you committed already?
-	hint: try "git cherry-pick --continue"
+	hint: try "kit cherry-pick --continue"
 	fatal: cherry-pick failed
 	EOF
 	test_must_fail git cherry-pick base..yetanotherpick &&
@@ -239,7 +239,7 @@ test_expect_success 'selectively advise --skip while launching another sequence'
 	pristine_detach initial &&
 	cat >expect <<-EOF &&
 	error: cherry-pick is already in progress
-	hint: try "git cherry-pick (--continue | --skip | --abort | --quit)"
+	hint: try "kit cherry-pick (--continue | --skip | --abort | --quit)"
 	fatal: cherry-pick failed
 	EOF
 	test_must_fail git cherry-pick picked..yetanotherpick &&
@@ -247,7 +247,7 @@ test_expect_success 'selectively advise --skip while launching another sequence'
 	test_cmp expect advice &&
 	cat >expect <<-EOF &&
 	error: cherry-pick is already in progress
-	hint: try "git cherry-pick (--continue | --abort | --quit)"
+	hint: try "kit cherry-pick (--continue | --abort | --quit)"
 	fatal: cherry-pick failed
 	EOF
 	git reset --merge &&

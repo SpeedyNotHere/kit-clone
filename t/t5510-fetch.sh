@@ -1401,11 +1401,11 @@ test_expect_success 'branchname D/F conflict rejected with targeted error messag
 		git update-ref refs/remotes/origin/dir_conflict/file HEAD &&
 		test_must_fail git fetch 2>err &&
 		test_grep "error: some local refs could not be updated; try running" err &&
-		test_grep " ${SQ}git remote prune origin${SQ} to remove any old, conflicting branches" err &&
+		test_grep " ${SQ}kit remote prune origin${SQ} to remove any old, conflicting branches" err &&
 		git pack-refs --all &&
 		test_must_fail git fetch 2>err-packed &&
 		test_grep "error: some local refs could not be updated; try running" err-packed &&
-		test_grep " ${SQ}git remote prune origin${SQ} to remove any old, conflicting branches" err-packed
+		test_grep " ${SQ}kit remote prune origin${SQ} to remove any old, conflicting branches" err-packed
 	)
 '
 

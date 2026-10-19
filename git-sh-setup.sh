@@ -75,7 +75,7 @@ if test -n "$OPTIONS_SPEC"; then
 		echo exit $?
 	)"
 else
-	dashless=$(basename -- "$0" | sed -e 's/-/ /')
+	dashless=$(basename -- "$0" | sed -e 's/-/ /' -e 's/^git /kit /')
 	usage() {
 		die "$(eval_gettext "usage: \$dashless \$USAGE")"
 	}

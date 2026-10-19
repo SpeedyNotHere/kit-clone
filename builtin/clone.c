@@ -408,8 +408,8 @@ static enum {
 
 static const char junk_leave_repo_msg[] =
 N_("Clone succeeded, but checkout failed.\n"
-   "You can inspect what was checked out with 'git status'\n"
-   "and retry with 'git restore --source=HEAD :/'\n");
+   "You can inspect what was checked out with 'kit status'\n"
+   "and retry with 'kit restore --source=HEAD :/'\n");
 
 static void remove_junk(void)
 {
@@ -1028,7 +1028,7 @@ int cmd_clone(int argc,
 	struct strvec alternates = STRVEC_INIT;
 
 	const char * const builtin_clone_usage[] = {
-		N_("git clone [<options>] [--] <repo> [<dir>]"),
+		N_("kit clone [<options>] [--] <repo> [<dir>]"),
 		NULL
 	};
 

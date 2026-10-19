@@ -324,7 +324,7 @@ static void die_if_server_options(struct transport *transport)
 {
 	if (!transport->server_options || !transport->server_options->nr)
 		return;
-	advise(_("see protocol.version in 'git help config' for more details"));
+	advise(_("see protocol.version in 'kit help config' for more details"));
 	die(_("server options require protocol version 2 or later"));
 }
 
@@ -1365,9 +1365,9 @@ static void die_with_unpushed_submodules(struct string_list *needs_pushing)
 	for (size_t i = 0; i < needs_pushing->nr; i++)
 		fprintf(stderr, "  %s\n", needs_pushing->items[i].string);
 	fprintf(stderr, _("\nPlease try\n\n"
-			  "	git push --recurse-submodules=on-demand\n\n"
+			  "	kit push --recurse-submodules=on-demand\n\n"
 			  "or cd to the path and use\n\n"
-			  "	git push\n\n"
+			  "	kit push\n\n"
 			  "to push them to a remote.\n\n"));
 
 	string_list_clear(needs_pushing, 0);

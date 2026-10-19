@@ -829,7 +829,7 @@ static void fsck_refs(struct repository *r)
 }
 
 static char const * const fsck_usage[] = {
-	N_("git fsck [--tags] [--root] [--unreachable] [--cache] [--no-reflogs]\n"
+	N_("kit fsck [--tags] [--root] [--unreachable] [--cache] [--no-reflogs]\n"
 	   "         [--[no-]full] [--strict] [--verbose] [--lost-found]\n"
 	   "         [--[no-]dangling] [--[no-]progress] [--connectivity-only]\n"
 	   "         [--[no-]name-objects] [--[no-]references] [<object>...]"),

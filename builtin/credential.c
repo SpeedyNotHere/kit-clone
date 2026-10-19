@@ -7,7 +7,7 @@
 #include "config.h"
 
 static const char usage_msg[] =
-	"git credential (fill|approve|reject)";
+	"kit credential (fill|approve|reject)";
 
 int cmd_credential(int argc,
 		   const char **argv,

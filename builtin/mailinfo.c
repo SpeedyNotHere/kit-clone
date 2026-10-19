@@ -13,7 +13,7 @@
 
 static const char * const mailinfo_usage[] = {
 	/* TRANSLATORS: keep <> in "<" mail ">" info. */
-	N_("git mailinfo [<options>] <msg> <patch> < mail >info"),
+	N_("kit mailinfo [<options>] <msg> <patch> < mail >info"),
 	NULL,
 };
 

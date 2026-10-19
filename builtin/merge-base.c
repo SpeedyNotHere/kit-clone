@@ -35,11 +35,11 @@ static int show_merge_base(struct commit **rev, size_t rev_nr, int show_all)
 }
 
 static const char * const merge_base_usage[] = {
-	N_("git merge-base [-a | --all] <commit> <commit>..."),
-	N_("git merge-base [-a | --all] --octopus <commit>..."),
-	N_("git merge-base --is-ancestor <commit> <commit>"),
-	N_("git merge-base --independent <commit>..."),
-	N_("git merge-base --fork-point <ref> [<commit>]"),
+	N_("kit merge-base [-a | --all] <commit> <commit>..."),
+	N_("kit merge-base [-a | --all] --octopus <commit>..."),
+	N_("kit merge-base --is-ancestor <commit> <commit>"),
+	N_("kit merge-base --independent <commit>..."),
+	N_("kit merge-base --fork-point <ref> [<commit>]"),
 	NULL
 };
 

@@ -773,7 +773,7 @@ int odb_source_files_optimize(struct odb_source *source,
 
 	if (opts->flags & ODB_OPTIMIZE_AUTO && too_many_loose_objects(files, gc_auto_threshold))
 		warning(_("There are too many unreachable loose objects; "
-			"run 'git prune' to remove them."));
+			"run 'kit prune' to remove them."));
 
 	ret = 0;
 

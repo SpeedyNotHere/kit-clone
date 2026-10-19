@@ -532,8 +532,8 @@ msgstr ""
 msgid "could not parse hunk header"
 msgstr "не удалось разобрать заголовок блока изменений"
 
-msgid "'git apply --cached' failed"
-msgstr "сбой при выполнении «git apply --cached»"
+msgid "'kit apply --cached' failed"
+msgstr "сбой при выполнении «kit apply --cached»"
 
 #. TRANSLATORS: do not translate [y/n]
 #. The program will only accept that input at this point.
@@ -626,7 +626,7 @@ msgstr "Разбито на %d блока изменений."
 msgid "Sorry, cannot edit this hunk"
 msgstr ""
 
-msgid "'git apply' failed"
+msgid "'kit apply' failed"
 msgstr "сбой при выполнении «git apply»"
 
 #, c-format
@@ -661,10 +661,10 @@ msgid "It is not possible to %s because you have unmerged files."
 msgstr "Невозможно выполнить %s, так как у вас имеются не слитые файлы."
 
 msgid ""
-"Fix them up in the work tree, and then use 'git add/rm <file>'\n"
+"Fix them up in the work tree, and then use 'kit add/rm <file>'\n"
 "as appropriate to mark resolution and make a commit."
 msgstr ""
-"Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,\n"
+"Исправьте их в рабочем каталоге, затем запустите «kit add/rm <файл>»,\n"
 "чтобы пометить исправление и сделайте коммит."
 
 msgid "Exiting because of an unresolved conflict."
@@ -682,11 +682,11 @@ msgstr "Выход из-за незавершенного слияния."
 msgid ""
 "Diverging branches can't be fast-forwarded, you need to either:\n"
 "\n"
-"\tgit merge --no-ff\n"
+"\tkit merge --no-ff\n"
 "\n"
 "or:\n"
 "\n"
-"\tgit rebase\n"
+"\tkit rebase\n"
 msgstr ""
 
 msgid "Not possible to fast-forward, aborting."
@@ -716,11 +716,11 @@ msgid ""
 "If you want to create a new branch to retain commits you create, you may\n"
 "do so (now or later) by using -c with the switch command. Example:\n"
 "\n"
-"  git switch -c <new-branch-name>\n"
+"  kit switch -c <new-branch-name>\n"
 "\n"
 "Or undo this operation with:\n"
 "\n"
-"  git switch -\n"
+"  kit switch -\n"
 "\n"
 "Turn off this advice by setting config variable advice.detachedHead to "
 "false\n"
@@ -737,11 +737,11 @@ msgstr ""
 "сделать это (сейчас или позже), используя команду switch с параметром -c.\n"
 "Например:\n"
 "\n"
-"  git switch -c <новая-ветка>\n"
+"  kit switch -c <новая-ветка>\n"
 "\n"
 "Или отмените эту операцию с помощью:\n"
 "\n"
-"  git switch -\n"
+"  kit switch -\n"
 "\n"
 "Отключите этот совет, установив переменную конфигурации\n"
 "advice.detachedHead в значение false\n"
@@ -756,8 +756,8 @@ msgstr ""
 
 msgid ""
 "To correct the sparsity of these paths, do the following:\n"
-"* Use \"git add --sparse <paths>\" to update the index\n"
-"* Use \"git sparse-checkout reapply\" to apply the sparsity rules"
+"* Use \"kit add --sparse <paths>\" to update the index\n"
+"* Use \"kit sparse-checkout reapply\" to apply the sparsity rules"
 msgstr ""
 
 msgid "cmdline ends with \\"
@@ -798,23 +798,23 @@ msgid "unable to find filename in patch at line %d"
 msgstr "не удалось найти имя файла в строке патча %d"
 
 #, c-format
-msgid "git apply: bad git-diff - expected /dev/null, got %s on line %d"
+msgid "kit apply: bad git-diff - expected /dev/null, got %s on line %d"
 msgstr ""
-"git apply: плохой git-diff — ожидалось /dev/null, получено %s на строке %d"
+"kit apply: плохой git-diff — ожидалось /dev/null, получено %s на строке %d"
 
 #, c-format
-msgid "git apply: bad git-diff - inconsistent new filename on line %d"
+msgid "kit apply: bad git-diff - inconsistent new filename on line %d"
 msgstr ""
-"git apply: плохой git-diff — не согласующееся новое имя файла на строке %d"
+"kit apply: плохой git-diff — не согласующееся новое имя файла на строке %d"
 
 #, c-format
-msgid "git apply: bad git-diff - inconsistent old filename on line %d"
+msgid "kit apply: bad git-diff - inconsistent old filename on line %d"
 msgstr ""
-"git apply: плохой git-diff — не согласующееся старое имя файла на строке %d"
+"kit apply: плохой git-diff — не согласующееся старое имя файла на строке %d"
 
 #, c-format
-msgid "git apply: bad git-diff - expected /dev/null on line %d"
-msgstr "git apply: плохой git-diff  — ожидалось /dev/null на строке %d"
+msgid "kit apply: bad git-diff - expected /dev/null on line %d"
+msgstr "kit apply: плохой git-diff  — ожидалось /dev/null на строке %d"
 
 #, c-format
 msgid "invalid mode on line %d: %s"
@@ -1226,8 +1226,8 @@ msgstr "вместо применения патча проверить подх
 msgid "make sure the patch is applicable to the current index"
 msgstr "проверить, что патч применяется к текущему индексу"
 
-msgid "mark new files with `git add --intent-to-add`"
-msgstr "помечать новые файлы с «git add --intent-to-add»"
+msgid "mark new files with `kit add --intent-to-add`"
+msgstr "помечать новые файлы с «kit add --intent-to-add»"
 
 msgid "apply a patch without touching the working tree"
 msgstr "применить патч, не изменяя рабочий каталог"
@@ -1325,16 +1325,16 @@ msgstr "путь слишком длинный (%d символов, SHA1: %s): 
 msgid "timestamp too large for this system: %<PRIuMAX>"
 msgstr "отметка времени слишком большая для этой системы: %<PRIuMAX>"
 
-msgid "git archive [<options>] <tree-ish> [<path>...]"
-msgstr "git archive [<options>] <tree-ish> [<path>...]"
+msgid "kit archive [<options>] <tree-ish> [<path>...]"
+msgstr "kit archive [<options>] <tree-ish> [<path>...]"
 
 msgid ""
-"git archive --remote <repo> [--exec <cmd>] [<options>] <tree-ish> [<path>...]"
+"kit archive --remote <repo> [--exec <cmd>] [<options>] <tree-ish> [<path>...]"
 msgstr ""
-"git archive --remote <repo> [--exec <cmd>] [<options>] <tree-ish> [<path>...]"
+"kit archive --remote <repo> [--exec <cmd>] [<options>] <tree-ish> [<path>...]"
 
-msgid "git archive --remote <repo> [--exec <cmd>] --list"
-msgstr "git archive --remote <репозиторий> [--exec <команда>] --list"
+msgid "kit archive --remote <repo> [--exec <cmd>] --list"
+msgstr "kit archive --remote <репозиторий> [--exec <команда>] --list"
 
 #, c-format
 msgid "cannot read '%s'"
@@ -1712,19 +1712,19 @@ msgid ""
 "\n"
 "If you are planning on basing your work on an upstream\n"
 "branch that already exists at the remote, you may need to\n"
-"run \"git fetch\" to retrieve it.\n"
+"run \"kit fetch\" to retrieve it.\n"
 "\n"
 "If you are planning to push out a new local branch that\n"
 "will track its remote counterpart, you may want to use\n"
-"\"git push -u\" to set the upstream config as you push."
+"\"kit push -u\" to set the upstream config as you push."
 msgstr ""
 "\n"
 "Если планируете основывать свою работу на вышестоящей ветке,\n"
 "которая уже существует во внешнем репозитории, вам может\n"
-"потребоваться запустить «git fetch» для ее получения.\n"
+"потребоваться запустить «kit fetch» для ее получения.\n"
 "\n"
 "Если планируете отправить во внешний репозиторий новую локальную ветку,\n"
-"которую нужно отслеживать, можете использовать команду «git push -u»\n"
+"которую нужно отслеживать, можете использовать команду «kit push -u»\n"
 "чтобы сразу связать ветки."
 
 #, c-format
@@ -1745,8 +1745,8 @@ msgstr ""
 
 #, c-format
 msgid ""
-"You may try updating the submodules using 'git checkout --no-recurse-"
-"submodules %s && git submodule update --init'"
+"You may try updating the submodules using 'kit checkout --no-recurse-"
+"submodules %s && kit submodule update --init'"
 msgstr ""
 
 #, c-format
@@ -1757,8 +1757,8 @@ msgstr ""
 msgid "'%s' is already checked out at '%s'"
 msgstr "«%s» уже находится на «%s»"
 
-msgid "git add [<options>] [--] <pathspec>..."
-msgstr "git add [<опции>] [--] <спецификатор-пути>..."
+msgid "kit add [<options>] [--] <pathspec>..."
+msgstr "kit add [<опции>] [--] <спецификатор-пути>..."
 
 #, c-format
 msgid "cannot chmod %cx '%s'"
@@ -1868,14 +1868,14 @@ msgid ""
 "the embedded repository and will not know how to obtain it.\n"
 "If you meant to add a submodule, use:\n"
 "\n"
-"\tgit submodule add <url> %s\n"
+"\tkit submodule add <url> %s\n"
 "\n"
 "If you added this path by mistake, you can remove it from the\n"
 "index with:\n"
 "\n"
-"\tgit rm --cached %s\n"
+"\tkit rm --cached %s\n"
 "\n"
-"See \"git help submodule\" for more information."
+"See \"kit help submodule\" for more information."
 msgstr ""
 "Вы добавили другой репозиторий git внутри текущего репозитория\n"
 "Клоны внешнего репозитория не будут содержать внутренний\n"
@@ -1889,7 +1889,7 @@ msgstr ""
 "\n"
 "\tgit rm --cached %s\n"
 "\n"
-"Для дополнительной информации смотрите «git help submodule»."
+"Для дополнительной информации смотрите «kit help submodule»."
 
 #, c-format
 msgid "adding embedded git repository: %s"
@@ -2053,8 +2053,8 @@ msgstr ""
 msgid "Failed to merge in the changes."
 msgstr "Не удалось слить изменения."
 
-msgid "git write-tree failed to write a tree"
-msgstr "git write-tree не удалось записать дерево"
+msgid "kit write-tree failed to write a tree"
+msgstr "kit write-tree не удалось записать дерево"
 
 msgid "applying to an empty history"
 msgstr "применение к пустой истории"
@@ -2107,14 +2107,14 @@ msgstr "Нет изменений — Патч уже применен."
 msgid "Patch failed at %s %.*s"
 msgstr "Ошибка применения изменений на %s %.*s"
 
-msgid "Use 'git am --show-current-patch=diff' to see the failed patch"
+msgid "Use 'kit am --show-current-patch=diff' to see the failed patch"
 msgstr ""
 
 msgid "No changes - recorded it as an empty commit."
 msgstr ""
 
 msgid ""
-"No changes - did you forget to use 'git add'?\n"
+"No changes - did you forget to use 'kit add'?\n"
 "If there is nothing left to stage, chances are that something else\n"
 "already introduced the same changes; you might want to skip this patch."
 msgstr ""
@@ -2124,9 +2124,9 @@ msgstr ""
 
 msgid ""
 "You still have unmerged paths in your index.\n"
-"You should 'git add' each file with resolved conflicts to mark them as "
+"You should 'kit add' each file with resolved conflicts to mark them as "
 "such.\n"
-"You might run `git rm` on a file to accept \"deleted by them\" for it."
+"You might run `kit rm` on a file to accept \"deleted by them\" for it."
 msgstr ""
 "У вас есть не слитые пути в индексе.\n"
 "Вы должны выполнить «git add» для каждого файла с разрешенными конфликтами, "
@@ -2159,11 +2159,11 @@ msgstr "не удалось прочитать «%s»"
 msgid "options '%s=%s' and '%s=%s' cannot be used together"
 msgstr ""
 
-msgid "git am [<options>] [(<mbox> | <Maildir>)...]"
-msgstr "git am [<опции>] [(<mbox> | <Maildir>)...]"
+msgid "kit am [<options>] [(<mbox> | <Maildir>)...]"
+msgstr "kit am [<опции>] [(<mbox> | <Maildir>)...]"
 
-msgid "git am [<options>] (--continue | --skip | --abort)"
-msgstr "git am [<опции>] (--continue | --skip | --abort)"
+msgid "kit am [<options>] (--continue | --skip | --abort)"
+msgstr "kit am [<опции>] (--continue | --skip | --abort)"
 
 msgid "run interactively"
 msgstr "запустить в интерактивном режиме"
@@ -2279,10 +2279,10 @@ msgstr "предыдущий каталог перемещения %s еще с�
 #, c-format
 msgid ""
 "Stray %s directory found.\n"
-"Use \"git am --abort\" to remove it."
+"Use \"kit am --abort\" to remove it."
 msgstr ""
 "Найден забытый каталог %s.\n"
-"Используйте «git am --abort», чтобы удалить его."
+"Используйте «kit am --abort», чтобы удалить его."
 
 msgid "Resolve operation not in progress, we are not resuming."
 msgstr ""
@@ -2291,8 +2291,8 @@ msgstr ""
 msgid "interactive mode requires patches on the command line"
 msgstr ""
 
-msgid "git apply [<options>] [<patch>...]"
-msgstr "git apply [<опции>] [<патч>...]"
+msgid "kit apply [<options>] [<patch>...]"
+msgstr "kit apply [<опции>] [<патч>...]"
 
 msgid "could not redirect output"
 msgstr "не удалось перенаправить вывод"
@@ -2300,18 +2300,18 @@ msgstr "не удалось перенаправить вывод"
 msgid "git archive: Remote with no URL"
 msgstr "git archive: внешний репозиторий без URL"
 
-msgid "git archive: expected ACK/NAK, got a flush packet"
-msgstr "git archive: ожидается ACK/NAK, получен пакет сброса буфера"
+msgid "kit archive: expected ACK/NAK, got a flush packet"
+msgstr "kit archive: ожидается ACK/NAK, получен пакет сброса буфера"
 
 #, c-format
-msgid "git archive: NACK %s"
-msgstr "git archive: NACK %s"
+msgid "kit archive: NACK %s"
+msgstr "kit archive: NACK %s"
 
-msgid "git archive: protocol error"
-msgstr "git archive: ошибка протокола"
+msgid "kit archive: protocol error"
+msgstr "kit archive: ошибка протокола"
 
-msgid "git archive: expected a flush"
-msgstr "git archive: ожидался сброс буфера"
+msgid "kit archive: expected a flush"
+msgstr "kit archive: ожидался сброс буфера"
 
 msgid ""
 "git bisect start [--term-{new,bad}=<term> --term-{old,good}=<term>]    [--no-"
@@ -2321,13 +2321,13 @@ msgstr ""
 msgid "git bisect (good|bad) [<rev>...]"
 msgstr ""
 
-msgid "git bisect skip [(<rev>|<range>)...]"
+msgid "kit bisect skip [(<rev>|<range>)...]"
 msgstr ""
 
-msgid "git bisect reset [<commit>]"
+msgid "kit bisect reset [<commit>]"
 msgstr ""
 
-msgid "git bisect replay <logfile>"
+msgid "kit bisect replay <logfile>"
 msgstr ""
 
 msgid "git bisect run <cmd>..."
@@ -2370,7 +2370,7 @@ msgstr ""
 
 #, c-format
 msgid ""
-"could not check out original HEAD '%s'. Try 'git bisect reset <commit>'."
+"could not check out original HEAD '%s'. Try 'kit bisect reset <commit>'."
 msgstr ""
 
 #, c-format
@@ -2392,14 +2392,14 @@ msgstr ""
 #, c-format
 msgid ""
 "You need to give me at least one %s and %s revision.\n"
-"You can use \"git bisect %s\" and \"git bisect %s\" for that."
+"You can use \"kit bisect %s\" and \"kit bisect %s\" for that."
 msgstr ""
 
 #, c-format
 msgid ""
-"You need to start by \"git bisect start\".\n"
+"You need to start by \"kit bisect start\".\n"
 "You then need to give me at least one %s and %s revision.\n"
-"You can use \"git bisect %s\" and \"git bisect %s\" for that."
+"You can use \"kit bisect %s\" and \"kit bisect %s\" for that."
 msgstr ""
 
 #, c-format
@@ -2437,7 +2437,7 @@ msgstr ""
 
 #, c-format
 msgid ""
-"invalid argument %s for 'git bisect terms'.\n"
+"invalid argument %s for 'kit bisect terms'.\n"
 "Supported options are: --term-good|--term-old and --term-bad|--term-new."
 msgstr ""
 
@@ -2463,7 +2463,7 @@ msgid "bad HEAD - I need a HEAD"
 msgstr ""
 
 #, c-format
-msgid "checking out '%s' failed. Try 'git bisect start <valid-branch>'."
+msgid "checking out '%s' failed. Try 'kit bisect start <valid-branch>'."
 msgstr ""
 
 msgid "bad HEAD - strange symbolic ref"
@@ -2473,7 +2473,7 @@ msgstr ""
 msgid "invalid ref: '%s'"
 msgstr ""
 
-msgid "You need to start by \"git bisect start\"\n"
+msgid "You need to start by \"kit bisect start\"\n"
 msgstr ""
 
 #. TRANSLATORS: Make sure to include [Y] and [n] in your
@@ -2486,7 +2486,7 @@ msgid "Please call `--bisect-state` with at least one argument"
 msgstr ""
 
 #, c-format
-msgid "'git bisect %s' can take only one argument."
+msgid "'kit bisect %s' can take only one argument."
 msgstr ""
 
 #, c-format
@@ -2541,7 +2541,7 @@ msgid "bisect found first bad commit"
 msgstr ""
 
 #, c-format
-msgid "bisect run failed: 'git bisect %s' exited with error code %d"
+msgid "bisect run failed: 'kit bisect %s' exited with error code %d"
 msgstr ""
 
 #, c-format
@@ -2570,10 +2570,10 @@ msgstr ""
 msgid "unknown command: '%s'"
 msgstr ""
 
-msgid "git blame [<options>] [<rev-opts>] [<rev>] [--] <file>"
-msgstr "git blame [<опции>] [<опции-редакции>] [<редакция>] [--] <файл>"
+msgid "kit blame [<options>] [<rev-opts>] [<rev>] [--] <file>"
+msgstr "kit blame [<опции>] [<опции-редакции>] [<редакция>] [--] <файл>"
 
-msgid "git annotate [<options>] [<rev-opts>] [<rev>] [--] <file>"
+msgid "kit annotate [<options>] [<rev-opts>] [<rev>] [--] <file>"
 msgstr ""
 
 msgid "<rev-opts> are documented in git-rev-list(1)"
@@ -2707,27 +2707,27 @@ msgid "git branch [<options>] [-r | -a] [--merged] [--no-merged]"
 msgstr ""
 
 msgid ""
-"git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-"
+"kit branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-"
 "point>]"
 msgstr ""
 
-msgid "git branch [<options>] [-l] [<pattern>...]"
+msgid "kit branch [<options>] [-l] [<pattern>...]"
 msgstr ""
 
-msgid "git branch [<options>] [-r] (-d | -D) <branch-name>..."
-msgstr "git branch [<options>] [-r] (-d | -D) <branch-name>..."
+msgid "kit branch [<options>] [-r] (-d | -D) <branch-name>..."
+msgstr "kit branch [<options>] [-r] (-d | -D) <branch-name>..."
 
-msgid "git branch [<options>] (-m | -M) [<old-branch>] <new-branch>"
-msgstr "git branch [<опции>] (-m | -M) [<старая-ветка>] <новая-ветка>"
+msgid "kit branch [<options>] (-m | -M) [<old-branch>] <new-branch>"
+msgstr "kit branch [<опции>] (-m | -M) [<старая-ветка>] <новая-ветка>"
 
-msgid "git branch [<options>] (-c | -C) [<old-branch>] <new-branch>"
-msgstr "git branch [<опции>] (-c | -C) [<старая-ветка>] <новая-ветка>"
+msgid "kit branch [<options>] (-c | -C) [<old-branch>] <new-branch>"
+msgstr "kit branch [<опции>] (-c | -C) [<старая-ветка>] <новая-ветка>"
 
-msgid "git branch [<options>] [-r | -a] [--points-at]"
-msgstr "git branch [<опции>] [-r | -a] [--points-at]"
+msgid "kit branch [<options>] [-r | -a] [--points-at]"
+msgstr "kit branch [<опции>] [-r | -a] [--points-at]"
 
-msgid "git branch [<options>] [-r | -a] [--format]"
-msgstr "git branch [<опции>] [-r | -a] [--format]"
+msgid "kit branch [<options>] [-r | -a] [--format]"
+msgstr "kit branch [<опции>] [-r | -a] [--format]"
 
 #, c-format
 msgid ""
@@ -3115,17 +3115,17 @@ msgid "Created new report at '%s'.\n"
 msgstr ""
 
 msgid ""
-"git bundle create [-q | --quiet | --progress]\n"
+"kit bundle create [-q | --quiet | --progress]\n"
 "                  [--version=<version>] <file> <git-rev-list-args>"
 msgstr ""
 
-msgid "git bundle verify [-q | --quiet] <file>"
+msgid "kit bundle verify [-q | --quiet] <file>"
 msgstr ""
 
-msgid "git bundle list-heads <file> [<refname>...]"
+msgid "kit bundle list-heads <file> [<refname>...]"
 msgstr ""
 
-msgid "git bundle unbundle [--progress] <file> [<refname>...]"
+msgid "kit bundle unbundle [--progress] <file> [<refname>...]"
 msgstr ""
 
 msgid "need a <file> argument"
@@ -3187,7 +3187,7 @@ msgstr ""
 msgid "only one batch option may be specified"
 msgstr ""
 
-msgid "git cat-file <type> <object>"
+msgid "kit cat-file <type> <object>"
 msgstr ""
 
 msgid "git cat-file (-e | -p) <object>"
@@ -3204,7 +3204,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"git cat-file (--textconv | --filters)\n"
+"kit cat-file (--textconv | --filters)\n"
 "             [<rev>:<path|tree-ish> | --path=<path|tree-ish> <rev>]"
 msgstr ""
 
@@ -3310,12 +3310,12 @@ msgid "only two arguments allowed in <type> <object> mode, not %d"
 msgstr ""
 
 msgid ""
-"git check-attr [--source <tree-ish>] [-a | --all | <attr>...] [--] "
+"kit check-attr [--source <tree-ish>] [-a | --all | <attr>...] [--] "
 "<pathname>..."
 msgstr ""
 
 msgid ""
-"git check-attr --stdin [-z] [--source <tree-ish>] [-a | --all | <attr>...]"
+"kit check-attr --stdin [-z] [--source <tree-ish>] [-a | --all | <attr>...]"
 msgstr ""
 
 msgid "report all attributes set on file"
@@ -3363,8 +3363,8 @@ msgstr "нельзя использовать одновременно --quiet �
 msgid "--non-matching is only valid with --verbose"
 msgstr "--non-matching можно использовать только вместе с --verbose"
 
-msgid "git check-mailmap [<options>] <contact>..."
-msgstr "git check-mailmap [<опции>] <контакт>..."
+msgid "kit check-mailmap [<options>] <contact>..."
+msgstr "kit check-mailmap [<опции>] <контакт>..."
 
 msgid "also read contacts from stdin"
 msgstr "также читать контакты из стандартного ввода"
@@ -3376,7 +3376,7 @@ msgstr "не удалось разобрать контакт: %s"
 msgid "no contacts specified"
 msgstr "не указаны контакты"
 
-msgid "git checkout--worker [<options>]"
+msgid "kit checkout--worker [<options>]"
 msgstr ""
 
 msgid "string"
@@ -3385,8 +3385,8 @@ msgstr "строка"
 msgid "when creating files, prepend <string>"
 msgstr "добавить спереди <строку> при создании файлов"
 
-msgid "git checkout-index [<options>] [--] [<file>...]"
-msgstr "git checkout-index [<опции>] [--] [<файл>...]"
+msgid "kit checkout-index [<options>] [--] [<file>...]"
+msgstr "kit checkout-index [<опции>] [--] [<файл>...]"
 
 msgid "stage should be between 1 and 3 or all"
 msgstr "индекс должен быть между 1 и 3 или all"
@@ -3419,17 +3419,17 @@ msgstr "записать содержимое во временные файлы
 msgid "copy out the files from named stage"
 msgstr "копировать файлы из указанного индекса"
 
-msgid "git checkout [<options>] <branch>"
-msgstr "git checkout [<опции>] <ветка>"
+msgid "kit checkout [<options>] <branch>"
+msgstr "kit checkout [<опции>] <ветка>"
 
-msgid "git checkout [<options>] [<branch>] -- <file>..."
-msgstr "git checkout [<опции>] [<ветка>] -- <файл>..."
+msgid "kit checkout [<options>] [<branch>] -- <file>..."
+msgstr "kit checkout [<опции>] [<ветка>] -- <файл>..."
 
-msgid "git switch [<options>] [<branch>]"
+msgid "kit switch [<options>] [<branch>]"
 msgstr ""
 
-msgid "git restore [<options>] [--source=<branch>] <file>..."
-msgstr "git restore [<опции>] [--source=<ветка>] <файл>..."
+msgid "kit restore [<options>] [--source=<branch>] <file>..."
+msgstr "kit restore [<опции>] [--source=<ветка>] <файл>..."
 
 #, c-format
 msgid "path '%s' does not have our version"
@@ -3582,34 +3582,34 @@ msgid ""
 "If you want to keep it by creating a new branch, this may be a good time\n"
 "to do so with:\n"
 "\n"
-" git branch <new-branch-name> %s\n"
+" kit branch <new-branch-name> %s\n"
 "\n"
 msgid_plural ""
 "If you want to keep them by creating a new branch, this may be a good time\n"
 "to do so with:\n"
 "\n"
-" git branch <new-branch-name> %s\n"
+" kit branch <new-branch-name> %s\n"
 "\n"
 msgstr[0] ""
 "Если хотите сохранить его в новую ветку, то сейчас самое время для команды:\n"
 "\n"
-" git branch <имя-новой-ветки> %s\n"
+" kit branch <имя-новой-ветки> %s\n"
 "\n"
 msgstr[1] ""
 "Если хотите сохранить их в новую ветку, то сейчас самое время для команды:\n"
 "\n"
-" git branch <имя-новой-ветки> %s\n"
+" kit branch <имя-новой-ветки> %s\n"
 "\n"
 msgstr[2] ""
 "Если хотите сохранить их в новую ветку, то сейчас самое время для команды:\n"
 "\n"
-" git branch <имя-новой-ветки> %s\n"
+" kit branch <имя-новой-ветки> %s\n"
 "\n"
 msgstr[3] ""
 "Если хотите сохранить работу в новую ветку, то сейчас самое время для "
 "команды:\n"
 "\n"
-" git branch <имя-новой-ветки> %s\n"
+" kit branch <имя-новой-ветки> %s\n"
 "\n"
 
 msgid "internal error in revision walk"
@@ -3679,27 +3679,27 @@ msgstr ""
 
 msgid ""
 "cannot switch branch while merging\n"
-"Consider \"git merge --quit\" or \"git worktree add\"."
+"Consider \"kit merge --quit\" or \"kit worktree add\"."
 msgstr ""
 
 msgid ""
 "cannot switch branch in the middle of an am session\n"
-"Consider \"git am --quit\" or \"git worktree add\"."
+"Consider \"kit am --quit\" or \"kit worktree add\"."
 msgstr ""
 
 msgid ""
 "cannot switch branch while rebasing\n"
-"Consider \"git rebase --quit\" or \"git worktree add\"."
+"Consider \"kit rebase --quit\" or \"kit worktree add\"."
 msgstr ""
 
 msgid ""
 "cannot switch branch while cherry-picking\n"
-"Consider \"git cherry-pick --quit\" or \"git worktree add\"."
+"Consider \"kit cherry-pick --quit\" or \"kit worktree add\"."
 msgstr ""
 
 msgid ""
 "cannot switch branch while reverting\n"
-"Consider \"git revert --quit\" or \"git worktree add\"."
+"Consider \"kit revert --quit\" or \"kit worktree add\"."
 msgstr ""
 
 msgid "you are switching branch while bisecting"
@@ -3789,14 +3789,14 @@ msgstr ""
 "«%s» не является коммитом, поэтому невозможно создать из него ветку «%s»"
 
 #, c-format
-msgid "git checkout: --detach does not take a path argument '%s'"
-msgstr "git checkout: --detach не принимает путь «%s» как аргумент"
+msgid "kit checkout: --detach does not take a path argument '%s'"
+msgstr "kit checkout: --detach не принимает путь «%s» как аргумент"
 
 msgid ""
-"git checkout: --ours/--theirs, --force and --merge are incompatible when\n"
+"kit checkout: --ours/--theirs, --force and --merge are incompatible when\n"
 "checking out of the index."
 msgstr ""
-"git checkout: --ours/--theirs, --force and --merge нельзя использовать "
+"kit checkout: --ours/--theirs, --force and --merge нельзя использовать "
 "одновременно при применении состояния индекса."
 
 msgid "you must specify path(s) to restore"
@@ -3814,7 +3814,7 @@ msgstr "создать/сбросить и перключиться на нов�
 msgid "create reflog for new branch"
 msgstr "создать журнал ссылок для новой ветки"
 
-msgid "second guess 'git checkout <no-such-branch>' (default)"
+msgid "second guess 'kit checkout <no-such-branch>' (default)"
 msgstr ""
 
 msgid "use overlay mode (default)"
@@ -3826,7 +3826,7 @@ msgstr ""
 msgid "create/reset and switch to a branch"
 msgstr ""
 
-msgid "second guess 'git switch <no-such-branch>'"
+msgid "second guess 'kit switch <no-such-branch>'"
 msgstr ""
 
 msgid "throw away local modifications"
@@ -3848,7 +3848,7 @@ msgid "use overlay mode"
 msgstr ""
 
 msgid ""
-"git clean [-d] [-f] [-i] [-n] [-q] [-e <pattern>] [-x | -X] [--] "
+"kit clean [-d] [-f] [-i] [-n] [-q] [-e <pattern>] [-x | -X] [--] "
 "[<pathspec>...]"
 msgstr ""
 
@@ -4003,8 +4003,8 @@ msgstr ""
 msgid "-x and -X cannot be used together"
 msgstr "нельзя использовать одновременно -x и -X"
 
-msgid "git clone [<options>] [--] <repo> [<dir>]"
-msgstr "git clone [<опции>] [--] <репозиторий> [<каталог>]"
+msgid "kit clone [<options>] [--] <repo> [<dir>]"
+msgstr "kit clone [<опции>] [--] <репозиторий> [<каталог>]"
 
 msgid "don't clone shallow repository"
 msgstr ""
@@ -4172,14 +4172,14 @@ msgstr "готово.\n"
 
 msgid ""
 "Clone succeeded, but checkout failed.\n"
-"You can inspect what was checked out with 'git status'\n"
-"and retry with 'git restore --source=HEAD :/'\n"
+"You can inspect what was checked out with 'kit status'\n"
+"and retry with 'kit restore --source=HEAD :/'\n"
 msgstr ""
 "Клонирование прошло успешно, но во время переключения на состояние произошла "
 "ошибка.\n"
 "С помощь команды «git status» вы можете просмотреть какие файлы были "
 "обновлены,\n"
-"а повторить попытку перехода на версию можно с помощью «git restore --"
+"а повторить попытку перехода на версию можно с помощью «kit restore --"
 "source=HEAD :/»\n"
 
 #, c-format
@@ -4318,8 +4318,8 @@ msgstr "Внешняя ветка %s не найдена в вышестояще
 msgid "You appear to have cloned an empty repository."
 msgstr "Похоже, что вы клонировали пустой репозиторий."
 
-msgid "git column [<options>]"
-msgstr "git column [<опции>]"
+msgid "kit column [<options>]"
+msgstr "kit column [<опции>]"
 
 msgid "lookup config vars"
 msgstr "запросить переменные конфигурации"
@@ -4343,7 +4343,7 @@ msgid "--command must be the first argument"
 msgstr "параметр --command должен быть первым"
 
 msgid ""
-"git commit-graph verify [--object-dir <dir>] [--shallow] [--[no-]progress]"
+"kit commit-graph verify [--object-dir <dir>] [--shallow] [--[no-]progress]"
 msgstr ""
 
 msgid ""
@@ -4421,11 +4421,11 @@ msgstr ""
 msgid "Collecting commits from input"
 msgstr ""
 
-msgid "git commit-tree <tree> [(-p <parent>)...]"
+msgid "kit commit-tree <tree> [(-p <parent>)...]"
 msgstr ""
 
 msgid ""
-"git commit-tree [(-p <parent>)...] [-S[<keyid>]] [(-m <message>)...]\n"
+"kit commit-tree [(-p <parent>)...] [-S[<keyid>]] [(-m <message>)...]\n"
 "                [(-F <file>)...] <tree>"
 msgstr ""
 
@@ -4438,12 +4438,12 @@ msgid "not a valid object name %s"
 msgstr ""
 
 #, c-format
-msgid "git commit-tree: failed to read '%s'"
-msgstr "git commit-tree: сбой при чтении «%s»"
+msgid "kit commit-tree: failed to read '%s'"
+msgstr "kit commit-tree: сбой при чтении «%s»"
 
 #, c-format
-msgid "git commit-tree: failed to close '%s'"
-msgstr "git commit-tree: сбой при закрытии «%s»"
+msgid "kit commit-tree: failed to close '%s'"
+msgstr "kit commit-tree: сбой при закрытии «%s»"
 
 msgid "parent"
 msgstr ""
@@ -4466,8 +4466,8 @@ msgstr "подписать коммит с помощью GPG"
 msgid "must give exactly one tree"
 msgstr "необходимо указать одно дерево"
 
-msgid "git commit-tree: failed to read"
-msgstr "git commit-tree: сбой при чтении"
+msgid "kit commit-tree: failed to read"
+msgstr "kit commit-tree: сбой при чтении"
 
 msgid ""
 "git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend]\n"
@@ -4481,47 +4481,47 @@ msgid ""
 "           [--] [<pathspec>...]"
 msgstr ""
 
-msgid "git status [<options>] [--] [<pathspec>...]"
+msgid "kit status [<options>] [--] [<pathspec>...]"
 msgstr ""
 
 msgid ""
 "You asked to amend the most recent commit, but doing so would make\n"
 "it empty. You can repeat your command with --allow-empty, or you can\n"
-"remove the commit entirely with \"git reset HEAD^\".\n"
+"remove the commit entirely with \"kit reset HEAD^\".\n"
 msgstr ""
 "Вы попросили исправить последний коммит, но делая это вы сделаете\n"
 "пустой коммит. Вы можете повторить эту команду с опцией --allow-empty\n"
 "или вы можете удалить коммит полностью с помощью команды \n"
-"«git reset HEAD^».\n"
+"«kit reset HEAD^».\n"
 
 msgid ""
 "The previous cherry-pick is now empty, possibly due to conflict resolution.\n"
 "If you wish to commit it anyway, use:\n"
 "\n"
-"    git commit --allow-empty\n"
+"    kit commit --allow-empty\n"
 "\n"
 msgstr ""
 "Копируемый коммит теперь пуст, возможно после разрешения конфликтов.\n"
 "Если вы все равно хотите сделать пустой коммит, используйте:\n"
 "\n"
-"    git commit --allow-empty\n"
+"    kit commit --allow-empty\n"
 "\n"
 
-msgid "Otherwise, please use 'git rebase --skip'\n"
-msgstr "В противном случае, используйте «git rebase --skip»\n"
+msgid "Otherwise, please use 'kit rebase --skip'\n"
+msgstr "В противном случае, используйте «kit rebase --skip»\n"
 
-msgid "Otherwise, please use 'git cherry-pick --skip'\n"
+msgid "Otherwise, please use 'kit cherry-pick --skip'\n"
 msgstr ""
 
 msgid ""
 "and then use:\n"
 "\n"
-"    git cherry-pick --continue\n"
+"    kit cherry-pick --continue\n"
 "\n"
 "to resume cherry-picking the remaining commits.\n"
 "If you wish to skip this commit, use:\n"
 "\n"
-"    git cherry-pick --skip\n"
+"    kit cherry-pick --skip\n"
 "\n"
 msgstr ""
 
@@ -4650,7 +4650,7 @@ msgid ""
 "\n"
 "It looks like you may be committing a merge.\n"
 "If this is not correct, please run\n"
-"\tgit update-ref -d MERGE_HEAD\n"
+"\tkit update-ref -d MERGE_HEAD\n"
 "and try again.\n"
 msgstr ""
 
@@ -4658,7 +4658,7 @@ msgid ""
 "\n"
 "It looks like you may be committing a cherry-pick.\n"
 "If this is not correct, please run\n"
-"\tgit update-ref -d CHERRY_PICK_HEAD\n"
+"\tkit update-ref -d CHERRY_PICK_HEAD\n"
 "and try again.\n"
 msgstr ""
 
@@ -5143,7 +5143,7 @@ msgstr ""
 msgid ""
 "--worktree cannot be used with multiple working trees unless the config\n"
 "extension worktreeConfig is enabled. Please read \"CONFIGURATION FILE\"\n"
-"section in \"git help worktree\" for details"
+"section in \"kit help worktree\" for details"
 msgstr ""
 
 msgid "--get-color and variable type are incoherent"
@@ -5225,14 +5225,14 @@ msgid "unable to get credential storage lock in %d ms"
 msgstr ""
 
 msgid ""
-"git describe [--all] [--tags] [--contains] [--abbrev=<n>] [<commit-ish>...]"
+"kit describe [--all] [--tags] [--contains] [--abbrev=<n>] [<commit-ish>...]"
 msgstr ""
 
 msgid ""
-"git describe [--all] [--tags] [--contains] [--abbrev=<n>] --dirty[=<mark>]"
+"kit describe [--all] [--tags] [--contains] [--abbrev=<n>] --dirty[=<mark>]"
 msgstr ""
 
-msgid "git describe <blob>"
+msgid "kit describe <blob>"
 msgstr ""
 
 msgid "head"
@@ -5356,7 +5356,7 @@ msgid "option '%s' and commit-ishes cannot be used together"
 msgstr ""
 
 msgid ""
-"git diagnose [(-o | --output-directory) <path>] [(-s | --suffix) <format>]\n"
+"kit diagnose [(-o | --output-directory) <path>] [(-s | --suffix) <format>]\n"
 "             [--mode=<mode>]"
 msgstr ""
 
@@ -5406,8 +5406,8 @@ msgstr "передан необработанный объект «%s»."
 msgid "%s...%s: multiple merge bases, using %s"
 msgstr ""
 
-msgid "git difftool [<options>] [<commit> [<commit>]] [--] [<path>...]"
-msgstr "git difftool [<опции>] [<коммит> [<коммит>]] [--] [<путь>...]"
+msgid "kit difftool [<options>] [<commit> [<commit>]] [--] [<path>...]"
+msgstr "kit difftool [<опции>] [<коммит> [<коммит>]] [--] [<путь>...]"
 
 #, c-format
 msgid "could not read symlink %s"
@@ -5583,17 +5583,17 @@ msgstr ""
 msgid "Lockfile created but not reported: %s"
 msgstr ""
 
-msgid "git fetch [<options>] [<repository> [<refspec>...]]"
-msgstr "git fetch [<опции>] [<репозиторий> [<спецификатор-ссылки>...]]"
+msgid "kit fetch [<options>] [<repository> [<refspec>...]]"
+msgstr "kit fetch [<опции>] [<репозиторий> [<спецификатор-ссылки>...]]"
 
-msgid "git fetch [<options>] <group>"
-msgstr "git fetch [<опции>] <группа>"
+msgid "kit fetch [<options>] <group>"
+msgstr "kit fetch [<опции>] <группа>"
 
 msgid "git fetch --multiple [<options>] [(<repository> | <group>)...]"
 msgstr "git fetch --multiple [<опции>] [(<репозиторий> | <группа>)...]"
 
-msgid "git fetch --all [<options>]"
-msgstr "git fetch --all [<опции>]"
+msgid "kit fetch --all [<options>]"
+msgstr "kit fetch --all [<опции>]"
 
 msgid "fetch.parallel cannot be negative"
 msgstr ""
@@ -5649,13 +5649,13 @@ msgstr "не удалось открыть «%s»"
 msgid ""
 "fetch normally indicates which branches had a forced update,\n"
 "but that check has been disabled; to re-enable, use '--show-forced-updates'\n"
-"flag or run 'git config fetch.showForcedUpdates true'"
+"flag or run 'kit config fetch.showForcedUpdates true'"
 msgstr ""
 
 #, c-format
 msgid ""
 "it took %.2f seconds to check forced updates; you can use\n"
-"'--no-show-forced-updates' or run 'git config fetch.showForcedUpdates "
+"'--no-show-forced-updates' or run 'kit config fetch.showForcedUpdates "
 "false'\n"
 "to avoid this check\n"
 msgstr ""
@@ -5671,7 +5671,7 @@ msgstr ""
 #, c-format
 msgid ""
 "some local refs could not be updated; try running\n"
-" 'git remote prune %s' to remove any old, conflicting branches"
+" 'kit remote prune %s' to remove any old, conflicting branches"
 msgstr ""
 "не удалось обновить некоторые локальные ссылки; попробуйте запустить «git "
 "remote prune %s», чтобы почистить старые, конфликтующие ветки"
@@ -5756,7 +5756,7 @@ msgstr ""
 msgid "fetch from all remotes"
 msgstr "извлечь со всех внешних репозиториев"
 
-msgid "set upstream for git pull/fetch"
+msgid "set upstream for kit pull/fetch"
 msgstr ""
 
 msgid "append to .git/FETCH_HEAD instead of overwriting"
@@ -5901,9 +5901,9 @@ msgid "--stdin can only be used when fetching from one remote"
 msgstr ""
 
 msgid ""
-"git fmt-merge-msg [-m <message>] [--log[=<n>] | --no-log] [--file <file>]"
+"kit fmt-merge-msg [-m <message>] [--log[=<n>] | --no-log] [--file <file>]"
 msgstr ""
-"git fmt-merge-msg [-m <сообщение>] [--log[=<n>] | --no-log] [--file <файл>]"
+"kit fmt-merge-msg [-m <сообщение>] [--log[=<n>] | --no-log] [--file <файл>]"
 
 msgid "populate log with at most <n> entries from shortlog"
 msgstr "отправить в журнал <n> записей из короткого журнала"
@@ -5976,7 +5976,7 @@ msgstr ""
 msgid "unknown arguments supplied with --stdin"
 msgstr ""
 
-msgid "git for-each-repo --config=<config> [--] <arguments>"
+msgid "kit for-each-repo --config=<config> [--] <arguments>"
 msgstr ""
 
 msgid "config"
@@ -6213,10 +6213,10 @@ msgstr ""
 msgid "invalid parameter: expected sha1, got '%s'"
 msgstr ""
 
-msgid "git fsmonitor--daemon start [<options>]"
+msgid "kit fsmonitor--daemon start [<options>]"
 msgstr ""
 
-msgid "git fsmonitor--daemon run [<options>]"
+msgid "kit fsmonitor--daemon run [<options>]"
 msgstr ""
 
 #, c-format
@@ -6304,8 +6304,8 @@ msgstr ""
 msgid "fsmonitor--daemon not supported on this platform"
 msgstr ""
 
-msgid "git gc [<options>]"
-msgstr "git gc [<опции>]"
+msgid "kit gc [<options>]"
+msgstr "kit gc [<опции>]"
 
 #, c-format
 msgid "Failed to fstat %s: %s"
@@ -6366,8 +6366,8 @@ msgstr ""
 "Автоматическая упаковка репозитория, для оптимальной производительности.\n"
 
 #, c-format
-msgid "See \"git help gc\" for manual housekeeping.\n"
-msgstr "Смотрите «git help gc» руководства по ручной очистке.\n"
+msgid "See \"kit help gc\" for manual housekeeping.\n"
+msgstr "Смотрите «kit help gc» руководства по ручной очистке.\n"
 
 #, c-format
 msgid ""
@@ -6377,13 +6377,13 @@ msgstr ""
 "--force)"
 
 msgid ""
-"There are too many unreachable loose objects; run 'git prune' to remove them."
+"There are too many unreachable loose objects; run 'kit prune' to remove them."
 msgstr ""
 "Имеется слишком много объектов, на которые нет ссылок; запустите «git prune» "
 "для их удаления."
 
 msgid ""
-"git maintenance run [--auto] [--[no-]quiet] [--task=<task>] [--schedule]"
+"kit maintenance run [--auto] [--[no-]quiet] [--task=<task>] [--schedule]"
 msgstr ""
 
 msgid "--no-schedule is not allowed"
@@ -6399,19 +6399,19 @@ msgstr ""
 msgid "failed to prefetch remotes"
 msgstr ""
 
-msgid "failed to start 'git pack-objects' process"
+msgid "failed to start 'kit pack-objects' process"
 msgstr ""
 
-msgid "failed to finish 'git pack-objects' process"
+msgid "failed to finish 'kit pack-objects' process"
 msgstr ""
 
 msgid "failed to write multi-pack-index"
 msgstr ""
 
-msgid "'git multi-pack-index expire' failed"
+msgid "'kit multi-pack-index expire' failed"
 msgstr ""
 
-msgid "'git multi-pack-index repack' failed"
+msgid "'kit multi-pack-index repack' failed"
 msgstr ""
 
 msgid ""
@@ -6534,23 +6534,23 @@ msgstr ""
 msgid "another process is scheduling background maintenance"
 msgstr ""
 
-msgid "git maintenance start [--scheduler=<scheduler>]"
+msgid "kit maintenance start [--scheduler=<scheduler>]"
 msgstr ""
 
 msgid "scheduler"
 msgstr ""
 
-msgid "scheduler to trigger git maintenance run"
+msgid "scheduler to trigger kit maintenance run"
 msgstr ""
 
 msgid "failed to add repo to global config"
 msgstr ""
 
-msgid "git maintenance <subcommand> [<options>]"
+msgid "kit maintenance <subcommand> [<options>]"
 msgstr ""
 
-msgid "git grep [<options>] [-e] <pattern> [<rev>...] [[--] <path>...]"
-msgstr "git grep [<опции>] [-e] <шаблон> [<редакция>...] [[--] <путь>...]"
+msgid "kit grep [<options>] [-e] <pattern> [<rev>...] [[--] <path>...]"
+msgstr "kit grep [<опции>] [-e] <шаблон> [<редакция>...] [[--] <путь>...]"
 
 #, c-format
 msgid "grep: failed to create thread: %s"
@@ -6756,11 +6756,11 @@ msgid "both --cached and trees are given"
 msgstr ""
 
 msgid ""
-"git hash-object [-t <type>] [-w] [--path=<file> | --no-filters]\n"
+"kit hash-object [-t <type>] [-w] [--path=<file> | --no-filters]\n"
 "                [--stdin [--literally]] [--] <file>..."
 msgstr ""
 
-msgid "git hash-object [-t <type>] [-w] --stdin-paths [--no-filters]"
+msgid "kit hash-object [-t <type>] [-w] --stdin-paths [--no-filters]"
 msgstr ""
 
 msgid "object type"
@@ -6819,7 +6819,7 @@ msgstr ""
 msgid "print all configuration variable names"
 msgstr ""
 
-msgid "git help [[-i|--info] [-m|--man] [-w|--web]] [<command>|<doc>]"
+msgid "kit help [[-i|--info] [-m|--man] [-w|--web]] [<command>|<doc>]"
 msgstr ""
 
 #, c-format
@@ -6886,7 +6886,7 @@ msgstr ""
 msgid "usage: %s%s"
 msgstr "использование: %s%s"
 
-msgid "'git help config' for more information"
+msgid "'kit help config' for more information"
 msgstr ""
 
 msgid ""
@@ -7293,11 +7293,11 @@ msgstr "--trailer одновременно с --only-input не имеет см�
 msgid "no input file given for in-place editing"
 msgstr "ничего не передано, для редактирования файлов на месте"
 
-msgid "git log [<options>] [<revision-range>] [[--] <path>...]"
-msgstr "git log [<опции>] [<диапазон-редакций>] [[--] <путь>...]"
+msgid "kit log [<options>] [<revision-range>] [[--] <path>...]"
+msgstr "kit log [<опции>] [<диапазон-редакций>] [[--] <путь>...]"
 
-msgid "git show [<options>] <object>..."
-msgstr "git show [<опции>] <объект>..."
+msgid "kit show [<options>] <object>..."
+msgstr "kit show [<опции>] <объект>..."
 
 #, c-format
 msgid "invalid --decorate option: %s"
@@ -7341,8 +7341,8 @@ msgid "unable to create temporary object directory"
 msgstr ""
 
 #, c-format
-msgid "git show %s: bad file"
-msgstr "git show %s: плохой файл"
+msgid "kit show %s: bad file"
+msgstr "kit show %s: плохой файл"
 
 #, c-format
 msgid "could not read object %s"
@@ -7379,8 +7379,8 @@ msgstr ""
 msgid "insane in-reply-to: %s"
 msgstr "ошибка в поле in-reply-to: %s"
 
-msgid "git format-patch [<options>] [<since> | <revision-range>]"
-msgstr "git format-patch [<опции>] [<начиная-с> | <диапазон-редакций>]"
+msgid "kit format-patch [<options>] [<since> | <revision-range>]"
+msgstr "kit format-patch [<опции>] [<начиная-с> | <диапазон-редакций>]"
 
 msgid "two output directories?"
 msgstr ""
@@ -7398,7 +7398,7 @@ msgstr ""
 
 msgid ""
 "failed to get upstream, if you want to record base commit automatically,\n"
-"please use git branch --set-upstream-to to track a remote branch.\n"
+"please use kit branch --set-upstream-to to track a remote branch.\n"
 "Or you could specify base commit by --base=<base-commit-id> manually"
 msgstr ""
 
@@ -7612,8 +7612,8 @@ msgstr "Создание патчей"
 msgid "failed to create output files"
 msgstr ""
 
-msgid "git cherry [-v] [<upstream> [<head> [<limit>]]]"
-msgstr "git cherry [-v] [<вышестоящая-ветка> [<редакция> [<ограничение>]]]"
+msgid "kit cherry [-v] [<upstream> [<head> [<limit>]]]"
+msgstr "kit cherry [-v] [<вышестоящая-ветка> [<редакция> [<ограничение>]]]"
 
 #, c-format
 msgid ""
@@ -7634,8 +7634,8 @@ msgstr ""
 msgid "bad ls-files format: %%%.*s"
 msgstr ""
 
-msgid "git ls-files [<options>] [<file>...]"
-msgstr "git ls-files [<опции>] [<файл>...]"
+msgid "kit ls-files [<options>] [<file>...]"
+msgstr "kit ls-files [<опции>] [<файл>...]"
 
 msgid "separate paths with the NUL character"
 msgstr ""
@@ -7760,8 +7760,8 @@ msgstr ""
 "показать также внутреннюю ссылку в дополнение к объекту, на который она "
 "указывает"
 
-msgid "git ls-tree [<options>] <tree-ish> [<path>...]"
-msgstr "git ls-tree [<опции>] <указатель-дерева> [<путь>...]"
+msgid "kit ls-tree [<options>] <tree-ish> [<path>...]"
+msgstr "kit ls-tree [<опции>] <указатель-дерева> [<путь>...]"
 
 #, c-format
 msgid "could not get object info about '%s'"
@@ -7812,7 +7812,7 @@ msgid "--format can't be combined with other format-altering options"
 msgstr ""
 
 #. TRANSLATORS: keep <> in "<" mail ">" info.
-msgid "git mailinfo [<options>] <msg> <patch> < mail >info"
+msgid "kit mailinfo [<options>] <msg> <patch> < mail >info"
 msgstr ""
 
 msgid "keep subject"
@@ -7855,20 +7855,20 @@ msgstr ""
 msgid "empty mbox: '%s'"
 msgstr "пустой mbox: «%s»"
 
-msgid "git merge-base [-a | --all] <commit> <commit>..."
-msgstr "git merge-base [-a | --all] <коммит> <коммит>..."
+msgid "kit merge-base [-a | --all] <commit> <commit>..."
+msgstr "kit merge-base [-a | --all] <коммит> <коммит>..."
 
-msgid "git merge-base [-a | --all] --octopus <commit>..."
-msgstr "git merge-base [-a | --all] --octopus <коммит>..."
+msgid "kit merge-base [-a | --all] --octopus <commit>..."
+msgstr "kit merge-base [-a | --all] --octopus <коммит>..."
 
-msgid "git merge-base --is-ancestor <commit> <commit>"
-msgstr "git merge-base --is-ancestor <коммит> <коммит>"
+msgid "kit merge-base --is-ancestor <commit> <commit>"
+msgstr "kit merge-base --is-ancestor <коммит> <коммит>"
 
-msgid "git merge-base --independent <commit>..."
-msgstr "git merge-base --independent <коммит>..."
+msgid "kit merge-base --independent <commit>..."
+msgstr "kit merge-base --independent <коммит>..."
 
-msgid "git merge-base --fork-point <ref> [<commit>]"
-msgstr "git merge-base --fork-point <ссылка> [<коммит>]"
+msgid "kit merge-base --fork-point <ref> [<commit>]"
+msgstr "kit merge-base --fork-point <ссылка> [<коммит>]"
 
 msgid "output all common ancestors"
 msgstr "вывести всех общих предков"
@@ -7886,10 +7886,10 @@ msgid "find where <commit> forked from reflog of <ref>"
 msgstr "найти журнале ссылок <ссылка> где именно <коммит> разветвился"
 
 msgid ""
-"git merge-file [<options>] [-L <name1> [-L <orig> [-L <name2>]]] <file1> "
+"kit merge-file [<options>] [-L <name1> [-L <orig> [-L <name2>]]] <file1> "
 "<orig-file> <file2>"
 msgstr ""
-"git merge-file [<опции>] [-L имя1 [-L orig [-L имя2]]] <файл1> <ориг-файл> "
+"kit merge-file [<опции>] [-L имя1 [-L orig [-L имя2]]] <файл1> <ориг-файл> "
 "<файл2>"
 
 msgid "send results to standard output"
@@ -7955,10 +7955,10 @@ msgstr "отказ слияния несвязанных историй изме
 msgid "failure to merge"
 msgstr ""
 
-msgid "git merge-tree [--write-tree] [<options>] <branch1> <branch2>"
+msgid "kit merge-tree [--write-tree] [<options>] <branch1> <branch2>"
 msgstr ""
 
-msgid "git merge-tree [--trivial-merge] <base-tree> <branch1> <branch2>"
+msgid "kit merge-tree [--trivial-merge] <base-tree> <branch1> <branch2>"
 msgstr ""
 
 msgid "do a real merge instead of a trivial merge"
@@ -7996,8 +7996,8 @@ msgstr "неправильная введенная строка: «%s»."
 msgid "merging cannot continue; got unclean result of %d"
 msgstr ""
 
-msgid "git merge [<options>] [<commit>...]"
-msgstr "git merge [<опции>] [<коммит>...]"
+msgid "kit merge [<options>] [<commit>...]"
+msgstr "kit merge [<опции>] [<коммит>...]"
 
 msgid "switch `m' requires a value"
 msgstr "при указании параметра «m» требуется указать значение"
@@ -8134,7 +8134,7 @@ msgid "Could not read from '%s'"
 msgstr "Не удалось прочесть из «%s»"
 
 #, c-format
-msgid "Not committing merge; use 'git commit' to complete the merge.\n"
+msgid "Not committing merge; use 'kit commit' to complete the merge.\n"
 msgstr ""
 "Не выполняю коммит слияния; используйте «git commit» для завершения "
 "слияния.\n"
@@ -8292,7 +8292,7 @@ msgstr ""
 "выполнением коммита\n"
 
 #, c-format
-msgid "When finished, apply stashed changes with `git stash pop`\n"
+msgid "When finished, apply stashed changes with `kit stash pop`\n"
 msgstr ""
 
 #, c-format
@@ -8341,13 +8341,13 @@ msgid ""
 "snapshot=<path>]"
 msgstr ""
 
-msgid "git multi-pack-index [<options>] verify"
+msgid "kit multi-pack-index [<options>] verify"
 msgstr ""
 
-msgid "git multi-pack-index [<options>] expire"
+msgid "kit multi-pack-index [<options>] expire"
 msgstr ""
 
-msgid "git multi-pack-index [<options>] repack [--batch-size=<size>]"
+msgid "kit multi-pack-index [<options>] repack [--batch-size=<size>]"
 msgstr ""
 
 msgid "directory"
@@ -8455,13 +8455,13 @@ msgstr "Переименование %s в %s\n"
 msgid "renaming '%s' failed"
 msgstr "сбой при переименовании «%s»"
 
-msgid "git name-rev [<options>] <commit>..."
-msgstr "git name-rev [<опции>] <коммит>..."
+msgid "kit name-rev [<options>] <commit>..."
+msgstr "kit name-rev [<опции>] <коммит>..."
 
-msgid "git name-rev [<options>] --all"
-msgstr "git name-rev [<опции>] --all"
+msgid "kit name-rev [<options>] --all"
+msgstr "kit name-rev [<опции>] --all"
 
-msgid "git name-rev [<options>] --annotate-stdin"
+msgid "kit name-rev [<options>] --annotate-stdin"
 msgstr ""
 
 msgid "print only ref-based names (no object names)"
@@ -8491,8 +8491,8 @@ msgstr "разрешить вывод «undefined», если не найден�
 msgid "dereference tags in the input (internal use)"
 msgstr "разыменовывать введенные метки (для внутреннего использования)"
 
-msgid "git notes [--ref <notes-ref>] [list [<object>]]"
-msgstr "git notes [--ref <ссылка-на-заметку>] [list [<объект>]]"
+msgid "kit notes [--ref <notes-ref>] [list [<object>]]"
+msgstr "kit notes [--ref <ссылка-на-заметку>] [list [<объект>]]"
 
 msgid ""
 "git notes [--ref <notes-ref>] add [-f] [--allow-empty] [-m <msg> | -F <file> "
@@ -8501,9 +8501,9 @@ msgstr ""
 "git notes [--ref <ссылка-на-заметку>] add [-f] [--allow-empty] [-m "
 "<сообщение> | -F <файл> | (-c | -C) <объект>] [<объект>]"
 
-msgid "git notes [--ref <notes-ref>] copy [-f] <from-object> <to-object>"
+msgid "kit notes [--ref <notes-ref>] copy [-f] <from-object> <to-object>"
 msgstr ""
-"git notes [--ref <ссылка-на-заметку>] copy [-f] <из-объекта> <в-объект>"
+"kit notes [--ref <ссылка-на-заметку>] copy [-f] <из-объекта> <в-объект>"
 
 msgid ""
 "git notes [--ref <notes-ref>] append [--allow-empty] [-m <msg> | -F <file> | "
@@ -8512,62 +8512,62 @@ msgstr ""
 "git notes [--ref <ссылка-на-заметку>] append [--allow-empty] [-m <сообщение> "
 "| -F <файл> | (-c | -C) <объект>] [<объект>]"
 
-msgid "git notes [--ref <notes-ref>] edit [--allow-empty] [<object>]"
-msgstr "git notes [--ref <ссылка-на-заметку>] edit [--allow-empty] [<объект>]"
+msgid "kit notes [--ref <notes-ref>] edit [--allow-empty] [<object>]"
+msgstr "kit notes [--ref <ссылка-на-заметку>] edit [--allow-empty] [<объект>]"
 
-msgid "git notes [--ref <notes-ref>] show [<object>]"
-msgstr "git notes [--ref <ссылка-на-заметку>] show [<объект>]"
+msgid "kit notes [--ref <notes-ref>] show [<object>]"
+msgstr "kit notes [--ref <ссылка-на-заметку>] show [<объект>]"
 
 msgid ""
-"git notes [--ref <notes-ref>] merge [-v | -q] [-s <strategy>] <notes-ref>"
+"kit notes [--ref <notes-ref>] merge [-v | -q] [-s <strategy>] <notes-ref>"
 msgstr ""
-"git notes [--ref <ссылка-на-заметку>] merge [-v | -q] [-s <стратегия>] "
+"kit notes [--ref <ссылка-на-заметку>] merge [-v | -q] [-s <стратегия>] "
 "<ссылка-на-заметку>"
 
-msgid "git notes [--ref <notes-ref>] remove [<object>...]"
-msgstr "git notes [--ref <ссылка-на-заметку>] remove [<объект>...]"
+msgid "kit notes [--ref <notes-ref>] remove [<object>...]"
+msgstr "kit notes [--ref <ссылка-на-заметку>] remove [<объект>...]"
 
-msgid "git notes [--ref <notes-ref>] prune [-n] [-v]"
-msgstr "git notes [--ref <имя-заметки>] prune [-n] [-v]"
+msgid "kit notes [--ref <notes-ref>] prune [-n] [-v]"
+msgstr "kit notes [--ref <имя-заметки>] prune [-n] [-v]"
 
-msgid "git notes [--ref <notes-ref>] get-ref"
-msgstr "git notes [--ref <ссылка-на-заметку>] get-ref"
+msgid "kit notes [--ref <notes-ref>] get-ref"
+msgstr "kit notes [--ref <ссылка-на-заметку>] get-ref"
 
-msgid "git notes [list [<object>]]"
-msgstr "git notes [list [<объект>]]"
+msgid "kit notes [list [<object>]]"
+msgstr "kit notes [list [<объект>]]"
 
-msgid "git notes add [<options>] [<object>]"
-msgstr "git notes add [<опции>] [<объект>]"
+msgid "kit notes add [<options>] [<object>]"
+msgstr "kit notes add [<опции>] [<объект>]"
 
-msgid "git notes copy [<options>] <from-object> <to-object>"
-msgstr "git notes copy [<опции>] <из-объекта> <в-объект>"
+msgid "kit notes copy [<options>] <from-object> <to-object>"
+msgstr "kit notes copy [<опции>] <из-объекта> <в-объект>"
 
-msgid "git notes copy --stdin [<from-object> <to-object>]..."
-msgstr "git notes copy --stdin [<из-объекта> <в-объект>]..."
+msgid "kit notes copy --stdin [<from-object> <to-object>]..."
+msgstr "kit notes copy --stdin [<из-объекта> <в-объект>]..."
 
-msgid "git notes append [<options>] [<object>]"
-msgstr "git notes append [<опции>] [<объект>]"
+msgid "kit notes append [<options>] [<object>]"
+msgstr "kit notes append [<опции>] [<объект>]"
 
-msgid "git notes edit [<object>]"
-msgstr "git notes edit [<объект>]"
+msgid "kit notes edit [<object>]"
+msgstr "kit notes edit [<объект>]"
 
-msgid "git notes show [<object>]"
-msgstr "git notes show [<объект>]"
+msgid "kit notes show [<object>]"
+msgstr "kit notes show [<объект>]"
 
-msgid "git notes merge [<options>] <notes-ref>"
-msgstr "git notes merge [<опции>] <ссылка-на-заметку>"
+msgid "kit notes merge [<options>] <notes-ref>"
+msgstr "kit notes merge [<опции>] <ссылка-на-заметку>"
 
-msgid "git notes merge --commit [<options>]"
-msgstr "git notes merge --commit [<опции>]"
+msgid "kit notes merge --commit [<options>]"
+msgstr "kit notes merge --commit [<опции>]"
 
-msgid "git notes merge --abort [<options>]"
-msgstr "git notes merge --abort [<опции>]"
+msgid "kit notes merge --abort [<options>]"
+msgstr "kit notes merge --abort [<опции>]"
 
-msgid "git notes remove [<object>]"
-msgstr "git notes remove [<опции>]"
+msgid "kit notes remove [<object>]"
+msgstr "kit notes remove [<опции>]"
 
-msgid "git notes prune [<options>]"
-msgstr "git notes prune [<опции>]"
+msgid "kit notes prune [<options>]"
+msgstr "kit notes prune [<опции>]"
 
 msgid "Write/edit the notes for the following object:"
 msgstr "Записать/изменить заметки для следующего объекта:"
@@ -8683,10 +8683,10 @@ msgstr "нет заметок у исходного объекта %s. Нель�
 #, c-format
 msgid ""
 "The -m/-F/-c/-C options have been deprecated for the 'edit' subcommand.\n"
-"Please use 'git notes add -f -m/-F/-c/-C' instead.\n"
+"Please use 'kit notes add -f -m/-F/-c/-C' instead.\n"
 msgstr ""
 "Опции -m/-F/-c/-C для подкоманды «edit» устарели.\n"
-"Используйте вместо них «git notes add -f -m/-F/-c/-C».\n"
+"Используйте вместо них «kit notes add -f -m/-F/-c/-C».\n"
 
 msgid "failed to delete ref NOTES_MERGE_PARTIAL"
 msgstr "не удалось удалить ссылку NOTES_MERGE_PARTIAL"
@@ -8694,8 +8694,8 @@ msgstr "не удалось удалить ссылку NOTES_MERGE_PARTIAL"
 msgid "failed to delete ref NOTES_MERGE_REF"
 msgstr "не удалось удалить ссылку NOTES_MERGE_REF"
 
-msgid "failed to remove 'git notes merge' worktree"
-msgstr "не удалось удалить рабочий каталог «git notes merge»"
+msgid "failed to remove 'kit notes merge' worktree"
+msgstr "не удалось удалить рабочий каталог «kit notes merge»"
 
 msgid "failed to read ref NOTES_MERGE_PARTIAL"
 msgstr "не удалось прочитать ссылку NOTES_MERGE_PARTIAL"
@@ -8762,12 +8762,12 @@ msgstr "не удалось сохранить адрес текущей ссы�
 #, c-format
 msgid ""
 "Automatic notes merge failed. Fix conflicts in %s and commit the result with "
-"'git notes merge --commit', or abort the merge with 'git notes merge --"
+"'kit notes merge --commit', or abort the merge with 'kit notes merge --"
 "abort'.\n"
 msgstr ""
 "Не удалось автоматически слить заметки. Исправьте конфликты в %s и "
-"закоммитьте результат с помощью «git notes merge --commit», или прервите "
-"процесс слияния с помощью «git notes merge --abort».\n"
+"закоммитьте результат с помощью «kit notes merge --commit», или прервите "
+"процесс слияния с помощью «kit notes merge --abort».\n"
 
 #, c-format
 msgid "Failed to resolve '%s' as a valid ref."
@@ -9186,7 +9186,7 @@ msgstr "паковать всё"
 msgid "prune loose refs (default)"
 msgstr "почистить слабые ссылки (по умолчанию)"
 
-msgid "git patch-id [--stable | --unstable | --verbatim]"
+msgid "kit patch-id [--stable | --unstable | --verbatim]"
 msgstr ""
 
 msgid "use the unstable patch-id algorithm"
@@ -9198,9 +9198,9 @@ msgstr ""
 msgid "don't strip whitespace from the patch"
 msgstr ""
 
-msgid "git prune [-n] [-v] [--progress] [--expire <time>] [--] [<head>...]"
+msgid "kit prune [-n] [-v] [--progress] [--expire <time>] [--] [<head>...]"
 msgstr ""
-"git prune [-n] [-v] [--progress] [--expire <время>] [--] [<редакция>...]"
+"kit prune [-n] [-v] [--progress] [--expire <время>] [--] [<редакция>...]"
 
 msgid "report pruned objects"
 msgstr "вывести список удаленных объектов"
@@ -9214,8 +9214,8 @@ msgstr "ограничить обход объектами вне promisor фа�
 msgid "cannot prune in a precious-objects repo"
 msgstr "нельзя почистить неиспользуемые объекты в precious-objects репозитории"
 
-msgid "git pull [<options>] [<repository> [<refspec>...]]"
-msgstr "git pull [<опции>] [<репозиторий> [<спецификатор-ссылки>...]]"
+msgid "kit pull [<options>] [<repository> [<refspec>...]]"
+msgstr "kit pull [<опции>] [<репозиторий> [<спецификатор-ссылки>...]]"
 
 msgid "control for recursive fetching of submodules"
 msgstr "управление рекурсивным извлечением подмодулей"
@@ -9318,11 +9318,11 @@ msgid ""
 "You can do so by running one of the following commands sometime before\n"
 "your next pull:\n"
 "\n"
-"  git config pull.rebase false  # merge\n"
-"  git config pull.rebase true   # rebase\n"
-"  git config pull.ff only       # fast-forward only\n"
+"  kit config pull.rebase false  # merge\n"
+"  kit config pull.rebase true   # rebase\n"
+"  kit config pull.ff only       # fast-forward only\n"
 "\n"
-"You can replace \"git config\" with \"git config --global\" to set a "
+"You can replace \"kit config\" with \"kit config --global\" to set a "
 "default\n"
 "preference for all repositories. You can also pass --rebase, --no-rebase,\n"
 "or --ff-only on the command line to override the configured default per\n"
@@ -9352,16 +9352,16 @@ msgstr ""
 msgid ""
 "Cannot fast-forward your working tree.\n"
 "After making sure that you saved anything precious from\n"
-"$ git diff %s\n"
+"$ kit diff %s\n"
 "output, run\n"
-"$ git reset --hard\n"
+"$ kit reset --hard\n"
 "to recover."
 msgstr ""
 "Быстрая перемотка не смогла изменить рабочую копию.\n"
 "После того, как вы убедитесь, что сохранили всё необходимое из вывода\n"
-"$ git diff %s\n"
+"$ kit diff %s\n"
 "запустите\n"
-"$ git reset --hard\n"
+"$ kit reset --hard\n"
 "для восстановления исходного состояния."
 
 msgid "Cannot merge multiple branches into empty head."
@@ -9381,8 +9381,8 @@ msgstr ""
 "невозможно выполнить перемещение с записанными локальными изменениями в "
 "подмодулях"
 
-msgid "git push [<options>] [<repository> [<refspec>...]]"
-msgstr "git push [<опции>] [<репозиторий> [<спецификатор-ссылки>...]]"
+msgid "kit push [<options>] [<repository> [<refspec>...]]"
+msgstr "kit push [<опции>] [<репозиторий> [<спецификатор-ссылки>...]]"
 
 msgid "tag shorthand without <tag>"
 msgstr "указано сокращение tag, но не указана сама <метка>"
@@ -9392,14 +9392,14 @@ msgstr "опция --delete принимает только простые це�
 
 msgid ""
 "\n"
-"To choose either option permanently, see push.default in 'git help config'.\n"
+"To choose either option permanently, see push.default in 'kit help config'.\n"
 msgstr ""
 
 msgid ""
 "\n"
 "To avoid automatically configuring an upstream branch when its name\n"
 "won't match the local branch, see option 'simple' of branch.autoSetupMerge\n"
-"in 'git help config'.\n"
+"in 'kit help config'.\n"
 msgstr ""
 
 #, c-format
@@ -9408,11 +9408,11 @@ msgid ""
 "the name of your current branch.  To push to the upstream branch\n"
 "on the remote, use\n"
 "\n"
-"    git push %s HEAD:%s\n"
+"    kit push %s HEAD:%s\n"
 "\n"
 "To push to the branch of the same name on the remote, use\n"
 "\n"
-"    git push %s HEAD\n"
+"    kit push %s HEAD\n"
 "%s%s"
 msgstr ""
 
@@ -9422,18 +9422,18 @@ msgid ""
 "To push the history leading to the current (detached HEAD)\n"
 "state now, use\n"
 "\n"
-"    git push %s HEAD:<name-of-remote-branch>\n"
+"    kit push %s HEAD:<name-of-remote-branch>\n"
 msgstr ""
 "Вы сейчас не находитесь ни на одной из веток.\n"
 "Чтобы отправить историю, ведущую к текущему (отсоединённый указатель HEAD) "
 "состоянию, используйте\n"
 "\n"
-"    git push %s HEAD:<имя-внешней-ветки>\n"
+"    kit push %s HEAD:<имя-внешней-ветки>\n"
 
 msgid ""
 "\n"
 "To have this happen automatically for branches without a tracking\n"
-"upstream, see 'push.autoSetupRemote' in 'git help config'.\n"
+"upstream, see 'push.autoSetupRemote' in 'kit help config'.\n"
 msgstr ""
 
 #, c-format
@@ -9441,7 +9441,7 @@ msgid ""
 "The current branch %s has no upstream branch.\n"
 "To push the current branch and set the remote as upstream, use\n"
 "\n"
-"    git push --set-upstream %s %s\n"
+"    kit push --set-upstream %s %s\n"
 "%s"
 msgstr ""
 
@@ -9587,8 +9587,8 @@ msgstr "использовать тонкие пакеты"
 msgid "receive pack program"
 msgstr "путь к программе упаковки на сервере"
 
-msgid "set upstream for git pull/status"
-msgstr "установить вышестоящую ветку для git pull/status"
+msgid "set upstream for kit pull/status"
+msgstr "установить вышестоящую ветку для kit pull/status"
 
 msgid "prune locally removed refs"
 msgstr "почистить локально удаленные ссылки"
@@ -9642,13 +9642,13 @@ msgstr "--mirror нельзя использовать вместе со спе�
 msgid "push options must not have new line characters"
 msgstr "опции для отправки не должны содержать символы перевода строк"
 
-msgid "git range-diff [<options>] <old-base>..<old-tip> <new-base>..<new-tip>"
+msgid "kit range-diff [<options>] <old-base>..<old-tip> <new-base>..<new-tip>"
 msgstr ""
 
-msgid "git range-diff [<options>] <old-tip>...<new-tip>"
+msgid "kit range-diff [<options>] <old-tip>...<new-tip>"
 msgstr ""
 
-msgid "git range-diff [<options>] <base> <old-tip> <new-tip>"
+msgid "kit range-diff [<options>] <base> <old-tip> <new-tip>"
 msgstr ""
 
 msgid "use simple diff colors"
@@ -9657,7 +9657,7 @@ msgstr ""
 msgid "notes"
 msgstr ""
 
-msgid "passed to 'git log'"
+msgid "passed to 'kit log'"
 msgstr ""
 
 msgid "only emit output related to the first range"
@@ -9682,7 +9682,7 @@ msgid "need two commit ranges"
 msgstr ""
 
 msgid ""
-"git read-tree [(-m [--trivial] [--aggressive] | --reset | --"
+"kit read-tree [(-m [--trivial] [--aggressive] | --reset | --"
 "prefix=<prefix>)\n"
 "              [-u | -i]] [--index-output=<file>] [--no-sparse-checkout]\n"
 "              (--empty | <tree-ish1> [<tree-ish2> [<tree-ish3>]])"
@@ -9744,12 +9744,12 @@ msgid "You need to resolve your current index first"
 msgstr ""
 
 msgid ""
-"git rebase [-i] [options] [--exec <cmd>] [--onto <newbase> | --keep-base] "
+"kit rebase [-i] [options] [--exec <cmd>] [--onto <newbase> | --keep-base] "
 "[<upstream> [<branch>]]"
 msgstr ""
 
 msgid ""
-"git rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] --root [<branch>]"
+"kit rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] --root [<branch>]"
 msgstr ""
 
 #, c-format
@@ -9791,26 +9791,26 @@ msgstr "не удалось удалить «%s»"
 
 msgid ""
 "Resolve all conflicts manually, mark them as resolved with\n"
-"\"git add/rm <conflicted_files>\", then run \"git rebase --continue\".\n"
-"You can instead skip this commit: run \"git rebase --skip\".\n"
-"To abort and get back to the state before \"git rebase\", run \"git rebase --"
+"\"kit add/rm <conflicted_files>\", then run \"kit rebase --continue\".\n"
+"You can instead skip this commit: run \"kit rebase --skip\".\n"
+"To abort and get back to the state before \"kit rebase\", run \"kit rebase --"
 "abort\"."
 msgstr ""
 "Разрешите все конфликты вручную, пометьте их разрешёнными командой\n"
-"«git add/rm <конфликтующие-файлы>», затем запустите «git rebase --"
+"«kit add/rm <конфликтующие-файлы>», затем запустите «kit rebase --"
 "continue».\n"
-"Если хотите пропустить этот коммит, то запустите «git rebase --skip».\n"
-"Чтобы вернуться на состояние до «git rebase», запустите «git rebase --abort»."
+"Если хотите пропустить этот коммит, то запустите «kit rebase --skip».\n"
+"Чтобы вернуться на состояние до «kit rebase», запустите «kit rebase --abort»."
 
 #, c-format
 msgid ""
 "\n"
-"git encountered an error while preparing the patches to replay\n"
+"kit encountered an error while preparing the patches to replay\n"
 "these revisions:\n"
 "\n"
 "    %s\n"
 "\n"
-"As a result, git cannot rebase them."
+"As a result, kit cannot rebase them."
 msgstr ""
 
 #, c-format
@@ -9842,7 +9842,7 @@ msgid ""
 "Please specify which branch you want to rebase against.\n"
 "See git-rebase(1) for details.\n"
 "\n"
-"    git rebase '<branch>'\n"
+"    kit rebase '<branch>'\n"
 "\n"
 msgstr ""
 
@@ -9850,7 +9850,7 @@ msgstr ""
 msgid ""
 "If you wish to set tracking information for this branch you can do so with:\n"
 "\n"
-"    git branch --set-upstream-to=%s/<branch> %s\n"
+"    kit branch --set-upstream-to=%s/<branch> %s\n"
 "\n"
 msgstr ""
 
@@ -9890,7 +9890,7 @@ msgstr ""
 msgid "synonym of --reset-author-date"
 msgstr ""
 
-msgid "passed to 'git apply'"
+msgid "passed to 'kit apply'"
 msgstr ""
 
 msgid "ignore changes in whitespace"
@@ -9971,12 +9971,12 @@ msgstr ""
 msgid "apply all changes, even those already present upstream"
 msgstr ""
 
-msgid "It looks like 'git am' is in progress. Cannot rebase."
+msgid "It looks like 'kit am' is in progress. Cannot rebase."
 msgstr "Похоже, что выполняется «git am». Невозможно выполнить перемещение."
 
 msgid ""
 "`rebase --preserve-merges` (-p) is no longer supported.\n"
-"Use `git rebase --abort` to terminate current rebase.\n"
+"Use `kit rebase --abort` to terminate current rebase.\n"
 "Or downgrade to v2.33, or earlier, to complete the rebase."
 msgstr ""
 
@@ -9999,11 +9999,11 @@ msgstr "Не удалось прочитать HEAD"
 
 msgid ""
 "You must edit all merge conflicts and then\n"
-"mark them as resolved using git add"
+"mark them as resolved using kit add"
 msgstr ""
 "Вы должны отредактировать все\n"
 "конфликты слияния, а потом пометить\n"
-"их как разрешенные с помощью git add"
+"их как разрешенные с помощью kit add"
 
 msgid "could not discard worktree changes"
 msgstr ""
@@ -10119,13 +10119,13 @@ msgstr ""
 msgid "Fast-forwarded %s to %s.\n"
 msgstr "Быстрая перемотка %s до %s.\n"
 
-msgid "git receive-pack <git-dir>"
-msgstr "git receive-pack <каталог-git>"
+msgid "kit receive-pack <git-dir>"
+msgstr "kit receive-pack <каталог-git>"
 
 msgid ""
 "By default, updating the current branch in a non-bare repository\n"
 "is denied, because it will make the index and work tree inconsistent\n"
-"with what you pushed, and will require 'git reset --hard' to match\n"
+"with what you pushed, and will require 'kit reset --hard' to match\n"
 "the work tree to HEAD.\n"
 "\n"
 "You can set the 'receive.denyCurrentBranch' configuration variable\n"
@@ -10140,7 +10140,7 @@ msgstr ""
 "По умолчанию, обновлять текущую ветку в репозитории с рабочей\n"
 "копией (не голом) запрещено, так как это сделает состояние индекса\n"
 "и рабочего каталога противоречивым, и вам прийдется выполнить\n"
-"«git reset --hard», чтобы состояние рабочего каталога снова\n"
+"«kit reset --hard», чтобы состояние рабочего каталога снова\n"
 "соответствовало HEAD.\n"
 "\n"
 "Вы можете установить значение опции «receive.denyCurrentBranch»\n"
@@ -10155,7 +10155,7 @@ msgstr ""
 
 msgid ""
 "By default, deleting the current branch is denied, because the next\n"
-"'git clone' won't result in any file checked out, causing confusion.\n"
+"'kit clone' won't result in any file checked out, causing confusion.\n"
 "\n"
 "You can set 'receive.denyDeleteCurrent' configuration variable to\n"
 "'warn' or 'ignore' in the remote repository to allow deleting the\n"
@@ -10179,22 +10179,22 @@ msgstr "тихий режим"
 msgid "you must specify a directory"
 msgstr ""
 
-msgid "git reflog [show] [<log-options>] [<ref>]"
+msgid "kit reflog [show] [<log-options>] [<ref>]"
 msgstr ""
 
 msgid ""
-"git reflog expire [--expire=<time>] [--expire-unreachable=<time>]\n"
+"kit reflog expire [--expire=<time>] [--expire-unreachable=<time>]\n"
 "                  [--rewrite] [--updateref] [--stale-fix]\n"
 "                  [--dry-run | -n] [--verbose] [--all [--single-worktree] | "
 "<refs>...]"
 msgstr ""
 
 msgid ""
-"git reflog delete [--rewrite] [--updateref]\n"
+"kit reflog delete [--rewrite] [--updateref]\n"
 "                  [--dry-run | -n] [--verbose] <ref>@{<specifier>}..."
 msgstr ""
 
-msgid "git reflog exists <ref>"
+msgid "kit reflog exists <ref>"
 msgstr ""
 
 #, c-format
@@ -10250,65 +10250,65 @@ msgid "invalid ref format: %s"
 msgstr ""
 
 msgid ""
-"git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--"
+"kit remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--"
 "mirror=<fetch|push>] <name> <url>"
 msgstr ""
-"git remote add [-t <ветка>] [-m <мастер-ветка>] [-f] [--tags | --no-tags] [--"
+"kit remote add [-t <ветка>] [-m <мастер-ветка>] [-f] [--tags | --no-tags] [--"
 "mirror=<fetch|push>] <имя> <адрес>"
 
-msgid "git remote rename [--[no-]progress] <old> <new>"
+msgid "kit remote rename [--[no-]progress] <old> <new>"
 msgstr ""
 
-msgid "git remote remove <name>"
-msgstr "git remote remove <имя>"
+msgid "kit remote remove <name>"
+msgstr "kit remote remove <имя>"
 
-msgid "git remote set-head <name> (-a | --auto | -d | --delete | <branch>)"
-msgstr "git remote set-head <имя> (-a | --auto | -d | --delete | <ветка>)"
+msgid "kit remote set-head <name> (-a | --auto | -d | --delete | <branch>)"
+msgstr "kit remote set-head <имя> (-a | --auto | -d | --delete | <ветка>)"
 
-msgid "git remote [-v | --verbose] show [-n] <name>"
-msgstr "git remote [-v | --verbose] show [-n] <имя>"
+msgid "kit remote [-v | --verbose] show [-n] <name>"
+msgstr "kit remote [-v | --verbose] show [-n] <имя>"
 
-msgid "git remote prune [-n | --dry-run] <name>"
-msgstr "git remote prune [-n | --dry-run] <имя>"
+msgid "kit remote prune [-n | --dry-run] <name>"
+msgstr "kit remote prune [-n | --dry-run] <имя>"
 
 msgid ""
-"git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]"
+"kit remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]"
 msgstr ""
-"git remote [-v | --verbose] update [-p | --prune] [(<группа> | <имя-внешнего-"
+"kit remote [-v | --verbose] update [-p | --prune] [(<группа> | <имя-внешнего-"
 "репозитория>)...]"
 
-msgid "git remote set-branches [--add] <name> <branch>..."
-msgstr "git remote set-branches [--add] <имя> <ветка>..."
+msgid "kit remote set-branches [--add] <name> <branch>..."
+msgstr "kit remote set-branches [--add] <имя> <ветка>..."
 
-msgid "git remote get-url [--push] [--all] <name>"
-msgstr "git remote get-url [--push] [--all] <имя>"
+msgid "kit remote get-url [--push] [--all] <name>"
+msgstr "kit remote get-url [--push] [--all] <имя>"
 
-msgid "git remote set-url [--push] <name> <newurl> [<oldurl>]"
-msgstr "git remote set-url [--push] <имя> <новый-url> [<старый-url>]"
+msgid "kit remote set-url [--push] <name> <newurl> [<oldurl>]"
+msgstr "kit remote set-url [--push] <имя> <новый-url> [<старый-url>]"
 
-msgid "git remote set-url --add <name> <newurl>"
-msgstr "git remote set-url --add <имя> <новый-url>"
+msgid "kit remote set-url --add <name> <newurl>"
+msgstr "kit remote set-url --add <имя> <новый-url>"
 
-msgid "git remote set-url --delete <name> <url>"
-msgstr "git remote set-url --delete <имя> <url>"
+msgid "kit remote set-url --delete <name> <url>"
+msgstr "kit remote set-url --delete <имя> <url>"
 
-msgid "git remote add [<options>] <name> <url>"
-msgstr "git remote add [<опции>] <имя> <url>"
+msgid "kit remote add [<options>] <name> <url>"
+msgstr "kit remote add [<опции>] <имя> <url>"
 
-msgid "git remote set-branches <name> <branch>..."
-msgstr "git remote set-branches <имя> <ветка>..."
+msgid "kit remote set-branches <name> <branch>..."
+msgstr "kit remote set-branches <имя> <ветка>..."
 
-msgid "git remote set-branches --add <name> <branch>..."
-msgstr "git remote set-branches --add <имя> <ветка>..."
+msgid "kit remote set-branches --add <name> <branch>..."
+msgstr "kit remote set-branches --add <имя> <ветка>..."
 
-msgid "git remote show [<options>] <name>"
-msgstr "git remote show [<опции>] <имя>"
+msgid "kit remote show [<options>] <name>"
+msgstr "kit remote show [<опции>] <имя>"
 
-msgid "git remote prune [<options>] <name>"
-msgstr "git remote prune [<опции>] <имя>"
+msgid "kit remote prune [<options>] <name>"
+msgstr "kit remote prune [<опции>] <имя>"
 
-msgid "git remote update [<options>] [<group> | <remote>]..."
-msgstr "git remote update [<опции>] [<группа> | <имя-внешнего-репозитория>]..."
+msgid "kit remote update [<options>] [<group> | <remote>]..."
+msgstr "kit remote update [<опции>] [<группа> | <имя-внешнего-репозитория>]..."
 
 #, c-format
 msgid "Updating %s"
@@ -10459,8 +10459,8 @@ msgstr " отслеживается"
 msgid " skipped"
 msgstr ""
 
-msgid " stale (use 'git remote prune' to remove)"
-msgstr " недействительна (используйте «git remote prune», чтобы удалить)"
+msgid " stale (use 'kit remote prune' to remove)"
+msgstr " недействительна (используйте «kit remote prune», чтобы удалить)"
 
 msgid " ???"
 msgstr " ???"
@@ -10575,19 +10575,19 @@ msgstr[3] "  Внешние ветки:%s"
 msgid " (status not queried)"
 msgstr " (статус не запрашивался)"
 
-msgid "  Local branch configured for 'git pull':"
-msgid_plural "  Local branches configured for 'git pull':"
+msgid "  Local branch configured for 'kit pull':"
+msgid_plural "  Local branches configured for 'kit pull':"
 msgstr[0] "  Локальная ветка, настроенная для «git pull»:"
 msgstr[1] "  Локальные ветки, настроенные для «git pull»:"
 msgstr[2] "  Локальные ветки, настроенные для «git pull»:"
 msgstr[3] "  Локальные ветки, настроенные для «git pull»:"
 
-msgid "  Local refs will be mirrored by 'git push'"
+msgid "  Local refs will be mirrored by 'kit push'"
 msgstr " Локальные ссылки, зеркалируемые с помощью «git push»"
 
 #, c-format
-msgid "  Local ref configured for 'git push'%s:"
-msgid_plural "  Local refs configured for 'git push'%s:"
+msgid "  Local ref configured for 'kit push'%s:"
+msgid_plural "  Local refs configured for 'kit push'%s:"
 msgstr[0] "  Локальная ссылка, настроенная для «git push»%s:"
 msgstr[1] "  Локальные ссылки, настроенные для «git push»%s:"
 msgstr[2] "  Локальные ссылки, настроенные для «git push»%s:"
@@ -10828,20 +10828,20 @@ msgstr ""
 msgid "could not unlink: %s"
 msgstr ""
 
-msgid "git replace [-f] <object> <replacement>"
-msgstr "git replace [-f] <объект> <замена>"
+msgid "kit replace [-f] <object> <replacement>"
+msgstr "kit replace [-f] <объект> <замена>"
 
-msgid "git replace [-f] --edit <object>"
-msgstr "git replace [-f] --edit <объект>"
+msgid "kit replace [-f] --edit <object>"
+msgstr "kit replace [-f] --edit <объект>"
 
-msgid "git replace [-f] --graft <commit> [<parent>...]"
-msgstr "git replace [-f] --graft <коммит> [<родитель>...]"
+msgid "kit replace [-f] --graft <commit> [<parent>...]"
+msgstr "kit replace [-f] --graft <коммит> [<родитель>...]"
 
-msgid "git replace -d <object>..."
-msgstr "git replace -d <объект>..."
+msgid "kit replace -d <object>..."
+msgstr "kit replace -d <объект>..."
 
-msgid "git replace [--format=<format>] [-l [<pattern>]]"
-msgstr "git replace [--format=<формат>] [-l [<шаблон>]]"
+msgid "kit replace [--format=<format>] [-l [<pattern>]]"
+msgstr "kit replace [--format=<формат>] [-l [<шаблон>]]"
 
 #, c-format
 msgid ""
@@ -11010,13 +11010,13 @@ msgid "only one pattern can be given with -l"
 msgstr ""
 
 msgid ""
-"git rerere [clear | forget <pathspec>... | diff | status | remaining | gc]"
+"kit rerere [clear | forget <pathspec>... | diff | status | remaining | gc]"
 msgstr ""
 
 msgid "register clean resolutions in index"
 msgstr "записать чистые разрешения конфликтов в индекс"
 
-msgid "'git rerere forget' without paths is deprecated"
+msgid "'kit rerere forget' without paths is deprecated"
 msgstr ""
 
 #, c-format
@@ -11024,18 +11024,18 @@ msgid "unable to generate diff for '%s'"
 msgstr ""
 
 msgid ""
-"git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]"
+"kit reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]"
 msgstr ""
-"git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<коммит>]"
+"kit reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<коммит>]"
 
-msgid "git reset [-q] [<tree-ish>] [--] <pathspec>..."
+msgid "kit reset [-q] [<tree-ish>] [--] <pathspec>..."
 msgstr ""
 
 msgid ""
-"git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]"
+"kit reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]"
 msgstr ""
 
-msgid "git reset --patch [<tree-ish>] [--] [<pathspec>...]"
+msgid "kit reset --patch [<tree-ish>] [--] [<pathspec>...]"
 msgstr ""
 
 msgid "mixed"
@@ -11100,9 +11100,9 @@ msgstr "Не удалось распознать «%s» как действит�
 msgid "Failed to resolve '%s' as a valid tree."
 msgstr "Не удалось распознать «%s» как действительное дерево."
 
-msgid "--mixed with paths is deprecated; use 'git reset -- <paths>' instead."
+msgid "--mixed with paths is deprecated; use 'kit reset -- <paths>' instead."
 msgstr ""
-"использование опции --mixed с путями устарело; используйте «git reset -- "
+"использование опции --mixed с путями устарело; используйте «kit reset -- "
 "<пути>» instead."
 
 #, c-format
@@ -11144,8 +11144,8 @@ msgstr "rev-list не поддерживает отображение замет
 msgid "marked counting and '%s' cannot be used together"
 msgstr ""
 
-msgid "git rev-parse --parseopt [<options>] -- [<args>...]"
-msgstr "git rev-parse --parseopt [<опции>] -- [<аргументы>...]"
+msgid "kit rev-parse --parseopt [<options>] -- [<args>...]"
+msgstr "kit rev-parse --parseopt [<опции>] -- [<аргументы>...]"
 
 msgid "keep the `--` passed as an arg"
 msgstr "передавать далее «--» как аргумент"
@@ -11169,17 +11169,17 @@ msgid "Needed a single revision"
 msgstr ""
 
 msgid ""
-"git rev-parse --parseopt [<options>] -- [<args>...]\n"
-"   or: git rev-parse --sq-quote [<arg>...]\n"
-"   or: git rev-parse [<options>] [<arg>...]\n"
+"kit rev-parse --parseopt [<options>] -- [<args>...]\n"
+"   or: kit rev-parse --sq-quote [<arg>...]\n"
+"   or: kit rev-parse [<options>] [<arg>...]\n"
 "\n"
-"Run \"git rev-parse --parseopt -h\" for more information on the first usage."
+"Run \"kit rev-parse --parseopt -h\" for more information on the first usage."
 msgstr ""
-"git rev-parse --parseopt [<опции>] -- [<аргументы>...]\n"
-"   or: git rev-parse --sq-quote [<аргумент>...]\n"
-"   or: git rev-parse [<опции>] [<аргумент>...]\n"
+"kit rev-parse --parseopt [<опции>] -- [<аргументы>...]\n"
+"   or: kit rev-parse --sq-quote [<аргумент>...]\n"
+"   or: kit rev-parse [<опции>] [<аргумент>...]\n"
 "\n"
-"Запустите команду «git rev-parse --parseopt -h» для получения подробной "
+"Запустите команду «kit rev-parse --parseopt -h» для получения подробной "
 "информации о первом использовании."
 
 msgid "--resolve-git-dir requires an argument"
@@ -11229,19 +11229,19 @@ msgid "unknown mode for --show-object-format: %s"
 msgstr ""
 
 msgid ""
-"git revert [--[no-]edit] [-n] [-m <parent-number>] [-s] [-S[<keyid>]] "
+"kit revert [--[no-]edit] [-n] [-m <parent-number>] [-s] [-S[<keyid>]] "
 "<commit>..."
 msgstr ""
 
-msgid "git revert (--continue | --skip | --abort | --quit)"
+msgid "kit revert (--continue | --skip | --abort | --quit)"
 msgstr ""
 
 msgid ""
-"git cherry-pick [--edit] [-n] [-m <parent-number>] [-s] [-x] [--ff]\n"
+"kit cherry-pick [--edit] [-n] [-m <parent-number>] [-s] [-x] [--ff]\n"
 "                [-S[<keyid>]] <commit>..."
 msgstr ""
 
-msgid "git cherry-pick (--continue | --skip | --abort | --quit)"
+msgid "kit cherry-pick (--continue | --skip | --abort | --quit)"
 msgstr ""
 
 #, c-format
@@ -11305,7 +11305,7 @@ msgid "cherry-pick failed"
 msgstr "сбой при копировании коммита"
 
 msgid ""
-"git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch]\n"
+"kit rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch]\n"
 "       [--quiet] [--pathspec-from-file=<file> [--pathspec-file-nul]]\n"
 "       [--] [<pathspec>...]"
 msgstr ""
@@ -11384,11 +11384,11 @@ msgid "not removing '%s' recursively without -r"
 msgstr "не удаляю рекурсивно «%s» без указания опции -r"
 
 #, c-format
-msgid "git rm: unable to remove %s"
-msgstr "git rm: не удалось удалить %s"
+msgid "kit rm: unable to remove %s"
+msgstr "kit rm: не удалось удалить %s"
 
 msgid ""
-"git send-pack [--mirror] [--dry-run] [--force]\n"
+"kit send-pack [--mirror] [--dry-run] [--force]\n"
 "              [--receive-pack=<git-receive-pack>]\n"
 "              [--verbose] [--thin] [--atomic]\n"
 "              [--[no-]signed | --signed=(true|false|if-asked)]\n"
@@ -11410,11 +11410,11 @@ msgstr "прочитать ссылки из стандартного ввода
 msgid "print status from remote helper"
 msgstr "вывести статус от скрипта внешнего сервера"
 
-msgid "git shortlog [<options>] [<revision-range>] [[--] <path>...]"
-msgstr "git shortlog [<опции>] [<диапазон-редакций>] [[--] <путь>...]"
+msgid "kit shortlog [<options>] [<revision-range>] [[--] <path>...]"
+msgstr "kit shortlog [<опции>] [<диапазон-редакций>] [[--] <путь>...]"
 
-msgid "git log --pretty=short | git shortlog [<options>]"
-msgstr "git log --pretty=short | git shortlog [<опции>]"
+msgid "kit log --pretty=short | kit shortlog [<options>]"
+msgstr "kit log --pretty=short | kit shortlog [<опции>]"
 
 msgid "using multiple --group options with stdin is not supported"
 msgstr ""
@@ -11455,15 +11455,15 @@ msgid "too many arguments given outside repository"
 msgstr ""
 
 msgid ""
-"git show-branch [-a | --all] [-r | --remotes] [--topo-order | --date-order]\n"
+"kit show-branch [-a | --all] [-r | --remotes] [--topo-order | --date-order]\n"
 "                [--current] [--color[=<when>] | --no-color] [--sparse]\n"
 "                [--more=<n> | --list | --independent | --merge-base]\n"
 "                [--no-name | --sha1-name] [--topics]\n"
 "                [(<rev> | <glob>)...]"
 msgstr ""
 
-msgid "git show-branch (-g | --reflog)[=<n>[,<base>]] [--list] [<ref>]"
-msgstr "git show-branch (-g | --reflog)[=<n>[,<база>]] [--list] [<ссылка>]"
+msgid "kit show-branch (-g | --reflog)[=<n>[,<base>]] [--list] [<ref>]"
+msgstr "kit show-branch (-g | --reflog)[=<n>[,<база>]] [--list] [<ссылка>]"
 
 #, c-format
 msgid "ignoring %s; cannot handle more than %d ref"
@@ -11571,8 +11571,8 @@ msgid ""
 "             [--heads] [--] [<pattern>...]"
 msgstr ""
 
-msgid "git show-ref --exclude-existing[=<pattern>]"
-msgstr "git show-ref --exclude-existing[=<шаблон>]"
+msgid "kit show-ref --exclude-existing[=<pattern>]"
+msgstr "kit show-ref --exclude-existing[=<шаблон>]"
 
 msgid "only show tags (can be combined with heads)"
 msgstr "вывести только метки (можно использовать одновременно с опцией heads)"
@@ -11686,7 +11686,7 @@ msgid ""
 "(see NON-CONE PROBLEMS in the git-sparse-checkout manual)."
 msgstr ""
 
-msgid "git sparse-checkout add [--skip-checks] (--stdin | <patterns>)"
+msgid "kit sparse-checkout add [--skip-checks] (--stdin | <patterns>)"
 msgstr ""
 
 msgid ""
@@ -11700,7 +11700,7 @@ msgid "no sparse-checkout to add to"
 msgstr ""
 
 msgid ""
-"git sparse-checkout set [--[no-]cone] [--[no-]sparse-index] [--skip-checks] "
+"kit sparse-checkout set [--[no-]cone] [--[no-]sparse-index] [--skip-checks] "
 "(--stdin | <patterns>)"
 msgstr ""
 
@@ -11711,7 +11711,7 @@ msgid "error while refreshing working directory"
 msgstr ""
 
 msgid ""
-"git sparse-checkout check-rules [-z] [--skip-checks][--[no-]cone] [--rules-"
+"kit sparse-checkout check-rules [-z] [--skip-checks][--[no-]cone] [--rules-"
 "file <file>]"
 msgstr ""
 
@@ -11724,27 +11724,27 @@ msgstr ""
 msgid "use patterns in <file> instead of the current ones."
 msgstr ""
 
-msgid "git stash list [<log-options>]"
+msgid "kit stash list [<log-options>]"
 msgstr ""
 
 msgid ""
-"git stash show [-u | --include-untracked | --only-untracked] [<diff-"
+"kit stash show [-u | --include-untracked | --only-untracked] [<diff-"
 "options>] [<stash>]"
 msgstr ""
 
-msgid "git stash drop [-q | --quiet] [<stash>]"
+msgid "kit stash drop [-q | --quiet] [<stash>]"
 msgstr ""
 
-msgid "git stash pop [--index] [-q | --quiet] [<stash>]"
+msgid "kit stash pop [--index] [-q | --quiet] [<stash>]"
 msgstr ""
 
 msgid "git stash apply [--index] [-q | --quiet] [<stash>]"
 msgstr ""
 
-msgid "git stash branch <branchname> [<stash>]"
-msgstr "git stash branch <имя-ветки> [<спрятанные-изменения>]"
+msgid "kit stash branch <branchname> [<stash>]"
+msgstr "kit stash branch <имя-ветки> [<спрятанные-изменения>]"
 
-msgid "git stash store [(-m | --message) <message>] [-q | --quiet] <commit>"
+msgid "kit stash store [(-m | --message) <message>] [-q | --quiet] <commit>"
 msgstr ""
 
 msgid ""
@@ -11757,12 +11757,12 @@ msgid ""
 msgstr ""
 
 msgid ""
-"git stash save [-p | --patch] [-S | --staged] [-k | --[no-]keep-index] [-q | "
+"kit stash save [-p | --patch] [-S | --staged] [-k | --[no-]keep-index] [-q | "
 "--quiet]\n"
 "          [-u | --include-untracked] [-a | --all] [<message>]"
 msgstr ""
 
-msgid "git stash create [<message>]"
+msgid "kit stash create [<message>]"
 msgstr ""
 
 #, c-format
@@ -11780,7 +11780,7 @@ msgstr "Не найдены спрятанные изменения."
 msgid "%s is not a valid reference"
 msgstr "%s не является допустимой ссылкой на коммит"
 
-msgid "git stash clear with arguments is unimplemented"
+msgid "kit stash clear with arguments is unimplemented"
 msgstr ""
 
 #, c-format
@@ -11854,8 +11854,8 @@ msgstr "Не удолось обновить %s с %s"
 msgid "stash message"
 msgstr "описание спрятанных изменений"
 
-msgid "\"git stash store\" requires one <commit> argument"
-msgstr "«git stash store» требует указания одного аргумента <коммит>"
+msgid "\"kit stash store\" requires one <commit> argument"
+msgstr "«kit stash store» требует указания одного аргумента <коммит>"
 
 msgid "No staged changes"
 msgstr ""
@@ -11888,7 +11888,7 @@ msgstr ""
 msgid "Can't use --staged and --include-untracked or --all at the same time"
 msgstr ""
 
-msgid "Did you forget to 'git add'?"
+msgid "Did you forget to 'kit add'?"
 msgstr "Возможно, вы забыли выполнить «git add»?"
 
 msgid "No local changes to save"
@@ -11972,7 +11972,7 @@ msgstr ""
 msgid "recurse into nested submodules"
 msgstr "проходить вглубь вложенных подмодулей"
 
-msgid "git submodule foreach [--quiet] [--recursive] [--] <command>"
+msgid "kit submodule foreach [--quiet] [--recursive] [--] <command>"
 msgstr ""
 
 #, c-format
@@ -11994,7 +11994,7 @@ msgstr "Сбой регистрации режима обновления для
 msgid "suppress output for initializing a submodule"
 msgstr ""
 
-msgid "git submodule init [<options>] [<path>]"
+msgid "kit submodule init [<options>] [<path>]"
 msgstr ""
 
 #, c-format
@@ -12017,8 +12017,8 @@ msgid ""
 "HEAD"
 msgstr ""
 
-msgid "git submodule status [--quiet] [--cached] [--recursive] [<path>...]"
-msgstr "git submodule status [--quiet] [--cached] [--recursive] [<путь>...]"
+msgid "kit submodule status [--quiet] [--cached] [--recursive] [<path>...]"
+msgstr "kit submodule status [--quiet] [--cached] [--recursive] [<путь>...]"
 
 #, c-format
 msgid "* %s %s(blob)->%s(submodule)"
@@ -12052,7 +12052,7 @@ msgstr ""
 msgid "limit the summary size"
 msgstr ""
 
-msgid "git submodule summary [<options>] [<commit>] [--] [<path>]"
+msgid "kit submodule summary [<options>] [<commit>] [--] [<path>]"
 msgstr ""
 
 msgid "could not fetch a revision for HEAD"
@@ -12073,7 +12073,7 @@ msgstr ""
 msgid "suppress output of synchronizing submodule url"
 msgstr ""
 
-msgid "git submodule sync [--quiet] [--recursive] [<path>]"
+msgid "kit submodule sync [--quiet] [--recursive] [<path>]"
 msgstr ""
 
 #, c-format
@@ -12111,9 +12111,9 @@ msgid "unregister all submodules"
 msgstr ""
 
 msgid ""
-"git submodule deinit [--quiet] [-f | --force] [--all | [--] [<path>...]]"
+"kit submodule deinit [--quiet] [-f | --force] [--all | [--] [<path>...]]"
 msgstr ""
-"git submodule deinit [--quiet] [-f | --force] [--all | [--] [<путь>...]]"
+"kit submodule deinit [--quiet] [-f | --force] [--all | [--] [<путь>...]]"
 
 msgid "Use '--all' if you really want to deinitialize all submodules"
 msgstr ""
@@ -12182,7 +12182,7 @@ msgid "disallow cloning into non-empty directory"
 msgstr ""
 
 msgid ""
-"git submodule--helper clone [--prefix=<path>] [--quiet] [--reference "
+"kit submodule--helper clone [--prefix=<path>] [--quiet] [--reference "
 "<repository>] [--name <name>] [--depth <depth>] [--single-branch] [--filter "
 "<filter-spec>] --url <url> --path <path>"
 msgstr ""
@@ -12326,19 +12326,19 @@ msgid "disallow cloning into non-empty directory, implies --init"
 msgstr ""
 
 msgid ""
-"git submodule [--quiet] update [--init [--filter=<filter-spec>]] [--remote] "
+"kit submodule [--quiet] update [--init [--filter=<filter-spec>]] [--remote] "
 "[-N|--no-fetch] [-f|--force] [--checkout|--merge|--rebase] [--[no-]recommend-"
 "shallow] [--reference <repository>] [--recursive] [--[no-]single-branch] "
 "[--] [<path>...]"
 msgstr ""
 
-msgid "git submodule absorbgitdirs [<options>] [<path>...]"
+msgid "kit submodule absorbgitdirs [<options>] [<path>...]"
 msgstr ""
 
 msgid "suppress output for setting url of a submodule"
 msgstr ""
 
-msgid "git submodule set-url [--quiet] <path> <newurl>"
+msgid "kit submodule set-url [--quiet] <path> <newurl>"
 msgstr ""
 
 msgid "set the default tracking branch to master"
@@ -12347,10 +12347,10 @@ msgstr ""
 msgid "set the default tracking branch"
 msgstr ""
 
-msgid "git submodule set-branch [-q|--quiet] (-d|--default) <path>"
+msgid "kit submodule set-branch [-q|--quiet] (-d|--default) <path>"
 msgstr ""
 
-msgid "git submodule set-branch [-q|--quiet] (-b|--branch) <branch> <path>"
+msgid "kit submodule set-branch [-q|--quiet] (-b|--branch) <branch> <path>"
 msgstr ""
 
 msgid "--branch or --default required"
@@ -12366,7 +12366,7 @@ msgid "show whether the branch would be created"
 msgstr ""
 
 msgid ""
-"git submodule--helper create-branch [-f|--force] [--create-reflog] [-q|--"
+"kit submodule--helper create-branch [-f|--force] [--create-reflog] [-q|--"
 "quiet] [-t|--track] [-n|--dry-run] <name> <start-oid> <start-name>"
 msgstr ""
 
@@ -12441,7 +12441,7 @@ msgid ""
 "path"
 msgstr ""
 
-msgid "git submodule add [<options>] [--] <repository> [<path>]"
+msgid "kit submodule add [<options>] [--] <repository> [<path>]"
 msgstr ""
 
 msgid "Relative path can only be used from the toplevel of the working tree"
@@ -12457,16 +12457,16 @@ msgstr ""
 msgid "'%s' is not a valid submodule name"
 msgstr ""
 
-msgid "git submodule--helper <command>"
+msgid "kit submodule--helper <command>"
 msgstr ""
 
-msgid "git symbolic-ref [-m <reason>] <name> <ref>"
+msgid "kit symbolic-ref [-m <reason>] <name> <ref>"
 msgstr ""
 
-msgid "git symbolic-ref [-q] [--short] [--no-recurse] <name>"
+msgid "kit symbolic-ref [-q] [--short] [--no-recurse] <name>"
 msgstr ""
 
-msgid "git symbolic-ref --delete [-q] <name>"
+msgid "kit symbolic-ref --delete [-q] <name>"
 msgstr ""
 
 msgid "suppress error message for non-symbolic (detached) refs"
@@ -12493,18 +12493,18 @@ msgid ""
 "        <tagname> [<commit> | <object>]"
 msgstr ""
 
-msgid "git tag -d <tagname>..."
-msgstr "git tag -d <имя-метки>..."
+msgid "kit tag -d <tagname>..."
+msgstr "kit tag -d <имя-метки>..."
 
 msgid ""
-"git tag [-n[<num>]] -l [--contains <commit>] [--no-contains <commit>]\n"
+"kit tag [-n[<num>]] -l [--contains <commit>] [--no-contains <commit>]\n"
 "        [--points-at <object>] [--column[=<options>] | --no-column]\n"
 "        [--create-reflog] [--sort=<key>] [--format=<format>]\n"
 "        [--merged <commit>] [--no-merged <commit>] [<pattern>...]"
 msgstr ""
 
-msgid "git tag -v [--format=<format>] <tagname>..."
-msgstr "git tag -v [--format=<формат>] <имя-метки>..."
+msgid "kit tag -v [--format=<format>] <tagname>..."
+msgstr "kit tag -v [--format=<формат>] <имя-метки>..."
 
 #, c-format
 msgid "tag '%s' not found."
@@ -12548,7 +12548,7 @@ msgid ""
 "You have created a nested tag. The object referred to by your new tag is\n"
 "already a tag. If you meant to tag the object that it points to, use:\n"
 "\n"
-"\tgit tag -f %s %s^{}"
+"\tkit tag -f %s %s^{}"
 msgstr ""
 
 msgid "bad object type."
@@ -12696,8 +12696,8 @@ msgstr "информация статистики каталога не изме
 msgid " OK"
 msgstr " OK"
 
-msgid "git update-index [<options>] [--] [<file>...]"
-msgstr "git update-index [<опции>] [--] [<файл>...]"
+msgid "kit update-index [<options>] [--] [<file>...]"
+msgstr "kit update-index [<опции>] [--] [<файл>...]"
 
 msgid "continue refresh even when index needs update"
 msgstr "продолжить обновление, даже если индекс требует обновления"
@@ -12897,7 +12897,7 @@ msgstr "не проверять <каталог>/.git/ если <каталог>
 msgid "interrupt transfer after <n> seconds of inactivity"
 msgstr "прервать передачу после <кол> секунд простоя"
 
-msgid "git verify-commit [-v | --verbose] [--raw] <commit>..."
+msgid "kit verify-commit [-v | --verbose] [--raw] <commit>..."
 msgstr ""
 
 msgid "print commit contents"
@@ -12906,7 +12906,7 @@ msgstr "вывести содержимое коммита"
 msgid "print raw gpg status output"
 msgstr "выводить сырой вывод статуса от gpg"
 
-msgid "git verify-pack [-v | --verbose] [-s | --stat-only] [--] <pack>.idx..."
+msgid "kit verify-pack [-v | --verbose] [-s | --stat-only] [--] <pack>.idx..."
 msgstr ""
 
 msgid "verbose"
@@ -12915,7 +12915,7 @@ msgstr "быть многословнее"
 msgid "show statistics only"
 msgstr "вывести только статистику"
 
-msgid "git verify-tag [-v | --verbose] [--format=<format>] [--raw] <tag>..."
+msgid "kit verify-tag [-v | --verbose] [--format=<format>] [--raw] <tag>..."
 msgstr ""
 
 msgid "print tag contents"
@@ -12926,25 +12926,25 @@ msgid ""
 "                 [-b <new-branch>] <path> [<commit-ish>]"
 msgstr ""
 
-msgid "git worktree list [-v | --porcelain [-z]]"
+msgid "kit worktree list [-v | --porcelain [-z]]"
 msgstr ""
 
-msgid "git worktree lock [--reason <string>] <worktree>"
+msgid "kit worktree lock [--reason <string>] <worktree>"
 msgstr ""
 
-msgid "git worktree move <worktree> <new-path>"
-msgstr "git worktree move <рабочий-каталог> <новый-путь>"
+msgid "kit worktree move <worktree> <new-path>"
+msgstr "kit worktree move <рабочий-каталог> <новый-путь>"
 
-msgid "git worktree prune [-n] [-v] [--expire <expire>]"
+msgid "kit worktree prune [-n] [-v] [--expire <expire>]"
 msgstr ""
 
-msgid "git worktree remove [-f] <worktree>"
+msgid "kit worktree remove [-f] <worktree>"
 msgstr ""
 
-msgid "git worktree repair [<path>...]"
+msgid "kit worktree repair [<path>...]"
 msgstr ""
 
-msgid "git worktree unlock <worktree>"
+msgid "kit worktree unlock <worktree>"
 msgstr ""
 
 #, c-format
@@ -13109,7 +13109,7 @@ msgid "failed to move '%s' to '%s'"
 msgstr ""
 
 #, c-format
-msgid "failed to run 'git status' on '%s'"
+msgid "failed to run 'kit status' on '%s'"
 msgstr ""
 
 #, c-format
@@ -13117,7 +13117,7 @@ msgid "'%s' contains modified or untracked files, use --force to delete it"
 msgstr ""
 
 #, c-format
-msgid "failed to run 'git status' on '%s', code %d"
+msgid "failed to run 'kit status' on '%s', code %d"
 msgstr ""
 
 msgid "force removal even if worktree is dirty or locked"
@@ -13146,8 +13146,8 @@ msgstr ""
 msgid "error: %s: %s"
 msgstr ""
 
-msgid "git write-tree [--missing-ok] [--prefix=<prefix>/]"
-msgstr "git write-tree [--missing-ok] [--prefix=<префикс>/]"
+msgid "kit write-tree [--missing-ok] [--prefix=<prefix>/]"
+msgstr "kit write-tree [--missing-ok] [--prefix=<префикс>/]"
 
 msgid "<prefix>/"
 msgstr "<префикс>/"
@@ -14716,7 +14716,7 @@ msgstr ""
 msgid "cannot start proxy %s"
 msgstr ""
 
-msgid "no path specified; see 'git help pull' for valid url syntax"
+msgid "no path specified; see 'kit help pull' for valid url syntax"
 msgstr ""
 
 msgid "newline is forbidden in git:// hosts and repo paths"
@@ -15405,10 +15405,10 @@ msgstr ""
 msgid "specify how differences in submodules are shown"
 msgstr ""
 
-msgid "hide 'git add -N' entries from the index"
+msgid "hide 'kit add -N' entries from the index"
 msgstr ""
 
-msgid "treat 'git add -N' entries as real in the index"
+msgid "treat 'kit add -N' entries as real in the index"
 msgstr ""
 
 msgid "<string>"
@@ -15803,16 +15803,16 @@ msgid ""
 msgstr ""
 
 msgid ""
-"'git help -a' and 'git help -g' list available subcommands and some\n"
-"concept guides. See 'git help <command>' or 'git help <concept>'\n"
+"'kit help -a' and 'kit help -g' list available subcommands and some\n"
+"concept guides. See 'kit help <command>' or 'kit help <concept>'\n"
 "to read about a specific subcommand or concept.\n"
-"See 'git help git' for an overview of the system."
+"See 'kit help git' for an overview of the system."
 msgstr ""
-"«git help -a» и «git help -g» выводит список доступных подкоманд\n"
-"и небольшую справку по понятиям. Смотрите «git help <понятие>»\n"
-"или «git help <термин>» чтобы узнать больше о конкретной подкоманде\n"
+"«kit help -a» и «kit help -g» выводит список доступных подкоманд\n"
+"и небольшую справку по понятиям. Смотрите «kit help <понятие>»\n"
+"или «kit help <термин>» чтобы узнать больше о конкретной подкоманде\n"
 "или понятии.\n"
-"Смотрите «git help git» для получения общего обзора системы."
+"Смотрите «kit help git» для получения общего обзора системы."
 
 #, c-format
 msgid "unsupported command listing type '%s'"
@@ -15886,7 +15886,7 @@ msgstr ""
 "\n"
 
 #, c-format
-msgid "expansion of alias '%s' failed; '%s' is not a git command\n"
+msgid "expansion of alias '%s' failed; '%s' is not a kit command\n"
 msgstr ""
 
 #, c-format
@@ -15977,21 +15977,21 @@ msgstr "«%s»: не удалось прочесть %s"
 msgid "'%s': short read"
 msgstr "«%s»: слишком мало данных прочитано"
 
-msgid "start a working area (see also: git help tutorial)"
-msgstr "создание рабочей области (смотрите также: git help tutorial)"
+msgid "start a working area (see also: kit help tutorial)"
+msgstr "создание рабочей области (смотрите также: kit help tutorial)"
 
-msgid "work on the current change (see also: git help everyday)"
-msgstr "работа с текущими изменениями (смотрите также: git help everyday)"
+msgid "work on the current change (see also: kit help everyday)"
+msgstr "работа с текущими изменениями (смотрите также: kit help everyday)"
 
-msgid "examine the history and state (see also: git help revisions)"
+msgid "examine the history and state (see also: kit help revisions)"
 msgstr ""
-"просмотр истории и текущего состояния (смотрите также: git help revisions)"
+"просмотр истории и текущего состояния (смотрите также: kit help revisions)"
 
 msgid "grow, mark and tweak your common history"
 msgstr "выращивание, маркировка и правка вашей общей истории"
 
-msgid "collaborate (see also: git help workflows)"
-msgstr "совместная работа (смотрите также: git help workflows)"
+msgid "collaborate (see also: kit help workflows)"
+msgstr "совместная работа (смотрите также: kit help workflows)"
 
 msgid "Main Porcelain Commands"
 msgstr "Основные машиночитаемые команды"
@@ -16024,13 +16024,13 @@ msgid "Developer-facing file formats, protocols and other interfaces"
 msgstr ""
 
 #, c-format
-msgid "available git commands in '%s'"
+msgid "available kit commands in '%s'"
 msgstr "доступные команды git в «%s»"
 
-msgid "git commands available from elsewhere on your $PATH"
+msgid "kit commands available from elsewhere on your $PATH"
 msgstr "команды git, доступные в других местах вашего $PATH"
 
-msgid "These are common Git commands used in various situations:"
+msgid "These are common kit commands used in various situations:"
 msgstr "Стандартные команды Git используемые в различных ситуациях:"
 
 msgid "The Git concept guides are:"
@@ -16048,26 +16048,26 @@ msgstr ""
 msgid "Command aliases"
 msgstr ""
 
-msgid "See 'git help <command>' to read about a specific subcommand"
-msgstr "Запустите «git help <команда>», чтобы прочесть о конкретной подкоманде"
+msgid "See 'kit help <command>' to read about a specific subcommand"
+msgstr "Запустите «kit help <команда>», чтобы прочесть о конкретной подкоманде"
 
 #, c-format
 msgid ""
-"'%s' appears to be a git command, but we were not\n"
+"'%s' appears to be a kit command, but we were not\n"
 "able to execute it. Maybe git-%s is broken?"
 msgstr ""
 "«%s» похоже на команду git, но нам не удалось ее запустить. Возможно, git-"
 "%s  не работает?"
 
 #, c-format
-msgid "git: '%s' is not a git command. See 'git --help'."
-msgstr "git: «%s» не является командой git. Смотрите «git --help»."
+msgid "kit: '%s' is not a kit command. See 'kit --help'."
+msgstr "kit: «%s» не является командой git. Смотрите «git --help»."
 
-msgid "Uh oh. Your system reports no Git commands at all."
+msgid "Uh oh. Your system reports no kit commands at all."
 msgstr "Ой-ёй! Ваша система не сообщает ни о каких командах Git вообще."
 
 #, c-format
-msgid "WARNING: You called a Git command named '%s', which does not exist."
+msgid "WARNING: You called a kit command named '%s', which does not exist."
 msgstr "Внимание: Вы запустили не существующую команду Git «%s»."
 
 #, c-format
@@ -16101,7 +16101,7 @@ msgstr[3] ""
 "\n"
 "Самые похожие команды:"
 
-msgid "git version [--build-options]"
+msgid "kit version [--build-options]"
 msgstr ""
 
 #, c-format
@@ -16191,8 +16191,8 @@ msgid ""
 "\n"
 "Run\n"
 "\n"
-"  git config --global user.email \"you@example.com\"\n"
-"  git config --global user.name \"Your Name\"\n"
+"  kit config --global user.email \"you@example.com\"\n"
+"  kit config --global user.name \"Your Name\"\n"
 "\n"
 "to set your account's default identity.\n"
 "Omit --global to set the identity only in this repository.\n"
@@ -16203,8 +16203,8 @@ msgstr ""
 "\n"
 "Запустите\n"
 "\n"
-"  git config --global user.email \"you@example.com\"\n"
-"  git config --global user.name \"Ваше Имя\"\n"
+"  kit config --global user.email \"you@example.com\"\n"
+"  kit config --global user.name \"Ваше Имя\"\n"
 "\n"
 "для указания идентификационных данных аккаунта по умолчанию.\n"
 "Пропустите параметр --global для указания данных только для этого "
@@ -16493,7 +16493,7 @@ msgid ""
 "This can be accomplished with the following steps:\n"
 "%s - come back to superproject and run:\n"
 "\n"
-"      git add %s\n"
+"      kit add %s\n"
 "\n"
 "   to record the above merge or update\n"
 " - resolve any other conflicts in the superproject\n"
@@ -16920,11 +16920,11 @@ msgstr ""
 #, c-format
 msgid ""
 "You have not concluded your previous notes merge (%s exists).\n"
-"Please, use 'git notes merge --commit' or 'git notes merge --abort' to "
+"Please, use 'kit notes merge --commit' or 'kit notes merge --abort' to "
 "commit/abort the previous merge before you start a new notes merge."
 msgstr ""
 "Вы не закончили предыдущее слияние заметок (%s существует).\n"
-"Запустите «git notes merge --commit» или «git notes merge --abort» для "
+"Запустите «kit notes merge --commit» или «kit notes merge --abort» для "
 "коммита или отмены предыдущего слияния и запуска нового слияния заметок."
 
 #, c-format
@@ -17954,13 +17954,13 @@ msgid "%s: cannot drop to stage #0"
 msgstr ""
 
 msgid ""
-"You can fix this with 'git rebase --edit-todo' and then run 'git rebase --"
+"You can fix this with 'kit rebase --edit-todo' and then run 'kit rebase --"
 "continue'.\n"
-"Or you can abort the rebase with 'git rebase --abort'.\n"
+"Or you can abort the rebase with 'kit rebase --abort'.\n"
 msgstr ""
-"Вы можете исправить это с помощью «git rebase --edit-todo», а потом запустив "
-"«git rebase --continue».\n"
-"Или вы можете прервать процесс перемещения, выполнив «git rebase --abort»\n"
+"Вы можете исправить это с помощью «kit rebase --edit-todo», а потом запустив "
+"«kit rebase --continue».\n"
+"Или вы можете прервать процесс перемещения, выполнив «kit rebase --abort»\n"
 
 #, c-format
 msgid ""
@@ -17980,7 +17980,7 @@ msgid ""
 "                   keep only this commit's message; -c is same as -C but\n"
 "                   opens the editor\n"
 "x, exec <command> = run command (the rest of the line) using shell\n"
-"b, break = stop here (continue rebase later with 'git rebase --continue')\n"
+"b, break = stop here (continue rebase later with 'kit rebase --continue')\n"
 "d, drop <commit> = remove commit\n"
 "l, label <label> = label current HEAD with a name\n"
 "t, reset <label> = reset HEAD to a label\n"
@@ -18021,13 +18021,13 @@ msgid ""
 "\n"
 "You are editing the todo file of an ongoing interactive rebase.\n"
 "To continue rebase after editing, run:\n"
-"    git rebase --continue\n"
+"    kit rebase --continue\n"
 "\n"
 msgstr ""
 "\n"
 "Вы сейчас редактируете файл со списком дел для интерактивного перемещения.\n"
 "Для продолжения перемещения, после редактирования файла запустите:\n"
-"    git rebase --continue\n"
+"    kit rebase --continue\n"
 "\n"
 
 msgid ""
@@ -18055,7 +18055,7 @@ msgstr ""
 msgid ""
 "To avoid this message, use \"drop\" to explicitly remove a commit.\n"
 "\n"
-"Use 'git config rebase.missingCommitsCheck' to change the level of "
+"Use 'kit config rebase.missingCommitsCheck' to change the level of "
 "warnings.\n"
 "The possible behaviours are: ignore, warn, error.\n"
 "\n"
@@ -18063,7 +18063,7 @@ msgstr ""
 "Чтобы избежать этого сообщения, используйте «drop» чтобы явно удалить "
 "коммит.\n"
 "\n"
-"Используйте опцию «git config rebase.missingCommitsCheck» для изменения "
+"Используйте опцию «kit config rebase.missingCommitsCheck» для изменения "
 "количества предупреждений.\n"
 "Возможные значения: ignore, warn, error.\n"
 "\n"
@@ -18452,7 +18452,7 @@ msgstr ""
 
 msgid "remote-curl: usage: git remote-curl <remote> [<url>]"
 msgstr ""
-"remote-curl: использование: git remote-curl <внешний-репозиторий> [<url>]"
+"remote-curl: использование: kit remote-curl <внешний-репозиторий> [<url>]"
 
 msgid "remote-curl: error reading command stream from git"
 msgstr ""
@@ -18618,8 +18618,8 @@ msgstr ""
 msgid "Your branch is based on '%s', but the upstream is gone.\n"
 msgstr "Связанная ветка «%s» отсутствует в вышестоящем репозитории.\n"
 
-msgid "  (use \"git branch --unset-upstream\" to fixup)\n"
-msgstr "  (для исправления запустите «git branch --unset-upstream»)\n"
+msgid "  (use \"kit branch --unset-upstream\" to fixup)\n"
+msgstr "  (для исправления запустите «kit branch --unset-upstream»)\n"
 
 #, c-format
 msgid "Your branch is up to date with '%s'.\n"
@@ -18641,9 +18641,9 @@ msgstr[1] "Ваша ветка опережает «%s» на %d коммита.
 msgstr[2] "Ваша ветка опережает «%s» на %d коммитов.\n"
 msgstr[3] "Ваша ветка опережает «%s» на %d коммитов.\n"
 
-msgid "  (use \"git push\" to publish your local commits)\n"
+msgid "  (use \"kit push\" to publish your local commits)\n"
 msgstr ""
-"  (используйте «git push», чтобы опубликовать ваши локальные коммиты)\n"
+"  (используйте «kit push», чтобы опубликовать ваши локальные коммиты)\n"
 
 #, c-format
 msgid "Your branch is behind '%s' by %d commit, and can be fast-forwarded.\n"
@@ -18658,8 +18658,8 @@ msgstr[2] ""
 msgstr[3] ""
 "Ветка отстает от «%s» на %d коммитов и может быть быстро перемотана.\n"
 
-msgid "  (use \"git pull\" to update your local branch)\n"
-msgstr "  (используйте «git pull», чтобы обновить вашу локальную ветку)\n"
+msgid "  (use \"kit pull\" to update your local branch)\n"
+msgstr "  (используйте «kit pull», чтобы обновить вашу локальную ветку)\n"
 
 #, c-format
 msgid ""
@@ -19043,27 +19043,27 @@ msgstr ""
 
 msgid ""
 "after resolving the conflicts, mark the corrected paths\n"
-"with 'git add <paths>' or 'git rm <paths>'"
+"with 'kit add <paths>' or 'kit rm <paths>'"
 msgstr ""
 "после разрешения конфликтов, пометьте исправленные пути\n"
-"с помощью «git add <пути>» или «git rm <пути>»"
+"с помощью «kit add <пути>» или «kit rm <пути>»"
 
 msgid ""
 "After resolving the conflicts, mark them with\n"
-"\"git add/rm <pathspec>\", then run\n"
-"\"git cherry-pick --continue\".\n"
-"You can instead skip this commit with \"git cherry-pick --skip\".\n"
-"To abort and get back to the state before \"git cherry-pick\",\n"
-"run \"git cherry-pick --abort\"."
+"\"kit add/rm <pathspec>\", then run\n"
+"\"kit cherry-pick --continue\".\n"
+"You can instead skip this commit with \"kit cherry-pick --skip\".\n"
+"To abort and get back to the state before \"kit cherry-pick\",\n"
+"run \"kit cherry-pick --abort\"."
 msgstr ""
 
 msgid ""
 "After resolving the conflicts, mark them with\n"
-"\"git add/rm <pathspec>\", then run\n"
-"\"git revert --continue\".\n"
-"You can instead skip this commit with \"git revert --skip\".\n"
-"To abort and get back to the state before \"git revert\",\n"
-"run \"git revert --abort\"."
+"\"kit add/rm <pathspec>\", then run\n"
+"\"kit revert --continue\".\n"
+"You can instead skip this commit with \"kit revert --skip\".\n"
+"To abort and get back to the state before \"kit revert\",\n"
+"run \"kit revert --abort\"."
 msgstr ""
 
 #, c-format
@@ -19132,29 +19132,29 @@ msgid ""
 "you have staged changes in your working tree\n"
 "If these changes are meant to be squashed into the previous commit, run:\n"
 "\n"
-"  git commit --amend %s\n"
+"  kit commit --amend %s\n"
 "\n"
 "If they are meant to go into a new commit, run:\n"
 "\n"
-"  git commit %s\n"
+"  kit commit %s\n"
 "\n"
 "In both cases, once you're done, continue with:\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 msgstr ""
 "у вас имеются проиндексированные изменения в рабочем каталоге. Если эти "
 "изменения должны быть объеденены с предыдущим коммитом, то запустите:\n"
 "\n"
-"  git commit --amend %s\n"
+"  kit commit --amend %s\n"
 "\n"
 "Если же они должны быть помещены в новый коммит, то запустите:\n"
 "\n"
-"  git commit %s\n"
+"  kit commit %s\n"
 "\n"
 "В любом случае, после того как вы закончите, продолжить перемещение можно "
 "выполнив:\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 
 msgid "'prepare-commit-msg' hook failed"
 msgstr "ошибка при вызове перехватчика «prepare-commit-msg»"
@@ -19166,11 +19166,11 @@ msgid ""
 "following command and follow the instructions in your editor to edit\n"
 "your configuration file:\n"
 "\n"
-"    git config --global --edit\n"
+"    kit config --global --edit\n"
 "\n"
 "After doing this, you may fix the identity used for this commit with:\n"
 "\n"
-"    git commit --amend --reset-author\n"
+"    kit commit --amend --reset-author\n"
 msgstr ""
 "Ваше имя или электронная почта настроены автоматически на основании вашего\n"
 "имени пользователя и имени машины. Пожалуйста, проверьте, что они \n"
@@ -19180,35 +19180,35 @@ msgstr ""
 "команду и следуйте инструкциям вашего текстового редактора, для\n"
 "редактирования вашего файла конфигурации:\n"
 "\n"
-"    git config --global --edit\n"
+"    kit config --global --edit\n"
 "\n"
 "После этого, изменить авторство этой коммита можно будет с помощью команды:\n"
 "\n"
-"    git commit --amend --reset-author\n"
+"    kit commit --amend --reset-author\n"
 
 msgid ""
 "Your name and email address were configured automatically based\n"
 "on your username and hostname. Please check that they are accurate.\n"
 "You can suppress this message by setting them explicitly:\n"
 "\n"
-"    git config --global user.name \"Your Name\"\n"
-"    git config --global user.email you@example.com\n"
+"    kit config --global user.name \"Your Name\"\n"
+"    kit config --global user.email you@example.com\n"
 "\n"
 "After doing this, you may fix the identity used for this commit with:\n"
 "\n"
-"    git commit --amend --reset-author\n"
+"    kit commit --amend --reset-author\n"
 msgstr ""
 "Ваше имя или электронная почта настроены автоматически на основании вашего\n"
 "имени пользователя и имени машины. Пожалуйста, проверьте, что они \n"
 "определены правильно.\n"
 "Вы можете отключить это уведомление установив их напрямую:\n"
 "\n"
-"    git config --global user.name \"Ваше Имя\"\n"
-"    git config --global user.email you@example.com\n"
+"    kit config --global user.name \"Ваше Имя\"\n"
+"    kit config --global user.email you@example.com\n"
 "\n"
 "После этого, изменить авторство этой коммита можно будет с помощью команды:\n"
 "\n"
-"    git commit --amend --reset-author\n"
+"    kit commit --amend --reset-author\n"
 
 msgid "couldn't look up newly created commit"
 msgstr "нельзя запросить новосозданный коммит"
@@ -19338,12 +19338,12 @@ msgid "dropping %s %s -- patch contents already upstream\n"
 msgstr ""
 
 #, c-format
-msgid "git %s: failed to read the index"
-msgstr "git %s: сбой чтения индекса"
+msgid "kit %s: failed to read the index"
+msgstr "kit %s: сбой чтения индекса"
 
 #, c-format
-msgid "git %s: failed to refresh the index"
-msgstr "git %s: сбой обновления индекса"
+msgid "kit %s: failed to refresh the index"
+msgstr "kit %s: сбой обновления индекса"
 
 #, c-format
 msgid "'%s' is not a valid label"
@@ -19387,8 +19387,8 @@ msgstr ""
 msgid "cancelling a revert in progress"
 msgstr ""
 
-msgid "please fix this using 'git rebase --edit-todo'."
-msgstr "пожалуйста исправьте это с помощью «git rebase --edit-todo»."
+msgid "please fix this using 'kit rebase --edit-todo'."
+msgstr "пожалуйста исправьте это с помощью «kit rebase --edit-todo»."
 
 #, c-format
 msgid "unusable instruction sheet: '%s'"
@@ -19417,14 +19417,14 @@ msgid "revert is already in progress"
 msgstr ""
 
 #, c-format
-msgid "try \"git revert (--continue | %s--abort | --quit)\""
+msgid "try \"kit revert (--continue | %s--abort | --quit)\""
 msgstr ""
 
 msgid "cherry-pick is already in progress"
 msgstr ""
 
 #, c-format
-msgid "try \"git cherry-pick (--continue | %s--abort | --quit)\""
+msgid "try \"kit cherry-pick (--continue | %s--abort | --quit)\""
 msgstr ""
 
 #, c-format
@@ -19471,7 +19471,7 @@ msgstr ""
 #, c-format
 msgid ""
 "have you committed already?\n"
-"try \"git %s --continue\""
+"try \"kit %s --continue\""
 msgstr ""
 
 msgid "cannot read HEAD"
@@ -19485,11 +19485,11 @@ msgstr ""
 msgid ""
 "You can amend the commit now, with\n"
 "\n"
-"  git commit --amend %s\n"
+"  kit commit --amend %s\n"
 "\n"
 "Once you are satisfied with your changes, run\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 msgstr ""
 
 #, c-format
@@ -19509,13 +19509,13 @@ msgid ""
 "execution failed: %s\n"
 "%sYou can fix the problem, and then run\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 "\n"
 msgstr ""
 "ошибка выполнения: %s\n"
 "%sВы можете исправить ошибку, а затем запустить\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 "\n"
 
 msgid "and made changes to the index and/or the working tree.\n"
@@ -19527,7 +19527,7 @@ msgid ""
 "but left changes to the index and/or the working tree.\n"
 "Commit or stash your changes, and then run\n"
 "\n"
-"  git rebase --continue\n"
+"  kit rebase --continue\n"
 "\n"
 msgstr ""
 
@@ -19645,8 +19645,8 @@ msgid ""
 "It has been rescheduled; To edit the command before continuing, please\n"
 "edit the todo list first:\n"
 "\n"
-"    git rebase --edit-todo\n"
-"    git rebase --continue\n"
+"    kit rebase --edit-todo\n"
+"    kit rebase --continue\n"
 msgstr ""
 
 #, c-format
@@ -19694,11 +19694,11 @@ msgstr "недопустимое содержимое: «%s»"
 msgid ""
 "\n"
 "You have uncommitted changes in your working tree. Please, commit them\n"
-"first and then run 'git rebase --continue' again."
+"first and then run 'kit rebase --continue' again."
 msgstr ""
 "\n"
 "У вас имеются незакоммиченные изменения в рабочем каталоге. Сделайте коммит, "
-"а затем запустите «git rebase --continue» снова."
+"а затем запустите «kit rebase --continue» снова."
 
 #, c-format
 msgid "could not write file: '%s'"
@@ -19754,7 +19754,7 @@ msgstr ""
 #, c-format
 msgid ""
 "%s: no such path in the working tree.\n"
-"Use 'git <command> -- <path>...' to specify paths that do not exist locally."
+"Use 'kit <command> -- <path>...' to specify paths that do not exist locally."
 msgstr ""
 "%s: нет такого пути в рабочем каталоге.\n"
 "Используйте «git <команда> -- <путь>...» для указания путей, которые не "
@@ -19764,7 +19764,7 @@ msgstr ""
 msgid ""
 "ambiguous argument '%s': unknown revision or path not in the working tree.\n"
 "Use '--' to separate paths from revisions, like this:\n"
-"'git <command> [<revision>...] -- [<file>...]'"
+"'kit <command> [<revision>...] -- [<file>...]'"
 msgstr ""
 "неоднозначный аргумент «%s»: неизвестная редакция или не путь в рабочем "
 "каталоге.\n"
@@ -19779,7 +19779,7 @@ msgstr ""
 msgid ""
 "ambiguous argument '%s': both revision and filename\n"
 "Use '--' to separate paths from revisions, like this:\n"
-"'git <command> [<revision>...] -- [<file>...]'"
+"'kit <command> [<revision>...] -- [<file>...]'"
 msgstr ""
 "неоднозначный аргумент «%s»: является одновременно и редакцией и именем "
 "файла.\n"
@@ -19876,7 +19876,7 @@ msgid ""
 "detected dubious ownership in repository at '%s'\n"
 "%sTo add an exception for this directory, call:\n"
 "\n"
-"\tgit config --global --add safe.directory %s"
+"\tkit config --global --add safe.directory %s"
 msgstr ""
 
 #, c-format
@@ -20003,7 +20003,7 @@ msgstr "запись подмодуля «%s» (%s) является %s, а не
 
 #, c-format
 msgid ""
-"Could not run 'git rev-list <commits> --not --remotes -n 1' command in "
+"Could not run 'kit rev-list <commits> --not --remotes -n 1' command in "
 "submodule %s"
 msgstr ""
 
@@ -20046,19 +20046,19 @@ msgid "'%s' not recognized as a git repository"
 msgstr "«%s» не распознан как репозиторий git"
 
 #, c-format
-msgid "Could not run 'git status --porcelain=2' in submodule %s"
+msgid "Could not run 'kit status --porcelain=2' in submodule %s"
 msgstr ""
 
 #, c-format
-msgid "'git status --porcelain=2' failed in submodule %s"
+msgid "'kit status --porcelain=2' failed in submodule %s"
 msgstr ""
 
 #, c-format
-msgid "could not start 'git status' in submodule '%s'"
+msgid "could not start 'kit status' in submodule '%s'"
 msgstr "не удалось запустить «git status» в подмодуле «%s»"
 
 #, c-format
-msgid "could not run 'git status' in submodule '%s'"
+msgid "could not run 'kit status' in submodule '%s'"
 msgstr "не удалось запустить «git status» в подмодуле «%s»"
 
 #, c-format
@@ -20408,7 +20408,7 @@ msgstr ""
 msgid "transport: invalid depth option '%s'"
 msgstr "транспорт: неправильный параметр глубины «%s»"
 
-msgid "see protocol.version in 'git help config' for more details"
+msgid "see protocol.version in 'kit help config' for more details"
 msgstr ""
 
 msgid "server options require protocol version 2 or later"
@@ -20447,11 +20447,11 @@ msgid ""
 "\n"
 "Please try\n"
 "\n"
-"\tgit push --recurse-submodules=on-demand\n"
+"\tkit push --recurse-submodules=on-demand\n"
 "\n"
 "or cd to the path and use\n"
 "\n"
-"\tgit push\n"
+"\tkit push\n"
 "\n"
 "to push them to a remote.\n"
 "\n"
@@ -20703,10 +20703,10 @@ msgstr "Прерываю\n"
 
 #, c-format
 msgid ""
-"After fixing the above paths, you may want to run `git sparse-checkout "
+"After fixing the above paths, you may want to run `kit sparse-checkout "
 "reapply`.\n"
 msgstr ""
-"После исправления указанных путей вы можете запустить «git sparse-checkout "
+"После исправления указанных путей вы можете запустить «kit sparse-checkout "
 "reapply».\n"
 
 msgid "Updating files"
@@ -20864,31 +20864,31 @@ msgstr "не удалось получить текущий рабочий ка�
 msgid "Unmerged paths:"
 msgstr "Не слитые пути:"
 
-msgid "  (use \"git restore --staged <file>...\" to unstage)"
+msgid "  (use \"kit restore --staged <file>...\" to unstage)"
 msgstr ""
-"  (используйте «git restore --staged <файл>...», чтобы убрать из индекса)"
+"  (используйте «kit restore --staged <файл>...», чтобы убрать из индекса)"
 
 #, c-format
-msgid "  (use \"git restore --source=%s --staged <file>...\" to unstage)"
+msgid "  (use \"kit restore --source=%s --staged <file>...\" to unstage)"
 msgstr ""
-"  (используйте «git restore --source=%s --staged <файл>...», чтобы убрать из "
+"  (используйте «kit restore --source=%s --staged <файл>...», чтобы убрать из "
 "индекса)"
 
-msgid "  (use \"git rm --cached <file>...\" to unstage)"
-msgstr "  (используйте «git rm --cached <файл>...», чтобы убрать из индекса)"
+msgid "  (use \"kit rm --cached <file>...\" to unstage)"
+msgstr "  (используйте «kit rm --cached <файл>...», чтобы убрать из индекса)"
 
-msgid "  (use \"git add <file>...\" to mark resolution)"
+msgid "  (use \"kit add <file>...\" to mark resolution)"
 msgstr ""
-"  (используйте «git add <файл>...», чтобы пометить разрешение конфликта)"
+"  (используйте «kit add <файл>...», чтобы пометить разрешение конфликта)"
 
-msgid "  (use \"git add/rm <file>...\" as appropriate to mark resolution)"
+msgid "  (use \"kit add/rm <file>...\" as appropriate to mark resolution)"
 msgstr ""
-"  (используйте «git add/rm <файл>...», чтобы пометить выбранное разрешение "
+"  (используйте «kit add/rm <файл>...», чтобы пометить выбранное разрешение "
 "конфликта)"
 
-msgid "  (use \"git rm <file>...\" to mark resolution)"
+msgid "  (use \"kit rm <file>...\" to mark resolution)"
 msgstr ""
-"  (используйте «git rm <файл>...», чтобы пометить разрешение конфликта)"
+"  (используйте «kit rm <файл>...», чтобы пометить разрешение конфликта)"
 
 msgid "Changes to be committed:"
 msgstr "Изменения, которые будут включены в коммит:"
@@ -20896,18 +20896,18 @@ msgstr "Изменения, которые будут включены в ком
 msgid "Changes not staged for commit:"
 msgstr "Изменения, которые не в индексе для коммита:"
 
-msgid "  (use \"git add <file>...\" to update what will be committed)"
-msgstr "  (используйте «git add <файл>...», чтобы добавить файл в индекс)"
+msgid "  (use \"kit add <file>...\" to update what will be committed)"
+msgstr "  (используйте «kit add <файл>...», чтобы добавить файл в индекс)"
 
-msgid "  (use \"git add/rm <file>...\" to update what will be committed)"
+msgid "  (use \"kit add/rm <file>...\" to update what will be committed)"
 msgstr ""
-"  (используйте «git add/rm <файл>...», чтобы добавить или удалить файл из "
+"  (используйте «kit add/rm <файл>...», чтобы добавить или удалить файл из "
 "индекса)"
 
 msgid ""
-"  (use \"git restore <file>...\" to discard changes in working directory)"
+"  (use \"kit restore <file>...\" to discard changes in working directory)"
 msgstr ""
-"  (используйте «git restore <файл>...», чтобы отменить изменения в рабочем "
+"  (используйте «kit restore <файл>...», чтобы отменить изменения в рабочем "
 "каталоге)"
 
 msgid "  (commit or discard the untracked or modified content in submodules)"
@@ -20916,9 +20916,9 @@ msgstr ""
 "содержимом в подмодулях)"
 
 #, c-format
-msgid "  (use \"git %s <file>...\" to include in what will be committed)"
+msgid "  (use \"kit %s <file>...\" to include in what will be committed)"
 msgstr ""
-"  (используйте «git %s <файл>...», чтобы добавить в то, что будет включено в "
+"  (используйте «kit %s <файл>...», чтобы добавить в то, что будет включено в "
 "коммит)"
 
 msgid "both deleted:"
@@ -21006,17 +21006,17 @@ msgstr ""
 msgid "You have unmerged paths."
 msgstr "У вас есть не слитые пути."
 
-msgid "  (fix conflicts and run \"git commit\")"
-msgstr "  (разрешите конфликты, затем запустите «git commit»)"
+msgid "  (fix conflicts and run \"kit commit\")"
+msgstr "  (разрешите конфликты, затем запустите «kit commit»)"
 
-msgid "  (use \"git merge --abort\" to abort the merge)"
-msgstr "  (используйте «git merge --abort», чтобы остановить операцию слияния)"
+msgid "  (use \"kit merge --abort\" to abort the merge)"
+msgstr "  (используйте «kit merge --abort», чтобы остановить операцию слияния)"
 
 msgid "All conflicts fixed but you are still merging."
 msgstr "Все конфликты исправлены, но вы все еще в процессе слияния."
 
-msgid "  (use \"git commit\" to conclude merge)"
-msgstr "  (используйте «git commit», чтобы завершить слияние)"
+msgid "  (use \"kit commit\" to conclude merge)"
+msgstr "  (используйте «kit commit», чтобы завершить слияние)"
 
 msgid "You are in the middle of an am session."
 msgstr "Вы в процессе сессии am."
@@ -21024,19 +21024,19 @@ msgstr "Вы в процессе сессии am."
 msgid "The current patch is empty."
 msgstr "Текущий патч пустой."
 
-msgid "  (fix conflicts and then run \"git am --continue\")"
-msgstr "  (разрешите конфликты, затем запустите «git am --continue»)"
+msgid "  (fix conflicts and then run \"kit am --continue\")"
+msgstr "  (разрешите конфликты, затем запустите «kit am --continue»)"
 
-msgid "  (use \"git am --skip\" to skip this patch)"
-msgstr "  (используйте «git am --skip», чтобы пропустить этот патч)"
+msgid "  (use \"kit am --skip\" to skip this patch)"
+msgstr "  (используйте «kit am --skip», чтобы пропустить этот патч)"
 
 msgid ""
-"  (use \"git am --allow-empty\" to record this patch as an empty commit)"
+"  (use \"kit am --allow-empty\" to record this patch as an empty commit)"
 msgstr ""
 
-msgid "  (use \"git am --abort\" to restore the original branch)"
+msgid "  (use \"kit am --abort\" to restore the original branch)"
 msgstr ""
-"  (используйте «git am --abort», чтобы восстановить оригинальную ветку)"
+"  (используйте «kit am --abort», чтобы восстановить оригинальную ветку)"
 
 msgid "git-rebase-todo is missing."
 msgstr "git-rebase-todo отсутствует."
@@ -21067,9 +21067,9 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-msgid "  (use \"git rebase --edit-todo\" to view and edit)"
+msgid "  (use \"kit rebase --edit-todo\" to view and edit)"
 msgstr ""
-"  (используйте «git rebase --edit-todo», чтобы просмотреть или изменить их)"
+"  (используйте «kit rebase --edit-todo», чтобы просмотреть или изменить их)"
 
 #, c-format
 msgid "You are currently rebasing branch '%s' on '%s'."
@@ -21078,18 +21078,18 @@ msgstr "Вы сейчас перемещаете ветку «%s» над «%s»
 msgid "You are currently rebasing."
 msgstr "Вы сейчас перемещаете ветку."
 
-msgid "  (fix conflicts and then run \"git rebase --continue\")"
-msgstr "  (разрешите конфликты, затем запустите «git rebase --continue»)"
+msgid "  (fix conflicts and then run \"kit rebase --continue\")"
+msgstr "  (разрешите конфликты, затем запустите «kit rebase --continue»)"
 
-msgid "  (use \"git rebase --skip\" to skip this patch)"
-msgstr "  (используйте «git rebase --skip», чтобы пропустить этот патч)"
+msgid "  (use \"kit rebase --skip\" to skip this patch)"
+msgstr "  (используйте «kit rebase --skip», чтобы пропустить этот патч)"
 
-msgid "  (use \"git rebase --abort\" to check out the original branch)"
+msgid "  (use \"kit rebase --abort\" to check out the original branch)"
 msgstr ""
-"  (используйте «git rebase --abort», чтобы перейти на оригинальную ветку)"
+"  (используйте «kit rebase --abort», чтобы перейти на оригинальную ветку)"
 
-msgid "  (all conflicts fixed: run \"git rebase --continue\")"
-msgstr "  (все конфликты разрешены: запустите «git rebase --continue»)"
+msgid "  (all conflicts fixed: run \"kit rebase --continue\")"
+msgstr "  (все конфликты разрешены: запустите «kit rebase --continue»)"
 
 #, c-format
 msgid ""
@@ -21099,9 +21099,9 @@ msgstr "Вы сейчас разделяете коммит при переме�
 msgid "You are currently splitting a commit during a rebase."
 msgstr "Вы сейчас разделяете коммит при перемещении ветки."
 
-msgid "  (Once your working directory is clean, run \"git rebase --continue\")"
+msgid "  (Once your working directory is clean, run \"kit rebase --continue\")"
 msgstr ""
-"  (Как только ваш рабочий каталог будет чистый, запустите «git rebase --"
+"  (Как только ваш рабочий каталог будет чистый, запустите «kit rebase --"
 "continue»)"
 
 #, c-format
@@ -21111,13 +21111,13 @@ msgstr "Вы сейчас редактируете коммит при пере�
 msgid "You are currently editing a commit during a rebase."
 msgstr "Вы сейчас редактируете коммит при перемещении ветки."
 
-msgid "  (use \"git commit --amend\" to amend the current commit)"
-msgstr "  (используйте «git commit --amend», чтобы исправить текущий коммит)"
+msgid "  (use \"kit commit --amend\" to amend the current commit)"
+msgstr "  (используйте «kit commit --amend», чтобы исправить текущий коммит)"
 
 msgid ""
-"  (use \"git rebase --continue\" once you are satisfied with your changes)"
+"  (use \"kit rebase --continue\" once you are satisfied with your changes)"
 msgstr ""
-"  (используйте «git rebase --continue», когда будете довольны изменениями)"
+"  (используйте «kit rebase --continue», когда будете довольны изменениями)"
 
 msgid "Cherry-pick currently in progress."
 msgstr ""
@@ -21126,21 +21126,21 @@ msgstr ""
 msgid "You are currently cherry-picking commit %s."
 msgstr "Вы копируете коммит %s."
 
-msgid "  (fix conflicts and run \"git cherry-pick --continue\")"
-msgstr "  (разрешите конфликты, затем запустите «git cherry-pick --continue»)"
+msgid "  (fix conflicts and run \"kit cherry-pick --continue\")"
+msgstr "  (разрешите конфликты, затем запустите «kit cherry-pick --continue»)"
 
-msgid "  (run \"git cherry-pick --continue\" to continue)"
+msgid "  (run \"kit cherry-pick --continue\" to continue)"
 msgstr ""
 
-msgid "  (all conflicts fixed: run \"git cherry-pick --continue\")"
-msgstr "  (все конфликты разрешены: запустите «git cherry-pick --continue»)"
+msgid "  (all conflicts fixed: run \"kit cherry-pick --continue\")"
+msgstr "  (все конфликты разрешены: запустите «kit cherry-pick --continue»)"
 
-msgid "  (use \"git cherry-pick --skip\" to skip this patch)"
+msgid "  (use \"kit cherry-pick --skip\" to skip this patch)"
 msgstr ""
 
-msgid "  (use \"git cherry-pick --abort\" to cancel the cherry-pick operation)"
+msgid "  (use \"kit cherry-pick --abort\" to cancel the cherry-pick operation)"
 msgstr ""
-"  (используйте «git cherry-pick --abort», чтобы отменить копирования коммита)"
+"  (используйте «kit cherry-pick --abort», чтобы отменить копирования коммита)"
 
 msgid "Revert currently in progress."
 msgstr ""
@@ -21149,21 +21149,21 @@ msgstr ""
 msgid "You are currently reverting commit %s."
 msgstr "Вы сейчас обращаете изменения коммита %s."
 
-msgid "  (fix conflicts and run \"git revert --continue\")"
-msgstr "  (разрешите конфликты, затем запустите «git revert --continue»)"
+msgid "  (fix conflicts and run \"kit revert --continue\")"
+msgstr "  (разрешите конфликты, затем запустите «kit revert --continue»)"
 
-msgid "  (run \"git revert --continue\" to continue)"
+msgid "  (run \"kit revert --continue\" to continue)"
 msgstr ""
 
-msgid "  (all conflicts fixed: run \"git revert --continue\")"
-msgstr "  (все конфликты разрешены: запустите «git revert --continue»)"
+msgid "  (all conflicts fixed: run \"kit revert --continue\")"
+msgstr "  (все конфликты разрешены: запустите «kit revert --continue»)"
 
-msgid "  (use \"git revert --skip\" to skip this patch)"
+msgid "  (use \"kit revert --skip\" to skip this patch)"
 msgstr ""
 
-msgid "  (use \"git revert --abort\" to cancel the revert operation)"
+msgid "  (use \"kit revert --abort\" to cancel the revert operation)"
 msgstr ""
-"  (используйте «git revert --abort», чтобы отменить операцию обращения "
+"  (используйте «kit revert --abort», чтобы отменить операцию обращения "
 "изменений коммита)"
 
 #, c-format
@@ -21173,8 +21173,8 @@ msgstr "Вы сейчас в процессе двоичного поиска, �
 msgid "You are currently bisecting."
 msgstr "Вы сейчас в процессе двоичного поиска."
 
-msgid "  (use \"git bisect reset\" to get back to the original branch)"
-msgstr "  (используйте «git bisect reset», чтобы вернуться на исходную ветку)"
+msgid "  (use \"kit bisect reset\" to get back to the original branch)"
+msgstr "  (используйте «kit bisect reset», чтобы вернуться на исходную ветку)"
 
 msgid "You are in a sparse checkout."
 msgstr ""
@@ -21223,7 +21223,7 @@ msgstr ""
 msgid "It took %.2f seconds to enumerate untracked files."
 msgstr ""
 
-msgid "See 'git help status' for information on how to improve this."
+msgid "See 'kit help status' for information on how to improve this."
 msgstr ""
 
 #, c-format
@@ -21237,8 +21237,8 @@ msgid "No changes"
 msgstr "Нет изменений"
 
 #, c-format
-msgid "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n"
-msgstr "индекс пуст (используйте «git add» и/или «git commit -a»)\n"
+msgid "no changes added to commit (use \"kit add\" and/or \"kit commit -a\")\n"
+msgstr "индекс пуст (используйте «kit add» и/или «kit commit -a»)\n"
 
 #, c-format
 msgid "no changes added to commit\n"
@@ -21246,21 +21246,21 @@ msgstr "индекс пуст\n"
 
 #, c-format
 msgid ""
-"nothing added to commit but untracked files present (use \"git add\" to "
+"nothing added to commit but untracked files present (use \"kit add\" to "
 "track)\n"
 msgstr ""
 "индекс пуст, но есть неотслеживаемые файлы\n"
-"(используйте «git add», чтобы проиндексировать их)\n"
+"(используйте «kit add», чтобы проиндексировать их)\n"
 
 #, c-format
 msgid "nothing added to commit but untracked files present\n"
 msgstr "индекс пуст, но есть неотслеживаемые файлы\n"
 
 #, c-format
-msgid "nothing to commit (create/copy files and use \"git add\" to track)\n"
+msgid "nothing to commit (create/copy files and use \"kit add\" to track)\n"
 msgstr ""
 "нечего коммитить (создайте/скопируйте файлы, затем запустите\n"
-"«git add», чтобы отслеживать их)\n"
+"«kit add», чтобы отслеживать их)\n"
 
 #, c-format
 msgid "nothing to commit\n"
@@ -21560,7 +21560,7 @@ msgid ""
 "    This behavior is controlled by the sendemail.confirm\n"
 "    configuration setting.\n"
 "\n"
-"    For additional information, run 'git send-email --help'.\n"
+"    For additional information, run 'kit send-email --help'.\n"
 "    To retain the current behavior, but squelch this message,\n"
 "    run 'git config --global sendemail.confirm auto'.\n"
 "\n"
@@ -21571,7 +21571,7 @@ msgstr ""
 "   Это поведение может быть изменено параметром файла конфигурации\n"
 "    sendemail.confirm.\n"
 "\n"
-"    Для дополнительной информации, запустите «git send-email --help».\n"
+"    Для дополнительной информации, запустите «kit send-email --help».\n"
 "    Чтобы оставить текущее поведение, но скрыть это сообщение,\n"
 "    запустите «git config --global sendemail.confirm auto».\n"
 "\n"

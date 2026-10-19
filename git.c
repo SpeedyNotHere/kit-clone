@@ -37,7 +37,7 @@ struct cmd_struct {
 };
 
 const char git_usage_string[] =
-	N_("git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n"
+	N_("kit [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n"
 	   "           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n"
 	   "           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n"
 	   "           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n"
@@ -45,10 +45,10 @@ const char git_usage_string[] =
 	   "           <command> [<args>]");
 
 const char git_more_info_string[] =
-	N_("'git help -a' and 'git help -g' list available subcommands and some\n"
-	   "concept guides. See 'git help <command>' or 'git help <concept>'\n"
+	N_("'kit help -a' and 'kit help -g' list available subcommands and some\n"
+	   "concept guides. See 'kit help <command>' or 'kit help <concept>'\n"
 	   "to read about a specific subcommand or concept.\n"
-	   "See 'git help git' for an overview of the system.");
+	   "See 'kit help git' for an overview of the system.");
 
 static int use_pager = -1;
 
@@ -919,6 +919,15 @@ static int run_argv(struct strvec *args)
 	return done_alias;
 }
 
+static int is_kit_program_name(const char *name)
+{
+	size_t len;
+
+	if (!strip_suffix(name, ".exe", &len))
+		len = strlen(name);
+	return len == 3 && !strncmp(name, "kit", 3);
+}
+
 int cmd_main(int argc, const char **argv)
 {
 	struct strvec args = STRVEC_INIT;
@@ -933,6 +942,9 @@ int cmd_main(int argc, const char **argv)
 		if (slash)
 			cmd = slash + 1;
 	}
+
+	if (is_kit_program_name(cmd))
+		version_program_name = "kit";
 
 	trace_command_performance(argv);
 
@@ -992,7 +1004,7 @@ int cmd_main(int argc, const char **argv)
 			break;
 		if (was_alias) {
 			fprintf(stderr, _("expansion of alias '%s' failed; "
-					  "'%s' is not a git command\n"),
+					  "'%s' is not a kit command\n"),
 				cmd, args.v[0]);
 			strvec_clear(&args);
 			exit(1);

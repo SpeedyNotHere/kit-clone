@@ -15,9 +15,9 @@
 #include "object-name.h"
 
 static const char edit_todo_list_advice[] =
-N_("You can fix this with 'git rebase --edit-todo' "
-"and then run 'git rebase --continue'.\n"
-"Or you can abort the rebase with 'git rebase"
+N_("You can fix this with 'kit rebase --edit-todo' "
+"and then run 'kit rebase --continue'.\n"
+"Or you can abort the rebase with 'kit rebase"
 " --abort'.\n");
 
 enum missing_commit_check_level {
@@ -56,7 +56,7 @@ void append_todo_help(int command_count,
 "                   keep only this commit's message; -c is same as -C but\n"
 "                   opens the editor\n"
 "x, exec <command> = run command (the rest of the line) using shell\n"
-"b, break = stop here (continue rebase later with 'git rebase --continue')\n"
+"b, break = stop here (continue rebase later with 'kit rebase --continue')\n"
 "d, drop <commit> = remove commit\n"
 "l, label <label> = label current HEAD with a name\n"
 "t, reset <label> = reset HEAD to a label\n"
@@ -95,7 +95,7 @@ void append_todo_help(int command_count,
 		msg = _("\nYou are editing the todo file "
 			"of an ongoing interactive rebase.\n"
 			"To continue rebase after editing, run:\n"
-			"    git rebase --continue\n\n");
+			"    kit rebase --continue\n\n");
 	else
 		msg = _("\nHowever, if you remove everything, "
 			"the rebase will be aborted.\n\n");
@@ -222,7 +222,7 @@ int todo_list_check(struct todo_list *old_todo, struct todo_list *new_todo)
 
 	fprintf(stderr, _("To avoid this message, use \"drop\" to "
 		"explicitly remove a commit.\n\n"
-		"Use 'git config rebase.missingCommitsCheck' to change "
+		"Use 'kit config rebase.missingCommitsCheck' to change "
 		"the level of warnings.\n"
 		"The possible behaviours are: ignore, warn, error.\n\n"));
 
