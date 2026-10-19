@@ -949,13 +949,13 @@ test_expect_success !WITH_BREAKING_CHANGES 'switch core.commentchar' '
 
 	To use the default comment string (#) please run
 
-	    git config unset core.commentChar
-	    git config unset --file ~/config-include --all core.commentString
-	    git config unset --file ~/config-include core.commentChar
+	    kit config unset core.commentChar
+	    kit config unset --file ~/config-include --all core.commentString
+	    kit config unset --file ~/config-include core.commentChar
 
 	To set a custom comment string please run
 
-	    git config set --file ~/config-include core.commentChar <comment string>
+	    kit config set --file ~/config-include core.commentChar <comment string>
 
 	where ${SQ}<comment string>${SQ} is the string you wish to use.
 	EOF
@@ -992,11 +992,11 @@ test_expect_success WITH_BREAKING_CHANGES 'core.commentChar=auto is rejected' '
 
 	To use the default comment string (#) please run
 
-	    git config unset core.commentChar
+	    kit config unset core.commentChar
 
 	To set a custom comment string please run
 
-	    git config set core.commentChar <comment string>
+	    kit config set core.commentChar <comment string>
 
 	where ${SQ}<comment string>${SQ} is the string you wish to use.
 	EOF

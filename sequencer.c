@@ -517,10 +517,10 @@ static void free_message(struct commit *commit, struct commit_message *msg)
 
 const char *rebase_resolvemsg =
 N_("Resolve all conflicts manually, mark them as resolved with\n"
-"\"git add/rm <conflicted_files>\", then run \"git rebase --continue\".\n"
-"You can instead skip this commit: run \"git rebase --skip\".\n"
-"To abort and get back to the state before \"git rebase\", run "
-"\"git rebase --abort\".");
+"\"kit add/rm <conflicted_files>\", then run \"kit rebase --continue\".\n"
+"You can instead skip this commit: run \"kit rebase --skip\".\n"
+"To abort and get back to the state before \"kit rebase\", run "
+"\"kit rebase --abort\".");
 
 static void print_advice(struct repository *r, int show_hint,
 			 struct replay_opts *opts)
@@ -548,23 +548,23 @@ static void print_advice(struct repository *r, int show_hint,
 		if (opts->no_commit)
 			advise_if_enabled(ADVICE_MERGE_CONFLICT,
 					  _("after resolving the conflicts, mark the corrected paths\n"
-					    "with 'git add <paths>' or 'git rm <paths>'"));
+					    "with 'kit add <paths>' or 'kit rm <paths>'"));
 		else if (opts->action == REPLAY_PICK)
 			advise_if_enabled(ADVICE_MERGE_CONFLICT,
 					  _("After resolving the conflicts, mark them with\n"
-					    "\"git add/rm <pathspec>\", then run\n"
-					    "\"git cherry-pick --continue\".\n"
-					    "You can instead skip this commit with \"git cherry-pick --skip\".\n"
-					    "To abort and get back to the state before \"git cherry-pick\",\n"
-					    "run \"git cherry-pick --abort\"."));
+					    "\"kit add/rm <pathspec>\", then run\n"
+					    "\"kit cherry-pick --continue\".\n"
+					    "You can instead skip this commit with \"kit cherry-pick --skip\".\n"
+					    "To abort and get back to the state before \"kit cherry-pick\",\n"
+					    "run \"kit cherry-pick --abort\"."));
 		else if (opts->action == REPLAY_REVERT)
 			advise_if_enabled(ADVICE_MERGE_CONFLICT,
 					  _("After resolving the conflicts, mark them with\n"
-					    "\"git add/rm <pathspec>\", then run\n"
-					    "\"git revert --continue\".\n"
-					    "You can instead skip this commit with \"git revert --skip\".\n"
-					    "To abort and get back to the state before \"git revert\",\n"
-					    "run \"git revert --abort\"."));
+					    "\"kit add/rm <pathspec>\", then run\n"
+					    "\"kit revert --continue\".\n"
+					    "You can instead skip this commit with \"kit revert --skip\".\n"
+					    "To abort and get back to the state before \"kit revert\",\n"
+					    "run \"kit revert --abort\"."));
 		else
 			BUG("unexpected pick action in print_advice()");
 	}
@@ -1080,15 +1080,15 @@ static const char staged_changes_advice[] =
 N_("you have staged changes in your working tree\n"
 "If these changes are meant to be squashed into the previous commit, run:\n"
 "\n"
-"  git commit --amend %s\n"
+"  kit commit --amend %s\n"
 "\n"
 "If they are meant to go into a new commit, run:\n"
 "\n"
-"  git commit %s\n"
+"  kit commit %s\n"
 "\n"
 "In both cases, once you're done, continue with:\n"
 "\n"
-"  git rebase --continue\n");
+"  kit rebase --continue\n");
 
 #define ALLOW_EMPTY (1<<0)
 #define EDIT_MSG    (1<<1)
@@ -1406,23 +1406,23 @@ N_("Your name and email address were configured automatically based\n"
 "following command and follow the instructions in your editor to edit\n"
 "your configuration file:\n"
 "\n"
-"    git config --global --edit\n"
+"    kit config --global --edit\n"
 "\n"
 "After doing this, you may fix the identity used for this commit with:\n"
 "\n"
-"    git commit --amend --reset-author\n");
+"    kit commit --amend --reset-author\n");
 
 static const char implicit_ident_advice_config[] =
 N_("Your name and email address were configured automatically based\n"
 "on your username and hostname. Please check that they are accurate.\n"
 "You can suppress this message by setting them explicitly:\n"
 "\n"
-"    git config --global user.name \"Your Name\"\n"
-"    git config --global user.email you@example.com\n"
+"    kit config --global user.name \"Your Name\"\n"
+"    kit config --global user.email you@example.com\n"
 "\n"
 "After doing this, you may fix the identity used for this commit with:\n"
 "\n"
-"    git commit --amend --reset-author\n");
+"    kit commit --amend --reset-author\n");
 
 static const char *implicit_ident_advice(void)
 {
@@ -1606,7 +1606,7 @@ static int try_to_commit(struct repository *r,
 	}
 
 	if (write_index_as_tree(&tree, r->index, r->index_file, 0, NULL)) {
-		res = error(_("git write-tree failed to write a tree"));
+		res = error(_("kit write-tree failed to write a tree"));
 		goto out;
 	}
 
@@ -2652,7 +2652,7 @@ static int read_and_refresh_cache(struct repository *r,
 	int index_fd = repo_hold_locked_index(r, &index_lock, 0);
 	if (repo_read_index(r) < 0) {
 		rollback_lock_file(&index_lock);
-		return error(_("git %s: failed to read the index"),
+		return error(_("kit %s: failed to read the index"),
 			action_name(opts));
 	}
 	refresh_index(r->index, REFRESH_QUIET|REFRESH_UNMERGED, NULL, NULL, NULL);
@@ -2660,7 +2660,7 @@ static int read_and_refresh_cache(struct repository *r,
 	if (index_fd >= 0) {
 		if (write_locked_index(r->index, &index_lock,
 				       COMMIT_LOCK | SKIP_IF_UNCHANGED)) {
-			return error(_("git %s: failed to refresh the index"),
+			return error(_("kit %s: failed to refresh the index"),
 				action_name(opts));
 		}
 	}
@@ -2795,7 +2795,7 @@ static int check_merge_commit_insn(enum todo_command command)
 			"'edit' does not take a merge commit. If you wanted to\n"
 			"replay the merge, use 'merge -C' on the commit, and then\n"
 			"'break' to give the control back to you so that you can\n"
-			"do 'git commit --amend && git rebase --continue'."));
+			"do 'kit commit --amend && kit rebase --continue'."));
 		return -1;
 
 	case TODO_FIXUP:
@@ -3119,7 +3119,7 @@ static int read_populate_todo(struct repository *r,
 	if (res) {
 		if (is_rebase_i(opts))
 			return error(_("please fix this using "
-				       "'git rebase --edit-todo'."));
+				       "'kit rebase --edit-todo'."));
 		return error(_("unusable instruction sheet: '%s'"), todo_file);
 	}
 
@@ -3521,12 +3521,12 @@ static int create_seq_dir(struct repository *r)
 		case REPLAY_REVERT:
 			in_progress_error = _("revert is already in progress");
 			in_progress_advice =
-			_("try \"git revert (--continue | %s--abort | --quit)\"");
+			_("try \"kit revert (--continue | %s--abort | --quit)\"");
 			break;
 		case REPLAY_PICK:
 			in_progress_error = _("cherry-pick is already in progress");
 			in_progress_advice =
-			_("try \"git cherry-pick (--continue | %s--abort | --quit)\"");
+			_("try \"kit cherry-pick (--continue | %s--abort | --quit)\"");
 			break;
 		default:
 			BUG("unexpected action in create_seq_dir");
@@ -3719,7 +3719,7 @@ give_advice:
 
 	if (advice_enabled(ADVICE_RESOLVE_CONFLICT)) {
 		advise(_("have you committed already?\n"
-			 "try \"git %s --continue\""),
+			 "try \"kit %s --continue\""),
 			 action == REPLAY_REVERT ? "revert" : "cherry-pick");
 	}
 	return -1;
@@ -3922,11 +3922,11 @@ static int error_with_patch(struct repository *r,
 		fprintf(stderr,
 			_("You can amend the commit now, with\n"
 			  "\n"
-			  "  git commit --amend %s\n"
+			  "  kit commit --amend %s\n"
 			  "\n"
 			  "Once you are satisfied with your changes, run\n"
 			  "\n"
-			  "  git rebase --continue\n"),
+			  "  kit rebase --continue\n"),
 			gpg_sign_opt_quoted(opts));
 	} else if (exit_code) {
 		if (commit)
@@ -3986,7 +3986,7 @@ static int do_exec(struct repository *r, const char *command_line,
 		warning(_("execution failed: %s\n%s"
 			  "You can fix the problem, and then run\n"
 			  "\n"
-			  "  git rebase --continue\n"
+			  "  kit rebase --continue\n"
 			  "\n"),
 			command_line,
 			dirty ? _("and made changes to the index and/or the "
@@ -3999,7 +3999,7 @@ static int do_exec(struct repository *r, const char *command_line,
 			  "left changes to the index and/or the working tree.\n"
 			  "Commit or stash your changes, and then run\n"
 			  "\n"
-			  "  git rebase --continue\n"
+			  "  kit rebase --continue\n"
 			  "\n"), command_line);
 		status = 1;
 	}
@@ -4895,9 +4895,9 @@ static enum stash_apply_result apply_save_autostash_oid(const char *stash_oid,
 			fprintf(stderr,
 				_("Your local changes are stashed, however applying them\n"
 				  "resulted in conflicts.  You can either resolve the conflicts\n"
-				  "and then discard the stash with \"git stash drop\", or, if you\n"
-				  "do not want to resolve them now, run \"git reset --hard\" and\n"
-				  "apply the local changes later by running \"git stash pop\".\n"));
+				  "and then discard the stash with \"kit stash drop\", or, if you\n"
+				  "do not want to resolve them now, run \"kit reset --hard\" and\n"
+				  "apply the local changes later by running \"kit stash pop\".\n"));
 		else if (attempt_apply)
 			ret = error(_("could not apply autostash; "
 				      "your changes are safe in the stash"));
@@ -4905,8 +4905,8 @@ static enum stash_apply_result apply_save_autostash_oid(const char *stash_oid,
 			fprintf(stderr,
 				_("Autostash exists; creating a new stash entry.\n"
 				  "Your changes are safe in the stash.\n"
-				  "You can run \"git stash pop\" or"
-				  " \"git stash drop\" at any time.\n"));
+				  "You can run \"kit stash pop\" or"
+				  " \"kit stash drop\" at any time.\n"));
 	}
 
 	return ret;
@@ -5074,8 +5074,8 @@ N_("Could not execute the todo command\n"
 "It has been rescheduled; To edit the command before continuing, please\n"
 "edit the todo list first:\n"
 "\n"
-"    git rebase --edit-todo\n"
-"    git rebase --continue\n");
+"    kit rebase --edit-todo\n"
+"    kit rebase --continue\n");
 
 static int pick_one_commit(struct repository *r,
 			   struct todo_list *todo_list,
@@ -5463,7 +5463,7 @@ static int commit_staged_changes(struct repository *r,
 		if (!is_clean && !oideq(&head, &to_amend)) {
 			ret = error(_("\nYou have uncommitted changes in your "
 				      "working tree. Please, commit them\n"
-				      "first and then run 'git rebase "
+				      "first and then run 'kit rebase "
 				      "--continue' again."));
 			goto out;
 		}

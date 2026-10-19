@@ -1226,7 +1226,7 @@ test_expect_success 'skip an empty patch in the middle of an am session' '
 	git checkout empty-commit^ &&
 	test_must_fail git am empty-commit.patch >out 2>err &&
 	test_grep "Patch is empty." out &&
-	test_grep "To record the empty patch as an empty commit, run \"git am --allow-empty\"." err &&
+	test_grep "To record the empty patch as an empty commit, run \"kit am --allow-empty\"." err &&
 	git am --skip &&
 	test_path_is_missing .git/rebase-apply &&
 	git rev-parse empty-commit^ >expected &&
@@ -1238,7 +1238,7 @@ test_expect_success 'record an empty patch as an empty commit in the middle of a
 	git checkout empty-commit^ &&
 	test_must_fail git am empty-commit.patch >out 2>err &&
 	test_grep "Patch is empty." out &&
-	test_grep "To record the empty patch as an empty commit, run \"git am --allow-empty\"." err &&
+	test_grep "To record the empty patch as an empty commit, run \"kit am --allow-empty\"." err &&
 	git am --allow-empty >output &&
 	test_grep "No changes - recorded it as an empty commit." output &&
 	test_path_is_missing .git/rebase-apply &&
@@ -1264,7 +1264,7 @@ test_expect_success 'cannot create empty commits when there is a clean index due
 	git rev-parse HEAD >expected &&
 	test_must_fail git am seq.patch &&
 	test_must_fail git am --allow-empty >err &&
-	test_grep ! "To record the empty patch as an empty commit, run \"git am --allow-empty\"." err &&
+	test_grep ! "To record the empty patch as an empty commit, run \"kit am --allow-empty\"." err &&
 	git rev-parse HEAD >actual &&
 	test_cmp actual expected
 '
@@ -1274,7 +1274,7 @@ test_expect_success 'cannot create empty commits when there is unmerged index du
 	git rev-parse HEAD >expected &&
 	test_must_fail git am -3 seq.patch &&
 	test_must_fail git am --allow-empty >err &&
-	test_grep ! "To record the empty patch as an empty commit, run \"git am --allow-empty\"." err &&
+	test_grep ! "To record the empty patch as an empty commit, run \"kit am --allow-empty\"." err &&
 	git rev-parse HEAD >actual &&
 	test_cmp actual expected
 '

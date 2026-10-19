@@ -58,7 +58,7 @@ test_expect_success 'ambiguous blob output' '
 	hint:   beef... blob
 	fatal: ambiguous argument '\''beef...'\'': unknown revision or path not in the working tree.
 	Use '\''--'\'' to separate paths from revisions, like this:
-	'\''git <command> [<revision>...] -- [<file>...]'\''
+	'\''kit <command> [<revision>...] -- [<file>...]'\''
 	EOF
 '
 
@@ -103,7 +103,7 @@ test_expect_success POSIXPERM 'ambigous zlib corrupt loose blob' '
 	hint:   cafe... blob
 	fatal: ambiguous argument '\''cafe...'\'': unknown revision or path not in the working tree.
 	Use '\''--'\'' to separate paths from revisions, like this:
-	'\''git <command> [<revision>...] -- [<file>...]'\''
+	'\''kit <command> [<revision>...] -- [<file>...]'\''
 	EOF
 '
 

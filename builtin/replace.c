@@ -26,12 +26,12 @@
 #include "wildmatch.h"
 
 static const char * const git_replace_usage[] = {
-	N_("git replace [-f] <object> <replacement>"),
-	N_("git replace [-f] --edit <object>"),
-	N_("git replace [-f] --graft <commit> [<parent>...]"),
-	"git replace [-f] --convert-graft-file",
-	N_("git replace -d <object>..."),
-	N_("git replace [--format=<format>] [-l [<pattern>]]"),
+	N_("kit replace [-f] <object> <replacement>"),
+	N_("kit replace [-f] --edit <object>"),
+	N_("kit replace [-f] --graft <commit> [<parent>...]"),
+	"kit replace [-f] --convert-graft-file",
+	N_("kit replace -d <object>..."),
+	N_("kit replace [--format=<format>] [-l [<pattern>]]"),
 	NULL
 };
 

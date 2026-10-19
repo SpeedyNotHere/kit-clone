@@ -954,9 +954,9 @@ static int gitdiff_verify_name(struct gitdiff_data *state,
 		char *another;
 		if (isnull) {
 			if (state->patch_input_file)
-				return error(_("git apply: bad git-diff - expected /dev/null, got %s at %s:%d"),
+				return error(_("kit apply: bad git-diff - expected /dev/null, got %s at %s:%d"),
 					     *name, state->patch_input_file, state->linenr);
-			return error(_("git apply: bad git-diff - expected /dev/null, got %s on line %d"),
+			return error(_("kit apply: bad git-diff - expected /dev/null, got %s on line %d"),
 				     *name, state->linenr);
 		}
 		another = find_name(state->root, line, NULL, state->p_value, TERM_TAB);
@@ -964,21 +964,21 @@ static int gitdiff_verify_name(struct gitdiff_data *state,
 			free(another);
 			if (state->patch_input_file)
 				return error((side == DIFF_NEW_NAME) ?
-					     _("git apply: bad git-diff - inconsistent new filename at %s:%d") :
-					     _("git apply: bad git-diff - inconsistent old filename at %s:%d"),
+					     _("kit apply: bad git-diff - inconsistent new filename at %s:%d") :
+					     _("kit apply: bad git-diff - inconsistent old filename at %s:%d"),
 					     state->patch_input_file, state->linenr);
 			return error((side == DIFF_NEW_NAME) ?
-				     _("git apply: bad git-diff - inconsistent new filename on line %d") :
-				     _("git apply: bad git-diff - inconsistent old filename on line %d"),
+				     _("kit apply: bad git-diff - inconsistent new filename on line %d") :
+				     _("kit apply: bad git-diff - inconsistent old filename on line %d"),
 				     state->linenr);
 		}
 		free(another);
 	} else {
 		if (!is_dev_null(line)) {
 			if (state->patch_input_file)
-				return error(_("git apply: bad git-diff - expected /dev/null at %s:%d"),
+				return error(_("kit apply: bad git-diff - expected /dev/null at %s:%d"),
 					     state->patch_input_file, state->linenr);
-			return error(_("git apply: bad git-diff - expected /dev/null on line %d"),
+			return error(_("kit apply: bad git-diff - expected /dev/null on line %d"),
 				     state->linenr);
 		}
 	}
@@ -5239,7 +5239,7 @@ int apply_parse_options(int argc, const char **argv,
 		OPT_BOOL(0, "index", &state->check_index,
 			N_("make sure the patch is applicable to the current index")),
 		OPT_BOOL('N', "intent-to-add", &state->ita_only,
-			N_("mark new files with `git add --intent-to-add`")),
+			N_("mark new files with `kit add --intent-to-add`")),
 		OPT_BOOL(0, "cached", &state->cached,
 			N_("apply a patch without touching the working tree")),
 		OPT_BOOL_F(0, "unsafe-paths", &state->unsafe_paths,

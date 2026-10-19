@@ -204,7 +204,7 @@ static void NORETURN die_verify_filename(struct repository *r,
 {
 	if (!diagnose_misspelt_rev)
 		die(_("%s: no such path in the working tree.\n"
-		      "Use 'git <command> -- <path>...' to specify paths that do not exist locally."),
+		      "Use 'kit <command> -- <path>...' to specify paths that do not exist locally."),
 		    arg);
 	/*
 	 * Saying "'(icase)foo' does not exist in the index" when the
@@ -218,7 +218,7 @@ static void NORETURN die_verify_filename(struct repository *r,
 	/* ... or fall back the most general message. */
 	die(_("ambiguous argument '%s': unknown revision or path not in the working tree.\n"
 	      "Use '--' to separate paths from revisions, like this:\n"
-	      "'git <command> [<revision>...] -- [<file>...]'"), arg);
+	      "'kit <command> [<revision>...] -- [<file>...]'"), arg);
 
 }
 
@@ -304,7 +304,7 @@ void verify_non_filename(struct repository *repo, const char *prefix, const char
 		return;
 	die(_("ambiguous argument '%s': both revision and filename\n"
 	      "Use '--' to separate paths from revisions, like this:\n"
-	      "'git <command> [<revision>...] -- [<file>...]'"), arg);
+	      "'kit <command> [<revision>...] -- [<file>...]'"), arg);
 }
 
 int get_common_dir(struct strbuf *sb, const char *gitdir)
@@ -1459,7 +1459,7 @@ void die_upon_dubious_ownership(const char *gitfile, const char *worktree,
 	      "%s"
 	      "To add an exception for this directory, call:\n"
 	      "\n"
-	      "\tgit config --global --add safe.directory %s"),
+	      "\tkit config --global --add safe.directory %s"),
 	    path, report.buf, quoted.buf);
 }
 
@@ -1970,7 +1970,7 @@ static void repo_discover(struct repo_discovery *discovery, int *nongit_ok)
 			      "%s"
 			      "To add an exception for this directory, call:\n"
 			      "\n"
-			      "\tgit config --global --add safe.directory %s"),
+			      "\tkit config --global --add safe.directory %s"),
 			    dir.buf, report.buf, quoted.buf);
 		}
 		*nongit_ok = 1;

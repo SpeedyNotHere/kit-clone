@@ -494,7 +494,7 @@ test_expect_success SYMLINKS,!MINGW 'symref transaction supports symlinks' '
 		hint: tells Git to use them is thus going away. You can unset
 		hint: it with:
 		hint:
-		hint:	git config unset core.preferSymlinkRefs
+		hint:	kit config unset core.preferSymlinkRefs
 		hint:
 		hint: Git will then use the textual symref format instead.
 		EOF

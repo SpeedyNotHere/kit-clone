@@ -24,7 +24,7 @@
 static const char *empty_base = "";
 
 static char const * const builtin_sparse_checkout_usage[] = {
-	N_("git sparse-checkout (init | list | set | add | reapply | disable | check-rules | clean) [<options>]"),
+	N_("kit sparse-checkout (init | list | set | add | reapply | disable | check-rules | clean) [<options>]"),
 	NULL
 };
 
@@ -48,7 +48,7 @@ static void write_patterns_to_file(FILE *fp, struct pattern_list *pl)
 }
 
 static char const * const builtin_sparse_checkout_list_usage[] = {
-	"git sparse-checkout list",
+	"kit sparse-checkout list",
 	NULL
 };
 
@@ -445,7 +445,7 @@ static int update_modes(struct repository *repo, int *cone_mode, int *sparse_ind
 }
 
 static char const * const builtin_sparse_checkout_init_usage[] = {
-	"git sparse-checkout init [--cone] [--[no-]sparse-index]",
+	"kit sparse-checkout init [--cone] [--[no-]sparse-index]",
 	NULL
 };
 
@@ -784,7 +784,7 @@ static void sanitize_paths(struct repository *repo,
 }
 
 static char const * const builtin_sparse_checkout_add_usage[] = {
-	N_("git sparse-checkout add [--skip-checks] (--stdin | <patterns>)"),
+	N_("kit sparse-checkout add [--skip-checks] (--stdin | <patterns>)"),
 	NULL
 };
 
@@ -829,7 +829,7 @@ static int sparse_checkout_add(int argc, const char **argv, const char *prefix,
 }
 
 static char const * const builtin_sparse_checkout_set_usage[] = {
-	N_("git sparse-checkout set [--[no-]cone] [--[no-]sparse-index] [--skip-checks] (--stdin | <patterns>)"),
+	N_("kit sparse-checkout set [--[no-]cone] [--[no-]sparse-index] [--skip-checks] (--stdin | <patterns>)"),
 	NULL
 };
 
@@ -897,7 +897,7 @@ static int sparse_checkout_set(int argc, const char **argv, const char *prefix,
 }
 
 static char const * const builtin_sparse_checkout_reapply_usage[] = {
-	"git sparse-checkout reapply [--[no-]cone] [--[no-]sparse-index]",
+	"kit sparse-checkout reapply [--[no-]cone] [--[no-]sparse-index]",
 	NULL
 };
 
@@ -939,7 +939,7 @@ static int sparse_checkout_reapply(int argc, const char **argv,
 }
 
 static char const * const builtin_sparse_checkout_clean_usage[] = {
-	"git sparse-checkout clean [-n|--dry-run]",
+	"kit sparse-checkout clean [-n|--dry-run]",
 	NULL
 };
 
@@ -1035,7 +1035,7 @@ static int sparse_checkout_clean(int argc, const char **argv,
 }
 
 static char const * const builtin_sparse_checkout_disable_usage[] = {
-	"git sparse-checkout disable",
+	"kit sparse-checkout disable",
 	NULL
 };
 
@@ -1091,7 +1091,7 @@ static int sparse_checkout_disable(int argc, const char **argv,
 }
 
 static char const * const builtin_sparse_checkout_check_rules_usage[] = {
-	N_("git sparse-checkout check-rules [-z] [--skip-checks]"
+	N_("kit sparse-checkout check-rules [-z] [--skip-checks]"
 	   "[--[no-]cone] [--rules-file <file>]"),
 	NULL
 };

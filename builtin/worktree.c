@@ -29,23 +29,23 @@
 #include "quote.h"
 
 #define BUILTIN_WORKTREE_ADD_USAGE \
-	N_("git worktree add [-f] [--detach] [--checkout] [--lock [--reason <string>]]\n" \
+	N_("kit worktree add [-f] [--detach] [--checkout] [--lock [--reason <string>]]\n" \
 	   "                 [--orphan] [(-b | -B) <new-branch>] <path> [<commit-ish>]")
 
 #define BUILTIN_WORKTREE_LIST_USAGE \
-	N_("git worktree list [-v | --porcelain [-z]]")
+	N_("kit worktree list [-v | --porcelain [-z]]")
 #define BUILTIN_WORKTREE_LOCK_USAGE \
-	N_("git worktree lock [--reason <string>] <worktree>")
+	N_("kit worktree lock [--reason <string>] <worktree>")
 #define BUILTIN_WORKTREE_MOVE_USAGE \
-	N_("git worktree move <worktree> <new-path>")
+	N_("kit worktree move <worktree> <new-path>")
 #define BUILTIN_WORKTREE_PRUNE_USAGE \
-	N_("git worktree prune [-n] [-v] [--expire <expire>]")
+	N_("kit worktree prune [-n] [-v] [--expire <expire>]")
 #define BUILTIN_WORKTREE_REMOVE_USAGE \
-	N_("git worktree remove [-f] <worktree>")
+	N_("kit worktree remove [-f] <worktree>")
 #define BUILTIN_WORKTREE_REPAIR_USAGE \
-	N_("git worktree repair [<path>...]")
+	N_("kit worktree repair [<path>...]")
 #define BUILTIN_WORKTREE_UNLOCK_USAGE \
-	N_("git worktree unlock <worktree>")
+	N_("kit worktree unlock <worktree>")
 
 #define WORKTREE_ADD_DWIM_ORPHAN_INFER_TEXT \
 	_("No possible source branch, inferring '--orphan'")
@@ -55,14 +55,14 @@
 	"(branch with no commits) for this repository, you can do so\n" \
 	"using the --orphan flag:\n" \
 	"\n" \
-	"    git worktree add --orphan -b %s %s\n")
+	"    kit worktree add --orphan -b %s %s\n")
 
 #define WORKTREE_ADD_ORPHAN_NO_DASH_B_HINT_TEXT \
 	_("If you meant to create a worktree containing a new unborn branch\n" \
 	"(branch with no commits) for this repository, you can do so\n" \
 	"using the --orphan flag:\n" \
 	"\n" \
-	"    git worktree add --orphan %s\n")
+	"    kit worktree add --orphan %s\n")
 
 static const char * const git_worktree_usage[] = {
 	BUILTIN_WORKTREE_ADD_USAGE,
@@ -775,7 +775,7 @@ static void advise_disambiguating_remotes(const char *path, const char *branch,
 	advise(_("If you meant to create a worktree from a remote tracking branch on\n"
 		 "<remote>, you can do so by:\n"
 		 "\n"
-		 "    git worktree add -b %s %s <remote>/%s\n"
+		 "    kit worktree add -b %s %s <remote>/%s\n"
 		 "\n"
 		 "If you'd like to always prefer some remote, e.g. 'origin',\n"
 		 "consider setting checkout.defaultRemote=origin in your config."),
@@ -1395,7 +1395,7 @@ static void check_clean_worktree(struct worktree *wt,
 	cp.out = -1;
 	ret = start_command(&cp);
 	if (ret)
-		die_errno(_("failed to run 'git status' on '%s'"),
+		die_errno(_("failed to run 'kit status' on '%s'"),
 			  original_path);
 	ret = xread(cp.out, buf, sizeof(buf));
 	if (ret)
@@ -1404,7 +1404,7 @@ static void check_clean_worktree(struct worktree *wt,
 	close(cp.out);
 	ret = finish_command(&cp);
 	if (ret)
-		die_errno(_("failed to run 'git status' on '%s', code %d"),
+		die_errno(_("failed to run 'kit status' on '%s', code %d"),
 			  original_path, ret);
 }
 

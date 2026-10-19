@@ -26,7 +26,7 @@
 #include "pathspec.h"
 
 static const char * const builtin_rm_usage[] = {
-	N_("git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch]\n"
+	N_("kit rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch]\n"
 	   "       [--quiet] [--pathspec-from-file=<file> [--pathspec-file-nul]]\n"
 	   "       [--] [<pathspec>...]"),
 	NULL
@@ -396,7 +396,7 @@ int cmd_rm(int argc,
 			printf("rm '%s'\n", path);
 
 		if (remove_file_from_index(the_repository->index, path))
-			die(_("git rm: unable to remove %s"), path);
+			die(_("kit rm: unable to remove %s"), path);
 	}
 
 	if (show_only)
@@ -432,7 +432,7 @@ int cmd_rm(int argc,
 				continue;
 			}
 			if (!removed)
-				die_errno("git rm: '%s'", path);
+				die_errno("kit rm: '%s'", path);
 		}
 		strbuf_release(&buf);
 		if (gitmodules_modified)

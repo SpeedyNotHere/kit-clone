@@ -22,72 +22,72 @@
 #include "progress.h"
 
 static const char * const builtin_remote_usage[] = {
-	"git remote [-v | --verbose]",
-	N_("git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>"),
-	N_("git remote rename [--[no-]progress] <old> <new>"),
-	N_("git remote remove <name>"),
-	N_("git remote set-head <name> (-a | --auto | -d | --delete | <branch>)"),
-	N_("git remote [-v | --verbose] show [-n] <name>"),
-	N_("git remote prune [-n | --dry-run] <name>"),
-	N_("git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]"),
-	N_("git remote set-branches [--add] <name> <branch>..."),
-	N_("git remote get-url [--push] [--all] <name>"),
-	N_("git remote set-url [--push] <name> <newurl> [<oldurl>]"),
-	N_("git remote set-url --add <name> <newurl>"),
-	N_("git remote set-url --delete <name> <url>"),
+	"kit remote [-v | --verbose]",
+	N_("kit remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>"),
+	N_("kit remote rename [--[no-]progress] <old> <new>"),
+	N_("kit remote remove <name>"),
+	N_("kit remote set-head <name> (-a | --auto | -d | --delete | <branch>)"),
+	N_("kit remote [-v | --verbose] show [-n] <name>"),
+	N_("kit remote prune [-n | --dry-run] <name>"),
+	N_("kit remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]"),
+	N_("kit remote set-branches [--add] <name> <branch>..."),
+	N_("kit remote get-url [--push] [--all] <name>"),
+	N_("kit remote set-url [--push] <name> <newurl> [<oldurl>]"),
+	N_("kit remote set-url --add <name> <newurl>"),
+	N_("kit remote set-url --delete <name> <url>"),
 	NULL
 };
 
 static const char * const builtin_remote_add_usage[] = {
-	N_("git remote add [<options>] <name> <url>"),
+	N_("kit remote add [<options>] <name> <url>"),
 	NULL
 };
 
 static const char * const builtin_remote_rename_usage[] = {
-	N_("git remote rename [--[no-]progress] <old> <new>"),
+	N_("kit remote rename [--[no-]progress] <old> <new>"),
 	NULL
 };
 
 static const char * const builtin_remote_rm_usage[] = {
-	N_("git remote remove <name>"),
+	N_("kit remote remove <name>"),
 	NULL
 };
 
 static const char * const builtin_remote_sethead_usage[] = {
-	N_("git remote set-head <name> (-a | --auto | -d | --delete | <branch>)"),
+	N_("kit remote set-head <name> (-a | --auto | -d | --delete | <branch>)"),
 	NULL
 };
 
 static const char * const builtin_remote_setbranches_usage[] = {
-	N_("git remote set-branches <name> <branch>..."),
-	N_("git remote set-branches --add <name> <branch>..."),
+	N_("kit remote set-branches <name> <branch>..."),
+	N_("kit remote set-branches --add <name> <branch>..."),
 	NULL
 };
 
 static const char * const builtin_remote_show_usage[] = {
-	N_("git remote show [<options>] <name>"),
+	N_("kit remote show [<options>] <name>"),
 	NULL
 };
 
 static const char * const builtin_remote_prune_usage[] = {
-	N_("git remote prune [<options>] <name>"),
+	N_("kit remote prune [<options>] <name>"),
 	NULL
 };
 
 static const char * const builtin_remote_update_usage[] = {
-	N_("git remote update [<options>] [<group> | <remote>]..."),
+	N_("kit remote update [<options>] [<group> | <remote>]..."),
 	NULL
 };
 
 static const char * const builtin_remote_geturl_usage[] = {
-	N_("git remote get-url [--push] [--all] <name>"),
+	N_("kit remote get-url [--push] [--all] <name>"),
 	NULL
 };
 
 static const char * const builtin_remote_seturl_usage[] = {
-	N_("git remote set-url [--push] <name> <newurl> [<oldurl>]"),
-	N_("git remote set-url --add <name> <newurl>"),
-	N_("git remote set-url --delete <name> <url>"),
+	N_("kit remote set-url [--push] <name> <newurl> [<oldurl>]"),
+	N_("kit remote set-url --add <name> <newurl>"),
+	N_("kit remote set-url --delete <name> <url>"),
 	NULL
 };
 
@@ -1084,7 +1084,7 @@ static int rm(int argc, const char **argv, const char *prefix,
 			      "to delete them, use:",
 			      skipped.nr));
 		for (size_t i = 0; i < skipped.nr; i++)
-			fprintf(stderr, "  git branch -d %s\n",
+			fprintf(stderr, "  kit branch -d %s\n",
 				skipped.items[i].string);
 	}
 	string_list_clear(&skipped, 0);
@@ -1218,7 +1218,7 @@ static int show_remote_info_item(struct string_list_item *item, void *cb_data)
 		else if (string_list_has_string(&states->skipped, name))
 			arg = _(" skipped");
 		else if (string_list_has_string(&states->stale, name))
-			arg = _(" stale (use 'git remote prune' to remove)");
+			arg = _(" stale (use 'kit remote prune' to remove)");
 		else
 			arg = _(" ???");
 		printf("    %-*s", info->width, name);
@@ -1488,22 +1488,22 @@ static int show(int argc, const char **argv, const char *prefix,
 		info.any_rebase = 0;
 		for_each_string_list(&branch_list, add_local_to_show_info, &info);
 		if (info.list.nr)
-			printf_ln(Q_("  Local branch configured for 'git pull':",
-				     "  Local branches configured for 'git pull':",
+			printf_ln(Q_("  Local branch configured for 'kit pull':",
+				     "  Local branches configured for 'kit pull':",
 				     info.list.nr));
 		for_each_string_list(&info.list, show_local_info_item, &info);
 		string_list_clear(&info.list, 0);
 
 		/* git push info */
 		if (info.states.remote->mirror)
-			printf_ln(_("  Local refs will be mirrored by 'git push'"));
+			printf_ln(_("  Local refs will be mirrored by 'kit push'"));
 
 		info.width = info.width2 = 0;
 		for_each_string_list(&info.states.push, add_push_to_show_info, &info);
 		QSORT(info.list.items, info.list.nr, cmp_string_with_push);
 		if (info.list.nr)
-			printf_ln(Q_("  Local ref configured for 'git push'%s:",
-				     "  Local refs configured for 'git push'%s:",
+			printf_ln(Q_("  Local ref configured for 'kit push'%s:",
+				     "  Local refs configured for 'kit push'%s:",
 				     info.list.nr),
 				  no_query ? _(" (status not queried)") : "");
 		for_each_string_list(&info.list, show_push_info_item, &info);
@@ -1580,7 +1580,7 @@ static int set_head(int argc, const char **argv, const char *prefix,
 			result |= error(_("Multiple remote HEAD branches. "
 					  "Please choose one explicitly with:"));
 			for (size_t i = 0; i < states.heads.nr; i++)
-				fprintf(stderr, "  git remote set-head %s %s\n",
+				fprintf(stderr, "  kit remote set-head %s %s\n",
 					argv[0], states.heads.items[i].string);
 		} else
 			head_name = xstrdup(states.heads.items[0].string);

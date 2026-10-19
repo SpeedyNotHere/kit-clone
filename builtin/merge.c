@@ -63,9 +63,9 @@ struct strategy {
 };
 
 static const char * const builtin_merge_usage[] = {
-	N_("git merge [<options>] [<commit>...]"),
-	"git merge --abort",
-	"git merge --continue",
+	N_("kit merge [<options>] [<commit>...]"),
+	"kit merge --abort",
+	"kit merge --continue",
 	NULL
 };
 
@@ -783,7 +783,7 @@ static void write_tree_trivial(struct object_id *oid)
 	if (write_index_as_tree(oid, the_repository->index,
 				repo_get_index_file(the_repository),
 				0, NULL))
-		die(_("git write-tree failed to write a tree"));
+		die(_("kit write-tree failed to write a tree"));
 }
 
 static int try_merge_strategy(const char *strategy, struct commit_list *common,
@@ -902,7 +902,7 @@ static void abort_commit(struct commit_list *remoteheads, const char *err_msg)
 	if (err_msg)
 		error("%s", err_msg);
 	fprintf(stderr,
-		_("Not committing merge; use 'git commit' to complete the merge.\n"));
+		_("Not committing merge; use 'kit commit' to complete the merge.\n"));
 	write_merge_state(remoteheads);
 	exit(1);
 }
@@ -1873,7 +1873,7 @@ int cmd_merge(int argc,
 	else
 		ret = suggest_conflicts();
 	if (autostash)
-		printf(_("When finished, apply stashed changes with `git stash pop`\n"));
+		printf(_("When finished, apply stashed changes with `kit stash pop`\n"));
 
 done:
 	if (!automerge_was_ok) {

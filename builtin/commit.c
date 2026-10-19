@@ -45,7 +45,7 @@
 #include "trailer.h"
 
 static const char * const builtin_commit_usage[] = {
-	N_("git commit [-a | --interactive | --patch] [-s] [-v] [-u[<mode>]] [--amend]\n"
+	N_("kit commit [-a | --interactive | --patch] [-s] [-v] [-u[<mode>]] [--amend]\n"
 	   "           [--dry-run] [(-c | -C | --squash) <commit> | --fixup [(amend|reword):]<commit>]\n"
 	   "           [-F <file> | -m <msg>] [--reset-author] [--allow-empty]\n"
 	   "           [--allow-empty-message] [--no-verify] [-e] [--author=<author>]\n"
@@ -57,37 +57,37 @@ static const char * const builtin_commit_usage[] = {
 };
 
 static const char * const builtin_status_usage[] = {
-	N_("git status [<options>] [--] [<pathspec>...]"),
+	N_("kit status [<options>] [--] [<pathspec>...]"),
 	NULL
 };
 
 static const char empty_amend_advice[] =
 N_("You asked to amend the most recent commit, but doing so would make\n"
 "it empty. You can repeat your command with --allow-empty, or you can\n"
-"remove the commit entirely with \"git reset HEAD^\".\n");
+"remove the commit entirely with \"kit reset HEAD^\".\n");
 
 static const char empty_cherry_pick_advice[] =
 N_("The previous cherry-pick is now empty, possibly due to conflict resolution.\n"
 "If you wish to commit it anyway, use:\n"
 "\n"
-"    git commit --allow-empty\n"
+"    kit commit --allow-empty\n"
 "\n");
 
 static const char empty_rebase_pick_advice[] =
-N_("Otherwise, please use 'git rebase --skip'\n");
+N_("Otherwise, please use 'kit rebase --skip'\n");
 
 static const char empty_cherry_pick_advice_single[] =
-N_("Otherwise, please use 'git cherry-pick --skip'\n");
+N_("Otherwise, please use 'kit cherry-pick --skip'\n");
 
 static const char empty_cherry_pick_advice_multi[] =
 N_("and then use:\n"
 "\n"
-"    git cherry-pick --continue\n"
+"    kit cherry-pick --continue\n"
 "\n"
 "to resume cherry-picking the remaining commits.\n"
 "If you wish to skip this commit, use:\n"
 "\n"
-"    git cherry-pick --skip\n"
+"    kit cherry-pick --skip\n"
 "\n");
 
 static const char *color_status_slots[] = {
@@ -968,12 +968,12 @@ static int prepare_to_commit(const char *index_file, const char *prefix,
 					      _("\n"
 					  "It looks like you may be committing a merge.\n"
 					  "If this is not correct, please run\n"
-					  "	git update-ref -d MERGE_HEAD\n"
+					  "	kit update-ref -d MERGE_HEAD\n"
 					  "and try again.\n") :
 					      _("\n"
 					  "It looks like you may be committing a cherry-pick.\n"
 					  "If this is not correct, please run\n"
-					  "	git update-ref -d CHERRY_PICK_HEAD\n"
+					  "	kit update-ref -d CHERRY_PICK_HEAD\n"
 					  "and try again.\n"));
 		}
 
@@ -1957,7 +1957,7 @@ int cmd_commit(int argc,
 	if (commit_index_files())
 		die(_("repository has been updated, but unable to write\n"
 		      "new index file. Check that disk is not full and quota is\n"
-		      "not exceeded, and then \"git restore --staged :/\" to recover."));
+		      "not exceeded, and then \"kit restore --staged :/\" to recover."));
 
 	git_test_write_commit_graph_or_die(the_repository->objects->sources);
 

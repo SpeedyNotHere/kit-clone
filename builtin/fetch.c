@@ -45,10 +45,10 @@
 #define FORCED_UPDATES_DELAY_WARNING_IN_MS (10 * 1000)
 
 static const char * const builtin_fetch_usage[] = {
-	N_("git fetch [<options>] [<repository> [<refspec>...]]"),
-	N_("git fetch [<options>] <group>"),
-	N_("git fetch --multiple [<options>] [(<repository>|<group>)...]"),
-	N_("git fetch --all [<options>]"),
+	N_("kit fetch [<options>] [<repository> [<refspec>...]]"),
+	N_("kit fetch [<options>] <group>"),
+	N_("kit fetch --multiple [<options>] [(<repository>|<group>)...]"),
+	N_("kit fetch --all [<options>]"),
 	NULL
 };
 
@@ -1226,10 +1226,10 @@ static void close_fetch_head(struct fetch_head *fetch_head)
 static const char warn_show_forced_updates[] =
 N_("fetch normally indicates which branches had a forced update,\n"
    "but that check has been disabled; to re-enable, use '--show-forced-updates'\n"
-   "flag or run 'git config fetch.showForcedUpdates true'");
+   "flag or run 'kit config fetch.showForcedUpdates true'");
 static const char warn_time_show_forced_updates[] =
 N_("it took %.2f seconds to check forced updates; you can use\n"
-   "'--no-show-forced-updates' or run 'git config fetch.showForcedUpdates false'\n"
+   "'--no-show-forced-updates' or run 'kit config fetch.showForcedUpdates false'\n"
    "to avoid this check\n");
 
 static int store_updated_refs(struct display_state *display_state,
@@ -1716,12 +1716,12 @@ static const char *strip_refshead(const char *name){
 static void set_head_advice_msg(const char *remote, const char *head_name)
 {
 	const char message_advice_set_head[] =
-	N_("Run 'git remote set-head %s %s' to follow the change, or modify\n"
+	N_("Run 'kit remote set-head %s %s' to follow the change, or modify\n"
 	   "either of the 'remote.%s.followRemoteHEAD' or 'fetch.followRemoteHEAD'\n"
 	   "configuration variables to handle the situation differently.\n\n"
 
 	   "Using this specific setting\n\n"
-	   "    git config set remote.%s.followRemoteHEAD warn-if-not-%s\n\n"
+	   "    kit config set remote.%s.followRemoteHEAD warn-if-not-%s\n\n"
 	   "will suppress the warning until the remote changes HEAD to something else.");
 
 	advise_if_enabled(ADVICE_FETCH_SET_HEAD_WARN, _(message_advice_set_head),
@@ -1848,7 +1848,7 @@ static void ref_transaction_rejection_handler(const char *refname,
 			"can either accept this as-is, in which case you won't be able to\n"
 			"store all remote references on disk. Or you can alternatively\n"
 			"migrate your repository to use the 'reftable' backend with the\n"
-			"following command:\n\n    git refs migrate --ref-storage-format=reftable\n\n"
+			"following command:\n\n    kit refs migrate --ref-storage-format=reftable\n\n"
 			"Please keep in mind that not all implementations of Git support this\n"
 			"new format yet. So if you use tools other than Git to access this\n"
 			"repository it may not be an option to migrate to reftables.\n"));
@@ -1856,7 +1856,7 @@ static void ref_transaction_rejection_handler(const char *refname,
 	} else if (err == REF_TRANSACTION_ERROR_NAME_CONFLICT &&
 		   !data->conflict_msg_shown) {
 		error(_("some local refs could not be updated; try running\n"
-			" 'git remote prune %s' to remove any old, conflicting "
+			" 'kit remote prune %s' to remove any old, conflicting "
 			"branches"), data->remote_name);
 		data->conflict_msg_shown = true;
 	} else {
@@ -2541,7 +2541,7 @@ int cmd_fetch(int argc,
 		OPT_BOOL(0, "all", &all,
 			 N_("fetch from all remotes")),
 		OPT_BOOL(0, "set-upstream", &set_upstream,
-			 N_("set upstream for git pull/fetch")),
+			 N_("set upstream for kit pull/fetch")),
 		OPT_BOOL('a', "append", &append,
 			 N_("append to .git/FETCH_HEAD instead of overwriting")),
 		OPT_BOOL(0, "atomic", &atomic_fetch,

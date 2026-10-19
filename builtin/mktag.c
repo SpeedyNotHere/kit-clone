@@ -11,7 +11,7 @@
 #include "config.h"
 
 static char const * const builtin_mktag_usage[] = {
-	"git mktag",
+	"kit mktag",
 	NULL
 };
 static int option_strict = 1;

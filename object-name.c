@@ -673,11 +673,11 @@ static int get_oid_basic(struct repository *r, const char *str, int len,
 	"because it will be ignored when you just specify 40-hex. These refs\n"
 	"may be created by mistake. For example,\n"
 	"\n"
-	"  git switch -c $br $(git rev-parse ...)\n"
+	"  kit switch -c $br $(kit rev-parse ...)\n"
 	"\n"
 	"where \"$br\" is somehow empty and a 40-hex ref is created. Please\n"
 	"examine these refs and maybe delete them. Turn this message off by\n"
-	"running \"git config set advice.objectNameWarning false\"");
+	"running \"kit config set advice.objectNameWarning false\"");
 	struct object_id tmp_oid;
 	char *real_ref = NULL;
 	int refs_found = 0;

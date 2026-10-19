@@ -35,15 +35,15 @@
 #include "trailer.h"
 
 static const char * const git_tag_usage[] = {
-	N_("git tag [-a | -s | -u <key-id>] [-f] [-m <msg> | -F <file>] [-e]\n"
+	N_("kit tag [-a | -s | -u <key-id>] [-f] [-m <msg> | -F <file>] [-e]\n"
 	   "        [(--trailer <token>[(=|:)<value>])...]\n"
 	   "        <tagname> [<commit> | <object>]"),
-	N_("git tag -d <tagname>..."),
-	N_("git tag [-n[<num>]] -l [--contains <commit>] [--no-contains <commit>]\n"
+	N_("kit tag -d <tagname>..."),
+	N_("kit tag [-n[<num>]] -l [--contains <commit>] [--no-contains <commit>]\n"
 	   "        [--points-at <object>] [--column[=<options>] | --no-column]\n"
 	   "        [--create-reflog] [--sort=<key>] [--format=<format>]\n"
 	   "        [--merged <commit>] [--no-merged <commit>] [<pattern>...]"),
-	N_("git tag -v [--format=<format>] <tagname>..."),
+	N_("kit tag -v [--format=<format>] <tagname>..."),
 	NULL
 };
 
@@ -292,7 +292,7 @@ static const char message_advice_nested_tag[] =
 	N_("You have created a nested tag. The object referred to by your new tag is\n"
 	   "already a tag. If you meant to tag the object that it points to, use:\n"
 	   "\n"
-	   "\tgit tag -f %s %s^{}");
+	   "\tkit tag -f %s %s^{}");
 
 static void create_tag(const struct object_id *object, const char *object_ref,
 		       const char *tag,
@@ -599,7 +599,7 @@ int cmd_tag(int argc,
 			memset(&copts, 0, sizeof(copts));
 			copts.padding = 2;
 			if (run_column_filter(colopts, &copts))
-				die(_("could not start 'git column'"));
+				die(_("could not start 'kit column'"));
 		}
 		filter.name_patterns = argv;
 		ret = list_tags(&filter, sorting, &format);

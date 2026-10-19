@@ -388,7 +388,7 @@ if ($dirtypatch) {
     print "problems you may commit using:";
     print "\n    cd \"$opt_w\"" if $opt_w;
     print "\n    $cmd\n";
-    print "\n    git checkout $go_back_to\n" if $go_back_to;
+    print "\n    kit checkout $go_back_to\n" if $go_back_to;
     print "\n";
     exit(1);
 }
@@ -424,7 +424,7 @@ sleep(1);
 
 sub usage {
 	print STDERR <<END;
-usage: GIT_DIR=/path/to/.git git cvsexportcommit [-h] [-p] [-v] [-c] [-f] [-u] [-k] [-w cvsworkdir] [-m msgprefix] [ parent ] commit
+usage: GIT_DIR=/path/to/.git kit cvsexportcommit [-h] [-p] [-v] [-c] [-f] [-u] [-k] [-w cvsworkdir] [-m msgprefix] [ parent ] commit
 END
 	exit(1);
 }

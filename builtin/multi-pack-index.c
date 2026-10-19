@@ -15,24 +15,24 @@
 #include "repository.h"
 
 #define BUILTIN_MIDX_WRITE_USAGE \
-	N_("git multi-pack-index [<options>] write [--preferred-pack=<pack>]\n" \
+	N_("kit multi-pack-index [<options>] write [--preferred-pack=<pack>]\n" \
 	   "  [--[no-]bitmap] [--[no-]incremental] [--[no-]stdin-packs]\n" \
 	   "  [--refs-snapshot=<path>] [--[no-]write-chain-file]\n" \
 	   "  [--base=<checksum>]")
 
 #define BUILTIN_MIDX_COMPACT_USAGE \
-	N_("git multi-pack-index [<options>] compact [--[no-]incremental]\n" \
+	N_("kit multi-pack-index [<options>] compact [--[no-]incremental]\n" \
 	   "  [--[no-]bitmap] [--base=<checksum>] [--[no-]write-chain-file]\n" \
 	   "  <from> <to>")
 
 #define BUILTIN_MIDX_VERIFY_USAGE \
-	N_("git multi-pack-index [<options>] verify")
+	N_("kit multi-pack-index [<options>] verify")
 
 #define BUILTIN_MIDX_EXPIRE_USAGE \
-	N_("git multi-pack-index [<options>] expire")
+	N_("kit multi-pack-index [<options>] expire")
 
 #define BUILTIN_MIDX_REPACK_USAGE \
-	N_("git multi-pack-index [<options>] repack [--batch-size=<size>]")
+	N_("kit multi-pack-index [<options>] repack [--batch-size=<size>]")
 
 static char const * const builtin_multi_pack_index_write_usage[] = {
 	BUILTIN_MIDX_WRITE_USAGE,

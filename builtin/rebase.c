@@ -39,11 +39,11 @@
 #include "trailer.h"
 
 static char const * const builtin_rebase_usage[] = {
-	N_("git rebase [-i] [options] [--exec <cmd>] "
+	N_("kit rebase [-i] [options] [--exec <cmd>] "
 		"[--onto <newbase> | --keep-base] [<upstream> [<branch>]]"),
-	N_("git rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] "
+	N_("kit rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] "
 		"--root [<branch>]"),
-	"git rebase --continue | --abort | --skip | --edit-todo",
+	"kit rebase --continue | --abort | --skip | --edit-todo",
 	NULL
 };
 
@@ -696,11 +696,11 @@ static int run_am(struct rebase_options *opts)
 		ropts.default_reflog_action = opts->reflog_action;
 		ropts.flags = RESET_WORKING_TREE_UPDATE_HEAD;
 		reset_working_tree(the_repository, &ropts);
-		error(_("\ngit encountered an error while preparing the "
+		error(_("\nkit encountered an error while preparing the "
 			"patches to replay\n"
 			"these revisions:\n"
 			"\n    %s\n\n"
-			"As a result, git cannot rebase them."),
+			"As a result, kit cannot rebase them."),
 		      opts->revisions);
 
 		return status;
@@ -1069,7 +1069,7 @@ static void NORETURN error_on_missing_default_upstream(void)
 		 "Please specify which branch you want to rebase against.\n"
 		 "See git-rebase(1) for details.\n"
 		 "\n"
-		 "    git rebase '<branch>'\n"
+		 "    kit rebase '<branch>'\n"
 		 "\n"),
 		current_branch ? _("There is no tracking information for "
 			"the current branch.") :
@@ -1084,7 +1084,7 @@ static void NORETURN error_on_missing_default_upstream(void)
 		printf(_("If you wish to set tracking information for this "
 			 "branch you can do so with:\n"
 			 "\n"
-			 "    git branch --set-upstream-to=%s/<branch> %s\n"
+			 "    kit branch --set-upstream-to=%s/<branch> %s\n"
 			 "\n"),
 		       remote, current_branch->name);
 	}
@@ -1163,11 +1163,11 @@ int cmd_rebase(int argc,
 		OPT_HIDDEN_BOOL(0, "ignore-date", &options.ignore_date,
 				N_("synonym of --reset-author-date")),
 		OPT_PASSTHRU_ARGV('C', NULL, &options.git_am_opts, N_("n"),
-				  N_("passed to 'git apply'"), 0),
+				  N_("passed to 'kit apply'"), 0),
 		OPT_BOOL(0, "ignore-whitespace", &ignore_whitespace,
 			 N_("ignore changes in whitespace")),
 		OPT_PASSTHRU_ARGV(0, "whitespace", &options.git_am_opts,
-				  N_("action"), N_("passed to 'git apply'"), 0),
+				  N_("action"), N_("passed to 'kit apply'"), 0),
 		OPT_BIT('f', "force-rebase", &options.flags,
 			N_("cherry-pick all commits, even if unchanged"),
 			REBASE_FORCE),
@@ -1276,7 +1276,7 @@ int cmd_rebase(int argc,
 	strbuf_reset(&buf);
 	strbuf_addf(&buf, "%s/applying", apply_dir());
 	if(file_exists(buf.buf))
-		die(_("It looks like 'git am' is in progress. Cannot rebase."));
+		die(_("It looks like 'kit am' is in progress. Cannot rebase."));
 
 	if (is_directory(apply_dir())) {
 		options.type = REBASE_APPLY;
@@ -1286,7 +1286,7 @@ int cmd_rebase(int argc,
 		strbuf_addf(&buf, "%s/rewritten", merge_dir());
 		if (!(options.action == ACTION_ABORT) && is_directory(buf.buf)) {
 			die(_("`rebase --preserve-merges` (-p) is no longer supported.\n"
-			"Use `git rebase --abort` to terminate current rebase.\n"
+			"Use `kit rebase --abort` to terminate current rebase.\n"
 			"Or downgrade to v2.33, or earlier, to complete the rebase."));
 		} else {
 			strbuf_reset(&buf);
@@ -1382,7 +1382,7 @@ int cmd_rebase(int argc,
 
 		if (has_unstaged_changes(the_repository, 1)) {
 			puts(_("You must edit all merge conflicts and then\n"
-			       "mark them as resolved using git add"));
+			       "mark them as resolved using kit add"));
 			exit(1);
 		}
 		if (read_basic_state(&options))
@@ -1466,7 +1466,7 @@ int cmd_rebase(int argc,
 		const char *state_dir_base =
 			last_slash ? last_slash + 1 : options.state_dir;
 		const char *cmd_live_rebase =
-			"git rebase (--continue | --abort | --skip)";
+			"kit rebase (--continue | --abort | --skip)";
 		strbuf_reset(&buf);
 		strbuf_addf(&buf, "rm -fr \"%s\"", options.state_dir);
 		die(_("It seems that there is already a %s directory, and\n"

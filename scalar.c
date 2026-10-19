@@ -795,7 +795,7 @@ loop_end:
 		if (!succeeded) {
 			res = -1;
 			warning(_("to unregister this repository from Scalar, run\n"
-				  "\tgit config --global --unset --fixed-value scalar.repo \"%s\""),
+				  "\tkit config --global --unset --fixed-value scalar.repo \"%s\""),
 				dir);
 		}
 	}

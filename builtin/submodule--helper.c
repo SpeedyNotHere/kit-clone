@@ -129,7 +129,7 @@ static int module_get_default_remote(int argc, const char **argv, const char *pr
 		OPT_END()
 	};
 	const char *const usage[] = {
-		N_("git submodule--helper get-default-remote <path>"),
+		N_("kit submodule--helper get-default-remote <path>"),
 		NULL
 	};
 
@@ -447,7 +447,7 @@ static int module_foreach(int argc, const char **argv, const char *prefix,
 		OPT_END()
 	};
 	const char *const git_submodule_helper_usage[] = {
-		N_("git submodule foreach [--quiet] [--recursive] [--] <command>"),
+		N_("kit submodule foreach [--quiet] [--recursive] [--] <command>"),
 		NULL
 	};
 	int ret = 1;
@@ -571,7 +571,7 @@ static void create_default_gitdir_config(const char *submodule_name)
 	/* Case 3: nothing worked, error out */
 	die(_("failed to set a valid default config for 'submodule.%s.gitdir'. "
 	      "Please ensure it is set, for example by running something like: "
-	      "'git config submodule.%s.gitdir .git/modules/%s'"),
+	      "'kit config submodule.%s.gitdir .git/modules/%s'"),
 	    submodule_name, submodule_name, submodule_name);
 }
 
@@ -680,7 +680,7 @@ static int module_init(int argc, const char **argv, const char *prefix,
 		OPT_END()
 	};
 	const char *const git_submodule_helper_usage[] = {
-		N_("git submodule init [<options>] [<path>]"),
+		N_("kit submodule init [<options>] [<path>]"),
 		NULL
 	};
 	int ret = 1;
@@ -871,7 +871,7 @@ static int module_status(int argc, const char **argv, const char *prefix,
 		OPT_END()
 	};
 	const char *const git_submodule_helper_usage[] = {
-		N_("git submodule status [--quiet] [--cached] [--recursive] [<path>...]"),
+		N_("kit submodule status [--quiet] [--cached] [--recursive] [<path>...]"),
 		NULL
 	};
 	int ret = 1;
@@ -1302,7 +1302,7 @@ static int module_summary(int argc, const char **argv, const char *prefix,
 		OPT_END()
 	};
 	const char *const git_submodule_helper_usage[] = {
-		N_("git submodule summary [<options>] [<commit>] [--] [<path>]"),
+		N_("kit submodule summary [<options>] [<commit>] [--] [<path>]"),
 		NULL
 	};
 
@@ -1354,7 +1354,7 @@ static int module_gitdir(int argc, const char **argv, const char *prefix UNUSED,
 	struct strbuf gitdir = STRBUF_INIT;
 
 	if (argc != 2)
-		usage(_("git submodule--helper gitdir <name>"));
+		usage(_("kit submodule--helper gitdir <name>"));
 
 	submodule_name_to_gitdir(&gitdir, repo, argv[1]);
 
@@ -1412,12 +1412,12 @@ static int module_migrate(int argc UNUSED, const char **argv UNUSED,
 	    repo_config_set_gently(repo, "core.repositoryformatversion", "1"))
 		die(_("could not set core.repositoryformatversion to 1.\n"
 		      "Please set it for migration to work, for example:\n"
-		      "git config core.repositoryformatversion 1"));
+		      "kit config core.repositoryformatversion 1"));
 
 	if (repo_config_set_gently(repo, "extensions.submodulePathConfig", "true"))
 		die(_("could not enable submodulePathConfig extension. It is required\n"
 		      "for migration to work. Please enable it in the root repo:\n"
-		      "git config extensions.submodulePathConfig true"));
+		      "kit config extensions.submodulePathConfig true"));
 
 	repo->repository_format_submodule_path_cfg = 1;
 
@@ -1548,7 +1548,7 @@ static int module_sync(int argc, const char **argv, const char *prefix,
 		OPT_END()
 	};
 	const char *const git_submodule_helper_usage[] = {
-		N_("git submodule sync [--quiet] [--recursive] [<path>]"),
+		N_("kit submodule sync [--quiet] [--recursive] [<path>]"),
 		NULL
 	};
 	int ret = 1;
@@ -1695,7 +1695,7 @@ static int module_deinit(int argc, const char **argv, const char *prefix,
 		OPT_END()
 	};
 	const char *const git_submodule_helper_usage[] = {
-		N_("git submodule deinit [--quiet] [-f | --force] [--all | [--] [<path>...]]"),
+		N_("kit submodule deinit [--quiet] [-f | --force] [--all | [--] [<path>...]]"),
 		NULL
 	};
 	int ret = 1;
@@ -2079,7 +2079,7 @@ static int module_clone(int argc, const char **argv, const char *prefix,
 		OPT_END()
 	};
 	const char *const git_submodule_helper_usage[] = {
-		N_("git submodule--helper clone [--prefix=<path>] [--quiet] "
+		N_("kit submodule--helper clone [--prefix=<path>] [--quiet] "
 		   "[--reference <repository>] [--name <name>] [--depth <depth>] "
 		   "[--single-branch] [--filter <filter-spec>] "
 		   "--url <url> --path <path>"),
@@ -3038,7 +3038,7 @@ static int module_update(int argc, const char **argv, const char *prefix,
 		OPT_END()
 	};
 	const char *const git_submodule_helper_usage[] = {
-		N_("git submodule [--quiet] update"
+		N_("kit submodule [--quiet] update"
 		" [--init [--filter=<filter-spec>]] [--remote]"
 		" [-N|--no-fetch] [-f|--force]"
 		" [--checkout|--merge|--rebase]"
@@ -3210,7 +3210,7 @@ static int absorb_git_dirs(int argc, const char **argv, const char *prefix,
 		OPT_END()
 	};
 	const char *const git_submodule_helper_usage[] = {
-		N_("git submodule absorbgitdirs [<options>] [<path>...]"),
+		N_("kit submodule absorbgitdirs [<options>] [<path>...]"),
 		NULL
 	};
 	int ret = 1;
@@ -3244,7 +3244,7 @@ static int module_set_url(int argc, const char **argv, const char *prefix,
 		OPT_END()
 	};
 	const char *const usage[] = {
-		N_("git submodule set-url [--quiet] <path> <newurl>"),
+		N_("kit submodule set-url [--quiet] <path> <newurl>"),
 		NULL
 	};
 	const struct submodule *sub;
@@ -3293,8 +3293,8 @@ static int module_set_branch(int argc, const char **argv, const char *prefix,
 		OPT_END()
 	};
 	const char *const usage[] = {
-		N_("git submodule set-branch [-q|--quiet] (-d|--default) <path>"),
-		N_("git submodule set-branch [-q|--quiet] (-b|--branch) <branch> <path>"),
+		N_("kit submodule set-branch [-q|--quiet] (-d|--default) <path>"),
+		N_("kit submodule set-branch [-q|--quiet] (-b|--branch) <branch> <path>"),
 		NULL
 	};
 	const struct submodule *sub;
@@ -3342,7 +3342,7 @@ static int module_create_branch(int argc, const char **argv, const char *prefix,
 		OPT_END()
 	};
 	const char *const usage[] = {
-		N_("git submodule--helper create-branch [-f|--force] [--create-reflog] [-q|--quiet] [-t|--track] [-n|--dry-run] <name> <start-oid> <start-name>"),
+		N_("kit submodule--helper create-branch [-f|--force] [--create-reflog] [-q|--quiet] [-t|--track] [-n|--dry-run] <name> <start-oid> <start-name>"),
 		NULL
 	};
 	struct repo_config_values *cfg = repo_config_values(the_repository);
@@ -3676,7 +3676,7 @@ static int module_add(int argc, const char **argv, const char *prefix,
 		OPT_END()
 	};
 	const char *const usage[] = {
-		N_("git submodule add [<options>] [--] <repository> [<path>]"),
+		N_("kit submodule add [<options>] [--] <repository> [<path>]"),
 		NULL
 	};
 	struct strbuf sb = STRBUF_INIT;
@@ -3815,7 +3815,7 @@ int cmd_submodule__helper(int argc,
 {
 	parse_opt_subcommand_fn *fn = NULL;
 	const char *const usage[] = {
-		N_("git submodule--helper <command>"),
+		N_("kit submodule--helper <command>"),
 		NULL
 	};
 	struct option options[] = {

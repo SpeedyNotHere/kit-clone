@@ -20,21 +20,21 @@ test_expect_success 'setup' '
 
 test_expect_success 'usage on cmd and subcommand invalid option' '
 	test_expect_code 129 git stash --invalid-option 2>usage &&
-	test_grep "or: git stash" usage &&
+	test_grep "or: kit stash" usage &&
 
 	test_expect_code 129 git stash push --invalid-option 2>usage &&
-	test_grep ! "or: git stash" usage
+	test_grep ! "or: kit stash" usage
 '
 
 test_expect_success 'usage on main command -h emits a summary of subcommands' '
 	git stash -h >usage &&
-	test_grep -F "usage: git stash list" usage &&
-	test_grep -F "or: git stash show" usage
+	test_grep -F "usage: kit stash list" usage &&
+	test_grep -F "or: kit stash show" usage
 '
 
 test_expect_success 'usage for subcommands should emit subcommand usage' '
 	git stash push -h >usage &&
-	test_grep -F "usage: git stash [push" usage
+	test_grep -F "usage: kit stash [push" usage
 '
 
 diff_cmp () {
@@ -1810,7 +1810,7 @@ test_expect_success SANITIZE_LEAK 'stash show handles -- without leaking' '
 
 test_expect_success 'controlled error return on unrecognized option' '
 	test_expect_code 129 git stash show -p --invalid 2>usage &&
-	test_grep -e "^usage: git stash show" usage
+	test_grep -e "^usage: kit stash show" usage
 '
 
 test_expect_success 'stash.index=true implies --index' '

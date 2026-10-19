@@ -457,7 +457,7 @@ static void chmod_path(char flip, const char *path)
 	report("chmod %cx '%s'", flip, path);
 	return;
  fail:
-	die("git update-index: cannot chmod %cx '%s'", flip, path);
+	die("kit update-index: cannot chmod %cx '%s'", flip, path);
 }
 
 static void update_one(const char *path)
@@ -495,7 +495,7 @@ static void update_one(const char *path)
 
 	if (force_remove) {
 		if (remove_file_from_index(the_repository->index, path))
-			die("git update-index: unable to remove %s", path);
+			die("kit update-index: unable to remove %s", path);
 		report("remove '%s'", path);
 		return;
 	}
@@ -565,7 +565,7 @@ static void read_index_info(int nul_term_line)
 		if (!nul_term_line && path_name[0] == '"') {
 			strbuf_reset(&uq);
 			if (unquote_c_style(&uq, path_name, NULL)) {
-				die("git update-index: bad quoting of path name");
+				die("kit update-index: bad quoting of path name");
 			}
 			path_name = uq.buf;
 		}
@@ -578,7 +578,7 @@ static void read_index_info(int nul_term_line)
 		if (!mode) {
 			/* mode == 0 means there is no such path -- remove */
 			if (remove_file_from_index(the_repository->index, path_name))
-				die("git update-index: unable to remove %s",
+				die("kit update-index: unable to remove %s",
 				    ptr);
 		}
 		else {
@@ -588,7 +588,7 @@ static void read_index_info(int nul_term_line)
 			 */
 			ptr[-(hexsz + 2)] = ptr[-1] = 0;
 			if (add_cacheinfo(mode, &oid, path_name, stage))
-				die("git update-index: unable to update %s",
+				die("kit update-index: unable to update %s",
 				    path_name);
 		}
 		continue;
@@ -601,7 +601,7 @@ static void read_index_info(int nul_term_line)
 }
 
 static const char * const update_index_usage[] = {
-	N_("git update-index [<options>] [--] [<file>...]"),
+	N_("kit update-index [<options>] [--] [<file>...]"),
 	NULL
 };
 
@@ -824,7 +824,7 @@ static enum parse_opt_result cacheinfo_callback(
 
 	if (!parse_new_style_cacheinfo(ctx->argv[1], &mode, &oid, &path)) {
 		if (add_cacheinfo(mode, &oid, path, 0))
-			die("git update-index: --cacheinfo cannot add %s", path);
+			die("kit update-index: --cacheinfo cannot add %s", path);
 		ctx->argv++;
 		ctx->argc--;
 		return 0;
@@ -834,7 +834,7 @@ static enum parse_opt_result cacheinfo_callback(
 	if (strtoul_ui(*++ctx->argv, 8, &mode) ||
 	    get_oid_hex(*++ctx->argv, &oid) ||
 	    add_cacheinfo(mode, &oid, *++ctx->argv, 0))
-		die("git update-index: --cacheinfo cannot add %s", *ctx->argv);
+		die("kit update-index: --cacheinfo cannot add %s", *ctx->argv);
 	ctx->argc -= 3;
 	return 0;
 }

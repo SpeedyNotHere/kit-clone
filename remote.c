@@ -346,7 +346,7 @@ static void warn_about_deprecated_remote_type(const char *type,
 		  "If you still use the \"remotes/\" directory it is recommended to\n"
 		  "migrate to config-based remotes:\n"
 		  "\n"
-		  "\tgit remote rename %s %s\n"
+		  "\tkit remote rename %s %s\n"
 		  "\n"
 		  "If you cannot, please let us know why you still need to use it by\n"
 		  "sending an e-mail to <git@vger.kernel.org>."),
@@ -2393,7 +2393,7 @@ static void format_branch_comparison(struct strbuf *sb,
 			    branch_name);
 		if (use_push_advice && advice_enabled(ADVICE_STATUS_HINTS))
 			strbuf_addf(sb, _("  (use \"%s\" for details)\n"),
-				    "git status --ahead-behind");
+				    "kit status --ahead-behind");
 	} else if (!theirs) {
 		strbuf_addf(sb,
 			Q_("Your branch is ahead of '%s' by %d commit.\n",
@@ -2402,7 +2402,7 @@ static void format_branch_comparison(struct strbuf *sb,
 			branch_name, ours);
 		if (use_push_advice && advice_enabled(ADVICE_STATUS_HINTS))
 			strbuf_addstr(sb,
-				_("  (use \"git push\" to publish your local commits)\n"));
+				_("  (use \"kit push\" to publish your local commits)\n"));
 	} else if (!ours) {
 		strbuf_addf(sb,
 			Q_("Your branch is behind '%s' by %d commit, "
@@ -2414,11 +2414,11 @@ static void format_branch_comparison(struct strbuf *sb,
 		if (use_pull_advice && advice_enabled(ADVICE_STATUS_HINTS)) {
 			if (push_remote_name && push_branch_name)
 				strbuf_addf(sb,
-					_("  (use \"git pull %s %s\" to update your local branch)\n"),
+					_("  (use \"kit pull %s %s\" to update your local branch)\n"),
 					push_remote_name, push_branch_name);
 			else
 				strbuf_addstr(sb,
-					_("  (use \"git pull\" to update your local branch)\n"));
+					_("  (use \"kit pull\" to update your local branch)\n"));
 		}
 	} else {
 		strbuf_addf(sb,
@@ -2433,11 +2433,11 @@ static void format_branch_comparison(struct strbuf *sb,
 		if (use_divergence_advice && advice_enabled(ADVICE_STATUS_HINTS)) {
 			if (push_remote_name && push_branch_name)
 				strbuf_addf(sb,
-					_("  (use \"git pull %s %s\" if you want to integrate the remote branch with yours)\n"),
+					_("  (use \"kit pull %s %s\" if you want to integrate the remote branch with yours)\n"),
 					push_remote_name, push_branch_name);
 			else
 				strbuf_addstr(sb,
-					_("  (use \"git pull\" if you want to integrate the remote branch with yours)\n"));
+					_("  (use \"kit pull\" if you want to integrate the remote branch with yours)\n"));
 		}
 	}
 }
@@ -2508,7 +2508,7 @@ int format_tracking_info(struct branch *branch, struct strbuf *sb,
 					short_ref);
 				if (advice_enabled(ADVICE_STATUS_HINTS))
 					strbuf_addstr(sb,
-						_("  (use \"git branch --unset-upstream\" to fixup)\n"));
+						_("  (use \"kit branch --unset-upstream\" to fixup)\n"));
 				reported = 1;
 			}
 			free(full_ref);

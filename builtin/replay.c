@@ -83,7 +83,7 @@ int cmd_replay(int argc,
 	int ret = 0;
 
 	const char *const replay_usage[] = {
-		N_("(EXPERIMENTAL!) git replay "
+		N_("(EXPERIMENTAL!) kit replay "
 		   "([--contained] --onto=<newbase> | --advance=<branch> | --revert=<branch>)\n"
 		   "[--ref=<ref>] [--ref-action=<mode>] [--linearize] <revision-range>"),
 		NULL

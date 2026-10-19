@@ -67,7 +67,7 @@ static void write_tree(struct repository *repo, struct object_id *oid)
 }
 
 static const char *const mktree_usage[] = {
-	"git mktree [-z] [--missing] [--batch]",
+	"kit mktree [-z] [--missing] [--batch]",
 	NULL
 };
 

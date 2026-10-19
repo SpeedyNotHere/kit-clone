@@ -5,7 +5,7 @@
 #include "urlmatch.h"
 
 static const char * const builtin_url_parse_usage[] = {
-	N_("git url-parse [-c <component>] [--] <url>..."),
+	N_("kit url-parse [-c <component>] [--] <url>..."),
 	NULL
 };
 

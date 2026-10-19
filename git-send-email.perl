@@ -29,10 +29,10 @@ Getopt::Long::Configure qw/ pass_through /;
 
 sub usage {
 	print <<EOT;
-git send-email [<options>] <file|directory>
-git send-email [<options>] <format-patch options>
-git send-email --dump-aliases
-git send-email --translate-aliases
+kit send-email [<options>] <file|directory>
+kit send-email [<options>] <format-patch options>
+kit send-email --dump-aliases
+kit send-email --translate-aliases
 
   Composing:
     --from                  <str>  * Email From:
@@ -1695,7 +1695,7 @@ sub send_message {
     This behavior is controlled by the sendemail.confirm
     configuration setting.
 
-    For additional information, run 'git send-email --help'.
+    For additional information, run 'kit send-email --help'.
     To retain the current behavior, but squelch this message,
     run 'git config --global sendemail.confirm auto'.
 

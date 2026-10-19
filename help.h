@@ -42,6 +42,11 @@ void add_cmdname(struct cmdnames *cmds, const char *name, int len);
 void exclude_cmds(struct cmdnames *cmds, struct cmdnames *excludes);
 int is_in_cmdlist(struct cmdnames *cmds, const char *name);
 void list_commands(struct cmdnames *main_cmds, struct cmdnames *other_cmds);
+/*
+ * Name printed by get_version_info(); git.c sets it to "kit" when the
+ * program is invoked as "kit", so "git version" output stays stable.
+ */
+extern const char *version_program_name;
 void get_version_info(struct strbuf *buf, int show_build_options);
 
 /*

@@ -13,7 +13,7 @@
 #include "protocol.h"
 
 static const char fetch_pack_usage[] =
-"git fetch-pack [--all] [--stdin] [--quiet | -q] [--keep | -k] [--thin] "
+"kit fetch-pack [--all] [--stdin] [--quiet | -q] [--keep | -k] [--thin] "
 "[--include-tag] [--upload-pack=<git-upload-pack>] [--depth=<n>] "
 "[--no-progress] [--diag-url] [-v] [<host>:]<directory> [<refs>...]";
 

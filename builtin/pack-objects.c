@@ -190,7 +190,7 @@ static inline void oe_set_delta_size(struct packing_data *pack,
 #define SET_DELTA_SIBLING(obj, val) oe_set_delta_sibling(&to_pack, obj, val)
 
 static const char *const pack_usage[] = {
-	N_("git pack-objects [-q | --progress | --all-progress] [--all-progress-implied]\n"
+	N_("kit pack-objects [-q | --progress | --all-progress] [--all-progress-implied]\n"
 	   "                 [--no-reuse-delta] [--delta-base-offset] [--non-empty]\n"
 	   "                 [--local] [--incremental] [--window=<n>] [--depth=<n>]\n"
 	   "                 [--revs [--unpacked | --all]] [--keep-pack=<pack-name>]\n"

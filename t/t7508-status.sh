@@ -71,7 +71,7 @@ test_expect_success 'setup' '
 '
 
 test_expect_success 'status (1)' '
-	test_grep "use \"git rm --cached <file>\.\.\.\" to unstage" output
+	test_grep "use \"kit rm --cached <file>\.\.\.\" to unstage" output
 '
 
 strip_comments () {
@@ -91,19 +91,19 @@ test_expect_success 'status --column' '
 # On branch main
 # Your branch and '\''upstream'\'' have diverged,
 # and have 1 and 2 different commits each, respectively.
-#   (use "git pull" if you want to integrate the remote branch with yours)
+#   (use "kit pull" if you want to integrate the remote branch with yours)
 #
 # Changes to be committed:
-#   (use "git restore --staged <file>..." to unstage)
+#   (use "kit restore --staged <file>..." to unstage)
 #	new file:   dir2/added
 #
 # Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git restore <file>..." to discard changes in working directory)
+#   (use "kit add <file>..." to update what will be committed)
+#   (use "kit restore <file>..." to discard changes in working directory)
 #	modified:   dir1/modified
 #
 # Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
+#   (use "kit add <file>..." to include in what will be committed)
 #	dir1/untracked dir2/untracked
 #	dir2/modified  untracked
 #
@@ -122,19 +122,19 @@ cat >expect <<\EOF
 # On branch main
 # Your branch and 'upstream' have diverged,
 # and have 1 and 2 different commits each, respectively.
-#   (use "git pull" if you want to integrate the remote branch with yours)
+#   (use "kit pull" if you want to integrate the remote branch with yours)
 #
 # Changes to be committed:
-#   (use "git restore --staged <file>..." to unstage)
+#   (use "kit restore --staged <file>..." to unstage)
 #	new file:   dir2/added
 #
 # Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git restore <file>..." to discard changes in working directory)
+#   (use "kit add <file>..." to update what will be committed)
+#   (use "kit restore <file>..." to discard changes in working directory)
 #	modified:   dir1/modified
 #
 # Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
+#   (use "kit add <file>..." to include in what will be committed)
 #	dir1/untracked
 #	dir2/modified
 #	dir2/untracked
@@ -270,23 +270,23 @@ test_expect_success 'status with gitignore' '
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 1 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	new file:   dir2/added
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	dir2/modified
 
 Ignored files:
-  (use "git add -f <file>..." to include in what will be committed)
+  (use "kit add -f <file>..." to include in what will be committed)
 	.gitignore
 	dir1/untracked
 	dir2/untracked
@@ -337,19 +337,19 @@ test_expect_success 'status with gitignore (nothing untracked)' '
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 1 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	new file:   dir2/added
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 
 Ignored files:
-  (use "git add -f <file>..." to include in what will be committed)
+  (use "kit add -f <file>..." to include in what will be committed)
 	.gitignore
 	dir1/untracked
 	dir2/modified
@@ -408,15 +408,15 @@ test_expect_success 'status -uno' '
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 1 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	new file:   dir2/added
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 
 Untracked files not listed (use -u option to show untracked files)
@@ -475,19 +475,19 @@ test_expect_success 'status -unormal' '
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 1 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	new file:   dir2/added
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	dir1/untracked
 	dir2/modified
 	dir2/untracked
@@ -537,19 +537,19 @@ test_expect_success 'status -uall' '
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 1 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	new file:   dir2/added
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	dir1/untracked
 	dir2/modified
 	dir2/untracked
@@ -597,19 +597,19 @@ test_expect_success 'status with relative paths' '
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 1 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	new file:   ../dir2/added
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   modified
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	untracked
 	../dir2/modified
 	../dir2/untracked
@@ -665,19 +665,19 @@ test_expect_success TTY 'status with color.ui' '
 On branch <GREEN>main<RESET>
 Your branch and '\''upstream'\'' have diverged,
 and have 1 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	<GREEN>new file:   dir2/added<RESET>
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	<RED>modified:   dir1/modified<RESET>
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	<BLUE>dir1/untracked<RESET>
 	<BLUE>dir2/modified<RESET>
 	<BLUE>dir2/untracked<RESET>
@@ -799,19 +799,19 @@ test_expect_success 'status without relative paths' '
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 1 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	new file:   dir2/added
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	dir1/untracked
 	dir2/modified
 	dir2/untracked
@@ -875,11 +875,11 @@ Your branch and '\''upstream'\'' have diverged,
 and have 1 and 2 different commits each, respectively.
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	modified:   dir1/modified
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	dir1/untracked
 	dir2/
 	untracked
@@ -926,20 +926,20 @@ test_expect_success 'status submodule summary is disabled by default' '
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 1 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	new file:   dir2/added
 	new file:   sm
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	dir1/untracked
 	dir2/modified
 	dir2/untracked
@@ -983,16 +983,16 @@ test_expect_success 'status submodule summary' '
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 1 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	new file:   dir2/added
 	new file:   sm
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 
 Submodule changes to be committed:
@@ -1001,7 +1001,7 @@ Submodule changes to be committed:
   > Add foo
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	dir1/untracked
 	dir2/modified
 	dir2/untracked
@@ -1042,23 +1042,23 @@ test_expect_success 'status submodule summary (clean submodule): commit' '
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 2 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	dir1/untracked
 	dir2/modified
 	dir2/untracked
 	untracked
 
-no changes added to commit (use "git add" and/or "git commit -a")
+no changes added to commit (use "kit add" and/or "kit commit -a")
 EOF
-	sed "/git pull/d" expect-status > expect-commit &&
+	sed "/kit pull/d" expect-status > expect-commit &&
 	git commit -m "commit submodule" &&
 	git config status.submodulesummary 10 &&
 	test_must_fail git commit --dry-run >output &&
@@ -1093,13 +1093,13 @@ Your branch and '\''upstream'\'' have diverged,
 and have 2 and 2 different commits each, respectively.
 
 Changes to be committed:
-  (use "git restore --source=HEAD^1 --staged <file>..." to unstage)
+  (use "kit restore --source=HEAD^1 --staged <file>..." to unstage)
 	new file:   dir2/added
 	new file:   sm
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 
 Submodule changes to be committed:
@@ -1108,7 +1108,7 @@ Submodule changes to be committed:
   > Add foo
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	dir1/untracked
 	dir2/modified
 	dir2/untracked
@@ -1142,15 +1142,15 @@ test_expect_success '--ignore-submodules=untracked suppresses submodules with un
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 2 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	modified:   sm
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 
 Submodule changes to be committed:
@@ -1159,7 +1159,7 @@ Submodule changes to be committed:
   > Add bar
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	.gitmodules
 	dir1/untracked
 	dir2/modified
@@ -1251,15 +1251,15 @@ test_expect_success "--ignore-submodules=untracked doesn't suppress submodules w
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 2 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	modified:   sm
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
   (commit or discard the untracked or modified content in submodules)
 	modified:   dir1/modified
 	modified:   sm (modified content)
@@ -1270,7 +1270,7 @@ Submodule changes to be committed:
   > Add bar
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	.gitmodules
 	dir1/untracked
 	dir2/modified
@@ -1308,15 +1308,15 @@ test_expect_success "--ignore-submodules=untracked doesn't suppress submodule su
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 2 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	modified:   sm
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 	modified:   sm (new commits)
 
@@ -1331,7 +1331,7 @@ Submodules changed but not updated:
   > 2nd commit
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	.gitmodules
 	dir1/untracked
 	dir2/modified
@@ -1389,15 +1389,15 @@ cat > expect << EOF
 ; On branch main
 ; Your branch and 'upstream' have diverged,
 ; and have 2 and 2 different commits each, respectively.
-;   (use "git pull" if you want to integrate the remote branch with yours)
+;   (use "kit pull" if you want to integrate the remote branch with yours)
 ;
 ; Changes to be committed:
-;   (use "git restore --staged <file>..." to unstage)
+;   (use "kit restore --staged <file>..." to unstage)
 ;	modified:   sm
 ;
 ; Changes not staged for commit:
-;   (use "git add <file>..." to update what will be committed)
-;   (use "git restore <file>..." to discard changes in working directory)
+;   (use "kit add <file>..." to update what will be committed)
+;   (use "kit restore <file>..." to discard changes in working directory)
 ;	modified:   dir1/modified
 ;	modified:   sm (new commits)
 ;
@@ -1412,7 +1412,7 @@ cat > expect << EOF
 ;   > 2nd commit
 ;
 ; Untracked files:
-;   (use "git add <file>..." to include in what will be committed)
+;   (use "kit add <file>..." to include in what will be committed)
 ;	.gitmodules
 ;	dir1/untracked
 ;	dir2/modified
@@ -1439,22 +1439,22 @@ test_expect_success "--ignore-submodules=all suppresses submodule summary" '
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 2 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	.gitmodules
 	dir1/untracked
 	dir2/modified
 	dir2/untracked
 	untracked
 
-no changes added to commit (use "git add" and/or "git commit -a")
+no changes added to commit (use "kit add" and/or "kit commit -a")
 EOF
 	git status --ignore-submodules=all > output &&
 	test_cmp expect output
@@ -1465,19 +1465,19 @@ test_expect_success '.gitmodules ignore=all suppresses unstaged submodule summar
 On branch main
 Your branch and '\''upstream'\'' have diverged,
 and have 2 and 2 different commits each, respectively.
-  (use "git pull" if you want to integrate the remote branch with yours)
+  (use "kit pull" if you want to integrate the remote branch with yours)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	modified:   sm
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use "kit add <file>..." to include in what will be committed)
 	.gitmodules
 	dir1/untracked
 	dir2/modified
@@ -1587,12 +1587,12 @@ Your branch and '\''upstream'\'' have diverged,
 and have 2 and 2 different commits each, respectively.
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "kit restore --staged <file>..." to unstage)
 	modified:   sm
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "kit add <file>..." to update what will be committed)
+  (use "kit restore <file>..." to discard changes in working directory)
 	modified:   dir1/modified
 
 Untracked files not listed (use -u option to show untracked files)
@@ -1728,7 +1728,7 @@ test_expect_success 'slow status advice when core.untrackedCache and fsmonitor a
 		On branch main
 
 		It took 3.25 seconds to enumerate untracked files.
-		See '\''git help status'\'' for information on how to improve this.
+		See '\''kit help status'\'' for information on how to improve this.
 
 		nothing to commit, working tree clean
 		EOF
@@ -1746,7 +1746,7 @@ test_expect_success 'slow status advice when core.untrackedCache true, but not f
 		On branch main
 
 		It took 3.25 seconds to enumerate untracked files.
-		See '\''git help status'\'' for information on how to improve this.
+		See '\''kit help status'\'' for information on how to improve this.
 
 		nothing to commit, working tree clean
 		EOF
@@ -1765,7 +1765,7 @@ test_expect_success 'slow status advice when core.untrackedCache true, and fsmon
 
 		It took 3.25 seconds to enumerate untracked files,
 		but the results were cached, and subsequent runs may be faster.
-		See '\''git help status'\'' for information on how to improve this.
+		See '\''kit help status'\'' for information on how to improve this.
 
 		nothing to commit, working tree clean
 		EOF

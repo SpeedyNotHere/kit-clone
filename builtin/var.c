@@ -22,8 +22,8 @@
 #include "string-list.h"
 
 static const char * const var_usage[] = {
-	N_("git var [-z] -l"),
-	N_("git var [-z] <variable>..."),
+	N_("kit var [-z] -l"),
+	N_("kit var [-z] <variable>..."),
 	NULL
 };
 

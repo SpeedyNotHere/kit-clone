@@ -47,7 +47,7 @@
 #define FAILED_RUN "failed to run %s"
 
 static const char * const builtin_gc_usage[] = {
-	N_("git gc [<options>]"),
+	N_("kit gc [<options>]"),
 	NULL
 };
 
@@ -658,7 +658,7 @@ int cmd_gc(int argc,
 				fprintf(stderr, _("Auto packing the repository in background for optimum performance.\n"));
 			else
 				fprintf(stderr, _("Auto packing the repository for optimum performance.\n"));
-			fprintf(stderr, _("See \"git help gc\" for manual housekeeping.\n"));
+			fprintf(stderr, _("See \"kit help gc\" for manual housekeeping.\n"));
 		}
 	}
 
@@ -750,7 +750,7 @@ out:
 }
 
 static const char *const builtin_maintenance_run_usage[] = {
-	N_("git maintenance run [--auto] [--[no-]quiet] [--task=<task>] [--schedule]"),
+	N_("kit maintenance run [--auto] [--[no-]quiet] [--task=<task>] [--schedule]"),
 	NULL
 };
 
@@ -1055,7 +1055,7 @@ static int pack_loose(struct maintenance_run_opts *opts)
 	pack_proc.out = -1;
 
 	if (start_command(&pack_proc)) {
-		error(_("failed to start 'git pack-objects' process"));
+		error(_("failed to start 'kit pack-objects' process"));
 		return 1;
 	}
 
@@ -1079,7 +1079,7 @@ static int pack_loose(struct maintenance_run_opts *opts)
 	fclose(data.in);
 
 	if (finish_command(&pack_proc)) {
-		error(_("failed to finish 'git pack-objects' process"));
+		error(_("failed to finish 'kit pack-objects' process"));
 		result = 1;
 	}
 
@@ -1152,7 +1152,7 @@ static int multi_pack_index_expire(struct maintenance_run_opts *opts)
 		strvec_push(&child.args, "--progress");
 
 	if (run_command(&child))
-		return error(_("'git multi-pack-index expire' failed"));
+		return error(_("'kit multi-pack-index expire' failed"));
 
 	return 0;
 }
@@ -1214,7 +1214,7 @@ static int multi_pack_index_repack(struct maintenance_run_opts *opts)
 				  (uintmax_t)get_auto_pack_size());
 
 	if (run_command(&child))
-		return error(_("'git multi-pack-index repack' failed"));
+		return error(_("'kit multi-pack-index repack' failed"));
 
 	return 0;
 }
@@ -1701,7 +1701,7 @@ static char *get_maintpath(void)
 }
 
 static char const * const builtin_maintenance_register_usage[] = {
-	"git maintenance register [--config-file <path>]",
+	"kit maintenance register [--config-file <path>]",
 	NULL
 };
 
@@ -1766,7 +1766,7 @@ static int maintenance_register(int argc, const char **argv, const char *prefix,
 }
 
 static char const * const builtin_maintenance_unregister_usage[] = {
-	"git maintenance unregister [--config-file <path>] [--force]",
+	"kit maintenance unregister [--config-file <path>] [--force]",
 	NULL
 };
 
@@ -3006,7 +3006,7 @@ static int update_background_schedule(const struct maintenance_start_opts *opts,
 }
 
 static const char *const builtin_maintenance_start_usage[] = {
-	N_("git maintenance start [--scheduler=<scheduler>]"),
+	N_("kit maintenance start [--scheduler=<scheduler>]"),
 	NULL
 };
 
@@ -3017,7 +3017,7 @@ static int maintenance_start(int argc, const char **argv, const char *prefix,
 	struct option options[] = {
 		OPT_CALLBACK_F(
 			0, "scheduler", &opts.scheduler, N_("scheduler"),
-			N_("scheduler to trigger git maintenance run"),
+			N_("scheduler to trigger kit maintenance run"),
 			PARSE_OPT_NONEG, maintenance_opt_scheduler),
 		OPT_END()
 	};
@@ -3040,7 +3040,7 @@ static int maintenance_start(int argc, const char **argv, const char *prefix,
 }
 
 static const char *const builtin_maintenance_stop_usage[] = {
-	"git maintenance stop",
+	"kit maintenance stop",
 	NULL
 };
 
@@ -3058,7 +3058,7 @@ static int maintenance_stop(int argc, const char **argv, const char *prefix,
 }
 
 static const char *const builtin_maintenance_is_needed_usage[] = {
-	"git maintenance is-needed [--task=<task>] [--schedule]",
+	"kit maintenance is-needed [--task=<task>] [--schedule]",
 	NULL
 };
 
@@ -3118,7 +3118,7 @@ static int maintenance_is_needed(int argc, const char **argv, const char *prefix
 }
 
 static const char *const builtin_maintenance_usage[] = {
-	N_("git maintenance <subcommand> [<options>]"),
+	N_("kit maintenance <subcommand> [<options>]"),
 	NULL,
 };
 

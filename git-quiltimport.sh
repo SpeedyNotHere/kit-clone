@@ -2,7 +2,7 @@
 OPTIONS_KEEPDASHDASH=
 OPTIONS_STUCKLONG=
 OPTIONS_SPEC="\
-git quiltimport [options]
+kit quiltimport [options]
 --
 n,dry-run     dry run
 author=       author name and email address for patches without any

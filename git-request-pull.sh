@@ -7,7 +7,7 @@
 SUBDIRECTORY_OK='Yes'
 OPTIONS_KEEPDASHDASH=
 OPTIONS_STUCKLONG=
-OPTIONS_SPEC='git request-pull [options] start url [end]
+OPTIONS_SPEC='kit request-pull [options] start url [end]
 --
 p    show patch text as well
 '

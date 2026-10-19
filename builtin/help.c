@@ -98,12 +98,12 @@ static struct option builtin_help_options[] = {
 };
 
 static const char * const builtin_help_usage[] = {
-	"git help [-a|--all] [--[no-]verbose] [--[no-]external-commands] [--[no-]aliases]",
-	N_("git help [[-i|--info] [-m|--man] [-w|--web]] [<command>|<doc>]"),
-	"git help [-g|--guides]",
-	"git help [-c|--config]",
-	"git help [--user-interfaces]",
-	"git help [--developer-interfaces]",
+	"kit help [-a|--all] [--[no-]verbose] [--[no-]external-commands] [--[no-]aliases]",
+	N_("kit help [[-i|--info] [-m|--man] [-w|--web]] [<command>|<doc>]"),
+	"kit help [-g|--guides]",
+	"kit help [-c|--config]",
+	"kit help [--user-interfaces]",
+	"kit help [--developer-interfaces]",
 	NULL
 };
 
@@ -729,7 +729,7 @@ int cmd_help(int argc,
 		opt_mode_usage(argc, "--config", help_format);
 		setup_pager(the_repository);
 		list_config_help(SHOW_CONFIG_HUMAN);
-		printf("\n%s\n", _("'git help config' for more information"));
+		printf("\n%s\n", _("'kit help config' for more information"));
 		return 0;
 	}
 

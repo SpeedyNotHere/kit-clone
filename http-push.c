@@ -30,7 +30,7 @@
 #endif
 
 static const char http_push_usage[] =
-"git http-push [--all] [--dry-run] [--force] [--verbose] <remote> [<head>...]\n";
+"kit http-push [--all] [--dry-run] [--force] [--verbose] <remote> [<head>...]\n";
 
 #ifndef XML_STATUS_OK
 enum XML_Status {
@@ -1673,7 +1673,7 @@ static int delete_remote_branch(const char *pattern, int force)
 			return error("The branch '%s' is not an ancestor "
 				     "of your current HEAD.\n"
 				     "If you are sure you want to delete it,"
-				     " run:\n\t'git http-push -D %s %s'",
+				     " run:\n\t'kit http-push -D %s %s'",
 				     remote_ref->name, repo->url, pattern);
 		}
 	}

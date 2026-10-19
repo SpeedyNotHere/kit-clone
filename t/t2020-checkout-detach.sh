@@ -166,7 +166,7 @@ test_expect_success 'checkout does not warn leaving reachable commit' '
 
 cat >expect <<'EOF'
 Your branch is behind 'main' by 1 commit, and can be fast-forwarded.
-  (use "git pull" to update your local branch)
+  (use "kit pull" to update your local branch)
 EOF
 test_expect_success 'tracking count is accurate after orphan check' '
 	reset &&
@@ -222,11 +222,11 @@ test_expect_success 'describe_detached_head prints no SHA-1 ellipsis when not as
 	If you want to create a new branch to retain commits you create, you may
 	do so (now or later) by using -c with the switch command. Example:
 
-	  git switch -c <new-branch-name>
+	  kit switch -c <new-branch-name>
 
 	Or undo this operation with:
 
-	  git switch -
+	  kit switch -
 
 	Turn off this advice by setting config variable advice.detachedHead to false
 
@@ -304,11 +304,11 @@ test_expect_success 'describe_detached_head does print SHA-1 ellipsis when asked
 	If you want to create a new branch to retain commits you create, you may
 	do so (now or later) by using -c with the switch command. Example:
 
-	  git switch -c <new-branch-name>
+	  kit switch -c <new-branch-name>
 
 	Or undo this operation with:
 
-	  git switch -
+	  kit switch -
 
 	Turn off this advice by setting config variable advice.detachedHead to false
 

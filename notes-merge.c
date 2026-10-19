@@ -287,7 +287,7 @@ static void check_notes_merge_worktree(struct notes_merge_options *o)
 			if (advice_enabled(ADVICE_RESOLVE_CONFLICT))
 				die(_("You have not concluded your previous "
 				    "notes merge (%s exists).\nPlease, use "
-				    "'git notes merge --commit' or 'git notes "
+				    "'kit notes merge --commit' or 'kit notes "
 				    "merge --abort' to commit/abort the "
 				    "previous merge before you start a new "
 				    "notes merge."), repo_git_path_replace(the_repository, &buf, "NOTES_MERGE_*"));

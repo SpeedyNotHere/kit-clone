@@ -10,7 +10,7 @@ export GIT_TEST_DEFAULT_INITIAL_BRANCH_NAME
 test_expect_success 'advice should be printed when config variable is unset' '
 	cat >expect <<-\EOF &&
 	hint: This is a piece of advice
-	hint: Disable this message with "git config set advice.nestedTag false"
+	hint: Disable this message with "kit config set advice.nestedTag false"
 	EOF
 	test-tool advise "This is a piece of advice" 2>actual &&
 	test_cmp expect actual
@@ -82,10 +82,10 @@ test_expect_success 'advice should be printed when GIT_ADVICE is set to true' '
 	No commits yet
 
 	Untracked files:
-	  (use "git add <file>..." to include in what will be committed)
+	  (use "kit add <file>..." to include in what will be committed)
 	QREADME
 
-	nothing added to commit but untracked files present (use "git add" to track)
+	nothing added to commit but untracked files present (use "kit add" to track)
 	EOF
 
 	test_when_finished "rm -fr advice-test" &&

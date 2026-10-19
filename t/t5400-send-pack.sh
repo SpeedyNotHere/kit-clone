@@ -57,9 +57,9 @@ test_expect_success setup '
 
 test_expect_success 'send-pack does not crash with -h' '
 	git send-pack -h >usage &&
-	test_grep "[Uu]sage: git send-pack " usage &&
+	test_grep "[Uu]sage: kit send-pack " usage &&
 	nongit git send-pack -h >usage &&
-	test_grep "[Uu]sage: git send-pack " usage
+	test_grep "[Uu]sage: kit send-pack " usage
 '
 
 test_expect_success 'pack the source repository' '

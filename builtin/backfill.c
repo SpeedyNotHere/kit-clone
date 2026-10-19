@@ -26,7 +26,7 @@
 #include "path-walk.h"
 
 static const char * const builtin_backfill_usage[] = {
-	N_("git backfill [--min-batch-size=<n>] [--[no-]sparse] [--[no-]include-edges] [<revision-range>]"),
+	N_("kit backfill [--min-batch-size=<n>] [--[no-]sparse] [--[no-]include-edges] [<revision-range>]"),
 	NULL
 };
 
@@ -82,19 +82,19 @@ static int fill_missing_blobs(const char *path UNUSED,
 static void reject_unsupported_rev_list_options(struct rev_info *revs)
 {
 	if (revs->diffopt.pickaxe)
-		die(_("'%s' cannot be used with 'git backfill'"),
+		die(_("'%s' cannot be used with 'kit backfill'"),
 		    (revs->diffopt.pickaxe_opts & DIFF_PICKAXE_REGEX) ? "-G" : "-S");
 	if (revs->diffopt.filter || revs->diffopt.filter_not)
-		die(_("'%s' cannot be used with 'git backfill'"),
+		die(_("'%s' cannot be used with 'kit backfill'"),
 		    "--diff-filter");
 	if (revs->diffopt.flags.follow_renames)
-		die(_("'%s' cannot be used with 'git backfill'"),
+		die(_("'%s' cannot be used with 'kit backfill'"),
 		    "--follow");
 	if (revs->line_level_traverse)
-		die(_("'%s' cannot be used with 'git backfill'"),
+		die(_("'%s' cannot be used with 'kit backfill'"),
 		    "-L");
 	if (revs->explicit_diff_merges)
-		die(_("'%s' cannot be used with 'git backfill'"),
+		die(_("'%s' cannot be used with 'kit backfill'"),
 		    "--diff-merges");
 	if (!path_walk_filter_compatible(&revs->filter))
 		die(_("cannot backfill with these filter options"));

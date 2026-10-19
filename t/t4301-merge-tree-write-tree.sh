@@ -167,7 +167,7 @@ test_expect_success 'Barf on misspelled option, with exit code other than 0 or 1
 test_expect_success 'Barf on too many arguments' '
 	test_expect_code 129 git merge-tree --write-tree side1 side2 invalid 2>expect &&
 
-	test_grep "^usage: git merge-tree" expect
+	test_grep "^usage: kit merge-tree" expect
 '
 
 anonymize_hash() {

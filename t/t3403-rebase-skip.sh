@@ -109,9 +109,9 @@ test_expect_success 'correct advice upon picking empty commit' '
 	test_must_fail git rebase -i --onto goodbye \
 		amended-goodbye^ amended-goodbye 2>err &&
 	test_grep "previous cherry-pick is now empty" err &&
-	test_grep "git rebase --skip" err &&
+	test_grep "kit rebase --skip" err &&
 	test_must_fail git commit &&
-	test_grep "git rebase --skip" err
+	test_grep "kit rebase --skip" err
 '
 
 test_expect_success 'correct authorship when committing empty pick' '
@@ -132,9 +132,9 @@ test_expect_success 'correct advice upon rewording empty commit' '
 			--onto goodbye amended-goodbye^ amended-goodbye 2>err
 	) &&
 	test_grep "previous cherry-pick is now empty" err &&
-	test_grep "git rebase --skip" err &&
+	test_grep "kit rebase --skip" err &&
 	test_must_fail git commit &&
-	test_grep "git rebase --skip" err
+	test_grep "kit rebase --skip" err
 '
 
 test_expect_success 'correct advice upon editing empty commit' '
@@ -145,9 +145,9 @@ test_expect_success 'correct advice upon editing empty commit' '
 			--onto goodbye amended-goodbye^ amended-goodbye 2>err
 	) &&
 	test_grep "previous cherry-pick is now empty" err &&
-	test_grep "git rebase --skip" err &&
+	test_grep "kit rebase --skip" err &&
 	test_must_fail git commit &&
-	test_grep "git rebase --skip" err
+	test_grep "kit rebase --skip" err
 '
 
 test_expect_success 'correct advice upon cherry-picking an empty commit during a rebase' '
@@ -158,9 +158,9 @@ test_expect_success 'correct advice upon cherry-picking an empty commit during a
 			git rebase -i goodbye^ goodbye 2>err
 	) &&
 	test_grep "previous cherry-pick is now empty" err &&
-	test_grep "git cherry-pick --skip" err &&
+	test_grep "kit cherry-pick --skip" err &&
 	test_must_fail git commit 2>err &&
-	test_grep "git cherry-pick --skip" err
+	test_grep "kit cherry-pick --skip" err
 '
 
 test_expect_success 'correct advice upon multi cherry-pick picking an empty commit during a rebase' '
@@ -171,9 +171,9 @@ test_expect_success 'correct advice upon multi cherry-pick picking an empty comm
 			git rebase -i goodbye^^ goodbye 2>err
 	) &&
 	test_grep "previous cherry-pick is now empty" err &&
-	test_grep "git cherry-pick --skip" err &&
+	test_grep "kit cherry-pick --skip" err &&
 	test_must_fail git commit 2>err &&
-	test_grep "git cherry-pick --skip" err
+	test_grep "kit cherry-pick --skip" err
 '
 
 test_expect_success 'fixup that empties commit fails' '

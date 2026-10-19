@@ -295,11 +295,11 @@ static int read_graft_file(struct repository *r, const char *graft_file)
 		advise(_("Support for <GIT_DIR>/info/grafts is deprecated\n"
 			 "and will be removed in a future Git version.\n"
 			 "\n"
-			 "Please use \"git replace --convert-graft-file\"\n"
+			 "Please use \"kit replace --convert-graft-file\"\n"
 			 "to convert the grafts into replace refs.\n"
 			 "\n"
 			 "Turn this message off by running\n"
-			 "\"git config set advice.graftFileDeprecated false\""));
+			 "\"kit config set advice.graftFileDeprecated false\""));
 	while (!strbuf_getwholeline(&buf, fp, '\n')) {
 		/* The format is just "Commit Parent1 Parent2 ...\n" */
 		struct commit_graft *graft = read_graft_line(&buf);

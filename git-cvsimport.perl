@@ -38,7 +38,7 @@ sub usage(;$) {
 	my $msg = shift;
 	print(STDERR "Error: $msg\n") if $msg;
 	print STDERR <<END;
-usage: git cvsimport     # fetch/update GIT from CVS
+usage: kit cvsimport     # fetch/update GIT from CVS
        [-o branch-for-HEAD] [-h] [-v] [-d CVSROOT] [-A author-conv-file]
        [-p opts-for-cvsps] [-P file] [-C GIT_repository] [-z fuzz] [-i] [-k]
        [-u] [-s subst] [-a] [-m] [-M regex] [-S regex] [-L commitlimit]
@@ -764,7 +764,7 @@ unless ($opt_P) {
 	    print $cvspsfh $_;
 	}
 	close CVSPS;
-	$? == 0 or die "git cvsimport: fatal: cvsps reported error\n";
+	$? == 0 or die "kit cvsimport: fatal: cvsps reported error\n";
 	close $cvspsfh;
 } else {
 	$cvspsfile = munge_user_filename($opt_P);

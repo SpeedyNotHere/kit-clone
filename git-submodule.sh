@@ -4,7 +4,7 @@
 #
 # Copyright (c) 2007 Lars Hjemli
 
-dashless=$(basename "$0" | sed -e 's/-/ /')
+dashless=$(basename "$0" | sed -e 's/-/ /' -e 's/^git /kit /')
 USAGE="[--quiet] [--cached]
    or: $dashless [--quiet] add [-b <branch>] [-f|--force] [--name <name>] [--reference <repository>] [--] <repository> [<path>]
    or: $dashless [--quiet] status [--cached] [--recursive] [--] [<path>...]

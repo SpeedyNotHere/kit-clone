@@ -72,7 +72,7 @@ test_expect_success 'git diff --no-index executed outside repo gives correct err
 		export GIT_CEILING_DIRECTORIES &&
 		cd non/git &&
 		test_must_fail git diff --no-index a 2>actual.err &&
-		test_grep "usage: git diff --no-index" actual.err
+		test_grep "usage: kit diff --no-index" actual.err
 	)
 '
 
@@ -342,17 +342,17 @@ test_expect_success PIPE,SYMLINKS 'diff --no-index reads from pipes' '
 
 test_expect_success 'diff --no-index F F rejects pathspecs' '
 	test_must_fail git diff --no-index -- a/1 a/2 a 2>actual.err &&
-	test_grep "usage: git diff --no-index" actual.err
+	test_grep "usage: kit diff --no-index" actual.err
 '
 
 test_expect_success 'diff --no-index D F rejects pathspecs' '
 	test_must_fail git diff --no-index -- a a/2 a 2>actual.err &&
-	test_grep "usage: git diff --no-index" actual.err
+	test_grep "usage: kit diff --no-index" actual.err
 '
 
 test_expect_success 'diff --no-index F D rejects pathspecs' '
 	test_must_fail git diff --no-index -- a/1 b b 2>actual.err &&
-	test_grep "usage: git diff --no-index" actual.err
+	test_grep "usage: kit diff --no-index" actual.err
 '
 
 test_expect_success 'diff --no-index rejects absolute pathspec' '

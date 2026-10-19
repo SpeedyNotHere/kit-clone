@@ -366,7 +366,7 @@ test_expect_success 'gc.recentObjectsHook' '
 
 test_expect_success 'prune does not crash with -h' '
 	git prune -h >usage &&
-	test_grep "[Uu]sage: git prune " usage
+	test_grep "[Uu]sage: kit prune " usage
 '
 
 test_done

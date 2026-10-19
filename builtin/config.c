@@ -18,49 +18,49 @@
 #include "worktree.h"
 
 static const char *const builtin_config_usage[] = {
-	N_("git config list [<file-option>] [<display-option>] [--includes]"),
-	N_("git config get [<file-option>] [<display-option>] [--includes] [--all] [--regexp] [--value=<pattern>] [--fixed-value] [--default=<default>] [--url=<url>] <name>"),
-	N_("git config set [<file-option>] [--type=<type>] [--all] [--value=<pattern>] [--fixed-value] <name> <value>"),
-	N_("git config unset [<file-option>] [--all] [--value=<pattern>] [--fixed-value] <name>"),
-	N_("git config rename-section [<file-option>] <old-name> <new-name>"),
-	N_("git config remove-section [<file-option>] <name>"),
-	N_("git config edit [<file-option>]"),
-	N_("git config [<file-option>] --get-colorbool <name> [<stdout-is-tty>]"),
+	N_("kit config list [<file-option>] [<display-option>] [--includes]"),
+	N_("kit config get [<file-option>] [<display-option>] [--includes] [--all] [--regexp] [--value=<pattern>] [--fixed-value] [--default=<default>] [--url=<url>] <name>"),
+	N_("kit config set [<file-option>] [--type=<type>] [--all] [--value=<pattern>] [--fixed-value] <name> <value>"),
+	N_("kit config unset [<file-option>] [--all] [--value=<pattern>] [--fixed-value] <name>"),
+	N_("kit config rename-section [<file-option>] <old-name> <new-name>"),
+	N_("kit config remove-section [<file-option>] <name>"),
+	N_("kit config edit [<file-option>]"),
+	N_("kit config [<file-option>] --get-colorbool <name> [<stdout-is-tty>]"),
 	NULL
 };
 
 static const char *const builtin_config_list_usage[] = {
-	N_("git config list [<file-option>] [<display-option>] [--includes]"),
+	N_("kit config list [<file-option>] [<display-option>] [--includes]"),
 	NULL
 };
 
 static const char *const builtin_config_get_usage[] = {
-	N_("git config get [<file-option>] [<display-option>] [--includes] [--all] [--regexp=<regexp>] [--value=<pattern>] [--fixed-value] [--default=<default>] <name>"),
+	N_("kit config get [<file-option>] [<display-option>] [--includes] [--all] [--regexp=<regexp>] [--value=<pattern>] [--fixed-value] [--default=<default>] <name>"),
 	NULL
 };
 
 static const char *const builtin_config_set_usage[] = {
-	N_("git config set [<file-option>] [--type=<type>] [--comment=<message>] [--all] [--value=<pattern>] [--fixed-value] <name> <value>"),
+	N_("kit config set [<file-option>] [--type=<type>] [--comment=<message>] [--all] [--value=<pattern>] [--fixed-value] <name> <value>"),
 	NULL
 };
 
 static const char *const builtin_config_unset_usage[] = {
-	N_("git config unset [<file-option>] [--all] [--value=<pattern>] [--fixed-value] <name>"),
+	N_("kit config unset [<file-option>] [--all] [--value=<pattern>] [--fixed-value] <name>"),
 	NULL
 };
 
 static const char *const builtin_config_rename_section_usage[] = {
-	N_("git config rename-section [<file-option>] <old-name> <new-name>"),
+	N_("kit config rename-section [<file-option>] <old-name> <new-name>"),
 	NULL
 };
 
 static const char *const builtin_config_remove_section_usage[] = {
-	N_("git config remove-section [<file-option>] <name>"),
+	N_("kit config remove-section [<file-option>] <name>"),
 	NULL
 };
 
 static const char *const builtin_config_edit_usage[] = {
-	N_("git config edit [<file-option>]"),
+	N_("kit config edit [<file-option>]"),
 	NULL
 };
 
@@ -219,7 +219,7 @@ static NORETURN void die_missing_set_value(const char *arg)
 
 	if (prefix && git_config_key_is_valid(prefix)) {
 		error(_("missing value to set to the variable '%s'"), arg);
-		advise(_("did you mean \"git config set %s %s\"?"),
+		advise(_("did you mean \"kit config set %s %s\"?"),
 		       prefix, eq + 1);
 	} else if (git_config_key_is_valid(arg)) {
 		error(_("missing value to set to the variable '%s'"), arg);
@@ -983,7 +983,7 @@ static void location_options_init(struct config_location_options *opts,
 			      "working trees unless the config\n"
 			      "extension worktreeConfig is enabled. "
 			      "Please read \"CONFIGURATION FILE\"\n"
-			      "section in \"git help worktree\" for details"));
+			      "section in \"kit help worktree\" for details"));
 		else
 			opts->source.file = opts->file_to_free =
 				repo_git_path(the_repository, "config");
