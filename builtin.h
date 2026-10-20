@@ -175,6 +175,11 @@ int cmd_credential_store(int argc, const char **argv, const char *prefix, struct
 int cmd_describe(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_diagnose(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_diff_files(int argc, const char **argv, const char *prefix, struct repository *repo);
+int cmd_diff(int argc, const char **argv, const char *prefix, struct repository *repo);
+int cmd_diff_pairs(int argc, const char **argv, const char *prefix, struct repository *repo);
+int cmd_diff_tree(int argc, const char **argv, const char *prefix, struct repository *repo);
+int cmd_difftool(int argc, const char **argv, const char *prefix, struct repository *repo);
+int cmd_download(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_diff_index(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_diff(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_diff_pairs(int argc, const char **argv, const char *prefix, struct repository *repo);
@@ -218,6 +223,7 @@ int cmd_merge_ours(int argc, const char **argv, const char *prefix, struct repos
 int cmd_merge_file(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_merge_recursive(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_merge_tree(int argc, const char **argv, const char *prefix, struct repository *repo);
+int cmd_microcommit(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_mktag(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_mktree(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_multi_pack_index(int argc, const char **argv, const char *prefix, struct repository *repo);
@@ -251,6 +257,12 @@ int cmd_rev_list(int argc, const char **argv, const char *prefix, struct reposit
 int cmd_rev_parse(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_revert(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_rm(int argc, const char **argv, const char *prefix, struct repository *repo);
+int cmd_save(int argc, const char **argv, const char *prefix, struct repository *repo);
+int cmd_send_pack(int argc, const char **argv, const char *prefix, struct repository *repo);
+int cmd_rev_list(int argc, const char **argv, const char *prefix, struct repository *repo);
+int cmd_rev_parse(int argc, const char **argv, const char *prefix, struct repository *repo);
+int cmd_revert(int argc, const char **argv, const char *prefix, struct repository *repo);
+int cmd_rm(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_send_pack(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_shortlog(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_show(int argc, const char **argv, const char *prefix, struct repository *repo);
@@ -264,11 +276,13 @@ int cmd_submodule__helper(int argc, const char **argv, const char *prefix, struc
 int cmd_switch(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_symbolic_ref(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_tag(int argc, const char **argv, const char *prefix, struct repository *repo);
+int cmd_undo(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_unpack_file(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_unpack_objects(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_update_index(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_update_ref(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_update_server_info(int argc, const char **argv, const char *prefix, struct repository *repo);
+int cmd_upload(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_upload_archive(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_upload_archive_writer(int argc, const char **argv, const char *prefix, struct repository *repo);
 int cmd_upload_pack(int argc, const char **argv, const char *prefix, struct repository *repo);
