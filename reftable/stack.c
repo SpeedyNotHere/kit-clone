@@ -16,6 +16,7 @@
 #include "reftable-merged.h"
 #include "table.h"
 #include "writer.h"
+#include "compat/poll.h"
 
 static int stack_filename(struct reftable_buf *dest, struct reftable_stack *st,
 			  const char *name)

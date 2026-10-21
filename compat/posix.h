@@ -124,7 +124,10 @@
 #include <assert.h>
 #include <regex.h>
 #include <utime.h>
+#if !defined(__MINGW32__) && !defined(_MSC_VER)
+#ifndef NO_SYSLOG_H
 #include <syslog.h>
+#endif
 #if !defined(NO_POLL_H)
 #include <poll.h>
 #elif !defined(NO_SYS_POLL_H)
@@ -132,6 +135,7 @@
 #else
 /* Pull the compat stuff */
 #include <poll.h>
+#endif
 #endif
 #ifdef HAVE_BSD_SYSCTL
 #include <sys/sysctl.h>

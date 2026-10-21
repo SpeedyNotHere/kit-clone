@@ -255,7 +255,7 @@ static struct recent_command cmd_hist = {
 };
 static struct recent_command *cmd_tail = &cmd_hist;
 static struct recent_command *rc_free;
-static unsigned int cmd_save = 100;
+static unsigned int cmd_save_mark = 100;
 static uintmax_t next_mark;
 static struct strbuf new_data = STRBUF_INIT;
 static int require_explicit_termination;
@@ -4236,10 +4236,10 @@ int cmd_fast_import(int argc,
 			state.allow_unsafe_features = 1;
 	}
 
-	rc_free = mem_pool_alloc(&fi_mem_pool, cmd_save * sizeof(*rc_free));
-	for (unsigned int i = 0; i < (cmd_save - 1); i++)
+	rc_free = mem_pool_alloc(&fi_mem_pool, cmd_save_mark * sizeof(*rc_free));
+	for (unsigned int i = 0; i < (cmd_save_mark - 1); i++)
 		rc_free[i].next = &rc_free[i + 1];
-	rc_free[cmd_save - 1].next = NULL;
+	rc_free[cmd_save_mark - 1].next = NULL;
 
 	start_packfile();
 	set_die_routine(die_nicely);
